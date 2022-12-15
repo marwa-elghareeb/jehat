@@ -127,6 +127,9 @@
 									<li>
 										<a href="{{ URL :: to ('/helpcenter')}}" style="font-family: cairo"> مركز المساعده</a>
 									</li>
+									<li>
+										<a href="{{ URL :: to ('/towers')}}" style="font-family: cairo">  الابراج الافتراضيه</a>
+									</li>
 								</ul>
 								<!--div class="dropdown-content">
 									&nbsp;&nbsp;
