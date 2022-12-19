@@ -1,136 +1,107 @@
-<!DOCTYPE html>
-<html lang="en">
+@extends('layouts.appPortal')
 
-<head>
-  <meta charset="utf-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <title>Jehat</title>
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <meta name="Description" lang="en" content="open source x/html and css templates">
-  <meta name="author" content="mlp design">
-  <meta name="robots" content="index, follow">
+@section('content')
 
-  <link rel="stylesheet" href="{{ asset('public\help\styles1.css')}}">
-</head>
-
-<body dir="rtl">
-  <!--start wrapper-->
-  <div id="wrapper">
-
-    <!--start body-->
-    <div id="body">
-
-      <!--start header-->
-      <div id="banner">
-
-        <ul id="topnav">
-          <li><a href="{{ URL :: to ('/')}}">الرئيسيه</a></li>
-          <li><a href="{{ URL :: to ('/aboutUs')}}">من نحن </a></li>
-          <li><a href="{{ URL :: to ('/contactUs')}}">تواصل معانا</a></li>
-          <li><a href="{{ URL :: to ('/question')}}"> الاسئله الشائعه</a></li>
-          <li><a href="{{ URL :: to ('/helpcenter')}}">مركز المساعده</a></li>
-
-          <li>
-          <form method="POST" action="{{ URL :: to ('/search')}}"">
-          {{ csrf_field() }}                               
-            <div class="input-group mb-3">
-              <input type="text" class="form-control" name="search"
-              placeholder="بحث" aria-label="بحث" required
-              aria-describedby="basic-addon1">
+    <main>
+        <!--? slider Area Start-->
+        <section class="slider-area slider-area2">
+            <div class="slider-active">
+                <!-- Single Slider -->
+                <div class="single-slider slider-height2">
+                    <div class="container">
+                        <div class="row justify-content-center">
+                            <div class="col-xl-8 col-lg-11 col-md-12">
+                                <div class="hero__caption hero__caption2 text-center">
+                                    <h1 data-animation="bounceIn" data-delay="0.2s">مركز المساعدة</h1>
+                                </div>
+                            </div>
+                        </div>
+                    </div>          
+                </div>
             </div>
-          </form>
+        </section>
+        <div class="faq-section section-padding40" >
+            <div class="container">
 
-          </li>
-        </ul>
-        <!-- end menu -->
-      </div>
-      <!--end of header-->
-      <!--start sidebar-->
-      <div id="sidebar">
+                <div class="row justify-content-center">
+                    <div class="col-lg-8">
+                        <div class="section-tittle">
+                            <h2>منصة مستفيد</h2>
+                        </div>
+                        <div class="collapse-wrapper">
+                            <div class="accordion" id="accordionExample">
+                                <!-- single-one -->
+                                <div class="card">
+                                    <div class="card-header" id="headingTwo">
+                                        <h2 class="mb-0">
+                                            <a href="#" class="btn-link collapsed"  data-toggle="collapse" data-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">طلباتي</a>
+                                        </h2>
+                                    </div>
+                                    <div id="collapseTwo" class="collapse" aria-labelledby="headingTwo" data-parent="#accordionExample">
+                                        <div class="card-body">
+                                            <h4><a href="https://jehat.sa/helpCenter/helpCenter/helpcenter/45" target="_self"> عرض طلباتي</a></h4>                                 
+                                            
+                                           <h4><a href="https://jehat.sa/helpCenter/helpCenter/helpcenter/46" target="_self"> إضافة طلب</a> 
+                                            </h4>
+                                        </div>
 
-        @foreach($allCat as $data)
-        <h2>{{ $data->name_ar}}</h2>
-        <ul>
-          @foreach($data->child as $child)
-          <li>
-            <a href="#" target="_self"> {{ $child->name_ar }}</a>
-
-            <ul>
-              @foreach ($child->subSub as $ss)
-
-              <li>
-                <a href="{{ URL :: to ('/helpcenter' , $ss->id )}}" target="_self"> {{ $ss->name_ar }}</a>
-
-              </li>
-              @endforeach
-
-            </ul>
-
-
-          </li>
-          @endforeach
-
-        </ul>
-        @endforeach
-      </div>
-      <!--end of sidebar-->
-      <div class="clear"></div>
-      <!--start containter-->
-      <div id="container">
-
-        <!--start content-->
-        <div id="content">
-          <!--post item-->
-          <div class="item">
-
-            @foreach($allCat as $data)
-            <h2>{{ $data->name_ar}}</h2>
-            <ul>
-              @foreach($data->child as $child)
-              <li><a href="#" target="_self"> {{ $child->name_ar }}</a>
-                <ul>
-                  @foreach ($child->subSub as $ss)
-                  <li>
-                    <a href="{{ URL :: to ('/helpcenter' , $ss->id )}}" target="_self"> {{ $ss->name_ar }}</a>
-
-                  </li>
-                  @endforeach
-
-                </ul>
-              </li>
-              @endforeach
-
-            </ul>
-            @endforeach
-
-
-          </div>
-
-
-          <!--end of another post item-->
+                                    </div>
+                                </div>
+                                <!-- single-two -->
+                                <div class="card">
+                                    <div class="card-header" id="headingOne">
+                                        <h2 class="mb-0">
+                                            <a href="#" class="btn-link" data-toggle="collapse" data-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">خطاباتي</a>
+                                        </h2>
+                                    </div>
+                                    <div id="collapseOne" class="collapse show" aria-labelledby="headingOne" data-parent="#accordionExample">
+                                        <div class="card-body">
+                                            <h4><a href="https://jehat.sa/helpCenter/helpCenter/helpcenter/33" target="_self"> شرح خطاباتي</a></h4>
+                                            <h3><a href="https://jehat.sa/helpCenter/helpCenter/helpcenter/42" target="_self"> إضافة موعد</a></h3>
+                                        </div>
+                                    </div>
+                                </div>
+                                <!-- single-three -->
+                                <div class="card">
+                                    <div class="card-header" id="headingThree">
+                                        <h2 class="mb-0">
+                                            <a href="#" class="btn-link collapsed"  data-toggle="collapse" data-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">Automated process starts.</a>
+                                        </h2>
+                                    </div>
+                                    <div id="collapseThree" class="collapse" aria-labelledby="headingThree" data-parent="#accordionExample">
+                                        <div class="card-body">
+                                            The automated process starts as soon as 
+                                            your clothes go into the machine. Duis cursus, mi 
+                                            quis viverra ornare.
+                                        </div>
+                                    </div>
+                                </div>
+                                <!-- single-four -->
+                                <div class="card">
+                                    <div class="card-header" id="headingfouree">
+                                        <h2 class="mb-0">
+                                            <a href="#" class="btn-link collapsed" data-toggle="collapse" data-target="#collapseFoure" aria-expanded="false" aria-controls="collapseFoure">Process the automated magic.</a>
+                                        </h2>
+                                    </div>
+                                    <div id="collapseFoure" class="collapse" aria-labelledby="headingfouree" data-parent="#accordionExample">
+                                        <div class="card-body">
+                                            The automated process starts as soon as 
+                                            your clothes go into the machine. Duis cursus, mi 
+                                            quis viverra ornare.
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
         </div>
-        <!--end of content-->
 
-      </div>
-      <!--end of container-->
-    </div>
-    <!--end of body-->
+        <!--? Want To work 01-->
+        
+        <!-- Want To work End -->
 
-
-    <!--start footer-->
-    <div id="footer" style="text-align: center;">
-      <span class="center">2022 &copy; <a href="#">جهات</a>. جميع الحقوق محفوظه لدى .</span>
-
-      <p class="show-footer">2022 &copy; <a href="#">جهات</a>. جميع الحقوق محفوظه لدى.<br />
-    </div>
-    <!--end of footer-->
-
-  </div>
-  <!--end of wrapper-->
-
-
-
-
-</body>
-
-</html>
+    </main>
+    @endsection
+   
