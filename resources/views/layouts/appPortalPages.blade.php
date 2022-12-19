@@ -6,44 +6,27 @@
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
 	<meta content="مستقبل كل الجهات" name="description">
 	<meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1">
-	<title> جهات</title>
-	<link rel="apple-touch-icon" sizes="180x180" href="{{ asset('public\portal-assets\assets\img\fav\apple-touch-icon.png') }}">
-	<link rel="icon" type="image/png" sizes="32x32" href="{{ asset('public\portal-assets\assets\img\fav\favicon-32x32.png') }}">
-	<link rel="icon" type="image/png" sizes="16x16" href="{{ asset('public\portal-assets\assets\img\fav\favicon-16x16.png') }}">
-	<link rel="mask-icon" href="{{ asset('public\portal-assets\assets\img\fav\safari-pinned-tab.svg') }}" color="#7052fb">
-	<meta name="msapplication-TileColor" content="#7052fb">
-	<meta name="theme-color" content="#7052fb">
-	<link rel="stylesheet" href="{{ asset('public\portal-assets\dependencies\bootstrap\css\bootstrap.min.css') }}" type="text/css">
-	<link rel="stylesheet" href="{{ asset('public\portal-assets\dependencies\fontawesome\css\all.min.css') }}" type="text/css">
-	<link rel="stylesheet" href="{{ asset('public\portal-assets\dependencies\swiper\css\swiper.min.css') }}" type="text/css">
-	<link rel="stylesheet" href="{{ asset('public\portal-assets\dependencies\wow\css\animate.css') }}" type="text/css">
-	<link rel="stylesheet" href="{{ asset('public\portal-assets\dependencies\magnific-popup\css\magnific-popup.css') }}" type="text/css">
-	<link rel="stylesheet" href="{{ asset('public\portal-assets\dependencies\components-elegant-icons\css\elegant-icons.min.css') }}" type="text/css">
-	<link rel="stylesheet" href="{{ asset('public\portal-assets\dependencies\simple-line-icons\css\simple-line-icons.css') }}" type="text/css">
-	<link rel="stylesheet" href="{{ asset('public\portal-assets\assets\css\app.css ') }}" type="text/css">
-	<link href="https://fonts.googleapis.com/css?family=Poppins:300,400,500,600,700,800" rel="stylesheet">
-	<link rel="preconnect" href="https://fonts.gstatic.com">
-	<link href="https://fonts.googleapis.com/css2?family=Cairo:wght@600&display=swap" rel="stylesheet">
+	<title> جهات</title>	
+	<link rel="preconnect" href="{{ asset(' https://fonts.gstatic.com ') }}">
+	<link rel="stylesheet" href=" {{ asset('public/web-assets/css/bootstrap.min.css') }}">
+    <link rel="stylesheet" href="{{ asset('public/web-assets/css/owl.carousel.min.css') }}">
+    <link rel="stylesheet" href=" {{ asset('public/web-assets/css/slicknav.css') }}">
+    <link rel="stylesheet" href=" {{ asset('public/web-assets/assets/css/flaticon.css') }}">
+    <link rel="stylesheet" href=" {{ asset('public/web-assets/css/progressbar_barfiller.css') }}">
+    <link rel="stylesheet" href="  {{ asset('public/web-assets/css/gijgo.css') }}">
+    <link rel="stylesheet" href=" {{ asset('public/web-assets/css/animate.min.css') }}">
+    <link rel="stylesheet" href="{{ asset('public/web-assets/css/animated-headline.css') }}">
+    <link rel="stylesheet" href="{{ asset('public/web-assets/css/magnific-popup.css ') }}">
+    <link rel="stylesheet" href=" {{ asset('public/web-assets/css/fontawesome-all.min.css ') }}">
+    <link rel="stylesheet" href=" {{ asset('public/web-assets/css/themify-icons.css ') }}">
+    <link rel="stylesheet" href=" {{ asset('public/web-assets/css/slick.css ') }}">
+    <link rel="stylesheet" href="{{ asset('public/web-assets/css/nice-select.css ') }}">
+	<link rel="stylesheet" href="{{ asset('assets/css/style.css /css/style.css ') }}">
+
 	<style type="text/css">
+		
 	</style>
 
-    <link rel="stylesheet" type="text/css" href="{{ asset('public/portal-assets/css/animate.css') }}">
-	<link rel="stylesheet" type="text/css" href="{{ asset('public/portal-assets/css/bootstrap.css') }}">
-	<link rel="stylesheet" type="text/css" href="{{ asset('public/portal-assets/css/font-awesome.css') }}">
-	<link rel="stylesheet" type="text/css" href="{{ asset('public/portal-assets/css/fonts.css') }}">
-	<link rel="stylesheet" type="text/css" href="{{ asset('public/portal-assets/css/flaticon.css') }}">
-	<link rel="stylesheet" type="text/css" href="{{ asset('public/portal-assets/css/owl.carousel.css') }}">
-	<link rel="stylesheet" type="text/css" href="{{ asset('public/portal-assets/css/owl.theme.default.css') }}">
-	<link rel="stylesheet" type="text/css" href="{{ asset('public/portal-assets/css/dl-menu.css') }}">
-	<link rel="stylesheet" type="text/css" href="{{ asset('public/portal-assets/css/nice-select.css') }}">
-	<link rel="stylesheet" type="text/css" href="{{ asset('public/portal-assets/css/magnific-popup.css') }}">
-	<link rel="stylesheet" type="text/css" href="{{ asset('public/portal-assets/css/venobox.css') }}">
-	<link rel="stylesheet" type="text/css" href="{{ asset('public/portal-assets/js/plugin/rs_slider/layers.css') }}">
-	<link rel="stylesheet" type="text/css" href="{{ asset('public/portal-assets/js/plugin/rs_slider/navigation.css') }}">
-	<link rel="stylesheet" type="text/css" href="{{ asset('public/portal-assets/js/plugin/rs_slider/settings3.css') }}">
-	<link rel="stylesheet" type="text/css" href="{{ asset('public/portal-assets/css/style3.css') }}">
-	<link rel="stylesheet" type="text/css" href="{{ asset('public/portal-assets/css/responsive.css') }}">
-	<link rel="stylesheet" id="theme-color" type="text/css" href="#">
 
 </head>
 
@@ -134,10 +117,8 @@
 								<!--div class="dropdown-content">
 									&nbsp;&nbsp;
 									&nbsp; <a href="#" style="color: #66CCFF; ">
-
 										<img src="{{ asset('portal-assets\united_kingdom_flag_pin_640.png')}}" width="44" height="28" class="pxs-btn banner-btn color-two wow pixFadeUp" data-wow-delay="0.6s" style="border-width: 0px; visibility: visible; animation-delay: 0.6s; animation-name: i;"></a><a href="#" style="color: #66CCFF">&nbsp;&nbsp;&nbsp;&nbsp;
 									</a><a href="#" style="color: #66CCFF; ">
-
 										<img src="{{ asset('portal-assets\malaysia_flag_pin_640.png')}}" width="44" height="28" class="pxs-btn banner-btn color-two wow pixFadeUp" data-wow-delay="0.6s" style="border-width: 0px; visibility: visible; animation-delay: 0.6s; animation-name: i;"></a>
 									<a href="#" style="color: #66CCFF">
 									</a>
