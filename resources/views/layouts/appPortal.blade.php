@@ -62,7 +62,14 @@
                                             <ul id="navigation">
                                                 <li class="active"><a href="{{ URL :: to ('/')}}">الرئيسية</a></li>
                                                 <li><a href="{{ URL :: to ('/aboutUs')}}">من نحن</a></li>
-                                                <li><a href="#">دليل المستخدم</a></li>
+                                                
+                                                <li><a href="about.html">دليل المستخدم</a>
+                                                <ul class="submenu">
+                                                    <li><a href="blog.html">اسئلة شائعة</a></li>
+                                                    <li><a href="blog_details.html">المركز الأعلامي </a></li>
+                                                   <li><a href="elements.html">مركز المساعدة</a></li>
+                                                   <li><a href="elements.html">آلية عمل المنصة </a></li>
+                                                </ul>
                                                 <li><a href="{{ URL :: to ('/contactUs')}}">تواصل معنا</a></li>
 
                                                 <li><a href="{{ URL :: to ('/helpcenter')}}">مركز المساعدة </a></li>
