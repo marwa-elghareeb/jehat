@@ -73,7 +73,7 @@
                                                 <li><a href="{{ URL :: to ('/contactUs')}}">تواصل معنا</a></li>
 
                                                 <li><a href="{{ URL :: to ('/helpcenter')}}">مركز المساعدة </a></li>
-                                                <li><a href="{{ URL :: to ('/towers')}}">برج جهات الافتراضي</a>
+                                                <li><a href="{{ URL :: to ('/cards')}}">برج جهات الافتراضي</a>
                                                     <!--ul class="submenu">
                                                             <li><a href="blog.html">الشركات</a></li>
                                                             <li><a href="blog_details.html">الموظفين</a></li>

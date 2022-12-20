@@ -106,6 +106,10 @@ class IndexController extends Controller
 
 
     /*====Tower=============================*/
+    public function cards()
+    {
+        return view('site.cards');
+    }
     public function towers()
     {
         return view('site.towers');
