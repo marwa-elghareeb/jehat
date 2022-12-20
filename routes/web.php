@@ -33,7 +33,7 @@ Route::get('/helpcenter/{id}', [IndexController::class, 'helpDetails']);
 Route::get('/question', [IndexController::class, 'question']);
 Route::post('/search', [IndexController::class, 'search']);
 //Towers
-Route::get('/cards', [IndexController::class, 'towers']);
+Route::get('/cards', [IndexController::class, 'cards']);
 Route::get('/towers', [IndexController::class, 'towers']);
 Route::get('/allCompanies', [IndexController::class, 'companies']);
 Route::get('/department/{id}', [IndexController::class, 'department']);
