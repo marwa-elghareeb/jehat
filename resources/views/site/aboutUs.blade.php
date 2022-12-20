@@ -17,7 +17,7 @@
                                 <div class="hero__caption hero__caption2 text-center">
                                     <h1 data-animation="bounceIn" data-delay="0.2s">منصة جهات</h1>
                                     <div class="screen-img">
-                                        <img src="assets/img/gallery/screen.png" alt="" class=" w-50">
+                                        <img src="{{ asset('public/web-assets/img/gallery/screen.png' ) }}" alt="" class=" w-50">
                                     </div>
                                 </div>
                             </div>
@@ -43,7 +43,7 @@
                     <div class=" col-lg-4 col-md-6 col-sm-6">
                         <div class="single-services mb-30">
                             <div class="services-ion">
-                                <img src="public/web-assets/img/icon/18.png" alt="" style="height: 100px; width: 100px;">
+                                <img src=" {{ asset('public/web-assets/img/icon/18.png' ) }} " alt="" style="height: 100px; width: 100px;">
                             </div>
                             <div class="services-cap">
                                 <h5><a href="#">هكذا نحقق أهدافنا</a></h5>
@@ -54,7 +54,7 @@
                     <div class=" col-lg-4 col-md-6 col-sm-6">
                         <div class="single-services mb-30">
                             <div class="services-ion">
-                            <img src="public/web-assets/img/icon/19.png " alt="" style="height: 100px; width: 100px;">
+                            <img src=" {{ asset('public/web-assets/img/icon/19.png ' ) }} " alt="" style="height: 100px; width: 100px;">
                         </div>
                             <div class="services-cap">
                                 <h5><a href="#">تلك هى رسالتنا</a></h5>
@@ -65,7 +65,7 @@
                     <div class=" col-lg-4 col-md-6 col-sm-6">
                         <div class="single-services mb-30">
                             <div class="services-ion">
-                                <img src="public/web-assets/img/icon/20.png" alt="" style="height: 100px; width: 100px;">
+                                <img src="{{ asset('public/web-assets/img/icon/20.png' ) }}" alt="" style="height: 100px; width: 100px;">
                             </div>
                             <div class="services-cap">
                                 <h5><a href="#">رؤيتنا الإستراتيجية</a></h5>
@@ -81,7 +81,7 @@
                           <div class="row">
                             <div class="col-md-6 col-lg-3">
                               <div class="img-block mb-5">
-                                <img src="public/web-assets/img/14.jpg" class="img-fluid  img-thumbnail rounded-circle" alt="image1">
+                                <img src=" {{ asset('public/web-assets/img/14.jpg' ) }}" class="img-fluid  img-thumbnail rounded-circle" alt="image1">
                                 <div class="content mt-2">
                                   <h4>Dr . Ayman Mahmoud Helmy</h4>
                                   <p class="text-muted">CEO of Egypt</p>
@@ -90,7 +90,7 @@
                             </div>
                             <div class="col-md-6 col-lg-3 ">
                               <div class="img-block mb-5">
-                                <img src="public/web-assets/img/13.jpg" class="img-fluid  img-thumbnail rounded-circle" alt="image1">
+                                <img src=" {{ asset('public/web-assets/img/13.jpg ' ) }}" class="img-fluid  img-thumbnail rounded-circle" alt="image1">
                                 <div class="content mt-2">
                                   <h4>Datuk Hj Abdul Rahim</h4>
                                   <p class="text-muted">CEO of Malaysia</p>
@@ -99,7 +99,7 @@
                             </div>
                             <div class="col-md-6 col-lg-3">
                               <div class="img-block mb-5">
-                                <img src="public/web-assets/img/12.jpg" class="img-fluid  img-thumbnail rounded-circle" alt="image1">
+                                <img src="{{ asset('public/web-assets/img/12.jpg  ' ) }}" class="img-fluid  img-thumbnail rounded-circle" alt="image1">
                                 <div class="content mt-2">
                                   <h4>Ahmed Basuony </h4>
                                   <p class="text-muted">IT Manager</p>
@@ -108,7 +108,7 @@
                             </div>
                             <div class="col-md-6 col-lg-3">
                               <div class="img-block mb-5">
-                                <img src="public/web-assets/img/11.jpg " class="img-fluid  img-thumbnail rounded-circle" alt="image1">
+                                <img src=" {{ asset('public/web-assets/img/11.jpg' ) }}" class="img-fluid  img-thumbnail rounded-circle" alt="image1">
                                 <div class="content mt-2">
                                   <h4>Saad Al Mohsen</h4>
                                   <p class="text-muted">Chairman of Board of Directors</p>
@@ -125,7 +125,7 @@
         <!--? Want To work 01-->
         <section class="wantToWork-area ">
             <div class="container">
-                <div class="wants-wrapper w-padding2 section-bg2" data-background="assets/img/gallery/section_bg02.png">
+                <div class="wants-wrapper w-padding2 section-bg2" data-background=" {{ asset('public/web-assets/img/gallery/section_bg02.png' ) }}">
                     <div class="row align-items-center justify-content-center">
                         <div class="col-xl-7 col-lg-9 col-md-8">
                             <div class="wantToWork-caption text-center">

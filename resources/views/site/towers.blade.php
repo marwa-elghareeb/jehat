@@ -41,7 +41,7 @@
                                     </a>
                                     <p></p>
                                     <ul class="blog-info-link">
-                                        <li><a href="blog_details.html"><i class="fa fa-user"></i> الموظفين</a></li>
+                                        <li><a href="{{ URL :: to ('/employe/{id}')}}"><i class="fa fa-user"></i> الموظفين</a></li>
                                         <li><a href="#"><i class="fa fa-comments"></i> التعليقات</a></li>
                                     </ul>
                                 </div>
@@ -55,12 +55,12 @@
                                     </a>
                                 </div>
                                 <div class="blog_details">
-                                    <a class="d-inline-block" href="blog_details.html">
+                                    <a class="d-inline-block" href="">
                                         <h2 class="blog-head" style="color: #2d2d2d;">معرض جهات الافتراضي للمطورين العقاريين</h2>
                                     </a>
                             
                                     <ul class="blog-info-link">
-                                        <li><a href="blog_details.html"><i class="fa fa-user"></i> الموظفين</a></li>
+                                        <li><a href="{{ URL :: to ('/employe/{id}')}}"><i class="fa fa-user"></i> الموظفين</a></li>
                                         <li><a href="#"><i class="fa fa-comments"></i> التعليقات</a></li>
                                     </ul>
                                 </div>
@@ -79,7 +79,7 @@
                                     </a>
                         
                                     <ul class="blog-info-link">
-                                        <li><a href="#"><i class="fa fa-user"></i> الموظفين</a></li>
+                                        <li><a href="{{ URL :: to ('/employe/{id}')}}"><i class="fa fa-user"></i> الموظفين</a></li>
                                         <li><a href="#"><i class="fa fa-comments"></i>التعليقات</a></li>
                                     </ul>
                                 </div>
@@ -98,7 +98,7 @@
                                     </a>
                                     
                                     <ul class="blog-info-link">
-                                        <li><a href="#"><i class="fa fa-user"></i> الموظفين</a></li>
+                                        <li><a href="{{ URL :: to ('/employe/{id}')}}"><i class="fa fa-user"></i> الموظفين</a></li>
                                         <li><a href="#"><i class="fa fa-comments"></i> التعليقات</a></li>
                                     </ul>
                                 </div>
@@ -117,7 +117,7 @@
                                     </a>
                                     
                                     <ul class="blog-info-link">
-                                        <li><a href="#"><i class="fa fa-user"></i> الموظفين</a></li>
+                                        <li><a href="{{ URL :: to ('/employe/{id}')}}"><i class="fa fa-user"></i> الموظفين</a></li>
                                         <li><a href="#"><i class="fa fa-comments"></i> التعليقات</a></li>
                                     </ul>
                                 </div>

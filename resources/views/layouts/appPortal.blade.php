@@ -119,7 +119,7 @@
                                 <div class="single-footer-caption mb-30">
                                     <!-- logo -->
                                     <div class="footer-logo mb-25">
-                                        <a href="index.html"><img src="s {{ asset('public/web-assets/img/logo/logo2_footer.png') }}" alt=""></a>
+                                        <a href="index.html"><img src=" {{ asset('public/web-assets/img/logo/logo2_footer.png') }}" alt=""></a>
                                     </div>
                                     <div class="footer-tittle">
                                         <div class="footer-pera">
@@ -140,7 +140,7 @@
                                 <div class="footer-tittle">
                                     <h4>عن منصة جهات</h4>
                                     <ul>
-                                        <li><a href="#"> من نحن </a></li>
+                                        <li><a href="{{ URL :: to ('/aboutUs')}}"> من نحن </a></li>
                                         <li><a href="#">الشهادات</a></li>
                                         <li><a href="#">اعضاء الادارة</a></li>
                                         <li><a href="#">شركائنا</a></li>
