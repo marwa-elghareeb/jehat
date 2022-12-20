@@ -7,7 +7,7 @@
     <title> منصة جهات</title>
     <meta name="description" content="">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="manifest" href="site.webmanifest">
+    <link rel="" href="">
     <link rel="shortcut icon" type="image/x-icon" href="{{ asset('public/web-assets/img/favicon.png')}}">
 
     <!-- CSS here -->
@@ -15,7 +15,7 @@
     <link rel="stylesheet" href=" {{ asset('public/web-assets/css/bootstrap.min.css') }}">
     <link rel="stylesheet" href="{{ asset('public/web-assets/css/owl.carousel.min.css') }}">
     <link rel="stylesheet" href=" {{ asset('public/web-assets/css/slicknav.css') }}">
-    <link rel="stylesheet" href=" {{ asset('public/web-assets/assets/css/flaticon.css') }}">
+    <link rel="stylesheet" href=" {{ asset('public/web-assets//css/flaticon.css') }}">
     <link rel="stylesheet" href=" {{ asset('public/web-assets/css/progressbar_barfiller.css') }}">
     <link rel="stylesheet" href="  {{ asset('public/web-assets/css/gijgo.css') }}">
     <link rel="stylesheet" href=" {{ asset('public/web-assets/css/animate.min.css') }}">
@@ -35,7 +35,7 @@
             <div class="preloader-inner position-relative">
                 <div class="preloader-circle"></div>
                 <div class="preloader-img pere-text">
-                    <img src="assets/img/logo/loder.png" alt="">
+                    <img src="{{ asset('public/web-assets/img/logo/loder.png') }}" alt="">
                 </div>
             </div>
         </div>

@@ -15,7 +15,9 @@
                                 <div class="hero__caption text-center">
                                     <h1 data-animation="bounceIn" data-delay="0.2s">منصة جهات مستقبل كل الجهات</h1>
                                     <p data-animation="fadeInUp" data-delay="0.4s">تُتيح للجهات فتح مكاتب افتراضية لموظفيها وغرف إجتماعات . كما تُمكن المستفيدين من الوصول للجهات بكل سهولة ويُسر </p>
-                                    <a href="https://app.jehat.sa/client_login.aspx" class="btn hero-btn" data-animation="fadeInUp" data-delay="0.7s">سجل كمستفيد واحجز مكتبك الأفتراضي</a>
+                                    <a href="#" class="btn hero-btn" 
+                                    data-animation="fadeInUp" data-delay="0.7s">منصه جهات
+                                </a>
                                 </div>
                             </div>
                         </div>
@@ -29,7 +31,8 @@
                                 <div class="hero__caption text-center">
                                     <h1 data-animation="bounceIn" data-delay="0.2s">منصة جهات مستقبل كل الجهات</h1>
                                     <p data-animation="fadeInUp" data-delay="0.4s">تُتيح للجهات فتح مكاتب افتراضية لموظفيها وغرف إجتماعات . كما تُمكن المستفيدين من الوصول للجهات بكل سهولة ويُسر </p>
-                                <a href="register.html" class="btn hero-btn" data-animation="fadeInUp" data-delay="0.7s"> سجل كمستفيد واحجز مكتبك الأفتراضي</a>
+                                <a href="#" class="btn hero-btn" data-animation="fadeInUp" data-delay="0.7s"> 
+                                        منصه جهات</a>
                                 </div>
                                 <!--########################################################################################################-->
                             </div>
