@@ -15,7 +15,7 @@
                         <div class="row justify-content-center">
                             <div class="col-xl-8 col-lg-11 col-md-12">
                                 <div class="hero__caption hero__caption2 text-center">
-                                    <h1 data-animation="bounceIn" data-delay="0.2s">منصة جهات</h1>
+                                    <h1 data-animation="bounceIn" data-delay="0.2s">من نحن</h1>
                                     <div class="screen-img">
                                         <img src="{{ asset('public/web-assets/img/gallery/screen.png' ) }}" alt="" class=" w-50">
                                     </div>
@@ -41,34 +41,34 @@
                 </div>
                 <div class="row">
                     <div class=" col-lg-4 col-md-6 col-sm-6">
-                        <div class="single-services mb-30">
+                        <div class="single-services mb-30 " style="text-align : center">  
                             <div class="services-ion">
                                 <img src=" {{ asset('public/web-assets/img/icon/18.png' ) }} " alt="" style="height: 100px; width: 100px;">
                             </div>
                             <div class="services-cap">
-                                <h5><a href="#">هكذا نحقق أهدافنا</a></h5>
+                                <h5 style="text-align : center" <a href="#">هكذا نحقق أهدافنا</a></h5>
                                 <p>أن تكون المنصة واجهة استرشادية موحده لكافة المعاملات في كافة القطاعات</p>
                             </div>
                         </div>
                     </div>
                     <div class=" col-lg-4 col-md-6 col-sm-6">
-                        <div class="single-services mb-30">
+                        <div class="single-services mb-30" style="text-align : center">
                             <div class="services-ion">
                             <img src=" {{ asset('public/web-assets/img/icon/19.png ' ) }} " alt="" style="height: 100px; width: 100px;">
                         </div>
                             <div class="services-cap">
-                                <h5><a href="#">تلك هى رسالتنا</a></h5>
+                                <h5 style="text-align : center" <a href="#">تلك هى رسالتنا</a> </h5>
                                 <p>تقديم المعلومة الدقيقة للجمهور وزيادة الوعي الإرشادي لكافة الجهات بشكل عام</p>
                             </div>
                         </div>
                     </div>
                     <div class=" col-lg-4 col-md-6 col-sm-6">
-                        <div class="single-services mb-30">
+                        <div class="single-services mb-30" style="text-align : center">
                             <div class="services-ion">
                                 <img src="{{ asset('public/web-assets/img/icon/20.png' ) }}" alt="" style="height: 100px; width: 100px;">
                             </div>
                             <div class="services-cap">
-                                <h5><a href="#">رؤيتنا الإستراتيجية</a></h5>
+                                <h5 style="text-align : center" <a href="#">رؤيتنا الإستراتيجية</a></h5>
                                 <p> أن تصبح منصة "جهات" هي القناة الأكثر استخداماً من قبل المستفيدين والجهات</p>
                             </div>
                         </div>
