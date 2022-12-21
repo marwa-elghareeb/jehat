@@ -5,11 +5,7 @@
 .small-text {
   color: #2c2b0c;
 }
-.heading {
-  color: #000;
-  font-size: 39px;
-  font-weight: 700;
-}
+
 .work-process-section {
   width: 100%;
   display: block;
@@ -159,9 +155,9 @@
                 <!-- Single Slider -->
                 <div class="single-slider slider-height2">
                     <div class="container">
-                        <div class="row justify-content-center">
+                        <div class="row justify-content-center ">
                             <div class="col-xl-8 col-lg-11 col-md-12">
-                                <div class="hero__caption hero__caption2 text-center">
+                                <div class="hero__caption hero__caption2 text-center align-items-right">
                                     <h1 data-animation="bounceIn" data-delay="0.2s">منصة جهات</h1>
                                     <div class="screen-img">
                                         <img src="{{ asset('public/web-assets/img/gallery/screen.png' ) }}" alt="" class=" w-50">
@@ -181,9 +177,7 @@
       <p class="description "> Web designing in a powerful way of just not a profession, however, in a passion for our Company. We have a tendency to believe the idea that smart looking. </p>
     </div>-->
     
-      <br>
-      <br>
-      <br>
+    
     <div class=" work-process-block work-process-layout1">
       <div class="row">
         <div class="col-xl-3 col-sm-6">
@@ -257,6 +251,25 @@
 
   </div>
 </section>
+     <!--? Want To work 01-->
+     <section class="wantToWork-area ">
+            <div class="container">
+                <div class="wants-wrapper w-padding2 section-bg2" data-background=" {{ asset('public/web-assets/img/gallery/section_bg02.png' ) }}">
+                    <div class="row align-items-center justify-content-center">
+                        <div class="col-xl-7 col-lg-9 col-md-8">
+                            <div class="wantToWork-caption text-center">
+                                <h2>كيف يمكنني تحميل التطبيق</h2>
+                                <p>تستطيع تحميل تطبيق جهات من متجر جوجل أو أبستور</p>
+                                <a class="wow fadeIn  animated" data-wow-delay="0.25s" href="https://apps.apple.com/eg/app/jehat/id1600983802" style="visibility: visible; animation-delay: 0.25s; animation-name: fadeIn;">
+                                    <img class="app-store-btn" src="public/web-assets/img/pngfind.com-store-png-1446326.png" alt="App Store Icon" style="width: 170px; height: 70px"></a>
+                                    <a class="wow fadeIn  animated" data-wow-delay="0.67s" href="https://play.google.com/store/apps/" style="visibility: visible; animation-delay: 0.67s; animation-name: fadeIn;">
+                                        <img class="google-play-btn" src="public/web-assets/img/pngfind.com-google-logo-white-png-982813.png" alt="Google Play Icon" style="width: 170px; height: 70px"><br>
+                                    </a>
+                                </div>
+                    </div>
+                </div>
+            </div>
+        </section>
 
 </main>
 @endsection
