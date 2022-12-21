@@ -187,7 +187,8 @@
                                 أول أبراج مكتبية أفتراضية .... نعم اول أبراج أفتراضيه تعكس الواقع الفعلي للابراج المكتبيه وتستطيع أي جهة أن تأخذ مساحة بهذا البرج وتفتح مكاتب أفتراضية لكل موظفيها فتتمكن الجهة من نقل العمل المكتبي الى بيئة الكترونية منظمة وفق احدث المتطلبات ومعايير الحماية
 
                             </p>
-                            <a href="https://app.jehat.sa/client_register.aspx" class="all-btn">سجل الأن</a>
+                            <a href="https://app.jehat.sa/client_register.aspx" class="all-btn"><button type="button" class="btn btn-outline-secondary  pt-8 btn-sm">سجل الأن</button></a>
+
                         </div>
                     </div>
                     <div class="col-xl-6 col-lg-6 col-md-9 col-sm-9">
@@ -220,7 +221,7 @@
                                 <h2>منصة المستفيد</h2>
                             </div>
                             <p class="mb-20">  كل شخص يستطيع بهويته الشخصية ان يفتح له مكتب أفتراضي ويتواصل من مكتبه مع أي جهة موجوده داخل المنصة بسهولة ويسر والتمتع بكافة المزايا التقنية من ترتيب وتنظيم المعاملات والاجتماعات والمواعيد فلا حاجه للذهاب الى مقر الجهة ولا تقلق من نسيان موعد تابع جميع معاملاتك لحظه بلحظه كل هذا واكثر سارع بالتسجيل الان</p>
-                            <a href="https://app.jehat.sa/client_register.aspx" class="all-btn">سجل الأن</a>
+                            <a href="https://app.jehat.sa/client_register.aspx" class="all-btn"><button type="button" class="btn btn-outline-secondary  pt-8 btn-sm">سجل الأن</button></a>
                         </div>
                     </div>
                 </div>
