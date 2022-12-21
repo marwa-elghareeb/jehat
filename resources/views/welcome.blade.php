@@ -15,7 +15,7 @@
                                 <div class="hero__caption text-center">
                                     <h1 data-animation="bounceIn" data-delay="0.2s">منصة جهات مستقبل كل الجهات</h1>
                                     <p data-animation="fadeInUp" data-delay="0.4s">تُتيح للجهات فتح مكاتب افتراضية لموظفيها وغرف إجتماعات . كما تُمكن المستفيدين من الوصول للجهات بكل سهولة ويُسر </p>
-                                    <a href="#" class="btn hero-btn" 
+                                    <a href="{{ URL :: to ('/cards')}}" class="btn hero-btn" 
                                     data-animation="fadeInUp" data-delay="0.7s">منصه جهات
                                 </a>
                                 </div>
@@ -31,7 +31,7 @@
                                 <div class="hero__caption text-center">
                                     <h1 data-animation="bounceIn" data-delay="0.2s">منصة جهات مستقبل كل الجهات</h1>
                                     <p data-animation="fadeInUp" data-delay="0.4s">تُتيح للجهات فتح مكاتب افتراضية لموظفيها وغرف إجتماعات . كما تُمكن المستفيدين من الوصول للجهات بكل سهولة ويُسر </p>
-                                <a href="#" class="btn hero-btn" data-animation="fadeInUp" data-delay="0.7s"> 
+                                <a href="{{ URL :: to ('/cards')}}" class="btn hero-btn" data-animation="fadeInUp" data-delay="0.7s"> 
                                         منصه جهات</a>
                                 </div>
                                 <!--########################################################################################################-->
@@ -187,7 +187,7 @@
                                 أول أبراج مكتبية أفتراضية .... نعم اول أبراج أفتراضيه تعكس الواقع الفعلي للابراج المكتبيه وتستطيع أي جهة أن تأخذ مساحة بهذا البرج وتفتح مكاتب أفتراضية لكل موظفيها فتتمكن الجهة من نقل العمل المكتبي الى بيئة الكترونية منظمة وفق احدث المتطلبات ومعايير الحماية
 
                             </p>
-                            <a href="register.html" class="all-btn">سجل الأن</a>
+                            <a href="https://app.jehat.sa/client_register.aspx" class="all-btn">سجل الأن</a>
                         </div>
                     </div>
                     <div class="col-xl-6 col-lg-6 col-md-9 col-sm-9">
@@ -220,7 +220,7 @@
                                 <h2>منصة المستفيد</h2>
                             </div>
                             <p class="mb-20">  كل شخص يستطيع بهويته الشخصية ان يفتح له مكتب أفتراضي ويتواصل من مكتبه مع أي جهة موجوده داخل المنصة بسهولة ويسر والتمتع بكافة المزايا التقنية من ترتيب وتنظيم المعاملات والاجتماعات والمواعيد فلا حاجه للذهاب الى مقر الجهة ولا تقلق من نسيان موعد تابع جميع معاملاتك لحظه بلحظه كل هذا واكثر سارع بالتسجيل الان</p>
-                            <a href="register.html" class="all-btn">سجل الأن</a>
+                            <a href="https://app.jehat.sa/client_register.aspx" class="all-btn">سجل الأن</a>
                         </div>
                     </div>
                 </div>
@@ -288,27 +288,7 @@
             </div>
         </section>
         <!--? Testimonial Area End -->
-        <!--? Want To work 01-->
-    
-        <section class="wantToWork-area ">
-            <div class="container">
-                <div class="wants-wrapper w-padding2 section-bg2" data-background="{{ asset('public/web-assets/img/gallery/section_bg02.png') }}">
-                    <div class="row align-items-center justify-content-center">
-                        <div class="col-xl-7 col-lg-9 col-md-8">
-                            <div class="wantToWork-caption text-center">
-                                <h2>كيف يمكنني تحميل التطبيق</h2>
-                                <p>تستطيع تحميل تطبيق جهات من متجر جوجل أو أبستور</p>
-                                <a href="#"><img src=" {{ asset('public/web-assets/img/gallery/nmn.png') }}" alt="" style="height: 50px; width: 150px;"></a>
-                                <a href="#"><img src="{{ asset('public/web-assets/img/gallery/mmm.png') }}" alt="" style="height: 50px; width: 150px;"></a>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </section>
-        <!-- Want To work End -->
 
-    </main>
-</section>
+       
 
 @endsection

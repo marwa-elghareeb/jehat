@@ -64,12 +64,12 @@
                                                 <li><a href="{{ URL :: to ('/aboutUs')}}">من نحن</a></li>
                                                 
                                                 <li><a href="about.html">دليل المستخدم</a>
-                                                <ul class="submenu">
+                                                <!--ul class="submenu">
                                                     <li><a href="blog.html">اسئلة شائعة</a></li>
                                                     <li><a href="blog_details.html">المركز الأعلامي </a></li>
                                                    <li><a href="elements.html">مركز المساعدة</a></li>
                                                    <li><a href="elements.html">آلية عمل المنصة </a></li>
-                                                </ul>
+                                                </ul-->
                                                 <li><a href="{{ URL :: to ('/contactUs')}}">تواصل معنا</a></li>
 
                                                 <li><a href="{{ URL :: to ('/helpcenter')}}">مركز المساعدة </a></li>
@@ -108,6 +108,33 @@
 
 
 
+     <!--? Want To work 01-->
+    
+     <section class="wantToWork-area ">
+            <div class="container">
+                <div class="wants-wrapper w-padding2 section-bg2" data-background="{{ asset('public/web-assets/img/gallery/section_bg02.png') }}">
+                    <div class="row align-items-center justify-content-center">
+                        <div class="col-xl-7 col-lg-9 col-md-8">
+                            <div class="wantToWork-caption text-center">
+                                <h2>كيف يمكنني تحميل التطبيق</h2>
+                                <p>تستطيع تحميل تطبيق جهات من متجر جوجل أو أبستور</p>
+                                <a href="https://play.google.com/store/apps/">
+                                    <img src=" {{ asset('public/web-assets/img/gallery/nmn.png') }}" alt="" style="height: 50px; width: 150px;"></a>
+                                <a href="https://apps.apple.com/eg/app/jehat/id1600983802">
+                                    <img src="{{ asset('public/web-assets/img/gallery/mmm.png') }}" alt="" style="height: 50px; width: 150px;"></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- Want To work End -->
+
+    </main>
+</section>
+
+
+
     <footer dir="rtl">
         <div class="footer-wrappper section-bg" data-background=" {{ asset('public/web-assets/img/gallery/footer-bg.png') }}">
             <!-- Footer Start-->
@@ -130,7 +157,8 @@
                                     <div class="footer-social">
                                         <a href="#"><i class="fab fa-twitter"></i></a>
                                         <a href="https://bit.ly/sai4ull"><i class="fab fa-facebook-f"></i></a>
-                                        <a href="#"><i class="fab fa-pinterest-p"></i></a>
+                                        <a href="#"><i class="fab fa-linked-p"></i></a>
+                                        
                                     </div>
                                 </div>
                             </div>
@@ -186,9 +214,9 @@
                             <div class="col-xl-12 ">
                                 <div class="footer-copy-right text-center">
                                     <p>
-                                        <!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
+                                        
                                         جميع الحقوق محفوظة منصة جهات &copy; 2022
-                                        <!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
+                                   
                                     </p>
                                 </div>
                             </div>
