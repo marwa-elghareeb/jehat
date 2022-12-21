@@ -146,6 +146,12 @@
   margin-bottom: 0px;
   margin-left: 0%;
 }
+.screen-img{
+  display: flex !important;
+  justify-content: flex-end !important;
+  margin-left: auto !important;
+  margin-right: 0 !important;
+}
   </style>
 
 <main>
@@ -157,9 +163,9 @@
                     <div class="container">
                         <div class="row justify-content-center ">
                             <div class="col-xl-8 col-lg-11 col-md-12">
-                                <div class="hero__caption hero__caption2 text-center align-items-right">
+                                <div class="hero__caption hero__caption2 text-center ">
                                     <h1 data-animation="bounceIn" data-delay="0.2s">منصة جهات</h1>
-                                    <div class="screen-img">
+                                    <div class="screen-img align-items-right">
                                         <img src="{{ asset('public/web-assets/img/gallery/screen.png' ) }}" alt="" class=" w-50">
                                     </div>
                                 </div>
