@@ -195,7 +195,7 @@
             <div class="work-process-content animate__zoomIn animate__animated wow">
                  <!--?<div class="icon"><img src="https://image.flaticon.com/icons/png/512/1352/1352623.png"></div>-->
               <h3 class="process-title heading4">المكاتب الافتراضيه</h3>
-              <p class="text">يتم عرض جميع الشركات الموجوده فى المنصه وكذلك الاقسام الخاصه بها وايضا الموظفين</p>
+              <p class="text">يتم عرض جميع الشركات الموجوده فى المنصه وكذلك الاقسام الخاصه بها وايضا الموظفين</p><br>
               <button type="button" class="btn btn-outline-secondary  btn-sm pt-8 ">المزيد</button>
 
               </div>
@@ -211,7 +211,7 @@
             <div class="work-process-content animate__zoomIn animate__animated wow" data-wow-delay="0.2s">
                  <!--?<div class="icon"><img src="https://image.flaticon.com/icons/png/512/1352/1352623.png"></div>-->
                  <h3 class="process-title heading4">المتاجر الالكترونيه</h3>
-              <p class="text">يتم العمل عليها فى الوقت الحالى وسيتم رفعها قريبا</p>
+              <p class="text">يتم العمل عليها فى الوقت الحالى وسيتم رفعها قريبا</p><br>
               <button type="button" class="btn btn-outline-secondary  pt-8 btn-sm">المزيد</button>
 
               </div>
@@ -227,7 +227,7 @@
             <div class="work-process-content animate__zoomIn animate__animated wow" data-wow-delay="0.3s">
                  <!--?<div class="icon"><img src="https://image.flaticon.com/icons/png/512/1352/1352623.png"></div>-->
                  <h3 class="process-title heading4">المعارض الافتراضيه</h3>
-              <p class="text">يتم عرض جميع المعارض الموجود فى المنصه وتفاصيل كل معرض</p>
+              <p class="text">يتم عرض جميع المعارض الموجود فى المنصه وتفاصيل كل معرض</p><br>
               <button type="button" class="btn btn-outline-secondary  pt-8 btn-sm">المزيد</button>
 
               </div>
@@ -243,7 +243,7 @@
             <div class="work-process-content animate__zoomIn animate__animated wow" data-wow-delay="0.4s">
                  <!--?<div class="icon"><img src="https://image.flaticon.com/icons/png/512/1352/1352623.png"></div>-->
                  <h3 class="process-title heading4">المنصة </h3>
-              <p class="text">عرض جميع المعارض الموجود فى المنصه وتفاصيل كل معرض</p>
+              <p class="text">عرض جميع المعارض الموجود فى المنصه وتفاصيل كل معرض</p><br>
               <button type="button" class="btn btn-outline-secondary  pt-8 btn-sm">المزيد</button>
 
             </div>
