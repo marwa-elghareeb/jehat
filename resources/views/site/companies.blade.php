@@ -27,7 +27,7 @@
     <!--? Blog Area Start-->
     <section class="blog_area section-padding">
         <div class="container">
-            <div class="row">
+            <div class="row  justify-content-center">
             @foreach($allData as $data)
                 <div class="col-lg-3 mb-5 mb-lg-0">
                     <div class="blog_left_sidebar">
@@ -37,12 +37,12 @@
                                 src="{{ URL ::to ('public/upload/'.$data->image)}}" alt=""
                                  style="height: 250px; width: 250px;">
                             </div>
-                            <div class="blog_details">
+                            <div class="blog_details text-center">
                                 <a class="d-inline-block" href="{{ URL :: to ('/department' , $data->id )}}">
                                     <h2 class="blog-head" >  {{ $data->name_ar }}</h2>
                                 </a>
                                 <p></p>
-                                <ul class="blog-info-link">
+                                <ul class="p-3 mb-2 bg-light text-dark  text-center border border-light rounded-5">
                                     <li><a href="{{ URL :: to ('/department' , $data->id )}}">
                                         <i class="fa fa-user"></i> الاقسام والموظفين</a></li>
                                 

@@ -34,16 +34,18 @@
                     <div class="blog-author">
                         <div class="media align-items-center">
                             <img src="{{ URL ::to ('public/upload/'.$data->image)}}" alt="">
-                            <div class="media-body">
+                            
+                            <div class="media-body ">
                                 <a href="#">
                                     <h4>{{ $data->name }}</h4>
                                 </a>
                                 <p>{{ $data->position }}</p>
-                                <p>  <!-- Facebook -->
-                                 <i class="fab fa-whatsapp"></i>
-                                 <i class="fa fa-envelope"></i>
+                                <div class="p-3 mb-2   ">  <!-- Facebook -->
+                                 <i class="fab fa-whatsapp"></i> |
+                                 <i class="fa fa-envelope"></i> |
                                  <i class="fa fa-link"></i>
-                                </p>
+                                </div>
+                                
                             </div>
                           
                         </div>
