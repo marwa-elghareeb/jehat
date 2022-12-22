@@ -127,7 +127,15 @@ class IndexController extends Controller
     {
         $cData = Companies::where('id', $id)->first();
         $allData = Department::where('company_id',$id)->get();
-        return view('site.department')->with([ 'allData' => $allData , 'cData' => $cData]);
+        foreach($allData as $data)
+        {
+            $allE = Employees::where('department_id',$data->id)->get();
+            $data->empCount = count($allE);
+
+        }
+        $allEmp = Employees::where('company_id',$id)->get();
+        return view('site.department')->with([ 'allData' => $allData , 'allEmp' => $allEmp ,
+        'cData' => $cData]);
     }
 
 
@@ -136,7 +144,15 @@ class IndexController extends Controller
         $DData = Department::where('id', $id)->first();
         $cData = Companies::where('id', $DData->company_id)->first();
         $allData = Employees::where('department_id',$id)->get();
-        return view('site.employees')->with([ 'allData' => $allData , 'cData' => $cData , 'DData' => $DData]);
+        $allDept = Department::where('company_id', $DData->company_id)->get();
+        foreach($allDept as $data)
+        {
+            $allE = Employees::where('department_id',$data->id)->get();
+            $data->empCount = count($allE);
+
+        }
+        return view('site.employees')->with([ 'allData' => $allData , 
+        'cData' => $cData , 'DData' => $DData , 'allDept' => $allDept]);
     }
 
     public function events()
