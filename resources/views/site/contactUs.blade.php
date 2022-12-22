@@ -1,7 +1,14 @@
 @extends('layouts.appPortal')
 
 @section('content')
-
+<style>
+  .screen-img{
+  display: flex !important;
+  justify-content: flex-end !important;
+  margin-left: auto !important;
+  margin-right: 0 !important;
+}
+</style>
 <main>
     <!--? slider Area Start-->
     <section class="slider-area slider-area2">
@@ -9,12 +16,11 @@
             <!-- Single Slider -->
             <div class="single-slider slider-height2">
                 <div class="container">
+                
                     <div class="row justify-content-center">
                         <div class="col-xl-8 col-lg-11 col-md-12">
                             <div class="hero__caption hero__caption2 text-center">
-                            <div class="screen-img">
-                                        <img src="{{ asset('public/web-assets/img/gallery/screen.png' ) }}" alt="" class=" w-50">
-                                    </div>
+                           
                                 <h1 data-animation="bounceIn" data-delay="0.2s">تواصل معنا نحن هنا لمساعدتك</h1>
                                 
                                 <p data-animation="fadeInUp" data-delay="0.4s">
@@ -22,9 +28,13 @@
                                     نحن نستمع إليك. يرجى اختيار وسيلة الاتصال المفضلة لديك
                                     وسيقوم أحد موظفينا بالتواصل معك قريبًا. ... سوف يسعدنا أن نسمع صوتك</p>
                                     
+                                    <div class="screen-img">
+                                        <img src="{{ asset('public/web-assets/img/gallery/screen.png' ) }}" alt="" class=" w-50">
+                                    </div>
                                 </div>
                         </div>
                     </div>
+                    
                 </div>
             </div>
         </div>
