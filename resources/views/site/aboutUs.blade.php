@@ -1,7 +1,14 @@
 @extends('layouts.appPortal')
 
 @section('content')
-
+<style>
+  .screen-img{
+  display: flex !important;
+  justify-content: flex-end !important;
+  margin-left: auto !important;
+  margin-right: 0 !important;
+}
+</style>
     <main>
         <!--? slider Area Start-->
         <section class="slider-area slider-area2">
@@ -12,7 +19,7 @@
                         <div class="row justify-content-center">
                             <div class="col-xl-8 col-lg-11 col-md-12">
                                 <div class="hero__caption hero__caption2 text-center">
-                                    <h1 data-animation="bounceIn" data-delay="0.2s">من نحن</h1>
+                                    <h1  data-animation="bounceIn" data-delay="0.2s">من نحن</h1>
                                     <div class="screen-img">
                                         <img src="{{ asset('public/web-assets/img/gallery/screen.png' ) }}" alt="" class=" w-50">
                                     </div>
@@ -31,8 +38,7 @@
 <div class="whole-wrap">
 									<div class="container box_1170">
 										<div class="section-top-border">
-                    
-											<h3 class="mb-30" >منصة جهات</h3>
+											<h3 class="mb-30 text-center" >منصة جهات</h3>
 											<div class="row">
 												<div class="col-md-3">
                         

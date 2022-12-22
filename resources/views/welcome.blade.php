@@ -14,7 +14,8 @@
                             <div class="col-xl-8 col-lg-11 col-md-12">
                                 <div class="hero__caption text-center">
                                     <h1 data-animation="bounceIn" data-delay="0.2s">منصة جهات مستقبل كل الجهات</h1>
-                                    <p data-animation="fadeInUp" data-delay="0.4s">تُتيح للجهات فتح مكاتب افتراضية لموظفيها وغرف إجتماعات . كما تُمكن المستفيدين من الوصول للجهات بكل سهولة ويُسر </p>
+                                    <h2 data-animation="fadeInUp" data-delay="0.4s">تُتيح للجهات فتح مكاتب افتراضية لموظفيها وغرف إجتماعات . كما تُمكن المستفيدين من الوصول للجهات بكل سهولة ويُسر </h2>
+                                    <br>
                                     <a href="{{ URL :: to ('/cards')}}" class="btn hero-btn" 
                                     data-animation="fadeInUp" data-delay="0.7s">منصه جهات
                                 </a>
@@ -30,7 +31,8 @@
                             <div class="col-xl-8 col-lg-11 col-md-12">
                                 <div class="hero__caption text-center">
                                     <h1 data-animation="bounceIn" data-delay="0.2s">منصة جهات مستقبل كل الجهات</h1>
-                                    <p data-animation="fadeInUp" data-delay="0.4s">تُتيح للجهات فتح مكاتب افتراضية لموظفيها وغرف إجتماعات . كما تُمكن المستفيدين من الوصول للجهات بكل سهولة ويُسر </p>
+                                    <h2 data-animation="fadeInUp" data-delay="0.4s">تُتيح للجهات فتح مكاتب افتراضية لموظفيها وغرف إجتماعات . كما تُمكن المستفيدين من الوصول للجهات بكل سهولة ويُسر </h2>
+                                    <br>
                                 <a href="{{ URL :: to ('/cards')}}" class="btn hero-btn" data-animation="fadeInUp" data-delay="0.7s"> 
                                         منصه جهات</a>
                                 </div>
@@ -54,10 +56,13 @@
             </div>
         </div>
  <!--? Brand Area Start -->
-        
+        <br>
+        <br>
+        <br>
  <div class="brand-area">
             <div class="container">
-                <h1>أكثر من 850 جهة وشركة وثقوا بنا</h1>
+                <h1 >أكثر من 850 جهة وشركة وثقوا بنا</h1>
+                <br>
                 <div class="brand-active brand-border pt-50">
                     <div class="single-brand">
                         <img src=" {{ asset('public/web-assets/img/gallery/brand1.png ' ) }}" alt="">
@@ -94,80 +99,92 @@
                     <div class="col-xl-7 col-lg-8">
                         <!-- Section Tittle -->
                         <div class="section-tittle text-center mb-80">
-                            <h2>لماذا منصة جهات هي الأفضل</h2>
+                        <h2>لماذا منصة جهات هي الأفضل</h2>
                             <!--<p></p>-->
                         </div>
                     </div>
                 </div>
-                <div class="row">
-                    <div class=" col-lg-4 col-md-6 col-sm-6">
-                        <div class="single-services mb-30">
-                            <div class="services-ion">
+                <div class="row  d-flex justify-content-center">
+                    <div class=" col-lg-4 col-md-6 col-sm-6  text-center">
+                        <div class=" mb-30 ">
+                            <div class="text-center">
                                 <img src=" {{ asset('public/web-assets/img/icon/services1.png ') }}" alt="">
                             </div>
-                            <div class="services-cap">
-                                <h5><a href="#">التطوير المستمر</a></h5>
-                                <p>تمتع بتصميم صديق للجوال وموديلات متعددة الاستخدام تواكب كل جديد</p>
+                            <br>
+                            <br>
+                            <div class="text-center">
+                                <h2  class="font-weight-bold" ><a href="#" >التطوير المستمر</a></h2><br>
+                                <h3 class="font-weight-light">تمتع بتصميم صديق للجوال وموديلات متعددة الاستخدام تواكب كل جديد</h3>
                             </div>
                         </div>
                     </div>
                     <div class=" col-lg-4 col-md-6 col-sm-6">
-                        <div class="single-services mb-30">
-                            <div class="services-ion">
+                        <div class=" mb-30">
+                            <div class="text-center">
                                 <img src=" {{ asset('public/web-assets/img/icon/services2.png' ) }}" alt="">
                             </div>
-                            <div class="services-cap">
-                                <h5><a href="#">دعم فني</a></h5>
-                                <p>دعم فني على مدار الساعه لدينا فريق تقني مدرب على اعلى مستوي لحل كافة المشكلات</p>
+                            <br>
+                            <br>
+                            <div class="text-center">
+                                <h2 class="font-weight-bold" ><a href="#">دعم فني</a></h2><br>
+                                <h3>دعم فني على مدار الساعه لدينا فريق تقني مدرب على اعلى مستوي لحل كافة المشكلات</h3>
                             </div>
                         </div>
                     </div>
                     <div class=" col-lg-4 col-md-6 col-sm-6">
-                        <div class="single-services mb-30">
-                            <div class="services-ion">
+                        <div class=" mb-30">
+                            <div class="text-center">
                                 <img src=" {{ asset('public/web-assets/img/icon/services3.png ') }}" alt="">
                             </div>
-                            <div class="services-cap">
-                                <h5><a href="#">التخزين السحابي</a></h5>
-                                <p>بكل أمان ويسر يمكنك متابعه جميع معاملاتك من اى مكان دون الخوف من فقدانها</p>
+                            <br>
+                            <br>
+                            <div class="text-center">
+                                <h2 class="font-weight-bold" ><a href="#">التخزين السحابي</a></h2><br>
+                                <h3>بكل أمان ويسر يمكنك متابعه جميع معاملاتك من اى مكان دون الخوف من فقدانها</h3>
                             </div>
                         </div>
                     </div>
                     <div class=" col-lg-4 col-md-6 col-sm-6">
-                        <div class="single-services mb-30">
-                            <div class="services-ion">
+                        <div class=" mb-30">
+                            <div class="text-center">
                                 <img src=" {{ asset('public/web-assets/img/icon/services4.svg') }}" alt="">
                             </div>
-                            <div class="services-cap">
-                                <h5><a href="#">تقارير متعددة</a></h5>
-                                <p>تقدم المنصه تقارير واحصائيات متعددة قابله للعرض وايضا للطباعة</p>
+                            <br>
+                            <br>
+                            <div class="text-center">
+                                <h2 class="font-weight-bold" ><a href="#">تقارير متعددة</a></h2><br>
+                                <h3>تقدم المنصه تقارير واحصائيات متعددة قابله للعرض وايضا للطباعة</h3>
                             </div>
                         </div>
                     </div>
                     <div class=" col-lg-4 col-md-6 col-sm-6">
-                        <div class="single-services mb-30">
-                            <div class="services-ion">
+                        <div class=" mb-30">
+                            <div class="text-center">
                                 <img src=" {{ asset('public/web-assets/img/icon/services5.png ') }}" alt="">
                             </div>
-                            <div class="services-cap">
-                                <h5><a href="#">فواتير إلكترونية</a></h5>
-                                <p>بكل مرونه تستطيع إنشاء فواتير الكترونية موثقة ب QR مع إمكانية المسح الرقمي</p>
+                            <br>
+                            <br>
+                            <div class="text-center">
+                                <h2 class="font-weight-bold" ><a href="#">فواتير إلكترونية</a></h2><br>
+                                <h3>بكل مرونه تستطيع إنشاء فواتير الكترونية موثقة ب QR مع إمكانية المسح الرقمي</h3>
                             </div>
                         </div>
                     </div>
                     <div class=" col-lg-4 col-md-6 col-sm-6">
-                        <div class="single-services mb-30">
-                            <div class="services-ion">
+                        <div class=" mb-30">
+                            <div class="text-center">
                                 <img src=" {{ asset('public/web-assets/img/icon/services6.png ') }}" alt="">
                             </div>
-                            <div class="services-cap">
-                                <h5><a href="#">معاملات متعددة</a></h5>
-                                <p>إدارة المعاملات باحترافيه وإدارة شئون الموظفين بكل يسر وعدد غير محدود من العملاء</p>
+                            <br>
+                            <br>
+                            <div class="text-center">
+                                <h2 class="font-weight-bold" ><a href="#">معاملات متعددة</a></h2><br>
+                                <h3>إدارة المعاملات باحترافيه وإدارة شئون الموظفين بكل يسر وعدد غير محدود من العملاء</h3>
                             </div>
                         </div>
                     </div>
                 </div>
-            </div>
+            </div
         </section>
         <!-- Our Services End -->
         <!--? About Area  -->
