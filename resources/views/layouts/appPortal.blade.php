@@ -63,7 +63,7 @@
                                                 <li class="active"><a href="{{ URL :: to ('/')}}">الرئيسية</a></li>
                                                 <li><a href="{{ URL :: to ('/aboutUs')}}">من نحن</a></li>
                                                 
-                                                <li><a href="#">دليل المستخدم</a>
+                                                <li><a href="{{ URL :: to ('/media')}}">دليل المستخدم</a>
                                                 <!--ul class="submenu">
                                                     <li><a href="blog.html">اسئلة شائعة</a></li>
                                                     <li><a href="blog_details.html">المركز الأعلامي </a></li>
