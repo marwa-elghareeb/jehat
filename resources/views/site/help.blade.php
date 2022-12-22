@@ -41,51 +41,50 @@
                         <h2> {{ $data->name_ar}}</h2>
                     </div>
                     <div class="collapse-wrapper">
-                        <div class="accordion" id="accordionExample">
-                            <!-- single-one -->
+                        <div class="accordion" id="accordionExample{{ $data->id}}">
+
+                            @foreach($data->child as $child)
+                            
                             <div class="card">
-                                <div class="card-header" id="headingOne">
+                                <div class="card-header" id="headingOne_{{ $child->id}}">
                                     <h2 class="mb-0">
-                                        <a href="#" class="btn-link collapsed" 
-                                        data-toggle="collapse" data-target="#collapseOne" 
-                                        aria-expanded="false" aria-controls="collapseOne">طلباتي</a>
+                                        <a href="#" class="btn-link collapsed"
+                                         data-toggle="collapse" data-target="#collapseOne_{{ $child->id}}" 
+                                         aria-expanded="false" aria-controls="collapseOne_{{ $child->id}}">
+                                            {{ $child->name_ar }}</a>
                                     </h2>
                                 </div>
 
-                                <div id="collapseOne" class="collapse" aria-labelledby="headingOne"
-                                 data-parent="#accordionExample">
+                                <div id="collapseOne_{{ $child->id}}" class="collapse" aria-labelledby="headingOne_{{ $child->id}}" data-parent="#accordionExample{{ $data->id}}">
 
 
                                     <div class="card-body">
-                                        <h4> عرض طلباتي
+                                        @foreach ($child->subSub as $ss)
+                                        <h4 style="text-decoration: underline;"> {{ $ss->name_ar }}</h4>
                                             <br>
-                                            بالنقر على أيقونة (طلباتي) ستظهر صفحة تستطيع من خلالها تحديد الخصوصية
-                                            وذلك باختيار ( مفتوحه - مغلقة ) وأيضا يمكنك عرض جميع الطلبات التي قمت
-                                            برفعها من خلال قائمة تحتوي على بيانات الطلب مثل
-                                            ( الموضوع - الموظف - نوع المعامله - التاريخ - الحالة والكود)
+                                            <h4>
+                                            <?php echo strip_tags($ss->pageData); ?>
+
                                         </h4>
+                                        <hr/>
+                                        @endforeach
 
-
-
-                                        <h4> إضافة طلب
-                                            <br>
-                                            بالنقر على ايقونة (إضافة طلب ) ستظهر لك صفحة بها (بيانات الطلب)
-                                            ومنها يتم اختيار الجهة المراد ارسال الطلب إليها ثم اختيار
-                                            (نوع الطلب - وكتابة الموضوع) ومن ثم إضافة جميع التفاصيل
-                                            التي تختص بالطلب. حيث يمكنك تحديد أولوية الطلب
-                                            ( طوارئ - عادية - مهمة - منخفضة ) وبالنقر على (اختيار الملفات)
-                                            يمكنك ارفاق جميع المهمات الخاصة بالطلب ثم النقر على ايقونة حفظ أسفل الصفحة
-                                        </h4>
                                     </div>
 
-                                    
+
 
                                 </div>
                             </div>
-                            <!-- single-two -->
+                          
                             @endforeach
+
                         </div>
+                     </div>
+                </div>
+                        @endforeach
                     </div>
                 </div>
+            </div>
+        </div>
 </main>
 @endsection

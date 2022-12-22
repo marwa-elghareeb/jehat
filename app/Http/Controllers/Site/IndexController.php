@@ -40,11 +40,18 @@ class IndexController extends Controller
             $child = Categories::where('parent_id',$data->id)->get();
             foreach ($child as $s) {
                 $sub1 = Categories::where('parent_id', $s->id)->get();
+                foreach ($sub1 as $ss) {
+                    $pageData = Pages::where('category_id',$ss->id)->first();
+                    if(empty($pageData->description_ar))
+                    {$ss->pageData = '';}else{
+                       // var_dump( $pageData->description_ar);
+                        $ss->pageData = $pageData->description_ar;
+                    }
+                   
+                   
+                }
                 $s->subSub = $sub1;
-               // $pageData = Pages::where('category_id',$s->id)->first();
-               // var_dump($pageData);
-               // $s->pageData = $pageData[0]->description_ar;
-               
+              
             }
             $data->child = $child;
         }

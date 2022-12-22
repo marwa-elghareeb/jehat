@@ -25,12 +25,10 @@
     <section class="blog_area single-post-area section-padding">
         <div class="container">
             <div class="row">
+            @foreach($allEmp as $data)
+                <div class="col-lg-4 posts-list">
+                    
 
-                <div class="col-lg-8 posts-list">
-
-                    <div class="single-post"></div>
-
-                    @foreach($allEmp as $data)
                     <div class="blog-author">
                         <div class="media align-items-center">
                             <img src="{{ URL ::to ('public/upload/'.$data->image)}}" alt="">
@@ -50,11 +48,11 @@
                           
                         </div>
                     </div>
-                    @endforeach
                    
-
-
+                   
                 </div>
+                @endforeach
+
 
                 <div class="col-lg-4">
                     <div class="blog_right_sidebar">
