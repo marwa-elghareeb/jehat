@@ -256,26 +256,9 @@
 
 
   </div>
+  
 </section>
-     <!--? Want To work 01-->
-     <section class="wantToWork-area ">
-            <div class="container">
-                <div class="wants-wrapper w-padding2 section-bg2" data-background=" {{ asset('public/web-assets/img/gallery/section_bg02.png' ) }}">
-                    <div class="row align-items-center justify-content-center">
-                        <div class="col-xl-7 col-lg-9 col-md-8">
-                            <div class="wantToWork-caption text-center">
-                                <h2>كيف يمكنني تحميل التطبيق</h2>
-                                <p>تستطيع تحميل تطبيق جهات من متجر جوجل أو أبستور</p>
-                                <a class="wow fadeIn  animated" data-wow-delay="0.25s" href="https://apps.apple.com/eg/app/jehat/id1600983802" style="visibility: visible; animation-delay: 0.25s; animation-name: fadeIn;">
-                                    <img class="app-store-btn" src="public/web-assets/img/pngfind.com-store-png-1446326.png" alt="App Store Icon" style="width: 170px; height: 70px"></a>
-                                    <a class="wow fadeIn  animated" data-wow-delay="0.67s" href="https://play.google.com/store/apps/" style="visibility: visible; animation-delay: 0.67s; animation-name: fadeIn;">
-                                        <img class="google-play-btn" src="public/web-assets/img/pngfind.com-google-logo-white-png-982813.png" alt="Google Play Icon" style="width: 170px; height: 70px"><br>
-                                    </a>
-                                </div>
-                    </div>
-                </div>
-            </div>
-        </section>
+     
 
 </main>
 @endsection

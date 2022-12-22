@@ -12,12 +12,17 @@
                     <div class="row justify-content-center">
                         <div class="col-xl-8 col-lg-11 col-md-12">
                             <div class="hero__caption hero__caption2 text-center">
+                            <div class="screen-img">
+                                        <img src="{{ asset('public/web-assets/img/gallery/screen.png' ) }}" alt="" class=" w-50">
+                                    </div>
                                 <h1 data-animation="bounceIn" data-delay="0.2s">تواصل معنا نحن هنا لمساعدتك</h1>
+                                
                                 <p data-animation="fadeInUp" data-delay="0.4s">
                                     بحاجة الى التحدث معنا؟
                                     نحن نستمع إليك. يرجى اختيار وسيلة الاتصال المفضلة لديك
                                     وسيقوم أحد موظفينا بالتواصل معك قريبًا. ... سوف يسعدنا أن نسمع صوتك</p>
-                            </div>
+                                    
+                                </div>
                         </div>
                     </div>
                 </div>
@@ -483,7 +488,8 @@
                     <h2 class="contact-title">ابق على اتصال</h2>
                 </div>
                 <div class="col-lg-8">
-                    <form class="form-contact contact_form" action="contact_process.php" method="post" id="contactForm"
+                    <form class="form-contact contact_form" 
+                    action="contact_process.php" method="post" id="contactForm"
                         novalidate="novalidate">
                         <div class="row">
                             <div class="col-12">

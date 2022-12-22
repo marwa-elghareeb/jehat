@@ -63,7 +63,7 @@
                                                 <li class="active"><a href="{{ URL :: to ('/')}}">الرئيسية</a></li>
                                                 <li><a href="{{ URL :: to ('/aboutUs')}}">من نحن</a></li>
                                                 
-                                                <li><a href="about.html">دليل المستخدم</a>
+                                                <li><a href="#">دليل المستخدم</a>
                                                 <!--ul class="submenu">
                                                     <li><a href="blog.html">اسئلة شائعة</a></li>
                                                     <li><a href="blog_details.html">المركز الأعلامي </a></li>
@@ -155,10 +155,11 @@
                                     </div>
                                     <!-- social -->
                                     <div class="footer-social">
-                                        <a href="#"><i class="fab fa-twitter"></i></a>
-                                        <a href="https://bit.ly/sai4ull"><i class="fab fa-facebook-f"></i></a>
-                                        <a href="#"><i class="fab fa-linked-p"></i></a>
-                                        
+                                        <a target="_blank" href="https://twitter.com/jehat_Platform"><i class="fab fa-twitter"></i></a>
+                                        <a target="_blank" href="https://www.facebook.com/profile.php?id=100084844831017"><i class="fab fa-facebook-f"></i></a>
+                                        <a target="_blank" href="#"><i class="fab fa-linkedin"></i></a>
+                                        <a target="_blank" href="https://www.instagram.com/invites/contact/?i=an5lcynrcsp3&utm_content=n0t065o"><i class="fab fa-instagram"></i></a>
+                                        <a target="_blank" href="https://www.youtube.com/channel/UCfwE7stMZzQlurXJN2eQvIQ"><i class="fab fa-youtube"></i></a>
                                     </div>
                                 </div>
                             </div>

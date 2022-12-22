@@ -2,9 +2,6 @@
 
 @section('content')
 
-
-<body dir="rtl">
-
     <main>
         <!--? slider Area Start-->
         <section class="slider-area slider-area2">

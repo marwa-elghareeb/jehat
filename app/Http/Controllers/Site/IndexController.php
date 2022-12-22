@@ -41,14 +41,16 @@ class IndexController extends Controller
             foreach ($child as $s) {
                 $sub1 = Categories::where('parent_id', $s->id)->get();
                 $s->subSub = $sub1;
+               // $pageData = Pages::where('category_id',$s->id)->first();
+               // var_dump($pageData);
+               // $s->pageData = $pageData[0]->description_ar;
                
             }
             $data->child = $child;
         }
+        
         return view('site.help')->with(['allCat' => $allCaegories]);
     }
-
-
 
     public function helpDetails($id)
     {

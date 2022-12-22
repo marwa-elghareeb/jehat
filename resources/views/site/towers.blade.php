@@ -228,25 +228,6 @@
             </div>
         </section>
         <!-- Blog Area End -->
-        <!--? Want To work 01-->
-        <section class="wantToWork-area ">
-            <div class="container">
-                <div class="wants-wrapper w-padding2 section-bg2" data-background=" {{ asset('public/web-assets/img/gallery/section_bg02.png ' ) }}">
-                    <div class="row align-items-center justify-content-center">
-                        <div class="col-xl-7 col-lg-9 col-md-8">
-                            <div class="wantToWork-caption text-center">
-                                <h2>كيف يمكنني تحميل التطبيق</h2>
-                                <p>تستطيع تحميل تطبيق جهات من متجر جوجل أو أبستور</p>
-                                <a href="#"><img src=" {{ asset('public/web-assets/img/gallery/nmn.png  ' ) }}" alt="" style="height: 50px; width: 150px;"></a>
-                                <a href="#"><img src=" {{ asset('public/web-assets/img/gallery/mmm.png  ' ) }}" alt="" style="height: 50px; width: 150px;"></a>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </section>
-        <!-- Want To work End -->
-    </main>
-
+        
 
 @endsection
