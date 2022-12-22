@@ -118,9 +118,9 @@
                             <div class="wantToWork-caption text-center">
                                 <h2>كيف يمكنني تحميل التطبيق</h2>
                                 <p>تستطيع تحميل تطبيق جهات من متجر جوجل أو أبستور</p>
-                                <a href="https://play.google.com/store/apps/">
-                                    <img src=" {{ asset('public/web-assets/img/gallery/nmn.png') }}" alt="" style="height: 50px; width: 150px;"></a>
                                 <a href="https://apps.apple.com/eg/app/jehat/id1600983802">
+                                    <img src=" {{ asset('public/web-assets/img/gallery/nmn.png') }}" alt="" style="height: 50px; width: 150px;"></a>
+                                <a href="https://play.google.com/store/apps/">
                                     <img src="{{ asset('public/web-assets/img/gallery/mmm.png') }}" alt="" style="height: 50px; width: 150px;"></a>
                             </div>
                         </div>
