@@ -26,16 +26,38 @@
         <!--? Our Services Start -->
         <section class="our-services">
             <div class="container">
-                <div class="row justify-content-center">
-                    <div class="col-xl-7 col-lg-8">
-                        <!-- Section Tittle -->
-                        <div class="section-tittle text-center mb-80">
-                             <h3>نحن نسعى من اجل مواكبة الحداثة والتطور ونشر الثقافة الرقمية , وفى إطار رؤية 2030 ساهمنا بدور فعال فى زيادة الوعي التقنى لدى الجمهور , حيث تُتيح المنصة للجهات فتح مكاتب افتراضية لموظفيها وغرف إجتماعات . كما تُمكن المستفيدين من الوصول للجهات بكل سهولة ويُسر, فى مختلف المجالات نحن نوظف خبراتنا لنؤمن لعملائنا واقعاً ملموسأ يحقق رغابتهم بالنمو والإزدهار المستدام</h3>
-                             <h2>رئيس مجلس الإدارة</h2>
-                             <h1>سعد عبدالله المحسن</h1>
-                        </div>
-                    </div>
-                </div>
+                
+
+<div class="whole-wrap">
+									<div class="container box_1170">
+										<div class="section-top-border">
+                    
+											<h3 class="mb-30" >منصة جهات</h3>
+											<div class="row">
+												<div class="col-md-3">
+                        
+													<img src="{{ asset('public/web-assets/img/1m.png') }}" alt="" class="img-fluid">
+												</div>
+												<div class="col-md-9 mt-sm-20">
+													<p>	 نحن نسعى من اجل مواكبة الحداثة والتطور ونشر الثقافة الرقمية , وفى إطار رؤية 2030<br>
+ ساهمنا بدور فعال فى زيادة الوعي التقنى لدى الجمهور , حيث تُتيح المنصة <br> 
+ للجهات فتح مكاتب افتراضية لموظفيها وغرف إجتماعات . كما تُمكن المستفيدين <br>
+ من الوصول للجهات بكل سهولة ويُسر, فى مختلف المجالات نحن نوظف خبراتنا <br>
+لنؤمن لعملائنا واقعاً ملموسأ يحقق رغابتهم بالنمو والإزدهار المستدام <br> 
+                            <br> <h1> رئيس مجلس الإدارة
+                            </h1>
+                            
+                           <h2>سعد عبدالله المحسن</h2> </p>
+												</div>
+											</div>
+										</div>
+
+
+
+
+
+
+
                 <div class="row">
                     <div class=" col-lg-4 col-md-6 col-sm-6">
                         <div class="single-services mb-30 " style="text-align : center">  
