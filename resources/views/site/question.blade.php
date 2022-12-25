@@ -1,121 +1,74 @@
-<!DOCTYPE html>
-<html lang="en">
+@extends('layouts.appPortal')
 
-<head>
-  <meta charset="utf-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <title>Jehat</title>
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <meta name="Description" lang="en" content="open source x/html and css templates">
-  <meta name="author" content="mlp design">
-  <meta name="robots" content="index, follow">
- 
-  <link rel="stylesheet" href="{{ asset('public\help\styles1.css')}}">
-</head>
+@section('content')
+<main>
+  <!--? slider Area Start-->
+  <section class="slider-area slider-area2">
+    <div class="slider-active">
+      <!-- Single Slider -->
+      <div class="single-slider slider-height2">
+        <div class="container">
+          <div class="row justify-content-center">
+            <div class="col-xl-8 col-lg-11 col-md-12">
+              <div class="hero__caption hero__caption2 text-center">
+                <h1 data-animation="bounceIn" data-delay="0.2s"> الاسئله الشائعه </h1>
 
-<body dir="rtl">
-  <!--start wrapper-->
-  <div id="wrapper">
-
-    <!--start body-->
-    <div id="body">
-
-      <!--start header-->
-      <div id="banner">
-
-        <ul id="topnav">
-          <li><a href="{{ URL :: to ('/')}}">الرئيسيه</a></li>
-          <li><a href="{{ URL :: to ('/aboutUs')}}">من نحن </a></li>
-          <li><a href="{{ URL :: to ('/contactUs')}}">تواصل معانا</a></li>
-          <li><a href="{{ URL :: to ('/question')}}"> الاسئله الشائعه</a></li>
-          <li><a href="{{ URL :: to ('/helpcenter')}}">مركز المساعده</a></li>
-          <li>
-          <form method="POST" action="{{ URL :: to ('/search')}}"">
-          {{ csrf_field() }}                               
-            <div class="input-group mb-3">
-              <input type="text" class="form-control" name="search"
-              placeholder="بحث" aria-label="بحث" require
-              aria-describedby="basic-addon1">
+              </div>
             </div>
-          </form>
-
-          </li>
-        </ul>
-        <!-- end menu -->
-      </div>
-      <!--end of header-->
-      <!--start sidebar-->
-      <div id="sidebar">
-
-        @foreach($allCat as $data)
-        <h2>{{ $data->name_ar}}</h2>
-        <ul>
-          @foreach($data->child as $child)
-          <li>
-            <a href="#" target="_self"> {{ $child->name_ar }}</a>
-
-            <ul>
-              @foreach ($child->subSub as $ss)
-              
-              <li>
-                <a href="{{ URL :: to ('/helpcenter' , $ss->id )}}" target="_self"> {{ $ss->name_ar }}</a>
-
-              </li>
-              @endforeach
-
-            </ul>
-
-
-          </li>
-          @endforeach
-
-        </ul>
-        @endforeach
-      </div>
-      <!--end of sidebar-->
-      <div class="clear"></div>
-      <!--start containter-->
-      <div id="container">
-
-        <!--start content-->
-        <div id="content">
-          <!--post item-->
-          <div class="item">
-
-            @foreach($allData as $data)
-            <h2>{{ $data->question_ar}}</h2>
-           
-            <p> {{ $data->answer_ar}}</p>
-            @endforeach
-
-
           </div>
-
-
-          <!--end of another post item-->
         </div>
-        <!--end of content-->
+      </div>
+    </div>
+  </section>
+  <!--? Our Services Start -->
+
+  <div class="faq-section section-padding40">
+    <div class="container">
+
+      <div class="row justify-content-center">
+
+        <div class="col-lg-10">
+          <div class="section-tittle">
+            <h2> الاسئله الشائعه</h2>
+          </div>
+          <div class="collapse-wrapper">
+          @foreach($allData as $data)
+            <div class="accordion" id="accordionExample_{{ $data->id}}">
+              <div class="card">
+                <div class="card-header" id="heading_{{ $data->id}}">
+                  <h2 class="mb-0">
+                    <a href="#" class="btn-link collapsed" data-toggle="collapse"
+                     data-target="#collapse_{{ $data->id}}" aria-expanded="false" 
+                     aria-controls="collapse_{{ $data->id}}"> {{$data->category_id}} </a>
+                  </h2>
+                </div>
+                <div id="collapse_{{ $data->id}}" class="collapse" aria-labelledby="heading_{{ $data->id}}" 
+                data-parent="#accordionExample_{{ $data->id}}">
+                  <div class="card-body">
+                    <h3>
+                    {{$data->question_ar}}
+                      <br>
+                      {{ $data->answer_ar}}
+                    </h3>
+                   
+                    
+                    
+                  </div>
+                </div>
+              </div>
+            </div>
+            @endforeach
+          </div>
+        </div>
 
       </div>
-      <!--end of container-->
     </div>
-    <!--end of body-->
-
-
-    <!--start footer-->
-    <div id="footer" style="text-align: center;">
-      <span class="center">2022 &copy;  <a href="#">جهات</a>. جميع الحقوق محفوظه لدى .</span>
-
-      <p class="show-footer">2022 &copy; <a href="#">جهات</a>. جميع الحقوق محفوظه لدى.<br />
-    </div>
-    <!--end of footer-->
-
   </div>
-  <!--end of wrapper-->
+  </div>
+</main>
 
 
 
 
-</body>
 
-</html>
+@endsection
