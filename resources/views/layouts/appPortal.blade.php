@@ -86,7 +86,7 @@
                                     </div>
                                     <!-- Header-btn -->
                                     <div class="header-right-btn d-none d-lg-block ml-65">
-                                        <a href="https://app.jehat.sa/client_login.aspx" class="border-btn">تسجل دخول</a>
+                                        <a href="https://app.jehat.sa/client_login.aspx" class="border-btn">تسجيل الدخول</a>
                                     </div>
                                 </div>
                             </div>
