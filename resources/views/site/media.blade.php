@@ -23,6 +23,7 @@
 
 
 	<div class="section-top-border">
+	<div class="container">
 		<h3>شرح منصة مستفيد </h3>
 		<div class="row gallery-item">
 			<div class="col-md-3">
@@ -88,8 +89,9 @@
 			</div>
 		</div>
 	</div>
-
+</div>
 	<div class="section-top-border">
+	<div class="container">
 		<h3>شرح منصة الموظف</h3>
 		<div class="row gallery-item">
 			<div class="col-md-3">
@@ -154,5 +156,5 @@
 			</div>
 		</div>
 	</div>
-
+</div>
 	@endsection
