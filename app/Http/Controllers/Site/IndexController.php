@@ -33,6 +33,10 @@ class IndexController extends Controller
     {
         return view('site.footerPages');
     }
+    public function ourTeam()
+    {
+        return view('site.ourTeam');
+    }
 
     /*===Help Center==============================*/
     
