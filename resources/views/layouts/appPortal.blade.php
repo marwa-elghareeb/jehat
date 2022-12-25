@@ -175,9 +175,10 @@
                                     <h4>عن منصة جهات</h4>
                                     <ul>
                                         <li><a href="{{ URL :: to ('/aboutUs')}}"> من نحن </a></li>
+                                        <li><a href="{{ URL :: to ('/ourTeam')}}">  فريق العمل </a></li>
                                         <li><a href="#">الشهادات</a></li>
                                         <li><a href="#">اعضاء الادارة</a></li>
-                                        <li><a href="#">شركائنا</a></li>
+                                        
 
                                     </ul>
                                 </div>
@@ -191,7 +192,7 @@
                                         <li><a href="{{ URL :: to ('/footerPages')}}">شروط استخدام المنصة</a></li>
                                         <li><a href="#">حماية العملاء</a></li>
                                         <li><a href="#">سياسة الخصوصية</a></li>
-
+                                        <li><a href="#">شركائنا</a></li>
                                     </ul>
                                 </div>
                             </div>
