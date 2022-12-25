@@ -1,13 +1,12 @@
 <?php
-
 namespace App\Http\Controllers\Admin;
 
 use App\Http\Controllers\Controller;
-use App\Models\Companies;
-use App\Models\Employees;
+use App\Models\Events;
+use Illuminate\Console\Scheduling\Event;
 use Illuminate\Http\Request;
 
-class CompaniesController extends Controller
+class EventsController extends Controller
 {
     /**
      * Display a listing of the resource.
@@ -17,8 +16,8 @@ class CompaniesController extends Controller
     public function index()
     {
         //
-        $allData = Companies::all();
-        return view('admin.company.list')->with('allData', $allData);
+        $allData = Events::all();
+        return view('admin.event.list')->with('allData', $allData);
     }
 
     /**
@@ -29,7 +28,7 @@ class CompaniesController extends Controller
     public function create()
     {
         //
-        return view('admin.company.create');
+        return view('admin.event.create');
     }
 
     /**
@@ -40,25 +39,25 @@ class CompaniesController extends Controller
      */
     public function store(Request $request)
     {
-        //validation
-        $request->validate([
-            'name_ar' => 'required|max:255',
-            'name_en' => 'required|max:255',
-            'images' => 'required|mimes:jpeg,png,jpg,gif'
+       //validation
+       $request->validate([
+        'name_ar' => 'required|max:255',
+        'name_en' => 'required|max:255',
+        'images' => 'required|mimes:jpeg,png,jpg,gif'
 
-        ]);
-        //Store
-        $data = new Companies();
-        $data->name_ar = $request->name_ar;
-        $data->name_en = $request->name_en;
-        if ($request->file('images')) {
-            $file = $request->file('images');
-            $filename = date('YmdHi') . $file->getClientOriginalName();
-            $file->move(public_path('upload'), $filename);
-        }
-        $data->image = $filename;
-        $data->save();
-        return redirect()->route('companies.index');
+    ]);
+    //Store
+    $data = new Events();
+    $data->name_ar = $request->name_ar;
+    $data->name_en = $request->name_en;
+    if ($request->file('images')) {
+        $file = $request->file('images');
+        $filename = date('YmdHi') . $file->getClientOriginalName();
+        $file->move(public_path('upload'), $filename);
+    }
+    $data->image = $filename;
+    $data->save();
+    return redirect()->route('events.index');
     }
 
     /**
@@ -81,8 +80,8 @@ class CompaniesController extends Controller
     public function edit($id)
     {
         //
-        $editData = Companies::where('id', $id)->first();
-        return view('admin.company.edit')->with(['editData' => $editData]);
+        $editData = Events::where('id', $id)->first();
+        return view('admin.event.edit')->with(['editData' => $editData]);
     }
 
     /**
@@ -103,7 +102,7 @@ class CompaniesController extends Controller
         ]);
 
         //Update
-        $data = Companies::find($id);
+        $data = Events::find($id);
 
         $data->name_ar = $request->name_ar;
         $data->name_en = $request->name_en;
@@ -115,7 +114,7 @@ class CompaniesController extends Controller
         } else {
         }
         $data->save();
-        return redirect()->route('companies.index');
+        return redirect()->route('events.index');
     }
 
     /**
@@ -126,14 +125,13 @@ class CompaniesController extends Controller
      */
     public function destroy($id)
     {
-
-        $getData = Employees::where('company_id', $id)->get();
+        $getData = Events::where('company_id', $id)->get();
         if (count($getData) > 0) {
-            return redirect()->route('companies.index')->with('flash_message', ' لا يمكن حذف الشركه لانها تحتوى على موظفين');
+            return redirect()->route('events.index')->with('flash_message', ' لا يمكن حذف الشركه لانها تحتوى على موظفين');
         } else {
 
-            Companies::destroy($id);
-            return redirect()->route('companies.index')->with('flash_message', 'Item deleted!');
+            Events::destroy($id);
+            return redirect()->route('events.index')->with('flash_message', 'Item deleted!');
         }
     }
 }

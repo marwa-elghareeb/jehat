@@ -169,12 +169,26 @@
                     </li>
 
                     <li class="mega-menu mega-menu-lg">
+                        <a class="has-arrow" href="{{ route('departments.index') }}" aria-expanded="false" style="width: max-content;cursor: pointer;">
+                            <i class="fa fa-building"></i><span class="nav-text">Departments</span>
+                        </a>
+                    
+                    </li>
+
+                    <li class="mega-menu mega-menu-lg">
                         <a class="has-arrow" href="{{ route('employees.index') }}" aria-expanded="false" style="width: max-content;cursor: pointer;">
                             <i class="fa fa-users"></i><span class="nav-text">Employees</span>
                         </a>
                     
                     </li>
 
+                    <li class="mega-menu mega-menu-lg">
+                        <a class="has-arrow" href="{{ route('events.index') }}" 
+                        aria-expanded="false" style="width: max-content;cursor: pointer;">
+                            <i class="mdi mdi-calendar"></i><span class="nav-text">Events</span>
+                        </a>
+                    
+                    </li>
 
 
                     <li class="mega-menu mega-menu-lg">

@@ -8,6 +8,8 @@ use App\Http\Controllers\Admin\CompaniesController;
 use App\Http\Controllers\Admin\EmployeesController;
 use App\Http\Controllers\Admin\ActivityController;
 use App\Http\Controllers\Admin\FAQController;
+use App\Http\Controllers\Admin\DepartmentsController;
+use App\Http\Controllers\Admin\EventsController;
 
 use App\Http\Controllers\Site\IndexController;
 /*
@@ -53,4 +55,6 @@ Route::group(['middleware' => ['auth']], function () {
     Route::resource('employees', EmployeesController::class);
     Route::resource('activitylog', ActivityController::class);
     Route::resource('faq', FAQController::class);
+    Route::resource('departments', DepartmentsController::class);
+    Route::resource('events', EventsController::class);
 });
