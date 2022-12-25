@@ -183,7 +183,7 @@
                                 <div class="footer-tittle">
                                     <h4>المسؤولية القانونية</h4>
                                     <ul>
-                                        <li><a href="#">شروط استخدام المنصة</a></li>
+                                        <li><a href="{{ URL :: to ('/footerPages')}}">شروط استخدام المنصة</a></li>
                                         <li><a href="#">حماية العملاء</a></li>
                                         <li><a href="#">سياسة الخصوصية</a></li>
 

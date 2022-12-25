@@ -29,6 +29,10 @@ class IndexController extends Controller
     {
         return view('site.media');
     }
+    public function footerPages()
+    {
+        return view('site.footerPages');
+    }
 
     /*===Help Center==============================*/
     
