@@ -106,20 +106,20 @@
                 </div>
                 <div class="row  d-flex justify-content-center">
                     <div class=" col-lg-4 col-md-6 col-sm-6  text-center">
-                        <div class=" mb-30 ">
+                        <div class=" mb-30 single-services">
                             <div class="text-center">
                                 <img src=" {{ asset('public/web-assets/img/icon/services1.png ') }}" alt="">
                             </div>
                             <br>
                             <br>
-                            <div class="text-center">
+                            <div class="text-center ">
                                 <h2  class="font-weight-bold" ><a href="#" >التطوير المستمر</a></h2><br>
                                 <h3 class="font-weight-light">تمتع بتصميم صديق للجوال وموديلات متعددة الاستخدام تواكب كل جديد</h3>
                             </div>
                         </div>
                     </div>
                     <div class=" col-lg-4 col-md-6 col-sm-6">
-                        <div class=" mb-30">
+                        <div class=" mb-30 single-services">
                             <div class="text-center">
                                 <img src=" {{ asset('public/web-assets/img/icon/services2.png' ) }}" alt="">
                             </div>
@@ -132,7 +132,7 @@
                         </div>
                     </div>
                     <div class=" col-lg-4 col-md-6 col-sm-6">
-                        <div class=" mb-30">
+                        <div class=" single-services mb-30">
                             <div class="text-center">
                                 <img src=" {{ asset('public/web-assets/img/icon/services3.png ') }}" alt="">
                             </div>
@@ -145,7 +145,7 @@
                         </div>
                     </div>
                     <div class=" col-lg-4 col-md-6 col-sm-6">
-                        <div class=" mb-30">
+                        <div class="single-services  mb-30">
                             <div class="text-center">
                                 <img src=" {{ asset('public/web-assets/img/icon/services4.svg') }}" alt="">
                             </div>
@@ -158,7 +158,7 @@
                         </div>
                     </div>
                     <div class=" col-lg-4 col-md-6 col-sm-6">
-                        <div class=" mb-30">
+                        <div class=" single-services mb-30">
                             <div class="text-center">
                                 <img src=" {{ asset('public/web-assets/img/icon/services5.png ') }}" alt="">
                             </div>
@@ -171,7 +171,7 @@
                         </div>
                     </div>
                     <div class=" col-lg-4 col-md-6 col-sm-6">
-                        <div class=" mb-30">
+                        <div class="single-services mb-30">
                             <div class="text-center">
                                 <img src=" {{ asset('public/web-assets/img/icon/services6.png ') }}" alt="">
                             </div>
