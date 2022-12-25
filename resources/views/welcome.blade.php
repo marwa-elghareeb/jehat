@@ -210,13 +210,11 @@
                     </div>
                     <div class="col-xl-6 col-lg-6 col-md-9 col-sm-9">
                         <!-- about-img -->
-                
                         <div class="about-img ">
-                           <a class="popup-video btn-icon" href="{{asset('public/web-assets/img/jehat.mp4')}}" class="video-wrap position-relative">
-                            <div class="about-icon">
-                            <img src=" {{ asset('public/web-assets/img/gallery/about2.jpg ') }}" alt="">
+                            <div class="about-icon embed-responsive embed-responsive-16by9">
+                            <iframe class="embed-responsive-item" src="{{asset('public/web-assets/img/jehat.mp4')}} " allowfullscreen></iframe>
                             </div>
-                           </a>
+                          
                         </div>
                     </div>
                 </div>
