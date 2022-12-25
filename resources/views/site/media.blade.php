@@ -13,13 +13,17 @@
 						<div class="col-xl-8 col-lg-11 col-md-12">
 							<div class="hero__caption hero__caption2 text-center">
 								<h1 data-animation="bounceIn" data-delay="0.2s"> المركز الاعلامى</h1>
+								
 							</div>
 						</div>
 					</div>
 				</div>
 			</div>
 		</div>
+		
 	</section>
+	<a href="{{ asset('public/web-assets/presentation.pdf' ) }}"class="btn hero-btn" 
+                                    data-animation="fadeInUp" data-delay="0.7s"> تحميل   </a>
 
 
 	<div class="section-top-border">
