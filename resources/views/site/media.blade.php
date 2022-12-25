@@ -27,7 +27,7 @@
 											<div class="row gallery-item">
 												<div class="col-md-3">
 													<a class="popup-video btn-icon" href="https://www.jehat.sa/media/mp4/Add_dep.mp4" class="video-wrap position-relative">
-														<div class="single-gallery-image" style="background: url(assets/img/elements/g1.jpg);"></div>
+														<div class="single-gallery-image" style="background: url{{ asset('public/web-assets/img/g1.jpg')}}"></div>
 														<h5> انشاء جهه جديده </h5>
 													</a>
 												</div>
