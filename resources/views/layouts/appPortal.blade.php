@@ -26,7 +26,7 @@
     <link rel="stylesheet" href=" {{ asset('public/web-assets/css/slick.css ') }}">
     <link rel="stylesheet" href="{{ asset('public/web-assets/css/nice-select.css ') }}">
     <link rel="stylesheet" href="{{ asset('public/web-assets/css/style.css ') }}">
-    <link rel="stylesheet" href="{{ asset('public/web-assets/css/css.css ') }}">
+     <link rel="stylesheet" href="{{ asset('public/web-assets/css/css.css ') }}">
 </head>
 
 <body>
