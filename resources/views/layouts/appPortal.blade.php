@@ -154,8 +154,8 @@
                                         <a href="index.html"><img src=" {{ asset('public/web-assets/img/logo/logo2_footer.png') }}" alt=""></a>
                                     </div>
                                     <div class="footer-tittle">
-                                        <div class="footer-pera">
-                                            <p>يمكنك متابعتنا على قنوات التواصل الأجتماعي </p>
+                                        <div class="footer-tittle text-center">
+                                            <p>  &nbsp; يمكنك متابعتنا على قنوات التواصل الأجتماعي </p>
                                         </div>
                                     </div>
                                     <!-- social -->
