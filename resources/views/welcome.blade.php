@@ -8,7 +8,7 @@
 font-size: 30px;}
 
 .slider-height {
-    min-height: 950px; }
+    min-height: 900px; }
 </style>
 
  <!--? slider Area Start-->
