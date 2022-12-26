@@ -62,17 +62,17 @@
 </section>
 <br>
 <br>
-<section class="team text-center py-5">
-               <div class="row justify-content-center">
+<section class="container our-services text-center ">
+               <div class="row justify-content-center" >
                     <div class="col-lg-4 col-md-6">
                         <div class="single-services mb-30  border border-light rounded-5 text-center" >
                             <div class="services-ion">
                                 <img src=" {{ asset('public/web-assets/img/icon/18.png' ) }} " alt="" style="height: 100px; width: 100px;">
                             </div>
                             <br>
-                            <div class="services-cap  mb-30 ">
+                            <div class="services-cap">
                                 <h3 class="font-weight-bold text-center" >هكذا نحقق أهدافنا</h5>
-                                <p>أن تكون المنصة واجهة استرشادية موحده<br> لكافة المعاملات في كافة القطاعات</p>
+                                <p class=" text-center">أن تكون المنصة واجهة استرشادية موحده<br> لكافة المعاملات في كافة القطاعات</p>
                             </div>
                         </div>
                     </div>
@@ -84,7 +84,7 @@
                         <br>
                             <div class="services-cap">
                                 <h3 class="font-weight-bold text-center" >تلك هى رسالتنا</h5>
-                                <p>تقديم المعلومة الدقيقة للجمهور وزيادة <br>الوعي الإرشادي لكافة الجهات بشكل عام</p>
+                                <p class=" text-center">تقديم المعلومة الدقيقة للجمهور وزيادة <br>الوعي الإرشادي لكافة الجهات بشكل عام</p>
                             </div>
                         </div>
                     </div>
@@ -96,11 +96,13 @@
                             <br>
                             <div class="services-cap">
                                 <h3 class="font-weight-bold text-center"  >رؤيتنا الإستراتيجية</a></h5>
-                                <p> أن تصبح منصة "جهات" هي القناة الأكثر<br> استخداماً من قبل المستفيدين والجهات</p>
+                                <p class=" text-center"> أن تصبح منصة "جهات" هي القناة الأكثر<br> استخداماً من قبل المستفيدين والجهات</p>
                             </div>
                         </div>
                     </div>
                     </section><br>
+                    <br>
+<br>
                    
         <!--  <section class="team text-center py-5">
                         <div class="container">
