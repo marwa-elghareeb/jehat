@@ -202,14 +202,14 @@
       <p class="description "> Web designing in a powerful way of just not a profession, however, in a passion for our Company. We have a tendency to believe the idea that smart looking. </p>
     </div>-->
 
-
+    <div class="container">
     <div class=" work-process-block work-process-layout1">
       <div class="row">
         <div class="col-xl-3 col-sm-6">
           <div class="vs-work-process text-center">
             <div class="work-process-top animate__slideInDown wow animate__animated">
               <span class="shape"></span>
-              <span class="number border-white text-white">01</span>
+              <span class="number border-white text-white">04</span>
             </div>
             <div class="work-process-content animate__zoomIn animate__animated wow">
               <!--?<div class="icon"><img src="https://image.flaticon.com/icons/png/512/1352/1352623.png"></div>-->
@@ -225,7 +225,7 @@
           <div class="vs-work-process vs-work-process-2 text-center">
             <div class="work-process-top animate__slideInDown wow animate__animated" data-wow-delay="0.2s">
               <span class="shape"></span>
-              <span class="number border-white text-white">02</span>
+              <span class="number border-white text-white">03</span>
             </div>
             <div class="work-process-content animate__zoomIn animate__animated wow" data-wow-delay="0.2s">
               <!--?<div class="icon"><img src="https://image.flaticon.com/icons/png/512/1352/1352623.png"></div>-->
@@ -241,7 +241,7 @@
           <div class="vs-work-process vs-work-process-3 text-center">
             <div class="work-process-top animate__slideInDown wow animate__animated" data-wow-delay="0.3s">
               <span class="shape"></span>
-              <span class="number border-white text-white">03</span>
+              <span class="number border-white text-white">02</span>
             </div>
             <div class="work-process-content animate__zoomIn animate__animated wow" data-wow-delay="0.3s">
               <!--?<div class="icon"><img src="https://image.flaticon.com/icons/png/512/1352/1352623.png"></div>-->
@@ -257,14 +257,14 @@
           <div class="vs-work-process vs-work-process-4 text-center">
             <div class="work-process-top animate__slideInDown wow animate__animated" data-wow-delay="0.4s">
               <span class="shape"></span>
-              <span class="number border-white text-white">04</span>
+              <span class="number border-white text-white">01</span>
             </div>
             <div class="work-process-content animate__zoomIn animate__animated wow" data-wow-delay="0.4s">
               <!--?<div class="icon"><img src="https://image.flaticon.com/icons/png/512/1352/1352623.png"></div>-->
               <h3 class="process-title heading4">المنصة </h3>
               <p class="text">عرض جميع المعارض الموجود فى المنصه وتفاصيل كل معرض</p><br>
               <button type="button" class="btn btn-outline-secondary  pt-8 btn-sm">المزيد</button>
-
+            </div>
             </div>
           </div>
         </div>
