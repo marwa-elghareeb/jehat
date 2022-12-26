@@ -3,6 +3,11 @@
 
 @section('content')
 
+<style>
+.btn {
+font-size: 30px;}
+
+</style>
 
  <!--? slider Area Start-->
  <section class="slider-area ">
@@ -16,8 +21,7 @@
                                     <h1 data-animation="bounceIn" data-delay="0.2s">منصة جهات مستقبل كل الجهات</h1>
                                     <p data-animation="fadeInUp" data-delay="0.4s">تُتيح للجهات فتح مكاتب افتراضية لموظفيها وغرف إجتماعات . كما تُمكن المستفيدين من الوصول للجهات بكل سهولة ويُسر </p>
                                     <br>
-                                    <a href="{{ URL :: to ('/cards')}}" class="btn hero-btn" 
-                                    data-animation="fadeInUp" data-delay="0.7s">منصه جهات
+                                    <a href="{{ URL :: to ('/cards')}}" class="btn hero-btn" data-animation="fadeInUp" data-delay="0.7s">منصة جهات
                                 </a>
                                 </div>
                             </div>
@@ -34,7 +38,7 @@
                                     <p data-animation="fadeInUp" data-delay="0.4s">تُتيح للجهات فتح مكاتب افتراضية لموظفيها وغرف إجتماعات . كما تُمكن المستفيدين من الوصول للجهات بكل سهولة ويُسر </p>
                                     <br>
                                 <a href="{{ URL :: to ('/cards')}}" class="btn hero-btn" data-animation="fadeInUp" data-delay="0.7s"> 
-                                        منصه جهات</a>
+                                        منصة جهات</a>
                                 </div>
                                 <!--########################################################################################################-->
                             </div>
