@@ -113,7 +113,7 @@
                             <br>
                             <br>
                             <div class="text-center ">
-                                <h2  class="font-weight-bold" ><a href="#" >التطوير المستمر</a></h2><br>
+                                <h2  class="font-weight-bold" ><a href="#" >التطوير المستمر</a></h2>
                                 <h3 class="font-weight-light">تمتع بتصميم صديق للجوال وموديلات متعددة الاستخدام تواكب كل جديد</h3>
                             </div>
                         </div>
@@ -126,7 +126,7 @@
                             <br>
                             <br>
                             <div class="text-center">
-                                <h2 class="font-weight-bold" ><a href="#">دعم فني</a></h2><br>
+                                <h2 class="font-weight-bold" ><a href="#">دعم فني</a></h2>
                                 <h3>دعم فني على مدار الساعه لدينا فريق تقني مدرب على اعلى مستوي لحل كافة المشكلات</h3>
                             </div>
                         </div>
@@ -139,33 +139,35 @@
                             <br>
                             <br>
                             <div class="text-center">
-                                <h2 class="font-weight-bold" ><a href="#">التخزين السحابي</a></h2><br>
+                                <h2 class="font-weight-bold" ><a href="#">التخزين السحابي</a></h2>
                                 <h3>بكل أمان ويسر يمكنك متابعه جميع معاملاتك من اى مكان دون الخوف من فقدانها</h3>
                             </div>
                         </div>
                     </div>
+
                     <div class=" col-lg-4 col-md-6 col-sm-6">
                         <div class="single-services  mb-30">
                             <div class="text-center">
-                                <img src=" {{ asset('public/web-assets/img/icon/services4.svg') }}" alt="">
+                                <img src=" {{ asset('public/web-assets/img/icon/services4.png') }}" alt="">
                             </div>
                             <br>
                             <br>
                             <div class="text-center">
-                                <h2 class="font-weight-bold" ><a href="#">تقارير متعددة</a></h2><br>
+                                <h2 class="font-weight-bold" ><a href="#"> تقارير متعددة</a></h2>
                                 <h3>تقدم المنصه تقارير واحصائيات متعددة قابله للعرض وايضا للطباعة</h3>
                             </div>
                         </div>
                     </div>
+                    
                     <div class=" col-lg-4 col-md-6 col-sm-6">
                         <div class=" single-services mb-30">
                             <div class="text-center">
-                                <img src=" {{ asset('public/web-assets/img/icon/services5.png ') }}" alt="">
+                                <img src=" {{ asset('public/web-assets/img/icon/services55.png') }}" alt="">
                             </div>
                             <br>
                             <br>
                             <div class="text-center">
-                                <h2 class="font-weight-bold" ><a href="#">فواتير إلكترونية</a></h2><br>
+                                <h2 class="font-weight-bold" ><a href="#">فواتير إلكترونية</a></h2>
                                 <h3>بكل مرونه تستطيع إنشاء فواتير الكترونية موثقة ب QR مع إمكانية المسح الرقمي</h3>
                             </div>
                         </div>
@@ -173,12 +175,12 @@
                     <div class=" col-lg-4 col-md-6 col-sm-6">
                         <div class="single-services mb-30">
                             <div class="text-center">
-                                <img src=" {{ asset('public/web-assets/img/icon/services6.png ') }}" alt="">
+                                <img src=" {{ asset('public/web-assets/img/icon/services66.png ') }}" alt="">
                             </div>
                             <br>
                             <br>
                             <div class="text-center">
-                                <h2 class="font-weight-bold" ><a href="#">معاملات متعددة</a></h2><br>
+                                <h2 class="font-weight-bold" ><a href="#">معاملات متعددة</a></h2>
                                 <h3>إدارة المعاملات باحترافيه وإدارة شئون الموظفين بكل يسر وعدد غير محدود من العملاء</h3>
                             </div>
                         </div>

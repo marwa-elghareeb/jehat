@@ -230,6 +230,6 @@
 </div>
 
 </body>
-</section>
+
 </main>
     @endsection
