@@ -265,7 +265,7 @@
                         </div>
                     </div>
                 </div>
-                <div class="testimonial-wrapper section-bg2 pt-135">
+                <div class="testimonial-wrapper section-bg2 pt-15">
                     <div class="row align-items-center justify-content-center">
                         <div class=" col-lg-8 col-md-12 col-sm-9">
                             <div class="about-caption">
