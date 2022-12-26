@@ -40,7 +40,87 @@
         </div>
     </section>
     <!--?  Contact Area start  -->
-    <section class="contact-section">
+ <br>
+ <br>
+  <section  class="team text-center py-5" style="background-position: right top; background-size: 100% 100%; background-color: #FFFFFF; background-image: url('media/background/down-bg.png'); background-repeat: no-repeat;">
+  <div class="container">
+    <div class="row">
+		<div class="col-md-4" style="left: 0px; top: 0px; height: 346px; visibility: visible;">
+        <div class="contact-infos media-body">
+			<div class="contact-info media-body">
+		        <h3 class="title" style="overflow: hidden; font-family: cairo"></h3><br>
+                   <div class="media-body">
+                            <h3>السعودية</h3>
+                            <p>الرياض, مخرج 24</p>
+                    <img alt="" height="50" src="{{ asset('public/web-assets/img/Whatsapp.png' ) }}" width="52"><span style="color: #80858F">+966553777769</span><div class="info phone">
+					<img alt="" height="50" src=" {{ asset('public/web-assets/img/Whatsapp.png' ) }}" width="52"><span style="color: #80858F">+966 5555 4418</span></div>
+                    <p>من الاحد الى الخميس من الساعة ٩ صباحا الى ٥ مساء</p>
+                    </div>
+            </div>
+            <div class="contact-info">
+		     <div class="info media-body">
+             <span class="contact-info__icon"><i class="ti-email"></i></span>
+					<span>info@jehat.sa<br>
+
+                           </span>
+                           <p>على مدار 24 ساعة</p>
+            </div>
+           </div>
+        </div>
+    </div>
+    <br>
+    <div class="col-md-8" style="float: right">
+    <div class="contact-froms">
+			<div class="contact-form">
+						<div class="well">
+							<div class="auto-style2">
+								<div data-form-type="formoid" class="contact-froms" style="float: right">
+                    <!---Formbuilder Form--->
+                     
+                        
+                    <form action="contact_process.php" novalidate="novalidate" method="post" id="contactForm" class=" form-contact contact_form mbr-form form-with-styler" data-form-title="Mobirise Form" dir="rtl"><input type="hidden" name="email" data-form-email="true" value="n0q1J8Zm3PR50O1bqo3e6DkZuIVA2UtphDJAImDAQXSKO/vI/5egZ78YxJExCdSr1UxMLItQ1IeaFddOTFk1dwM8VDXujC3jVPOL3hRY/7xRBKBTtfcq17+uEqGZbdib">
+                        <div class="row">
+                            <div hidden="hidden" data-form-alert="" class="alert alert-success col-12">تم الإرسال بنجاح شكرا لتواصلك معنا</div>
+                            <div hidden="hidden" data-form-alert-danger="" class="alert alert-danger col-12">
+                            </div>
+                        </div>
+                        <div class="dragArea row">
+                            <div class="col-md-6  form-group" data-for="name" style="text-align: right">
+                                <input type="text" name="name"    onfocus="this.placeholder = ''" onblur="this.placeholder = 'Enter your name'"
+                                   placeholder="الأسم" id="name"  data-form-field="Name" required="required" class=" input display-7 form-control valid"  dir="rtl" style="font-family: cairo"><div class="auto-style1">
+							</div>
+                            &nbsp;
+                                
+                           </div> 
+                                  
+                            <div class="col-md-6  form-group" data-for="phone">
+                                <input type="text"  name="subject" onfocus="this.placeholder = ''" onblur="this.placeholder = 'Enter Subject'"
+                                   placeholder="رقم الهاتف" data-form-field="Phone" required="required" class="form-control input display-7" id="subject" dir="rtl" style="font-family: cairo">
+                            </div>
+                            <div data-for="email" class="col-md-12  form-group">
+                                <input type="text" name="email" placeholder="الاميل" data-form-field="Email" class="form-control input display-7" required="required" id="email-form4-g" dir="rtl" style="font-family: cairo">
+                            </div>
+                            <div data-for="message" class="col-md-12  form-group">
+                                <textarea name="message" id="message"   onfocus="this.placeholder = ''" onblur="this.placeholder = 'Enter Message'"
+                                   placeholder=" محتوى الرسالة" data-form-field="Message" class="form-control w-100 input display-7" class="form-control " dir="rtl" cols="30" rows="9" style="height: 115px; font-family: cairo;"></textarea>
+                            </div>
+                            <div class="col-md-12 input-group-btn  mt-2 align-center">
+								<button type="submit" class=" genric-btn primary-border circle arrow app-btn btn-active button button-contactForm boxed-btn" style="font-family: cairo">إرسال</button></div>
+                        </div>
+                    </form><!---Formbuilder Form--->
+                </div>
+							</div>
+						</div>
+					</div>
+</div></div></div></div><br>
+</section><br>
+<div class="content">
+		<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3724462.302321135!2d48.42137161748818!3d24.27078448817087!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3e2f03890d489399%3A0xba974d1c98e79fd5!2z2KfZhNix2YrYp9i2INin2YTYs9i52YjYr9mK2Kk!5e0!3m2!1sar!2seg!4v1514645079905" border="0" frameborder="0" marginheight="200" marginwidth="200" name="google" 
+            scrolling="no" style="float: center; height: 400px;" width="100%"></iframe>
+</div>
+<br>
+<!---
+   <section class="contact-section">
         <div class="container">
             <div class="d-none d-sm-block mb-5 pb-4">
                 <div id="map" style="height: 480px; position: relative; overflow: hidden;">
@@ -493,83 +573,9 @@
                     </script>
 
             </div>
-            <div class="row">
-                <div class="col-12">
-                    <h2 class="contact-title">ابق على اتصال</h2>
-                </div>
-                <div class="col-lg-8">
-                    <form class="form-contact contact_form" 
-                    action="contact_process.php" method="post" id="contactForm"
-                        novalidate="novalidate">
-                        <div class="row">
-                     
-                       
-                       <div class="col-sm-6">
-                           <div class="form-group">
-                               <input class="form-control valid" name="name" id="name" type="text"
-                                   onfocus="this.placeholder = ''" onblur="this.placeholder = 'Enter your name'"
-                                   placeholder="الأسم">
-                           </div>
-                       </div>
-                       <div class="col-6">
-                           <div class="form-group">
-                               <input class="form-control" name="subject" id="subject" type="text"
-                                   onfocus="this.placeholder = ''" onblur="this.placeholder = 'Enter Subject'"
-                                   placeholder="رقم الهاتف">
-                           </div>
-                       </div>
-                       <div class="col-sm-12">
-                           <div class="form-group">
-                               <input class="form-control valid" name="email" id="email" type="email"
-                                   onfocus="this.placeholder = ''"
-                                   onblur="this.placeholder = 'Enter email address'"
-                                   placeholder="البريد الالكتروني">
-                           </div>
-                       </div>
-                     
-                       <div class="col-12">
-                           <div class="form-group">
-                               <textarea class="form-control w-100" name="message" id="message" cols="30" rows="9"
-                                   onfocus="this.placeholder = ''" onblur="this.placeholder = 'Enter Message'"
-                                   placeholder=" محتوى الرسالة"></textarea>
-                           </div>
-                       </div>
-                   </div>
-                       
-                        <div class="form-group mt-3">
-                            <button type="submit" class="button button-contactForm boxed-btn">ارسال</button>
-                        </div>
-                    </form>
-                </div>
-                <div class="col-lg-3 offset-lg-1">
-                    <div class="media contact-info">
-                        <span class="contact-info__icon"><i class="ti-home"></i></span>
-                        <div class="media-body">
-                            <h3>السعودية</h3>
-                            <p>الرياض, مخرج 24</p>
-                        </div>
-                    </div>
-                    <div class="media contact-info">
-                        <span class="contact-info__icon"><i class="ti-tablet"></i></span>
-                        <div class="media-body">
-                            <h3>+966553777769</h3>
-                            <p>من الاحد الى الخميس من الساعة ٩ صباحا الى ٥ مساء</p>
-                        </div>
-                    </div>
-                    <div class="media contact-info">
-                        <span class="contact-info__icon"><i class="ti-email"></i></span>
-                        <div class="media-body">
-                            <h3> info@jehat.sa</h3>
-                            <p>على مدار 24 ساعة</p>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
+--->
   
-</main>
-
+</main> 
 
 
 

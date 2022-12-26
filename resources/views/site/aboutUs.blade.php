@@ -30,6 +30,10 @@
                 </div>
             </div>
         </section>
+        <br>
+        <br>
+        <br>
+        <br>
         <section class="about">
   <div class="container ">
     <div class="row">
@@ -56,6 +60,8 @@
     </div>
   </div>
 </section>
+<br>
+<br>
 <section class="team text-center py-5">
                <div class="row justify-content-center">
                     <div class="col-lg-4 col-md-6">
@@ -64,7 +70,7 @@
                                 <img src=" {{ asset('public/web-assets/img/icon/18.png' ) }} " alt="" style="height: 100px; width: 100px;">
                             </div>
                             <br>
-                            <div class="services-cap">
+                            <div class="services-cap  mb-30 ">
                                 <h3 class="font-weight-bold text-center" >هكذا نحقق أهدافنا</h5>
                                 <p>أن تكون المنصة واجهة استرشادية موحده<br> لكافة المعاملات في كافة القطاعات</p>
                             </div>
@@ -94,8 +100,9 @@
                             </div>
                         </div>
                     </div>
-                    </section>
-                    <section class="team text-center py-5">
+                    </section><br>
+                   
+        <!--  <section class="team text-center py-5">
                         <div class="container">
                           <div class="header my-5">
                             <h1>فريق عمل منصة جهات  </h1>
@@ -142,8 +149,7 @@
                         </div>
 
             </div>
-        </section>
-        <!-- Our Services End -->
+        </section>-->
  
 
 
