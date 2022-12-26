@@ -9,7 +9,7 @@
   margin-right: 0 !important;
 }
 </style>
-    <main>
+<main>
         <!--? slider Area Start-->
         <section class="slider-area slider-area2">
             <div class="slider-active">
@@ -146,16 +146,5 @@
         <!-- Our Services End -->
  
 
-
-       <div class="row justify-content-center"><div class="col-lg-4 col-md-6"><div class="saaspik-icon-box-wrapper style-four wow pixFadeLeft" data-wow-delay="0.5s" style="visibility: visible; animation-delay: 0.5s; animation-name: k;"><div class="saaspik-icon-box-icon"><img src="media\feature\20.png" alt=""></div><div class="pixsass-icon-box-content"><h3 class="pixsass-icon-box-title">
-	<a style="font-family: cairo"> رؤيتنا الإستراتيجية</a></h3>
-	<p style="font-family: cairo">أن تصبح منصة "جهات" هي القناة الأكثر استخداماً من قبل المستفيدين والجهات </p> <svg class="layer" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="370px" height="270px"><path fill-rule="evenodd" fill="rgb(253, 248, 248)" d="M-0.000,269.999 L-0.000,-0.001 L370.000,-0.001 C370.000,-0.001 347.889,107.879 188.862,112.181 C35.160,116.338 -0.000,269.999 -0.000,269.999 Z"></path></svg></div></div></div><div class="col-lg-4 col-md-6"><div class="saaspik-icon-box-wrapper style-four wow pixFadeLeft" data-wow-delay="0.6s" style="visibility: visible; animation-delay: 0.6s; animation-name: k;"><div class="saaspik-icon-box-icon"><img src="media\feature\19.png" alt=""></div><div class="pixsass-icon-box-content"><h3 class="pixsass-icon-box-title">
-	<a style="font-family: cairo">تلك هى رسالتنا</a></h3>
-	<p style="font-family: cairo">تقديم المعلومة الدقيقة للجمهور
- وزيادة الوعي الإرشادي لكافة الجهات بشكل عام 
-</p></div><svg class="layer" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="370px" height="270px"><path fill-rule="evenodd" fill="rgb(253, 248, 248)" d="M-0.000,269.999 L-0.000,-0.001 L370.000,-0.001 C370.000,-0.001 347.889,107.879 188.862,112.181 C35.160,116.338 -0.000,269.999 -0.000,269.999 Z"></path></svg></div></div><div class="col-lg-4 col-md-6"><div class="saaspik-icon-box-wrapper style-four wow pixFadeLeft" data-wow-delay="0.9s" style="visibility: visible; animation-delay: 0.9s; animation-name: k;"><div class="saaspik-icon-box-icon"><img src="media\feature\18.png" alt=""></div><div class="pixsass-icon-box-content"><h3 class="pixsass-icon-box-title">
-	<a style="font-family: cairo">هكذا نحقق أهدافنا</a></h3>
-	<p style="font-family: cairo">أن تكون المنصة واجهة استرشادية موحده لكافة المعاملات  في كافة القطاعات 
-</p></div><svg class="layer" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="370px" height="270px"><path fill-rule="evenodd" fill="rgb(253, 248, 248)" d="M-0.000,269.999 L-0.000,-0.001 L370.000,-0.001 C370.000,-0.001 347.889,107.879 188.862,112.181 C35.160,116.338 -0.000,269.999 -0.000,269.999 Z"></path></svg></div></div></div>
 
 	@endsection
