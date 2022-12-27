@@ -27,6 +27,52 @@
     <!--? Blog Area Start-->
     <section class="blog_area section-padding">
         <div class="container">
+
+
+
+
+<!-- Card deck -->
+<div class="card-deck">
+
+  <!-- Card -->
+  <div class="card mb-4">
+
+    <!--Card image-->
+    <a href="#!">
+    <div class="view overlay">
+      <img class="card-img-top" src="https://mdbootstrap.com/img/Photos/Others/images/16.webp"
+        alt="Card image cap">
+      
+        <div class="mask rgba-white-slight"></div>
+      </a>
+    </div>
+
+    <!--Card content-->
+    <div class="card-body">
+
+      <!--Title-->
+      <h1 class="card-title">مجموعة شركات جندلة</h1>
+      <!--Text-->
+      
+      <!-- Provides extra visual weight and identifies the primary action in a set of buttons -->
+      <a href="#!"> <button type="button" class="btn btn-light-blue btn-md">الاقسام والموظفين</button></a>
+
+    </div>
+
+  </div>
+  <!-- Card -->
+
+  <!-- Card -->
+  
+
+<!-- Card deck -->
+
+
+
+
+
+
+        
             <div class="row  justify-content-center">
             @foreach($allData as $data)
                 <div class="col-lg-3 mb-5 mb-lg-0">

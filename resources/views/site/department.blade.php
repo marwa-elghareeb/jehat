@@ -24,28 +24,40 @@
     <!--? Blog Area Start -->
     <section class="blog_area single-post-area section-padding">
         <div class="container">
-            <div class="row">
+            <div class="row d-flex flex-row-reverse">
             @foreach($allEmp as $data)
                 <div class="col-lg-4 posts-list">
-                    
-
                     <div class="blog-author">
-                        <div class="media align-items-center">
-                            <img src="{{ URL ::to ('public/upload/'.$data->image)}}" alt="">
-                            
+                        <div class="responsive-cell-block wk-desk-3 wk-ipadp-3 wk-tab-6 wk-mobile-12 card-container">
+                        <div class="card">
+                           <div class="team-image-wrapper">
+                            <img src="{{ URL ::to ('public/upload/'.$data->image)}}" alt="" class="img-fluid team-member-image  img-thumbnail rounded-circle" alt="image1">
+                            </div>
                             <div class="media-body ">
                                 <a href="#">
-                                    <h4>{{ $data->name }}</h4>
+                                    <h4 class="text-blk name">{{ $data->name }}</h4>
                                 </a>
-                                <p>{{ $data->position }}</p>
-                                <div class="p-3 mb-2   ">  <!-- Facebook -->
+                                <p class="text-blk position">{{ $data->position }}</p>
+                                <div class="p-3 mb-2 pt-4 ">  
+                                    <!-- Facebook -->
+                                    <!-- Facebook 
+                                       <a href="https://www.twitter.com" target="_blank">
+                                        <img src="https://workik-widget-assets.s3.amazonaws.com/widget-assets/images/Icon.svg"
+                                          class="twitter-icon" />
+                                       </a>
+                                       <a href="https://www.facebook.com" target="_blank">
+                                           <img src="https://workik-widget-assets.s3.amazonaws.com/widget-assets/images/Icon-1.svg"
+                                           class="facebook-icon" />
+                                            </a>-->
                                  <i class="fab fa-whatsapp"></i> |
                                  <i class="fa fa-envelope"></i> |
                                  <i class="fa fa-link"></i>
+
                                 </div>
                                 
+                                
                             </div>
-                          
+                            </div>
                         </div>
                     </div>
                    
@@ -69,15 +81,15 @@
                                 <button class="button rounded-0 primary-bg text-white w-100 btn_1 boxed-btn" type="submit">بحث</button>
                             </form>
                         </aside>
-                        <aside class="single_sidebar_widget post_category_widget">
+                        <aside class="single_sidebar_widget post_category_widget  text-center">
                             <h4 class="widget_title" style="color: #2d2d2d;">الاقسام</h4>
-                            <ul class="list cat-list">
+                            <ul class="list cat-list text-center">
 
                             @foreach($allData as $data)
                                 <li>
-                                    <a href="{{ URL :: to ('/employe' , $data->id )}}" class="d-flex">
-                                        <p>   {{ $data->name_ar }}</p>
-                                        <p>({{ $data->empCount}})</p>
+                                    <a href="{{ URL :: to ('/employe' , $data->id )}}" class="d-flex ">
+                                        <p  class=" text-center">   {{ $data->name_ar }}</p>
+                                        <p class=" text-center">({{ $data->empCount}})</p>
                                     </a>
                                 </li>
                                 @endforeach
