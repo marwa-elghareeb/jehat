@@ -28,38 +28,25 @@
     <section class="blog_area section-padding">
         <div class="container">
 
-
-
-
 <!-- Card deck -->
-<div class="card-deck">
+<div class="card-deck  row  justify-content-center">
+@foreach($allData as $data)
 
-  <!-- Card -->
-  <div class="card mb-4">
-
-    <!--Card image-->
-    <a href="#!">
+  <div class="card col-lg-3 mb-5 mb-lg-0">
+  <br> 
     <div class="view overlay">
-      <img class="card-img-top" src="https://mdbootstrap.com/img/Photos/Others/images/16.webp"
-        alt="Card image cap">
-      
+    <img class="card-img rounded-0"  src="{{ URL ::to ('public/upload/'.$data->image)}}" alt=""
+           style="height: 250px; width: 250px;">
         <div class="mask rgba-white-slight"></div>
-      </a>
     </div>
-
-    <!--Card content-->
+    <br> 
+    
     <div class="card-body">
-
-      <!--Title-->
-      <h1 class="card-title">مجموعة شركات جندلة</h1>
-      <!--Text-->
-      
-      <!-- Provides extra visual weight and identifies the primary action in a set of buttons -->
-      <a href="#!"> <button type="button" class="btn btn-light-blue btn-md">الاقسام والموظفين</button></a>
-
+      <h1 class="card-title">  {{ $data->name_ar }}</h1>  <br>            
+      <a  href="{{ URL :: to ('/department' , $data->id )}}"> <button type="button" class="genric-btn primary-border circle arrow app-btn btn-active button button-contactForm boxed-btn"><i class="fa fa-user"></i>الاقسام والموظفين</button></a>
     </div>
 
-  </div>
+  </div>  @endforeach
   <!-- Card -->
 
   <!-- Card -->
@@ -72,7 +59,10 @@
 
 
 
-        
+       
+    </section>
+    <!-- Blog Area End
+     
             <div class="row  justify-content-center">
             @foreach($allData as $data)
                 <div class="col-lg-3 mb-5 mb-lg-0">
@@ -102,8 +92,7 @@
                 
             </div>
         </div>
-    </section>
-    <!-- Blog Area End -->
+ -->
 
 
 
