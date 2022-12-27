@@ -9,6 +9,13 @@ font-size: 30px;}
 
 .slider-height {
     min-height: 900px; }
+
+.slider-area .hero__caption,
+.slider-area2 .hero__caption {
+    text-align: center;
+    padding-top: 190px
+}
+
 </style>
 
  <!--? slider Area Start-->
