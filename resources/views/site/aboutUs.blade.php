@@ -19,10 +19,10 @@
             <div class="col-xl-8 col-lg-11 col-md-12">
               <div class="hero__caption hero__caption2 text-center ">
               <h1  data-animation="bounceIn" data-delay="0.2s">من نحن</h1>
-                <div class="screen-img ">
+                <!--div class="screen-img ">
                   <img src="{{ asset('public/web-assets/img/gallery/screen.png' ) }}" 
                   alt="" class=" w-50">
-                </div>
+                </div-->
               </div>
             </div>
           </div>

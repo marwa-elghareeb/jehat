@@ -24,8 +24,8 @@
                                بحاجة الى التحدث معنا؟
                                نحن نستمع إليك. يرجى اختيار وسيلة الاتصال المفضلة لديك
                                وسيقوم أحد موظفينا بالتواصل معك قريبًا. ... سوف يسعدنا أن نسمع صوتك</p>                <div class="screen-img ">
-                  <img src="{{ asset('public/web-assets/img/gallery/screen.png' ) }}" 
-                  alt="" class=" w-50">
+                  <!--img src="{{ asset('public/web-assets/img/gallery/screen.png' ) }}" 
+                  alt="" class=" w-50"-->
                 </div>
               </div>
             </div>
