@@ -19,12 +19,12 @@
             <div class="col-xl-8 col-lg-11 col-md-12">
               <div class="hero__caption hero__caption2 text-center ">
               <h1 data-animation="bounceIn" data-delay="0.2s">تواصل معنا نحن هنا لمساعدتك</h1>
-                           
+
                            <p data-animation="fadeInUp" data-delay="0.4s">
                                بحاجة الى التحدث معنا؟
                                نحن نستمع إليك. يرجى اختيار وسيلة الاتصال المفضلة لديك
                                وسيقوم أحد موظفينا بالتواصل معك قريبًا. ... سوف يسعدنا أن نسمع صوتك</p>                <div class="screen-img ">
-                  <!--img src="{{ asset('public/web-assets/img/gallery/screen.png' ) }}" 
+                  <!--img src="{{ asset('public/web-assets/img/gallery/screen.png' ) }}"
                   alt="" class=" w-50"-->
                 </div>
               </div>
@@ -74,8 +74,8 @@
 							<div class="auto-style2">
 								<div data-form-type="formoid" class="contact-froms" style="float: right">
                     <!---Formbuilder Form--->
-                     
-                        
+
+
                     <form action="contact_process.php" novalidate="novalidate" method="post" id="contactForm" class=" form-contact contact_form mbr-form form-with-styler" data-form-title="Mobirise Form" dir="rtl"><input type="hidden" name="email" data-form-email="true" value="n0q1J8Zm3PR50O1bqo3e6DkZuIVA2UtphDJAImDAQXSKO/vI/5egZ78YxJExCdSr1UxMLItQ1IeaFddOTFk1dwM8VDXujC3jVPOL3hRY/7xRBKBTtfcq17+uEqGZbdib">
                         <div class="row">
                             <div hidden="hidden" data-form-alert="" class="alert alert-success col-12">تم الإرسال بنجاح شكرا لتواصلك معنا</div>
@@ -88,15 +88,15 @@
                                    placeholder="الأسم" id="name"  data-form-field="Name" required="required" class=" input display-7 form-control valid"  dir="rtl" style="font-family: cairo"><div class="auto-style1">
 							</div>
                             &nbsp;
-                                
-                           </div> 
-                                  
+
+                           </div>
+
                             <div class="col-md-6  form-group" data-for="phone">
                                 <input type="text"  name="subject" onfocus="this.placeholder = ''" onblur="this.placeholder = 'Enter Subject'"
                                    placeholder="رقم الهاتف" data-form-field="Phone" required="required" class="form-control input display-7" id="subject" dir="rtl" style="font-family: cairo">
                             </div>
                             <div data-for="email" class="col-md-12  form-group">
-                                <input type="text" name="email" placeholder="الاميل" data-form-field="Email" class="form-control input display-7" required="required" id="email-form4-g" dir="rtl" style="font-family: cairo">
+                                <input type="text" name="email" placeholder="الايميل" data-form-field="Email" class="form-control input display-7" required="required" id="email-form4-g" dir="rtl" style="font-family: cairo">
                             </div>
                             <div data-for="message" class="col-md-12  form-group">
                                 <textarea name="message" id="message"   onfocus="this.placeholder = ''" onblur="this.placeholder = 'Enter Message'"
@@ -113,9 +113,7 @@
 </div></div></div></div><br>
 </section><br>
 <div class="content">
-		<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3724462.302321135!2d48.42137161748818!3d24.27078448817087!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3e2f03890d489399%3A0xba974d1c98e79fd5!2z2KfZhNix2YrYp9i2INin2YTYs9i52YjYr9mK2Kk!5e0!3m2!1sar!2seg!4v1514645079905" border="0" frameborder="0" marginheight="200" marginwidth="200" name="google" 
-            scrolling="no" style="float: center; height: 400px;" width="100%"></iframe>
-</div>
+    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3628.09742716265!2d46.69508482545472!3d24.585833656193323!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3e2f0f65f5d44c21%3A0x21602e9c7844e7dd!2z2YXYrNmF2YjYudipINi02LHZg9in2Kog2KzZhtiv2YTYqQ!5e0!3m2!1sar!2ssa!4v1672146481978!5m2!1sar!2ssa" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
 <br>
 <!---
    <section class="contact-section">
@@ -572,8 +570,8 @@
 
             </div>
 --->
-  
-</main> 
+
+</main>
 
 
 
