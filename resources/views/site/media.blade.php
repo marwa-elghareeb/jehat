@@ -22,9 +22,13 @@
 		</div>
 		
 	</section>
-	<h1><a href="{{ asset('public/web-assets/presentation.pdf' ) }}"class="btn hero-btn"  data-animation="fadeInUp" data-delay="0.7s"> تحميل ملف الإدارة الالكترونية  </a></h1>
- 
-                     
+	
+	<div class="row align-items-center justify-content-center ">
+
+	
+	<a href="{{ asset('public/web-assets/presentation.pdf' ) }}" class="btn hero-btn"  data-animation="fadeInUp" data-delay="0.7s" > تحميل ملف آلية عمل المنصة </a>
+	<a href="{{ asset('public/web-assets/user guide.pdf' ) }}"class="btn hero-btn"  data-animation="fadeInUp" data-delay="0.7s"> تحميل ملف دليل المستخدم </a>
+	</div>             
               
 
 	<div class="section-top-border">
