@@ -73,8 +73,7 @@
                                                     <li><a href="{{ URL :: to ('/helpcenter')}}">مركز المساعدة</a></li>
                                                     <li><a href="{{ URL :: to ('/media')}}">المركز الأعلامي </a></li>
                                                     <li><a href="{{ URL :: to ('/question')}}">اسئلة شائعة</a></li>
-                                                   <li><a href="#">آلية عمل المنصة </a></li>
-                                                   <li><a href="#">  دليل المستخدم </a></li>
+                                                  
                                                 </ul>
 
                                                 <!--li><a href="{{ URL :: to ('/helpcenter')}}">مركز المساعدة </a></li-->
