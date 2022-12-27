@@ -23,39 +23,52 @@
         </div>
     </section>
 
-
     <!--? Blog Area Start -->
     <section class="blog_area single-post-area section-padding">
         <div class="container">
-            <div class="row">
-
-                <div class="col-lg-8 posts-list">
-
-                    <div class="single-post"></div>
-
-                    @foreach($allData as $data)
+            <div class="row d-flex flex-row-reverse">
+            @foreach($allData as $data)
+                <div class="col-lg-4 posts-list">
                     <div class="blog-author">
-                        <div class="media align-items-center">
-                            <img src="{{ URL ::to ('public/upload/'.$data->image)}}" alt="">
-                            <div class="media-body">
-                                <a href="#">
-                                    <h4>{{ $data->name }}</h4>
-                                </a>
-                                <p>{{ $data->position }}</p>
-                                <p>  <!-- Facebook -->
-                                 <i class="fab fa-whatsapp"></i>
-                                 <i class="fa fa-envelope"></i>
-                                 <i class="fa fa-link"></i>
-                                </p>
+                        <div class="responsive-cell-block wk-desk-3 wk-ipadp-3 wk-tab-6 wk-mobile-12 card-container">
+                        <div class="card">
+                           <div class="team-image-wrapper">
+                            <img src="{{ URL ::to ('public/upload/'.$data->image)}}" alt="" class="img-fluid team-member-image  img-thumbnail rounded-circle" alt="image1">
                             </div>
-                          
+                            <div class="media-body ">
+                                <a href="#">
+                                    <h4 class="text-blk name">{{ $data->name }}</h4>
+                                </a>
+                                <p class="text-blk position">{{ $data->position }}</p>
+                                <div class="p-3 mb-2 pt-4 ">  
+                                    <!-- Facebook -->
+                                    <!-- Facebook 
+                                       <a href="https://www.twitter.com" target="_blank">
+                                        <img src="https://workik-widget-assets.s3.amazonaws.com/widget-assets/images/Icon.svg"
+                                          class="twitter-icon" />
+                                       </a>
+                                       <a href="https://www.facebook.com" target="_blank">
+                                           <img src="https://workik-widget-assets.s3.amazonaws.com/widget-assets/images/Icon-1.svg"
+                                           class="facebook-icon" />
+                                            </a>-->
+                                 <i class="fab fa-whatsapp"></i> |
+                                 <i class="fa fa-envelope"></i> |
+                                 <i class="fa fa-link"></i>
+
+                                </div>
+                                
+                                
+                            </div>
+                            </div>
                         </div>
                     </div>
-                    @endforeach
                    
-
-
+                   
                 </div>
+                @endforeach
+
+
+
 
                 <div class="col-lg-4">
                     <div class="blog_right_sidebar">
