@@ -77,10 +77,11 @@
                                            <img src="https://workik-widget-assets.s3.amazonaws.com/widget-assets/images/Icon-1.svg"
                                            class="facebook-icon" />
                                             </a>-->
-                                 <div class="icon-block">
-                                    <a class="icon" href="#"><i class="fa fa-envelope"></i></a>
-                                    <a class="icon" href="#"> <i class="fab fa-whatsapp"></i></a>
-                                    <a  class="icon"href="#"> <i class="fa fa-link"></i></a>
+
+                                <div class="icon-block">
+                                    <a class="icon" href="mailto:{{ $data->email }}"><i class="fa fa-envelope"></i></a>
+                                    <a class="icon" href="https://wa.me/{{ $data->whats_app }}?text="> <i class="fab fa-whatsapp"></i></a>
+                                    <a  class="icon"href="{{ $data->meeting_link }}"> <i class="fa fa-link"></i></a>
                                 </div>
 
                                 </div>
