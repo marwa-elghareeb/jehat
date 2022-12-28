@@ -2,7 +2,33 @@
 
 
 @section('content')
-
+<style>
+ .icon i {
+  display: inline-block;
+    font-size: 16px;
+    color: #232323;
+    text-align: center;
+    border: 1px solid #232323;
+    width: 30px;
+    height: 30px;
+    line-height: 30px;
+    border-radius: 50%;
+    margin:0 5px;
+}
+ .icon-block{
+    float:left;
+    width:100%;
+    margin-top:15px;
+}
+.icon-block a{
+    text-decoration:none;
+}
+.icon i:hover {
+  background-color:#232323;
+  color:#fff;
+  text-decoration:none;
+}
+</style>
 <main>
     <!--? slider Area Start-->
     <section class="slider-area slider-area2">
@@ -51,9 +77,11 @@
                                            <img src="https://workik-widget-assets.s3.amazonaws.com/widget-assets/images/Icon-1.svg"
                                            class="facebook-icon" />
                                             </a>-->
-                                 <i class="fab fa-whatsapp"></i> |
-                                 <i class="fa fa-envelope"></i> |
-                                 <i class="fa fa-link"></i>
+                                 <div class="icon-block">
+                                    <a class="icon" href="#"><i class="fa fa-envelope"></i></a>
+                                    <a class="icon" href="#"> <i class="fab fa-whatsapp"></i></a>
+                                    <a  class="icon"href="#"> <i class="fa fa-link"></i></a>
+                                </div>
 
                                 </div>
                                 
