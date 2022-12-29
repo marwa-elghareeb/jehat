@@ -12,7 +12,7 @@ use App\Http\Controllers\Admin\DepartmentsController;
 use App\Http\Controllers\Admin\EventsController;
 
 use App\Http\Controllers\Site\IndexController;
-use Illuminate\Support\Facades\Route;
+//use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\ProductController;
 use App\Http\Controllers\ClientController;
 use App\Http\Controllers\FluentController;
