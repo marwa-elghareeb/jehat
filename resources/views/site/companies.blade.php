@@ -3,9 +3,27 @@
 
 @section('content')
 
+<style>
+.button-one {
+    background-color:  #6f42c1 !important;
+    color: #fff !important;
+    border: 2px solid  #7b7b7b !important ;
+    padding: 10px 20px !important;
+    border-radius: 10px !important;
+  }
+.button-one a{
+    color: #fff !important;
+}
+  
+.button-one a:hover, .button-one a:focus {
+    color:#fff3cd  !important;
+
+}
+
+</style>
 
 <main>
-    <!--? slider Area Start-->
+ 
     <section class="slider-area slider-area2">
         <div class="slider-active">
             <!-- Single Slider -->
@@ -42,12 +60,15 @@
     <br> 
     
     <div class="card-body">
-      <h1 class="card-title">  {{ $data->name_ar }}</h1>  <br>            
-      <a  href="{{ URL :: to ('/department' , $data->id )}}"> <button type="button" class="genric-btn primary-border circle arrow app-btn btn-active button button-contactForm boxed-btn"><i class="fa fa-user"></i>الاقسام والموظفين</button></a>
+      <h1 class="card-title">  {{ $data->name_ar }}</h1>  <br> 
+    </div>
+    <div class="button-one "> 
+    <a href="{{ URL :: to ('/department' , $data->id )}}" class=" " role="button" aria-pressed="true"><i class="fa fa-user"></i>الاقسام والموظفين</a>
     </div>
 
   </div>  @endforeach
-  <!-- Card -->
+  <!--       <a  href="{{ URL :: to ('/department' , $data->id )}}"><button type="button" class=" button-one  btn-outline-secondary"><i class="fa fa-user"></i>الاقسام والموظفين</button></a>
+ -->
 
   <!-- Card -->
   
