@@ -8,7 +8,14 @@
 font-size: 30px;}
 
 .slider-height {
-    min-height: 900px; }
+    min-height: 890px; }
+
+.slider-area,
+.slider-area2 {
+    background-image: url('public/web-assets/img/hero/jehat90.png' );
+    background-size: cover;
+   background-repeat: repeat;
+}
 
 .slider-area .hero__caption,
 .slider-area2 .hero__caption {
@@ -63,7 +70,7 @@ font-size: 30px;}
                     <div class="col-lg-12">
                         <div class="screen-img">
                         <br>
-                            <img src=" {{ asset('public/web-assets/img/gallery/screen.png' ) }} " alt="" class=" w-1">
+                           
                         </div>
                     </div>
                 </div>
@@ -73,6 +80,7 @@ font-size: 30px;}
         <br>
         <br>
         <br>
+        <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
  <div class="brand-area">
             <div class="container">
                 <h1 >أكثر من 850 جهة وشركة وثقوا بنا</h1>

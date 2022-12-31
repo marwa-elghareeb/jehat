@@ -2,6 +2,12 @@
 
 @section('content')
 <style>
+
+.slider-area.slider-area2,
+.slider-area2.slider-area2 {
+    background-image: url('public/web-assets/img/hero/jehatp90.png')
+}
+
   .small-text {
     color: #2c2b0c;
   }

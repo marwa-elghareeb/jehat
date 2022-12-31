@@ -8,6 +8,13 @@
   margin-left: auto !important;
   margin-right: 0 !important;
 }
+
+
+.slider-area.slider-area2,
+.slider-area2.slider-area2 {
+    background-image: url('public/web-assets/img/hero/jehatp90.png')
+}
+
 </style>
 <main>
 <section class="slider-area slider-area2">

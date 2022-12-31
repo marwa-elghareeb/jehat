@@ -1,28 +1,21 @@
 @extends('layouts.appPortal')
 
 @section('content')
-<style>
-  .screen-img{
-  display: flex !important;
-  justify-content: flex-end !important;
-  margin-left: auto !important;
-  margin-right: 0 !important;
+
+
+<style> 
+
+.slider-area.slider-area2,
+.slider-area2.slider-area2 {
+    background-image: url('public/web-assets/img/hero/jehatp90.png')
 }
 </style>
-<main>
+
+
 <section class="slider-area slider-area2">
     <div class="slider-active">
       <!-- Single Slider -->
       <div class="single-slider slider-height2">
-        <div class="container">
-          <div class="row justify-content-center ">
-            <div class="col-xl-8 col-lg-11 col-md-12">
-              <div class="hero__caption hero__caption2 text-center ">
-              <h1  data-animation="bounceIn" data-delay="0.2s">من نحن</h1>
-                <!--div class="screen-img ">
-                  <img src="{{ asset('public/web-assets/img/gallery/screen.png' ) }}" 
-                  alt="" class=" w-50">
-                </div-->
               </div>
             </div>
           </div>
@@ -30,11 +23,24 @@
       </div>
     </div>
   </section>
-       
-        <br>
-        <br>
-        <br>
-        <br>
+
+
+
+
+  <div class="inner-page pb-5">
+	<div class="inner-page-container">
+
+        <div class="container">
+        <div class="row justify-content-center">
+            <div class="card col-9 col-md-10 col-lg-15">
+                <div class="card-wrapper">
+                    <div class="card-box align-center">
+
+
+
+
+
+
         <section class="about">
   <div class="container ">
     <div class="row">
@@ -105,54 +111,27 @@
                     <br>
 <br>
                    
-        <!--  <section class="team text-center py-5">
-                        <div class="container">
-                          <div class="header my-5">
-                            <h1>فريق عمل منصة جهات  </h1>
-                          </div>
-                          <div class="row">
-                            <div class="col-md-6 col-lg-3">
-                              <div class="img-block mb-5">
-                                <img src=" {{ asset('public/web-assets/img/14.jpg' ) }}" class="img-fluid  img-thumbnail rounded-circle" alt="image1">
-                                <div class="content mt-2">
-                                  <h4>Dr . Ayman Mahmoud Helmy</h4>
-                                  <p class="text-muted">CEO of Egypt</p>
-                                </div>
-                              </div>
-                            </div>
-                            <div class="col-md-6 col-lg-3 ">
-                              <div class="img-block mb-5">
-                                <img src=" {{ asset('public/web-assets/img/13.jpg ' ) }}" class="img-fluid  img-thumbnail rounded-circle" alt="image1">
-                                <div class="content mt-2">
-                                  <h4>Datuk Hj Abdul Rahim</h4>
-                                  <p class="text-muted">CEO of Malaysia</p>
-                                </div>
-                              </div>
-                            </div>
-                            <div class="col-md-6 col-lg-3">
-                              <div class="img-block mb-5">
-                                <img src="{{ asset('public/web-assets/img/12.jpg  ' ) }}" class="img-fluid  img-thumbnail rounded-circle" alt="image1">
-                                <div class="content mt-2">
-                                  <h4>Ahmed Basuony </h4>
-                                  <p class="text-muted">IT Manager</p>
-                                </div>
-                              </div>
-                            </div>
-                            <div class="col-md-6 col-lg-3">
-                              <div class="img-block mb-5">
-                                <img src=" {{ asset('public/web-assets/img/11.jpg' ) }}" class="img-fluid  img-thumbnail rounded-circle" alt="image1">
-                                <div class="content mt-2">
-                                  <h4>Saad Al Mohsen</h4>
-                                  <p class="text-muted">Chairman of Board of Directors</p>
+       
 
-                                </div>
-                              </div>
-                            </div>
-                          </div>
-                        </div>
+
+
+
+                    </div>
+
+                </div>
+            </div>
+
+
+
+
+     </div>
+            </div>
+
+        </div>
+    </div>
 
             </div>
-        </section>-->
+        </section>
  
 
 
