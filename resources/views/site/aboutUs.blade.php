@@ -9,6 +9,23 @@
 .slider-area2.slider-area2 {
     background-image: url('public/web-assets/img/hero/jehatp90.png')
 }
+
+
+.card{
+border-radius:4rem
+}
+
+.container1 {
+    max-width: 1380px;
+    margin-top: -320px;
+    margin-right: auto;
+    margin-bottom: 0px;
+    margin-left: auto;
+    padding-top: 0px;
+    padding-right: 30px;
+    padding-bottom: 0px;
+    padding-left: 30px;
+}
 </style>
 
 
@@ -25,7 +42,7 @@
 
   <div class="inner-page pb-5 ">
 	<div class="inner-page-container">
-        <div class="container">
+        <div class="container1">
         <div class="row justify-content-center">
             <div class="card col-9 col-md-10 col-lg-15">
                 <div class="card-wrapper">

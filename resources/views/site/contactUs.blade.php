@@ -15,28 +15,33 @@
     background-image: url('public/web-assets/img/hero/jehatp90.png')
 }
 
+
+
+.card{
+border-radius:4rem
+}
+
+.container1 {
+    max-width: 1380px;
+    margin-top: -320px;
+    margin-right: auto;
+    margin-bottom: 0px;
+    margin-left: auto;
+    padding-top: 0px;
+    padding-right: 30px;
+    padding-bottom: 0px;
+    padding-left: 30px;
+}
+
 </style>
 <main>
 <section class="slider-area slider-area2">
     <div class="slider-active">
       <!-- Single Slider -->
       <div class="single-slider slider-height2">
-        <div class="container">
-          <div class="row justify-content-center ">
-            <div class="col-xl-8 col-lg-11 col-md-12">
-              <div class="hero__caption hero__caption2 text-center ">
-              <h1 data-animation="bounceIn" data-delay="0.2s">تواصل معنا نحن هنا لمساعدتك</h1>
-                           <p data-animation="fadeInUp" data-delay="0.4s">
-                               بحاجة الى التحدث معنا؟
-                               نحن نستمع إليك. يرجى اختيار وسيلة الاتصال المفضلة لديك
-                               وسيقوم أحد موظفينا بالتواصل معك قريبًا. ... سوف يسعدنا أن نسمع صوتك</p>                <div class="screen-img ">
-                  <!--img src="{{ asset('public/web-assets/img/gallery/screen.png' ) }}"
-                  alt="" class=" w-50"-->
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
+        
+           
+          
       </div>
     </div>
   </section>
@@ -47,7 +52,7 @@
 
  <div class="inner-page pb-5 ">
 	<div class="inner-page-container">
-        <div class="container">
+        <div class="container1">
         <div class="row justify-content-center">
             <div class="card col-9 col-md-10 col-lg-15">
                 <div class="card-wrapper">

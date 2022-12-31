@@ -3,6 +3,8 @@
 
 @section('content')
 
+<head>
+<link href='https://fonts.googleapis.com/css?family=Cairo' rel='stylesheet'>
 <style>
 .btn {
 font-size: 30px;}
@@ -22,9 +24,194 @@ font-size: 30px;}
     text-align: center;
     padding-top: 190px
 }
+.btn {
+    background: #f2bf51;
+}
+.btn::before {
+    background: #7f5afc;
+      }
+
+.slider-area .hero__caption h11,
+.slider-area2 .hero__caption h1 {
+   font-family: 'Cairo';
+    font-size: 68px;
+    font-weight: 600;
+    color: #e3e1eb;
+    line-height: 1.3;
+    margin-bottom: -10px
+}
+.slider-area .hero__caption h1,
+.slider-area2 .hero__caption h1 {
+    font-family: 'Cairo';
+    font-size: 42px;
+    font-weight: 600;
+    color: #e3e1eb;
+    line-height: 1.3;
+    margin-bottom: -10px
+}
+.slider-area .hero__caption h8,
+.slider-area2 .hero__caption h8 {
+    font-family: 'Cairo';
+    font-size: 68px;
+    font-weight: 600;
+    color: #f2bf51;
+    line-height: 1.3;
+    margin-bottom: -10px
+}
+
+.slider-area .hero__caption p,
+.slider-area2 .hero__caption p {
+     font-family: 'Cairo';
+    color: #e5e3ee;
+    font-size: 25px;
+    margin-bottom: 34px;
+    padding: 0 50px
+}
+
+
+
+
+
+.services .icon-box {
+  padding: 30px;
+  position: relative;
+  overflow: hidden;
+  background: #fff;
+  box-shadow: 0 0 29px 0 rgba(68, 88, 144, 0.12);
+  transition: all 0.3s ease-in-out;
+  border-radius: 8px;
+  z-index: 1;
+}
+
+.services .icon-box::before {
+  content: "";
+  position: absolute;
+  background: #E3E0ED;
+  right: -60px;
+  top: -40px;
+  width: 100px;
+  height: 100px;
+  border-radius: 50px;
+  transition: all 0.3s;
+  z-index: -1;
+}
+
+.services .icon-box:hover::before {
+  background: #f6f5f9;
+  right: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  border-radius: 0px;
+}
+
+.services .icon {
+  margin: 0 auto 20px auto;
+  padding-top: 10px;
+  display: inline-block;
+  text-align: center;
+  border-radius: 50%;
+  width: 60px;
+  height: 60px;
+  background: #6847dc;
+  transition: all 0.3s ease-in-out;
+}
+
+.services .icon i {
+  font-size: 36px;
+  line-height: 1;
+  color: #fff;
+}
+
+.services .title {
+  font-weight: 700;
+  margin-bottom: 15px;
+  font-size: 18px;
+}
+
+.services .title a {
+  color: #111;
+}
+
+.services .description {
+  font-size: 15px;
+  line-height: 28px;
+  margin-bottom: 0;
+}
+
+.services .icon-box:hover .title a,
+.services .icon-box:hover .description {
+  color: #6847dc;
+}
+
+.services .icon-box:hover .icon {
+  background: #fff;
+}
+
+.services .icon-box:hover .icon i {
+  color: #3498db;
+}
+
+
+.section-title {
+  text-align: center;
+  padding-bottom: 30px;
+}
+
+.section-title h2 {
+  font-family: 'Cairo';
+  font-size: 32px;
+  text-transform: uppercase;
+  position: relative;
+  color: #444347;
+}
+
+.section-title h2::before,
+.section-title h2::after {
+  content: "";
+  width: 50px;
+  height: 2px;
+  background:#E3E0ED ;
+  display: inline-block;
+}
+
+.section-title h2::before {
+  margin: 0 15px 10px 0;
+}
+
+.section-title h2::after {
+  margin: 0 0 10px 15px;
+}
+
+.section-title p {
+  margin: 15px 0 0 0;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 </style>
-
+</head>
  <!--? slider Area Start-->
  <section class="slider-area ">
             <div class="slider-active">
@@ -34,9 +221,22 @@ font-size: 30px;}
                         <div class="row justify-content-center">
                             <div class="col-xl-8 col-lg-11 col-md-12">
                                 <div class="hero__caption text-center">
-                                    <h1 data-animation="bounceIn" data-delay="0.2s">منصة جهات مستقبل كل الجهات</h1>
-                                    <p data-animation="fadeInUp" data-delay="0.4s">تُتيح للجهات فتح مكاتب افتراضية لموظفيها وغرف إجتماعات . كما تُمكن المستفيدين من الوصول للجهات بكل سهولة ويُسر </p>
-                                    
+ <h11 data-animation="bounceIn" data-delay="0.2s">منـصـة
+ <h8>
+ جـهـات 
+ </h8>
+ 
+ 
+ </h11>
+                                     <h1 data-animation="bounceIn" data-delay="0.2s"> مـسـتـقـبل كل الجـهـات</h1>
+ <p data-animation="fadeInUp" data-delay="0.4s"><br>
+									
+									تـتيح للجهات فتح مكاتب افتراضية لموظفيها وغرف اجتمـاعات <br>
+كما تمكن المستفيدين من الوصول للجهات بكل سهولة ويسر
+ 
+									
+									</p>
+
                                     <a href="{{ URL :: to ('/cards')}}" class="btn hero-btn" data-animation="fadeInUp" data-delay="0.7s">منصة جهات
                                 </a>
                                 </div>
@@ -50,9 +250,21 @@ font-size: 30px;}
                         <div class="row justify-content-center">
                             <div class="col-xl-8 col-lg-11 col-md-12">
                                 <div class="hero__caption text-center">
-                                    <h1 data-animation="bounceIn" data-delay="0.2s">منصة جهات مستقبل كل الجهات</h1>
-                                    <p data-animation="fadeInUp" data-delay="0.4s">تُتيح للجهات فتح مكاتب افتراضية لموظفيها وغرف إجتماعات . كما تُمكن المستفيدين من الوصول للجهات بكل سهولة ويُسر </p>
-                                    
+  <h11 data-animation="bounceIn" data-delay="0.2s">منـصـة
+ <h8>
+ جـهـات 
+ </h8>
+ 
+ 
+ </h11>
+                                    <h1 data-animation="bounceIn" data-delay="0.2s"> مـسـتـقـبل كل الجـهـات</h1>
+ <p data-animation="fadeInUp" data-delay="0.4s"><br>
+									
+									تـتيح للجهات فتح مكاتب افتراضية لموظفيها وغرف اجتمـاعات <br>
+كما تمكن المستفيدين من الوصول للجهات بكل سهولة ويسر
+ 
+									
+									</p>                                   
                                 <a href="{{ URL :: to ('/cards')}}" class="btn hero-btn" data-animation="fadeInUp" data-delay="0.7s"> 
                                         منصة جهات</a>
                                 </div>
@@ -81,135 +293,169 @@ font-size: 30px;}
         <br>
         <br>
         <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
- <div class="brand-area">
-            <div class="container">
-                <h1 >أكثر من 850 جهة وشركة وثقوا بنا</h1>
-                <br>
-                <div class="brand-active brand-border pt-50">
-                    <div class="single-brand">
-                        <img src=" {{ asset('public/web-assets/img/gallery/brand1.png ' ) }}" alt="">
-                    </div>
-                    <div class="single-brand">
-                        <img src=" {{ asset('public/web-assets/img/gallery/brand2.png  ') }}" alt="">
-                    </div>
-                    <div class="single-brand">
-                        <img src=" {{ asset('public/web-assets/img/gallery/brand3.png ' ) }}" alt="">
-                    </div>
-                    <div class="single-brand">
-                        <img src="{{ asset('public/web-assets/img/gallery/brand4.png ' ) }}" alt="">
-                    </div>
-                    <div class="single-brand">
-                        <img src=" {{ asset('public/web-assets/img/gallery/brand5.png ' ) }}" alt="">
-                    </div>
-                    <div class="single-brand">
-                        <img src=" {{ asset('public/web-assets/img/gallery/brand6.png ' ) }}" alt="">
-                    </div>
-                    
-                    
-                </div>
-            </div>
-        </div>
+
+
         <!-- Brand Area End -->
           <!--? Brand Area Start -->
         
 		
-        <!-- Brand Area End -->
-        <!--? Our Services Start -->
-        <section class="our-services">
-            <div class="container">
-                <div class="row justify-content-center">
-                    <div class="col-xl-7 col-lg-8">
-                        <!-- Section Tittle -->
-                        <div class="section-tittle text-center mb-80">
-                        <h2>لماذا منصة جهات هي الأفضل</h2>
-                            <!--<p></p>-->
-                        </div>
-                    </div>
-                </div>
-                <div class="row  d-flex justify-content-center">
-                    <div class=" col-lg-4 col-md-6 col-sm-6  text-center">
-                        <div class=" mb-30 single-services">
-                            <div class="text-center">
-                                <img src=" {{ asset('public/web-assets/img/icon/services1.png ') }}" alt="">
-                            </div>
-                            <br>
-                            <br>
-                            <div class="text-center ">
-                                <h2  class="font-weight-bold" ><a href="#" >التطوير المستمر</a></h2>
-                                <h3 class="font-weight-light">تمتع بتصميم صديق للجوال وموديلات متعددة الاستخدام تواكب كل جديد</h3>
-                            </div>
-                        </div>
-                    </div>
-                    <div class=" col-lg-4 col-md-6 col-sm-6">
-                        <div class=" mb-30 single-services">
-                            <div class="text-center">
-                                <img src=" {{ asset('public/web-assets/img/icon/services2.png' ) }}" alt="">
-                            </div>
-                            <br>
-                            <br>
-                            <div class="text-center">
-                                <h2 class="font-weight-bold" ><a href="#">دعم فني</a></h2>
-                                <h3>دعم فني على مدار الساعه لدينا فريق تقني مدرب على اعلى مستوي لحل كافة المشكلات</h3>
-                            </div>
-                        </div>
-                    </div>
-                    <div class=" col-lg-4 col-md-6 col-sm-6">
-                        <div class=" single-services mb-30">
-                            <div class="text-center">
-                                <img src=" {{ asset('public/web-assets/img/icon/services3.png ') }}" alt="">
-                            </div>
-                            <br>
-                            <br>
-                            <div class="text-center">
-                                <h2 class="font-weight-bold" ><a href="#">التخزين السحابي</a></h2>
-                                <h3>بكل أمان ويسر يمكنك متابعه جميع معاملاتك من اى مكان دون الخوف من فقدانها</h3>
-                            </div>
-                        </div>
-                    </div>
 
-                    <div class=" col-lg-4 col-md-6 col-sm-6">
-                        <div class="single-services  mb-30">
-                            <div class="text-center">
-                                <img src=" {{ asset('public/web-assets/img/icon/services4.png') }}" alt="">
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+ <!-- ======= Services Section ======= -->
+    <section id="services" class="services">
+      <div class="container">
+
+        <div class="section-title" data-aos="fade-up">
+          <h2>مركز جهات للتواصل الرقمي الموحد</h2>
+          
+        </div>
+
+        <div class="row">
+          <div class="col-md-6 col-lg-3 d-flex align-items-stretch mb-5 mb-lg-0">
+            <div class="icon-box" data-aos="fade-up" data-aos-delay="100">
+              <div class="icon"><i class="bx bxl-dribbble"></i></div>
+              <h4 class="title"><a href="">الموارد البشرية </a></h4>
+              <p class="description">Voluptatum deleniti atque corrupti quos dolores et quas molestias excepturi</p>
+            </div>
+          </div>
+
+          <div class="col-md-6 col-lg-3 d-flex align-items-stretch mb-5 mb-lg-0">
+            <div class="icon-box" data-aos="fade-up" data-aos-delay="200">
+              <div class="text-center">
+                                <img src=" {{ asset('public/web-assets/img/icon/pi1.png ') }}" alt="">
                             </div>
                             <br>
-                            <br>
-                            <div class="text-center">
-                                <h2 class="font-weight-bold" ><a href="#"> تقارير متعددة</a></h2>
-                                <h3>تقدم المنصه تقارير واحصائيات متعددة قابله للعرض وايضا للطباعة</h3>
-                            </div>
-                        </div>
-                    </div>
-                    
-                    <div class=" col-lg-4 col-md-6 col-sm-6">
-                        <div class=" single-services mb-30">
-                            <div class="text-center">
-                                <img src=" {{ asset('public/web-assets/img/icon/services55.png') }}" alt="">
+              <h4 class="title"><a href="">الفواتير</a></h4>
+              <p class="description">Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore</p>
+            </div>
+          </div>
+
+          <div class="col-md-6 col-lg-3 d-flex align-items-stretch mb-5 mb-lg-0">
+            <div class="icon-box" data-aos="fade-up" data-aos-delay="300">
+             <div class="text-center">
+                                <img src=" {{ asset('public/web-assets/img/icon/ed1.png ') }}" alt="">
                             </div>
                             <br>
-                            <br>
-                            <div class="text-center">
-                                <h2 class="font-weight-bold" ><a href="#">فواتير إلكترونية</a></h2>
-                                <h3>بكل مرونه تستطيع إنشاء فواتير الكترونية موثقة ب QR مع إمكانية المسح الرقمي</h3>
-                            </div>
-                        </div>
-                    </div>
-                    <div class=" col-lg-4 col-md-6 col-sm-6">
-                        <div class="single-services mb-30">
-                            <div class="text-center">
-                                <img src=" {{ asset('public/web-assets/img/icon/services66.png ') }}" alt="">
+              <h4 class="title"><a href="">المحررات </a></h4>
+              <p class="description">Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia</p>
+            </div>
+          </div>
+
+          <div class="col-md-6 col-lg-3 d-flex align-items-stretch mb-5 mb-lg-0">
+            <div class="icon-box" data-aos="fade-up" data-aos-delay="400">
+           <div class="text-center">
+                                <img src=" {{ asset('public/web-assets/img/icon/me1.png ') }}" alt="">
                             </div>
                             <br>
-                            <br>
-                            <div class="text-center">
-                                <h2 class="font-weight-bold" ><a href="#">معاملات متعددة</a></h2>
-                                <h3>إدارة المعاملات باحترافيه وإدارة شئون الموظفين بكل يسر وعدد غير محدود من العملاء</h3>
+              <h4 class="title"><a href="">الأجتماعات </a></h4>
+              <p class="description">At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis</p>
+            </div>
+          </div>
+
+        </div>
+
+      </div>
+    </section><!-- End Services Section -->
+
+
+<br>
+
+ <!-- ======= Services Section ======= -->
+    <section id="services" class="services">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-6 col-lg-3 d-flex align-items-stretch mb-5 mb-lg-0">
+            <div class="icon-box" data-aos="fade-up" data-aos-delay="100">
+              <div class="text-center">
+                                <img src=" {{ asset('public/web-assets/img/icon/of1.png ') }}" alt="">
                             </div>
-                        </div>
-                    </div>
-                </div>
-</div>
-        </section>
+                            <br>
+              <h4 class="title"><a href="">المكاتب الافتراضية</a></h4>
+              <p class="description">Voluptatum deleniti atque corrupti quos dolores et quas molestias excepturi</p>
+            </div>
+          </div>
+
+          <div class="col-md-6 col-lg-3 d-flex align-items-stretch mb-5 mb-lg-0">
+            <div class="icon-box" data-aos="fade-up" data-aos-delay="200">
+              <div class="icon"><i class="bx bx-file"></i></div>
+              <h4 class="title"><a href="">الفعاليات </a></h4>
+              <p class="description">Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore</p>
+            </div>
+          </div>
+
+          <div class="col-md-6 col-lg-3 d-flex align-items-stretch mb-5 mb-lg-0">
+            <div class="icon-box" data-aos="fade-up" data-aos-delay="300">
+              <div class="text-center">
+                                <img src=" {{ asset('public/web-assets/img/icon/mall1.png ') }}" alt="">
+                            </div>
+                            <br>
+              <h4 class="title"><a href="">مول</a></h4>
+              <p class="description">Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia</p>
+            </div>
+          </div>
+
+          <div class="col-md-6 col-lg-3 d-flex align-items-stretch mb-5 mb-lg-0">
+            <div class="icon-box" data-aos="fade-up" data-aos-delay="400">
+             <div class="text-center">
+                                <img src=" {{ asset('public/web-assets/img/icon/co1.png ') }}" alt="">
+                            </div>
+                            <br>
+              <h4 class="title"><a href="">الحسابات </a></h4>
+              <p class="description">At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis</p>
+            </div>
+          </div>
+
+        </div>
+
+      </div>
+    </section><!-- End Services Section -->
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+        
         <!-- Our Services End -->
         <!--? About Area  -->
         <section class="about-area2 section-padding40 section-bg2" data-background="{{ asset('public/web-assets/img/gallery/section-bg3.png') }}">
@@ -248,33 +494,39 @@ font-size: 30px;}
         </section>
         <!-- About Area End -->
         <!--? About Area  -->
-        <section class="about-area2 pb-bottom">
+        
+                 
+ <div class="brand-area">
             <div class="container">
-                <div class="row align-items-center">
-                    <div class="col-xl-6 col-lg-5 col-md-9">
-                        <!-- about-img -->
-                        <div class="about-img ">
-                            <img src=" {{ asset('public/web-assets/img/gallery/about1.jpg ') }}" alt="">
-                        </div>
+                <h1 >أكثر من 850 جهة وشركة وثقوا بنا</h1>
+                <br>
+                <div class="brand-active brand-border pt-50">
+                    <div class="single-brand">
+                        <img src=" {{ asset('public/web-assets/img/gallery/brand1.png ' ) }}" alt="">
                     </div>
-                    <div class="col-xl-5 col-lg-6 col-md-12">
-                        <div class="about-caption mb-50">
-                            <div class="about-icon">
-                                <img src="  {{ asset('public/web-assets/img/icon/about.svg') }}" alt="">
-                            </div>
-                            <!-- Section Tittle -->
-                            <div class="section-tittle mb-25">
-                                <h2>منصة المستفيد</h2>
-                            </div>
-                            
-                            <p class="mb-20">  كل شخص يستطيع بهويته الشخصية ان يفتح له مكتب أفتراضي ويتواصل من مكتبه مع أي جهة موجوده داخل المنصة بسهولة ويسر والتمتع بكافة المزايا التقنية من ترتيب وتنظيم المعاملات والاجتماعات والمواعيد فلا حاجه للذهاب الى مقر الجهة ولا تقلق من نسيان موعد تابع جميع معاملاتك لحظه بلحظه كل هذا واكثر سارع بالتسجيل الان</p>
-                            <a href="https://app.jehat.sa/client_register.aspx" class="all-btn"><button type="button" class="btn btn-outline-secondary  pt-8 btn-sm">سجل الأن</button></a>
-                        </div>
+                    <div class="single-brand">
+                        <img src=" {{ asset('public/web-assets/img/gallery/brand2.png  ') }}" alt="">
                     </div>
+                    <div class="single-brand">
+                        <img src=" {{ asset('public/web-assets/img/gallery/brand3.png ' ) }}" alt="">
+                    </div>
+                    <div class="single-brand">
+                        <img src="{{ asset('public/web-assets/img/gallery/brand4.png ' ) }}" alt="">
+                    </div>
+                    <div class="single-brand">
+                        <img src=" {{ asset('public/web-assets/img/gallery/brand5.png ' ) }}" alt="">
+                    </div>
+                    <div class="single-brand">
+                        <img src=" {{ asset('public/web-assets/img/gallery/brand6.png ' ) }}" alt="">
+                    </div>
+                    
+                    
                 </div>
             </div>
-        </section>
-        <!-- About Area End -->
+        </div>
+
+        
+
         
         <!--? Testimonial Area Start -->
         <section class="testimonial-area fix">    
@@ -283,7 +535,7 @@ font-size: 30px;}
                     <div class="col-xl-7 col-lg-8">
                         <!-- Section Tittle -->
                         <div class="section-tittle text-center">
-                            <h2>ماذا قال عملائنا عنا</h2>
+                            <h2>ماذا قالوا عنا </h2>
                         </div>
                     </div>
                 </div>

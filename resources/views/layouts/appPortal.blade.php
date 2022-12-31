@@ -1,6 +1,8 @@
 <!doctype html>
 <html class="no-js" lang="zxx">
 
+
+
 <head>
     <meta charset="utf-8">
     <meta http-equiv="x-ua-compatible" content="ie=edge">
@@ -27,8 +29,62 @@
     <link rel="stylesheet" href="{{ asset('public/web-assets/css/nice-select.css ') }}">
     <link rel="stylesheet" href="{{ asset('public/web-assets/css/style.css ') }}">
      <link rel="stylesheet" href="{{ asset('public/web-assets/css/css.css ') }}">
+     <link href='https://fonts.googleapis.com/css?family=Cairo' rel='stylesheet'>
 </head>
 
+<style>
+
+*{
+  font-family: 'Cairo';
+}
+.header-sticky.sticky-bar {
+    background: #fff
+}
+
+.main-header .main-menu ul li a {
+    color: #ccc9d5;
+    font-weight: 600;
+    padding: 28px 2px;
+    display: block;
+    font-size: 16px;
+    -webkit-transition: .3s;
+    -moz-transition: .3s;
+    -o-transition: .3s;
+    transition: .3s;
+    text-transform: capitalize
+}
+
+.main-header .main-menu ul li a::before {
+    content: "";
+    position: absolute;
+    width: 0;
+    background: #fff;
+    bottom: 30px;
+    -webkit-transition: .4s;
+    -o-transition: .4s;
+    transition: .4s;
+    right: 5px;
+    left: -5px;
+    height: 0px;
+    z-index: -1
+}
+
+.footer-padding {
+    padding-top:190px;
+    padding-bottom: 0px
+}
+
+
+
+
+
+
+
+
+
+
+
+</style>
 <body>
     <!-- ? Preloader Start -->
     <div id="preloader-active">
@@ -116,7 +172,7 @@
     
      <section class="wantToWork-area ">
             <div class="container">
-                <div class="wants-wrapper w-padding2 section-bg2" data-background="{{ asset('public/web-assets/img/gallery/section_bg02.png') }}">
+                <div class="wants-wrapper w-padding2 section-bg2" data-background="{{ asset('public/web-assets/img/gallery/backgapps.png') }}">
                     <div class="row align-items-center justify-content-center">
                         <div class="col-xl-7 col-lg-9 col-md-8">
                             <div class="wantToWork-caption text-center">
