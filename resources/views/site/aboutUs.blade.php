@@ -18,31 +18,20 @@
       <div class="single-slider slider-height2">
               </div>
             </div>
-          </div>
-        </div>
-      </div>
-    </div>
   </section>
 
 
 
 
-  <div class="inner-page pb-5">
+  <div class="inner-page pb-5 ">
 	<div class="inner-page-container">
-
         <div class="container">
         <div class="row justify-content-center">
             <div class="card col-9 col-md-10 col-lg-15">
                 <div class="card-wrapper">
                     <div class="card-box align-center">
-
-
-
-
-
-
-        <section class="about">
-  <div class="container ">
+                      <br>
+  <section class="about p-5">
     <div class="row">
       <div class="col-lg-7">
         <div class="about-content">
@@ -132,6 +121,7 @@
 
             </div>
         </section>
+        
  
 
 
