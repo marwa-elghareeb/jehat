@@ -26,7 +26,7 @@
     <link rel="stylesheet" href=" {{ asset('public/web-assets/css/slick.css ') }}">
     <link rel="stylesheet" href="{{ asset('public/web-assets/css/nice-select.css ') }}">
     <link rel="stylesheet" href="{{ asset('public/web-assets/css/style.css ') }}">
-     <link rel="stylesheet" href="{{ asset('public/web-assets/css/css.css ') }}">
+    <link rel="stylesheet" href="{{ asset('public/web-assets/css/css.css ') }}">
 </head>
 
 <body>
@@ -63,28 +63,22 @@
                                             <ul id="navigation">
                                                 <li class="active"><a href="{{ URL :: to ('/')}}">الرئيسية</a></li>
                                                 <li><a href="{{ URL :: to ('/aboutUs')}}">من نحن</a></li>
-                                                
-                                                
+
+
                                                 <li><a href="{{ URL :: to ('/contactUs')}}">تواصل معنا</a></li>
 
                                                 <li><a href="#">دليل المستخدم</a>
-                                                <ul class="submenu">
-                                                    
-                                                    <li><a href="{{ URL :: to ('/helpcenter')}}">مركز المساعدة</a></li>
-                                                    <li><a href="{{ URL :: to ('/media')}}">المركز الأعلامي </a></li>
-                                                    <li><a href="{{ URL :: to ('/question')}}">اسئلة شائعة</a></li>
-                                                  
-                                                </ul>
+                                                    <ul class="submenu">
 
-                                                <!--li><a href="{{ URL :: to ('/helpcenter')}}">مركز المساعدة </a></li-->
-                                                <li><a href="{{ URL :: to ('/cards')}}">الأبراج الأفتراضية</a>
-                                                    <!--ul class="submenu">
-                                                            <li><a href="blog.html">الشركات</a></li>
-                                                            <li><a href="blog_details.html">الموظفين</a></li>
-                                                           <<li><a href="elements.html">Element</a></li>
-</ul-->
+                                                        <li><a href="{{ URL :: to ('/helpcenter')}}">مركز المساعدة</a></li>
+                                                        <li><a href="{{ URL :: to ('/media')}}">المركز الأعلامي </a></li>
+                                                        <li><a href="{{ URL :: to ('/question')}}">اسئلة شائعة</a></li>
 
-                                                </li>
+                                                    </ul>
+
+                                                    <!--li><a href="{{ URL :: to ('/helpcenter')}}">مركز المساعدة </a></li-->
+                                                <li><a href="{{ URL :: to ('/cards')}}">الأبراج الأفتراضية</a></li>
+                                                <li><a href="{{ URL :: to ('/news')}}"> الاخبار</a></li>
                                             </ul>
                                         </nav>
                                     </div>
@@ -112,30 +106,30 @@
 
 
 
-     <!--? Want To work 01-->
-    
-     <section class="wantToWork-area ">
-            <div class="container">
-                <div class="wants-wrapper w-padding2 section-bg2" data-background="{{ asset('public/web-assets/img/gallery/section_bg02.png') }}">
-                    <div class="row align-items-center justify-content-center">
-                        <div class="col-xl-7 col-lg-9 col-md-8">
-                            <div class="wantToWork-caption text-center">
-                                <h2>كيف يمكنني تحميل التطبيق</h2>
-                                <p>تستطيع تحميل تطبيق جهات من متجر جوجل أو أبستور</p>
-                                <a href="https://apps.apple.com/eg/app/jehat/id1600983802">
-                                    <img src=" {{ asset('public/web-assets/img/gallery/nmn.png') }}" alt="" style="height: 50px; width: 150px;"></a>
-                                <a href="https://play.google.com/store/apps/">
-                                    <img src="{{ asset('public/web-assets/img/gallery/mmm.png') }}" alt="" style="height: 50px; width: 150px;"></a>
-                            </div>
+    <!--? Want To work 01-->
+
+    <section class="wantToWork-area ">
+        <div class="container">
+            <div class="wants-wrapper w-padding2 section-bg2" data-background="{{ asset('public/web-assets/img/gallery/section_bg02.png') }}">
+                <div class="row align-items-center justify-content-center">
+                    <div class="col-xl-7 col-lg-9 col-md-8">
+                        <div class="wantToWork-caption text-center">
+                            <h2>كيف يمكنني تحميل التطبيق</h2>
+                            <p>تستطيع تحميل تطبيق جهات من متجر جوجل أو أبستور</p>
+                            <a href="https://apps.apple.com/eg/app/jehat/id1600983802">
+                                <img src=" {{ asset('public/web-assets/img/gallery/nmn.png') }}" alt="" style="height: 50px; width: 150px;"></a>
+                            <a href="https://play.google.com/store/apps/">
+                                <img src="{{ asset('public/web-assets/img/gallery/mmm.png') }}" alt="" style="height: 50px; width: 150px;"></a>
                         </div>
                     </div>
                 </div>
             </div>
-        </section>
-        <!-- Want To work End -->
+        </div>
+    </section>
+    <!-- Want To work End -->
 
     </main>
-</section>
+    </section>
 
 
 
@@ -154,7 +148,7 @@
                                     </div>
                                     <div class="footer-tittle">
                                         <div class="footer-tittle text-center">
-                                            <p>  &nbsp; يمكنك متابعتنا على قنوات التواصل الأجتماعي </p>
+                                            <p> &nbsp; يمكنك متابعتنا على قنوات التواصل الأجتماعي </p>
                                         </div>
                                     </div>
                                     <!-- social -->
@@ -174,10 +168,10 @@
                                     <h4>عن منصة جهات</h4>
                                     <ul>
                                         <li><a href="{{ URL :: to ('/aboutUs')}}"> من نحن </a></li>
-                                        <li><a href="{{ URL :: to ('/ourTeam')}}">  فريق العمل </a></li>
+                                        <li><a href="{{ URL :: to ('/ourTeam')}}"> فريق العمل </a></li>
                                         <li><a href="#">الشهادات</a></li>
                                         <li><a href="#">اعضاء الادارة</a></li>
-                                        
+
 
                                     </ul>
                                 </div>
@@ -220,9 +214,9 @@
                             <div class="col-xl-12 ">
                                 <div class="footer-copy-right text-center">
                                     <p>
-                                        
+
                                         جميع الحقوق محفوظة منصة جهات &copy; 2022
-                                   
+
                                     </p>
                                 </div>
                             </div>
