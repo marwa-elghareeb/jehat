@@ -26,7 +26,6 @@
             <div class="col-xl-8 col-lg-11 col-md-12">
               <div class="hero__caption hero__caption2 text-center ">
               <h1 data-animation="bounceIn" data-delay="0.2s">تواصل معنا نحن هنا لمساعدتك</h1>
-
                            <p data-animation="fadeInUp" data-delay="0.4s">
                                بحاجة الى التحدث معنا؟
                                نحن نستمع إليك. يرجى اختيار وسيلة الاتصال المفضلة لديك
@@ -45,10 +44,27 @@
     <!--? slider Area Start-->
 
     <!--?  Contact Area start  -->
- <br>
- <br>
-  <section  class="team text-center py-5" style="background-position: right top; background-size: 100% 100%; background-color: #FFFFFF; background-image: url('media/background/down-bg.png'); background-repeat: no-repeat;">
-  <div class="container">
+
+ <div class="inner-page pb-5 ">
+	<div class="inner-page-container">
+        <div class="container">
+        <div class="row justify-content-center">
+            <div class="card col-9 col-md-10 col-lg-15">
+                <div class="card-wrapper">
+                    <div class="card-box align-center">
+              <div class="hero__caption hero__caption2 text-center ">
+              <br>
+              <h1 data-animation="bounceIn" data-delay="0.2s">تواصل معنا نحن هنا لمساعدتك</h1>
+              <br>
+                           <p data-animation="fadeInUp" data-delay="0.4s">
+                               بحاجة الى التحدث معنا؟
+                               نحن نستمع إليك. يرجى اختيار وسيلة الاتصال المفضلة لديك
+                               وسيقوم أحد موظفينا بالتواصل معك قريبًا. ... سوف يسعدنا أن نسمع صوتك</p>                <div class="screen-img ">
+                  <!--img src="{{ asset('public/web-assets/img/gallery/screen.png' ) }}"
+                  alt="" class=" w-50"-->
+                </div>
+              </div>
+                      <br>
     <div class="row">
 		<div class="col-md-4" style="left: 0px; top: 0px; height: 346px; visibility: visible;">
         <div class="contact-infos media-body">

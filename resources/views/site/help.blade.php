@@ -35,8 +35,23 @@
         </div>
     </section>
 
-    <div class="faq-section section-padding40">
+  <div class="inner-page pb-5 ">
+	<div class="inner-page-container">
         <div class="container">
+        <div class="row justify-content-center">
+            <div class="card col-9 col-md-10 col-lg-15">
+                <div class="card-wrapper">
+                    <div class="card-box align-center">
+                      <br>
+                      <div class="hero__caption hero__caption2 text-center">
+                                <h1 data-animation="bounceIn" data-delay="0.2s">مركز المساعدة</h1>
+                                <!--div class="screen-img ">
+                                    <img src="{{ asset('public/web-assets/img/gallery/screen.png' ) }}" alt="" class=" w-50">
+                                </div-->
+                            </div>
+                            <br>
+    <div class="faq-section section-padding40">
+        
 
             <div class="row justify-content-center">
                 @foreach($allCat as $data)
