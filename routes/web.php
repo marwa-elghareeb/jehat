@@ -57,6 +57,7 @@ Route::get('/contactUs', [IndexController::class, 'contactUs']);
 Route::get('/media', [IndexController::class, 'media']);
 Route::get('/footerPages', [IndexController::class, 'footerPages']);
 Route::get('/ourTeam', [IndexController::class, 'ourTeam']);
+Route::get('/news', [IndexController::class, 'news']);
 
 //Help Center
 Route::get('/helpcenter', [IndexController::class, 'help']);
