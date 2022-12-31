@@ -8,6 +8,30 @@
 .slider-area2.slider-area2 {
     background-image: url('public/web-assets/img/hero/jehatp90.png')
 }
+.panel .panel-heading{
+    padding: 0;
+    border-radius:10px;
+    border: none;
+}
+.panel-heading a{
+    display: block;
+    border:none;
+    padding:20px 35px 20px;
+    font-size: 20px;
+    background-color:#fff;
+    font-weight:600;
+    position: relative;
+    color:#fff;
+    box-shadow:none;
+    transition:all 0.1s ease 0;
+}
+
+.panel-heading:hover a:after,
+.panel-heading:hover a.collapsed:after{
+    transform:rotate(360deg);
+}
+.panel-heading a.collapsed:after{
+    content: "\f067";}
 </style>
 
 <main>
@@ -30,21 +54,28 @@
     </div>
   </section>
   <!--? Our Services Start -->
-
-  <div class="faq-section section-padding40">
-    <div class="container">
-
-      <div class="row justify-content-center">
-
-        <div class="col-lg-10">
-          <div class="section-tittle">
+  
+  <div class="inner-page pb-5 ">
+	<div class="inner-page-container">
+        <div class="container">
+        <div class="row justify-content-center">
+            <div class="card col-9 col-md-10 col-lg-15">
+                <div class="card-wrapper">
+                    <div class="card-box align-center">
+                      <br>
+  <div class=" ">
+  <div class="section-tittle">
             <h2> الاسئله الشائعه</h2>
           </div>
+      <div class="row justify-content-center">
+
+        <div class="col-md-offset-1 col-md-10 ">
+      
           <div class="collapse-wrapper">
           @foreach($allData as $data)
             <div class="accordion" id="accordionExample_{{ $data->id}}">
               <div class="card">
-                <div class="card-header" id="heading_{{ $data->id}}">
+                <div class="card-header panel-heading" id="heading_{{ $data->id}}">
                   <h2 class="mb-0">
                     <a href="#" class="btn-link collapsed" data-toggle="collapse"
                      data-target="#collapse_{{ $data->id}}" aria-expanded="false" 
@@ -58,14 +89,12 @@
                     {{$data->question_ar}}
                       <br>
                       {{ $data->answer_ar}}
-                    </h3>
-                   
-                    
-                    
+                    </h3>  
                   </div>
                 </div>
               </div>
             </div>
+            <br>
             @endforeach
           </div>
         </div>
@@ -74,6 +103,8 @@
     </div>
   </div>
   </div>
+  
+  
 </main>
 
 

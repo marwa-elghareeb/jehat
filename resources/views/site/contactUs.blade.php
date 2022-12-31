@@ -12,26 +12,23 @@
 
 .slider-area.slider-area2,
 .slider-area2.slider-area2 {
-    background-image: url('public/web-assets/img/13333.jpg')
+    background-image: url('public/web-assets/img/hero/jehatp90.png')
 }
 
+
+
+.card{
+border-radius:4rem
+}
 </style>
 <main>
 <section class="slider-area slider-area2">
     <div class="slider-active">
       <!-- Single Slider -->
       <div class="single-slider slider-height2">
-        <div class="container">
-          <div class="row justify-content-center ">
-            <div class="col-xl-8 col-lg-11 col-md-12">
-              <div class="hero__caption hero__caption2 text-center ">
-                  <!--img src="{{ asset('public/web-assets/img/gallery/screen.png' ) }}"
-                  alt="" class=" w-50"-->
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
+        
+           
+          
       </div>
     </div>
   </section>
@@ -47,7 +44,7 @@
             <div class="card col-9 col-md-10 col-lg-15">
                 <div class="card-wrapper">
                     <div class="card-box align-center">
-              <div class="hero__caption hero__caption2 text-center ">
+              <div class="hero_caption hero_caption2 text-center ">
               <br>
               <h1 data-animation="bounceIn" data-delay="0.2s">تواصل معنا نحن هنا لمساعدتك</h1>
               <br>
