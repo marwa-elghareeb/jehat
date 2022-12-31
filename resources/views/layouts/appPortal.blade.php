@@ -133,14 +133,8 @@
                                                 </ul>
 
                                                 <!--li><a href="{{ URL :: to ('/helpcenter')}}">مركز المساعدة </a></li-->
-                                                <li><a href="{{ URL :: to ('/cards')}}">الأبراج الأفتراضية</a>
-                                                    <!--ul class="submenu">
-                                                            <li><a href="blog.html">الشركات</a></li>
-                                                            <li><a href="blog_details.html">الموظفين</a></li>
-                                                           <<li><a href="elements.html">Element</a></li>
-</ul-->
-
-                                                </li>
+                                                <li><a href="{{ URL :: to ('/cards')}}">الأبراج الأفتراضية</a></li>
+                                                <li><a href="{{ URL :: to ('/news')}}"> الاخبار</a></li>
                                             </ul>
                                         </nav>
                                     </div>
@@ -217,7 +211,7 @@
                                     <div class="footer-social">
                                         <a target="_blank" href="https://twitter.com/jehat_Platform"><i class="fab fa-twitter"></i></a>
                                         <a target="_blank" href="https://www.facebook.com/profile.php?id=100084844831017"><i class="fab fa-facebook-f"></i></a>
-                                        <a target="_blank" href="#"><i class="fab fa-linkedin"></i></a>
+                                        <a target="_blank" href="https://www.linkedin.com/in/jehat-platform-729a5025b/"><i class="fab fa-linkedin"></i></a>
                                         <a target="_blank" href="https://www.instagram.com/invites/contact/?i=an5lcynrcsp3&utm_content=n0t065o"><i class="fab fa-instagram"></i></a>
                                         <a target="_blank" href="https://www.youtube.com/channel/UCfwE7stMZzQlurXJN2eQvIQ"><i class="fab fa-youtube"></i></a>
                                     </div>
