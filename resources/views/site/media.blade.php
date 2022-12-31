@@ -8,7 +8,8 @@
     background-image: url('public/web-assets/img/hero/jehatp90.png')
 }
 .btn {
-    font-size: 30px;
+    font-size: 25px;
+	border-radius: 10px;
 }
 </style>
 <main>
@@ -34,10 +35,11 @@
 	
   
 	<div class="row align-items-center justify-content-center ">
+	<div class="col-xl-10 ">
 	<a href="{{ asset('public/web-assets/presentation.pdf' ) }}" class="btn hero-btn"  data-animation="fadeInUp" data-delay="0.7s" > تحميل ملف آلية عمل المنصة </a>
 	<a href="{{ asset('public/web-assets/user guide.pdf' ) }}"class="btn hero-btn"  data-animation="fadeInUp" data-delay="0.7s"> تحميل ملف دليل المستخدم </a>
 	</div>             
-              
+	</div>         
 
 	<div class="section-top-border">
 	<div class="container">
