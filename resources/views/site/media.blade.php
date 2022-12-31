@@ -107,7 +107,7 @@
 </div>
 	<div class="section-top-border">
 	<div class="container">
-		<h3>شرح منصة الموظف</h3>
+		<h1>شرح منصة الموظف</h1>
 		<div class="row gallery-item">
 			<div class="col-md-3">
 				<a class="popup-video btn-icon" href="https://www.jehat.sa/media/mp4/Add_dep.mp4" class="video-wrap position-relative">
