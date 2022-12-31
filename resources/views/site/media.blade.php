@@ -8,6 +8,7 @@
     background-image: url('public/web-assets/img/hero/jehatp90.png')
 }
 .btn {
+	background: #404DFF;
     font-size: 25px;
 	border-radius: 10px;
 }
@@ -32,15 +33,23 @@
 		</div>
 		
 	</section>
+	<div class="container">
+	<div class="d-flex justify-content-end">
+	<div class="d-flex flex-column" >
 	
-  
-	<div class="row align-items-center justify-content-center ">
-	<div class="col-xl-10 ">
-	<a href="{{ asset('public/web-assets/presentation.pdf' ) }}" class="btn hero-btn"  data-animation="fadeInUp" data-delay="0.7s" > تحميل ملف آلية عمل المنصة </a>
+	<!--<div class="col-xl-10 ">-->
+		<div>
+			
+	<a href="{{ asset('public/web-assets/presentation.pdf' ) }}"  class="btn hero-btn"  data-animation="fadeInUp" data-delay="0.7s" > تحميل ملف آلية عمل المنصة </a>
+		</div>
+<br/>
+		<div>
 	<a href="{{ asset('public/web-assets/user guide.pdf' ) }}"class="btn hero-btn"  data-animation="fadeInUp" data-delay="0.7s"> تحميل ملف دليل المستخدم </a>
-	</div>             
+	</div> 
+	</div>            
 	</div>         
-
+</div>
+</div>
 	<div class="section-top-border">
 	<div class="container">
 		<h1>شرح منصة مستفيد </h1>
