@@ -43,6 +43,11 @@ class IndexController extends Controller
         return view('site.allfaq');
     }
 
+    public function news()
+    {
+        return view('site.news');
+    }
+
     /*===Help Center==============================*/
     
     public function help()

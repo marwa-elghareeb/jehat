@@ -1,4 +1,4 @@
-/*  
+/*
 Template Name: mlpdesign07.1 Khaki
 Version: Pure CSS version
 Author:webmasterneo, MLP Design
@@ -8,7 +8,7 @@ Author URI: http://www.mlpdesign.net/
 /* Global Settings */
 @import url(https://fonts.googleapis.com/css?family=Open+Sans);
 body {
-background: #3d6345;
+background: #b898bd;
 /*background: -moz-linear-gradient(top, #7c803d 0%, #000000 75%, #000000 100%);
 background: -webkit-gradient(left top, left bottom, color-stop(0%, #7c803d), color-stop(75%, #000000), color-stop(100%, #000000));
 background: -webkit-linear-gradient(top, #7c803d 0%, #000000 75%, #000000 100%);
