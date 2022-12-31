@@ -34,7 +34,7 @@
 		
 	</section>
 	<div class="container">
-	<div class="d-flex justify-content-end">
+	<div class="d-flex justify-content-center">
 	<div class="d-flex flex-column" >
 	
 	<!--<div class="col-xl-10 ">-->
