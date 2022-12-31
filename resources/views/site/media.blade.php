@@ -29,17 +29,8 @@
 		
 	</section>
 	
-  <div class="inner-page pb-5 ">
-	<div class="inner-page-container">
-        <div class="container">
-        <div class="row justify-content-center">
-            <div class="card col-9 col-md-10 col-lg-15">
-                <div class="card-wrapper">
-                    <div class="card-box align-center">
-                      <br>
+  
 	<div class="row align-items-center justify-content-center ">
-
-	
 	<a href="{{ asset('public/web-assets/presentation.pdf' ) }}" class="btn hero-btn"  data-animation="fadeInUp" data-delay="0.7s" > تحميل ملف آلية عمل المنصة </a>
 	<a href="{{ asset('public/web-assets/user guide.pdf' ) }}"class="btn hero-btn"  data-animation="fadeInUp" data-delay="0.7s"> تحميل ملف دليل المستخدم </a>
 	</div>             
@@ -48,7 +39,7 @@
 	<div class="section-top-border">
 	<div class="container">
 		<h1>شرح منصة مستفيد </h1>
-		<div class="row gallery-item ">
+		<div class="row gallery-item justify-content-center ">
 			<div class="col-md-3 col d-flex justify-content-center m-5 p-5">
 				<a class="popup-video btn-icon" href="https://www.jehat.sa/media/mp4/Add_dep.mp4" class="video-wrap position-relative">
 					<img class="single-gallery-image" src="{{ asset('public/web-assets/img/g1.jpg' ) }}">
@@ -116,7 +107,7 @@
 	<div class="section-top-border">
 	<div class="container">
 		<h1>شرح منصة الموظف</h1>
-		<div class="row gallery-item">
+		<div class="row gallery-item justify-content-center">
 			<div class="col-md-3 col d-flex justify-content-center m-5 p-5">
 				<a class="popup-video btn-icon" href="https://www.jehat.sa/media/mp4/Add_dep.mp4" class="video-wrap position-relative">
 				<img class="single-gallery-image" src="{{ asset('public/web-assets/img/h1.jpg' ) }}">
