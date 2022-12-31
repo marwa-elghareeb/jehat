@@ -7,6 +7,9 @@
 .slider-area2.slider-area2 {
     background-image: url('public/web-assets/img/hero/jehatp90.png')
 }
+.btn {
+    font-size: 30px;
+}
 </style>
 <main>
 	<!--? slider Area Start-->
