@@ -3,53 +3,158 @@
 @section('content')
 
 
-<style> .slider-area.slider-area2,
-.slider-area2.slider-area2 {
-    background-image: url('public/web-assets/img/hero/jehatp90.png')
+<style> 
+
+.row {
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+    margin-right: 0px;
+    margin-left: 0px;
 }
+
+.slider-area.slider-area3,
+.slider-area3.slider-area3 {
+    background-image: url('public/web-assets/img/hero/ban3a.png')
+}
+
+.slider-height2 {
+    min-height: 658px;
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover
+}
+
 .btn {
 	background: #404DFF;
     font-size: 25px;
 	border-radius: 10px;
 }
+
+.card{
+border-radius:1rem
+}
+.card {
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 30px;
+    padding-right: 25px;
+    padding-bottom: 50px;
+    padding-left: 0px
+}
+.container3 {
+   
+    margin-top: -200px;
+    margin-right: auto;
+    margin-bottom: 0px;
+    margin-left: auto;
+    padding-top: 0px;
+    padding-right: 30px;
+    padding-bottom: 0px;
+    padding-left: 30px;
+}
+
+.section-title h2 {
+  font-family: 'Cairo';
+  font-size: 20px;
+  text-transform: uppercase;
+  position: relative;
+  color: #444347;
+}
+
+
+
+
+
 </style>
 <main>
 	<!--? slider Area Start-->
-	<section class="slider-area slider-area2">
+	<section class="slider-area slider-area3">
 		<div class="slider-active">
 			<!-- Single Slider -->
 			<div class="single-slider slider-height2">
 				<div class="container">
 					<div class="row justify-content-center">
 						<div class="col-xl-8 col-lg-11 col-md-12">
-							<div class="hero__caption hero__caption2 text-center">
-								<h1 data-animation="bounceIn" data-delay="0.2s"> المركز الاعلامي</h1>
+							<div class="hero__caption hero__caption2 text-right">
+								<h2 data-animation="bounceIn" data-delay="0.2s"> 
+								
+							المركز الاعلامي 
+
+							
+     
+            <div class="card col-12 col-md-12 col-lg-3">
+			<div class="section-title h2"style="text-align:right">
+
+	<a href="{{ asset('public/web-assets/presentation.pdf' ) }}"  " >
+ <h2>تحميل ملف آلية عمل المنصة <img src=" {{ asset('public/web-assets/img/icon/pdficon.svg' ) }} " alt="" style="height: 40px; width: 40px;"> </h2></a>
+ 
+                            </div>
+		</div>
+         
+	<br>
+	
+	
+      
+            <div class="card col-12 col-md-12 col-lg-3">
+			<div class="section-title h2" style="text-align:right">
+	<a href="{{ asset('public/web-assets/user guide.pdf' ) }}"  "> 
+	
+	<h2> تحميل ملف دليل المستخدم  <img src=" {{ asset('public/web-assets/img/icon/pdficon.svg' ) }} " alt="" style="height: 40px; width: 40px;"> </h2></a>
+	</div>      
+</div>
+
+	
+</h2>
+
 								
 							</div>
+							
 						</div>
+						
 					</div>
 				</div>
 			</div>
 		</div>
 		
 	</section>
-	<div class="container">
-	<div class="d-flex justify-content-center">
-	<div class="d-flex flex-column" >
+
+
+
+
+
+
+
+
+
+
+
+          
+
+
+
+
+
+               
+      
 	
-	<!--<div class="col-xl-10 ">-->
-		<div>
+
 			
-	<a href="{{ asset('public/web-assets/presentation.pdf' ) }}"  class="btn hero-btn"  data-animation="fadeInUp" data-delay="0.7s" > تحميل ملف آلية عمل المنصة </a>
-		</div>
-<br/>
-		<div>
-	<a href="{{ asset('public/web-assets/user guide.pdf' ) }}"class="btn hero-btn"  data-animation="fadeInUp" data-delay="0.7s"> تحميل ملف دليل المستخدم </a>
-	</div> 
-	</div>            
-	</div>         
-</div>
-</div>
+  
+
+
+
+   
+
+
+
+
+
+
+
 	<div class="section-top-border">
 	<div class="container">
 		<h1>شرح منصة مستفيد </h1>
