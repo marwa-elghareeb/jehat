@@ -32,8 +32,45 @@
 }
 .panel-heading a.collapsed:after{
     content: "\f067";}
-</style>
 
+
+.container4 {
+    max-width: 1500px;
+    margin-top: -300px;
+    margin-right: auto;
+    margin-bottom: 0px;
+    margin-left: auto;
+    padding-top: 0px;
+    padding-right: 30px;
+    padding-bottom: 0px;
+    padding-left: 30px;
+}
+.card{
+border-radius:4rem
+}
+
+.card {
+    text-align: center;
+    box-shadow: rgb(0 0 0 / 5%) 0px 4px 20px 7px;
+    display: flex;
+    padding-top: 0px; 
+     padding-right: 400px; 
+     padding-bottom: 0px; 
+    padding-left: 400px;
+
+    }
+
+.slider-area .hero__caption h1, .slider-area2 .hero__caption h1 {
+  font-family: 'Cairo';
+    font-size: 54px;
+    font-weight: 600;
+    color: #fff;
+    line-height: 1.3;
+    margin-bottom: 22px;
+
+
+
+</style>
 <main>
   <!--? slider Area Start-->
   <section class="slider-area slider-area2">
@@ -44,7 +81,7 @@
           <div class="row justify-content-center">
             <div class="col-xl-8 col-lg-11 col-md-12">
               <div class="hero__caption hero__caption2 text-center">
-                <h1 data-animation="bounceIn" data-delay="0.2s"> الاسئله الشائعه </h1>
+                <h1 data-animation="bounceIn" data-delay="0.2s"> الاسئلة الشائعة</h1>
 
               </div>
             </div>
@@ -55,18 +92,19 @@
   </section>
   <!--? Our Services Start -->
   
-  <div class="inner-page pb-5 ">
+  
+  <div class=" ">
+  <div class="section-tittle">
+<h2> الاسئلة الشائعة </h2>
+          </div>
+          <div class="inner-page pb-5 ">
 	<div class="inner-page-container">
-        <div class="container">
+        <div class="container4">
         <div class="row justify-content-center">
             <div class="card col-9 col-md-10 col-lg-15">
                 <div class="card-wrapper">
                     <div class="card-box align-center">
                       <br>
-  <div class=" ">
-  <div class="section-tittle">
-            <h2> الاسئله الشائعه</h2>
-          </div>
       <div class="row justify-content-center">
 
         <div class="col-md-offset-1 col-md-10 ">
