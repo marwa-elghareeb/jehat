@@ -1,6 +1,14 @@
 @extends('layouts.appPortal')
 @section('content')
 <style>
+.slider-area.slider-area2,
+.slider-area2.slider-area2 {
+    background-image: url('public/web-assets/img/hero/jehatp90.png')
+}
+.card{
+border-radius:4rem
+}
+
  .icon i {
   display: inline-block;
     font-size: 16px;
@@ -13,7 +21,7 @@
     border-radius: 50%;
     margin:0 5px;
 }
- .icon-block{
+.icon-block{
     float:left;
     width:100%;
     margin-top:15px;
@@ -26,12 +34,17 @@
   color:#fff;
   text-decoration:none;
 }
+
+
 </style>
 <main>
-    <!--?-->
-    <section class="slider-area slider-area2">
+    
+
+
+
+    <!--   <section class="slider-area slider-area2">
         <div class="slider-active">
-            <!-- Single Slider -->
+            <!-- Single Slider 
             <div class="single-slider slider-height2">
                 <div class="container">
                     <div class="row justify-content-center">
@@ -45,12 +58,31 @@
                 </div>
             </div>
         </div>
-    </section>
+    </section>-->
+ 
 
 
     <!--? Blog Area Start -->
+    <section class="slider-area slider-area2">
+    <div class="slider-active">
+      <!-- Single Slider -->
+      <div class="single-slider slider-height2">
+              </div>
+            </div>
+  </section>
+    
     <section class="blog_area single-post-area section-padding">
+    <div class="container">
+                    <div class="row justify-content-center">
+                        <div class="col-xl-8 col-lg-11 col-md-12">
+                            <div class="hero__caption hero__caption2 text-center">
+                                <h1 data-animation="bounceIn" data-delay="0.2s"> الاقسام والموظفين ({{ $cData->name_ar}}) </h1>
+
+                            </div>
+                        </div>
+                    </div>
         <div class="container">
+       
             <div class="row d-flex flex-row-reverse">
             @foreach($allEmp as $data)
                 <div class="col-lg-4 posts-list">
@@ -132,6 +164,7 @@
             </div>
         </div>
     </section>
+</main>
     <!-- Blog Area End -->
 
     <!--title>برج جهات الافتراضي</title>

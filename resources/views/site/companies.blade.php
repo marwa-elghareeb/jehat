@@ -4,6 +4,14 @@
 @section('content')
 
 <style>
+.slider-area.slider-area2,
+.slider-area2.slider-area2 {
+    background-image: url('public/web-assets/img/hero/jehatp90.png')
+}
+.card{
+border-radius:4rem
+}
+
 .button-one {
     background-color:  #6f42c1 !important;
     color: #fff !important;
@@ -19,14 +27,16 @@
     color:#fff3cd  !important;
 
 }
+ 
+
 
 </style>
 
 <main>
- 
-    <section class="slider-area slider-area2">
+  
+    <!--?   <section class="slider-area slider-area2">
         <div class="slider-active">
-            <!-- Single Slider -->
+            <!-- Single Slider 
             <div class="single-slider slider-height2">
                 <div class="container">
                     <div class="row justify-content-center">
@@ -40,17 +50,34 @@
                 </div>
             </div>
         </div>
-    </section>
-    <!--? Our Services Start -->
+    </section> -->
+    
+    <section class="slider-area slider-area2">
+    <div class="slider-active">
+      <!-- Single Slider -->
+      <div class="single-slider slider-height2">
+              </div>
+            </div>
+  </section>
+
+  <div class="inner-page pb-5 ">
+	<div class="inner-page-container">
+        <div class="container1">
+        <div class="row justify-content-center">
+            <div class="card col-9 col-md-10 col-lg-15">
+                <div class="card-wrapper">
+                    <div class="card-box align-center">
+                      <br>
+
     <!--? Blog Area Start-->
     <section class="blog_area section-padding">
-        <div class="container">
+       
 
 <!-- Card deck -->
 <div class="card-deck  row  justify-content-center">
 @foreach($allData as $data)
 
-  <div class="card col-lg-3 mb-5 mb-lg-0">
+  <div class="card col-lg-5 mb-5 mb-lg-0">
   <br> 
     <div class="view overlay">
     <img class="card-img rounded-0"  src="{{ URL ::to ('public/upload/'.$data->image)}}" alt=""
@@ -70,18 +97,11 @@
   <!--       <a  href="{{ URL :: to ('/department' , $data->id )}}"><button type="button" class=" button-one  btn-outline-secondary"><i class="fa fa-user"></i>الاقسام والموظفين</button></a>
  -->
 
-  <!-- Card -->
-  
-
-<!-- Card deck -->
-
-
-
-
-
 
        
     </section>
+    
+</main>
     <!-- Blog Area End
      
             <div class="row  justify-content-center">

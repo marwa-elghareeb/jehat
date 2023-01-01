@@ -3,6 +3,16 @@
 
 @section('content')
 <style>
+
+.slider-area.slider-area2,
+.slider-area2.slider-area2 {
+    background-image: url('public/web-assets/img/hero/jehatp90.png')
+}
+
+
+.card{
+border-radius:4rem
+}
  .icon i {
   display: inline-block;
     font-size: 16px;
@@ -29,11 +39,17 @@
   text-decoration:none;
 }
 </style>
-<main>
-    <!--? slider Area Start-->
-    <section class="slider-area slider-area2">
+<main >
+<section class="slider-area slider-area2">
+    <div class="slider-active">
+      <!-- Single Slider -->
+      <div class="single-slider slider-height2">
+              </div>
+            </div>
+  </section>
+    <!--? <section class="slider-area slider-area2">
         <div class="slider-active">
-            <!-- Single Slider -->
+            <!-- Single Slider 
             <div class="single-slider slider-height2">
                 <div class="container">
                     <div class="row justify-content-center">
@@ -47,10 +63,19 @@
                 </div>
             </div>
         </div>
-    </section>
+    </section>-->
+    
 
     <!--? Blog Area Start -->
     <section class="blog_area single-post-area section-padding">
+    <div class="row justify-content-center">
+                        <div class="col-xl-8 col-lg-11 col-md-12">
+                            <div class="hero__caption hero__caption2 text-center">
+                                <h1 data-animation="bounceIn" data-delay="0.2s">  الموظفين لقسم ({{ $DData->name_ar}}) </h1>
+
+                            </div>
+                        </div>
+                    </div>
         <div class="container">
             <div class="row d-flex flex-row-reverse">
             @foreach($allData as $data)
@@ -132,7 +157,7 @@
             </div>
         </div>
     </section>
-
+</main>
 
 
 @endsection
