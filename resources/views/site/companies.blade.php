@@ -68,26 +68,28 @@ border-radius:4rem
                 <div class="card-wrapper">
                     <div class="card-box align-center">
                       <br>
-
+                      <div class="section-title" data-aos="fade-up">
+          <h1 > المكاتب الافتراضيه</h1>
+          
+        </div><br>
     <!--? Blog Area Start-->
     <section class="blog_area section-padding">
        
-
+   
 <!-- Card deck -->
 <div class="card-deck  row  justify-content-center">
 @foreach($allData as $data)
 
-  <div class="card col-lg-5 mb-5 mb-lg-0">
-  <br> 
+  <div class="card col-lg-6 mb-5 mb-lg-0">
+  
     <div class="view overlay">
     <img class="card-img rounded-0"  src="{{ URL ::to ('public/upload/'.$data->image)}}" alt=""
            style="height: 250px; width: 250px;">
         <div class="mask rgba-white-slight"></div>
     </div>
-    <br> 
     
     <div class="card-body">
-      <h1 class="card-title">  {{ $data->name_ar }}</h1>  <br> 
+      <h1 class="card-title">  {{ $data->name_ar }}</h1>   
     </div>
     <div class="button-one "> 
     <a href="{{ URL :: to ('/department' , $data->id )}}" class=" " role="button" aria-pressed="true"><i class="fa fa-user"></i>الاقسام والموظفين</a>
