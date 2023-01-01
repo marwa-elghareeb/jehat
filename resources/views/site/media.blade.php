@@ -43,7 +43,7 @@ border-radius:1rem
     padding-top: 0px;
     padding-right: 25px;
     padding-bottom: 0px;
-    padding-left: 0px
+    padding-left: 25px
 }
 .container3 {
    
@@ -65,8 +65,52 @@ border-radius:1rem
   color: #444347;
 }
 
+h1, h2, h3, h4, h5, h6 {
+    font-family: 'Cairo';
+    color: #1D2547;
+	font-size: 20px;
+    margin-top: 0px;
+    font-style: normal;
+    font-weight: 400;
+}
+h7{
+    font-family: 'Cairo';
+    color: #fff;
+	font-size: 30px;
+    margin-top: 0px;
+    font-style: normal;
+    font-weight: 400;
+}
+.container1 {
+    max-width: 600px;
+    margin-top: -320px;
+    margin-right: auto;
+    margin-bottom: 0px;
+    margin-left: auto;
+    padding-top: 0px;
+    padding-right: 2px;
+    padding-bottom: 0px;
+    padding-left: 0px;
+}
+.container4 {
+    max-width: 1500px;
+    margin-top: -170px;
+    margin-right: auto;
+    margin-bottom: 0px;
+    margin-left: auto;
+    padding-top: 0px;
+    padding-right: 30px;
+    padding-bottom: 0px;
+    padding-left: 30px;
+}
 
-
+.single-gallery-image {
+    margin-top: -50px;
+    background-repeat: no-repeat !important;
+    background-position: center center !important;
+    background-size: cover !important;
+    height: 200px;
+}
 
 
 </style>
@@ -76,29 +120,33 @@ border-radius:1rem
 		<div class="slider-active">
 			<!-- Single Slider -->
 			<div class="single-slider slider-height2">
+			<div class="container">
+					<div class="row justify-content-center">
+						<div class="col-xl-8 col-lg-11 col-md-12">
+							<div class="hero__caption hero__caption2 text-right">
+								<h7 data-animation="bounceIn" data-delay="0.2s"> 
+								
+							المركز الاعلامي 
+							</h7>
+
+					</div>
+				</div>
+			</div>
+		</div>
 		</div>
 		</div>
 	</section>
 
-	<section>
+ <div class="inner-page pb-5 ">
+	<div class="inner-page-container">
+        <div class="container1">
+       
+                      <br>
 
-	<div class="container3">
-	<div class="row justify-content-center">
-						<div class="col-xl-8 col-lg-11 col-md-12">
-							<div class="hero__caption hero__caption2 text-right">
-								<h1 data-animation="bounceIn" data-delay="0.2s"> 
-								
-							المركز الاعلامي 
-
-							
-     
-           </h1>
-						
-					</div>
-				</div>
-			</div>
-<div class="card col-12 col-md-12 col-lg-3">
-			<div class="section-title h2"style="text-align:right">
+	
+	
+<div class="card col-12 col-md-12 col-lg-15">
+			<div class="section-title h2">
 
 	<a href="{{ asset('public/web-assets/presentation.pdf' ) }}"  " >
  <h2>تحميل ملف آلية عمل المنصة <img src=" {{ asset('public/web-assets/img/icon/pdficon.svg' ) }} " alt="" style="height: 40px; width: 40px;"> </h2></a>
@@ -107,35 +155,36 @@ border-radius:1rem
 		</div>
          
 	<br>
-	
-	
      
-          <div class="card col-12 col-md-12 col-lg-3">
-			<div class="section-title h2" style="text-align:right">
+          <div class="card col-12 col-md-12 col-lg-15">
+			<div class="section-title h2" >
 	<a href="{{ asset('public/web-assets/user guide.pdf' ) }}"  "> 
 	
 	<h2> تحميل ملف دليل المستخدم  <img src=" {{ asset('public/web-assets/img/icon/pdficon.svg' ) }} " alt="" style="height: 40px; width: 40px;"> </h2></a>
 	</div>      
 </div>
 </div>
+	</div>      
+</div>
+</div>
 	
 </h2>
 
-								
-							</div>
-							
-						</div>
-
-
-
-</section>
+			
+<br><br><br><br>
 <br>
 <br>
 <br>
+<div class="inner-page pb-5 ">
+	<div class="inner-page-container">
+        <div class="container4">
+        <div class="row justify-content-center">
+            <div class="card col-9 col-md-10 col-lg-15">
+                <div class="card-wrapper">
+                    <div class="card-box align-center">
+                      <br>
 
-
-	<div class="section-top-border">
-	<div class="container">
+	
 		<h1>شرح منصة مستفيد </h1>
 		<div class="row gallery-item justify-content-center ">
 			<div class="col-md-3 col d-flex justify-content-center m-5 p-5">
@@ -269,5 +318,7 @@ border-radius:1rem
 		</div>
 	</div>
 </div>
+
+      </div></div></div></div></div></div></div>
 </main>
 	@endsection
