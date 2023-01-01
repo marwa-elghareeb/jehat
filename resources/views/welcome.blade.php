@@ -64,7 +64,7 @@ font-size: 30px;}
      font-family: 'Cairo';
     color: #e5e3ee;
     font-size: 25px;
-    margin-bottom: 34px;
+    margin-bottom: 15px;
     padding: 0 50px
 }
 
