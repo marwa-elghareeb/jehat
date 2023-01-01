@@ -12,6 +12,52 @@
 .slider-area2.slider-area2 {
     background-image: url('public/web-assets/img/hero/jehatp90.png')
 }
+
+
+.container4 {
+    max-width: 1500px;
+    margin-top: -300px;
+    margin-right: auto;
+    margin-bottom: 0px;
+    margin-left: auto;
+    padding-top: 0px;
+    padding-right: 30px;
+    padding-bottom: 0px;
+    padding-left: 30px;
+}
+
+.card{
+border-radius:4rem
+}
+.card {
+    text-align: center;
+    box-shadow: rgb(0 0 0 / 5%) 0px 4px 20px 7px;
+    display: flex;
+    padding-top: 0px; 
+     padding-right: 100px; 
+     padding-bottom: 0px; 
+    padding-left: 100px;
+
+    }
+
+  
+    h7{
+    font-family: 'Cairo';
+    color: #1D2547;
+	font-size: 30px;
+    margin-top: 0px;
+    font-style: normal;
+    font-weight: 400;}
+
+.section-tittle h2 {
+     font-family: 'Cairo';
+    font-size: 30px;
+    display: block;
+    font-weight: 600;
+    line-height: 1.3;
+    margin-bottom: 21px}
+
+
 </style>
 <main>
     <!--? slider Area Start-->
@@ -23,7 +69,7 @@
                     <div class="row justify-content-center">
                         <div class="col-xl-8 col-lg-11 col-md-12">
                             <div class="hero__caption hero__caption2 text-center">
-                                <h1 data-animation="bounceIn" data-delay="0.2s">مركز المساعدة</h1>
+                                <h7 data-animation="bounceIn" data-delay="0.2s">مركز المساعدة</h7>
                                 <!--div class="screen-img ">
                                     <img src="{{ asset('public/web-assets/img/gallery/screen.png' ) }}" alt="" class=" w-50">
                                 </div-->
@@ -37,22 +83,20 @@
 
   <div class="inner-page pb-5 ">
 	<div class="inner-page-container">
-        <div class="container">
+        <div class="container4">
         <div class="row justify-content-center">
             <div class="card col-9 col-md-10 col-lg-15">
                 <div class="card-wrapper">
                     <div class="card-box align-center">
                       <br>
                       <div class="hero__caption hero__caption2 text-center">
-                                <h1 data-animation="bounceIn" data-delay="0.2s">مركز المساعدة</h1>
+                                <h7 data-animation="bounceIn" data-delay="0.2s">مركز المساعدة</h7>
                                 <!--div class="screen-img ">
                                     <img src="{{ asset('public/web-assets/img/gallery/screen.png' ) }}" alt="" class=" w-50">
                                 </div-->
                             </div>
                             <br>
     <div class="faq-section section-padding40">
-        
-
             <div class="row justify-content-center">
                 @foreach($allCat as $data)
                 <div class="col-lg-10">
@@ -104,6 +148,9 @@
                     </div>
                 </div>
             </div>
+        </div>
+        </div>
+        </div>
         </div>
 </main>
 @endsection
