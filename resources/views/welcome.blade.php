@@ -190,18 +190,13 @@ font-size: 30px;}
 
 
 
-
-
-
-
-
-
-
-
-
-
-
-
+.section-heading {
+   font-family: 'Cairo';
+    font-size: 3.5rem;
+    font-weight: 700;
+    background: linear-gradient(-45deg, #9887D3, #1B113E);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
 
 
 
@@ -318,6 +313,7 @@ font-size: 30px;}
 
 
 
+<section class="about-area2 section-padding40 section-bg2" data-background="{{ asset('public/web-assets/img/gallery/down-pg55.png') }}">
  <!-- ======= Services Section ======= -->
     <section id="services" class="services">
       <div class="container">
@@ -431,8 +427,50 @@ font-size: 30px;}
 
 
 
+<br>
+<br>
+<br>
+<br><br>
+<br>
+ <section class="section">
+<div class="brand-area">
+            <div class="container">
 
+             <div class="row justify-content-center text-center mb-5">
+          <div class="col-md-5" data-aos="fade-up">
+                      <h2 class="section-heading">أكثر من 850 جهة وشركة وثقوا بنا</h2>
 
+          </div>
+        </div>
+                <br>
+               
+
+                          <div class="brand-active brand-border pt-20">
+                    <div class="single-brand">
+                        <img src=" {{ asset('public/web-assets/img/gallery/brand1.png ' ) }}" alt="">
+                    </div>
+                    <div class="single-brand">
+                        <img src=" {{ asset('public/web-assets/img/gallery/brand2.png  ') }}" alt="">
+                    </div>
+                    <div class="single-brand">
+                        <img src=" {{ asset('public/web-assets/img/gallery/brand3.png ' ) }}" alt="">
+                    </div>
+                    <div class="single-brand">
+                        <img src="{{ asset('public/web-assets/img/gallery/brand4.png ' ) }}" alt="">
+                    </div>
+                    <div class="single-brand">
+                        <img src=" {{ asset('public/web-assets/img/gallery/brand5.png ' ) }}" alt="">
+                    </div>
+                    <div class="single-brand">
+                        <img src=" {{ asset('public/web-assets/img/gallery/brand6.png ' ) }}" alt="">
+                    </div>
+                    
+                     </div>
+                </div>
+            </div></div></div>
+        </div>
+</section>
+</section>
 
 
 
@@ -458,7 +496,7 @@ font-size: 30px;}
         
         <!-- Our Services End -->
         <!--? About Area  -->
-        <section class="about-area2 section-padding40 section-bg2" data-background="{{ asset('public/web-assets/img/gallery/section-bg3.png') }}">
+        <section class="about-area2 section-padding40 section-bg2" data-background="{{ asset('public/web-assets/img/gallery/backgg55.png') }}">
             <div class="container">
                 <div class="row align-items-center">
                     <div class="col-xl-5 col-lg-6 col-md-12">
@@ -478,6 +516,7 @@ font-size: 30px;}
 
                         </div>
                     </div>
+                    
                     <div class="col-xl-6 col-lg-6 col-md-9 col-sm-9">
                         <!-- about-img -->
                         <div class="about-img ">
@@ -496,34 +535,7 @@ font-size: 30px;}
         <!--? About Area  -->
         
                  
- <div class="brand-area">
-            <div class="container">
-                <h1 >أكثر من 850 جهة وشركة وثقوا بنا</h1>
-                <br>
-                <div class="brand-active brand-border pt-50">
-                    <div class="single-brand">
-                        <img src=" {{ asset('public/web-assets/img/gallery/brand1.png ' ) }}" alt="">
-                    </div>
-                    <div class="single-brand">
-                        <img src=" {{ asset('public/web-assets/img/gallery/brand2.png  ') }}" alt="">
-                    </div>
-                    <div class="single-brand">
-                        <img src=" {{ asset('public/web-assets/img/gallery/brand3.png ' ) }}" alt="">
-                    </div>
-                    <div class="single-brand">
-                        <img src="{{ asset('public/web-assets/img/gallery/brand4.png ' ) }}" alt="">
-                    </div>
-                    <div class="single-brand">
-                        <img src=" {{ asset('public/web-assets/img/gallery/brand5.png ' ) }}" alt="">
-                    </div>
-                    <div class="single-brand">
-                        <img src=" {{ asset('public/web-assets/img/gallery/brand6.png ' ) }}" alt="">
-                    </div>
-                    
-                    
-                </div>
-            </div>
-        </div>
+ 
 
         
 
@@ -531,14 +543,16 @@ font-size: 30px;}
         <!--? Testimonial Area Start -->
         <section class="testimonial-area fix">    
             <div class="container" >   
-                <div class="row justify-content-center">
-                    <div class="col-xl-7 col-lg-8">
+                
                         <!-- Section Tittle -->
-                        <div class="section-tittle text-center">
-                            <h2>ماذا قالوا عنا </h2>
-                        </div>
-                    </div>
-                </div>
+                               <div class="row justify-content-center text-center mb-5">
+          <div class="col-md-5" data-aos="fade-up">
+                      <h2 class="section-heading">ماذا قالوا عنا </h2>
+
+          </div>
+        </div>
+                     
+                 
                 <div class="testimonial-wrapper section-bg2 pt-15">
                     <div class="row align-items-center justify-content-center">
                         <div class=" col-lg-8 col-md-12 col-sm-9">
