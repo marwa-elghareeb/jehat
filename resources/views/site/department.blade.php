@@ -3,7 +3,7 @@
 <style>
 .slider-area.slider-area2,
 .slider-area2.slider-area2 {
-    background-image: url('public/web-assets/img/hero/jehatp90.png')
+    background-image: url('http://localhost/jehat-test/public/web-assets/img/hero/jehatp90.png')
 }
 .card{
 border-radius:4rem
