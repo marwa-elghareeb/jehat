@@ -110,12 +110,15 @@ border-radius:4rem
             <div class="card col-12 col-md-12 col-lg-9">
                 <div class="card-wrapper">
                     <div class="card-box align-center">
-	
+					<br>
 	 <div class=" ">
   <div class="section-tittle">
 <h2> المركز الاعلامي</h2>
           </div>
-					  
+
+		  <br>
+		  <br>  
+  <div class="d-flex align-items-center flex-column ">			  
 <div class="card col-6 col-md-12 col-lg-4">
 			<div class="section-title h2">
 
@@ -136,11 +139,11 @@ border-radius:4rem
 </div>
 </div>
 
-	
+</div>	
 </h2>
 
 			
-<br><br><br><br>
+
 <br>
 <br>
 <br>
