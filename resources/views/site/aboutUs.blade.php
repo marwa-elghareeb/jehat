@@ -26,6 +26,7 @@ border-radius:4rem
     padding-bottom: 0px;
     padding-left: 30px;
 }
+
 </style>
 
 

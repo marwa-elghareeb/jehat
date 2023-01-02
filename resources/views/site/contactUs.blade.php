@@ -8,7 +8,14 @@
   margin-left: auto !important;
   margin-right: 0 !important;
 }
-
+.container1 h1, h2, h3 {
+    font-family: 'Cairo';
+    color: #1D2547;
+	font-size: 20px;
+    margin-top: 0px;
+    font-style: normal;
+    font-weight: 400;
+}
 
 .slider-area.slider-area2,
 .slider-area2.slider-area2 {

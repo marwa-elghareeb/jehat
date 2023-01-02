@@ -1,10 +1,22 @@
 @extends('layouts.appPortal')
 @section('content')
+<style> 
+
+.slider-area.slider-area2,
+.slider-area2.slider-area2 {
+    background-image: url('public/web-assets/img/hero/jehatp90.png')
+}
+
+
+.card{
+border-radius:4rem
+}
+
+</style>
 <main>
-    <!--? slider Area Start-->
-    <section class="slider-area slider-area2">
+    <!--?  <section class="slider-area slider-area2">
         <div class="slider-active">
-            <!-- Single Slider -->
+            <!-- Single Slider
             <div class="single-slider slider-height2">
                 <div class="container">
                     <div class="row justify-content-center">
@@ -18,15 +30,24 @@
                 </div>
             </div>
         </div>
-    </section>
+    </section>-->
+
     <!--? Our Services Start -->
+    <section class="slider-area slider-area2">
+    <div class="slider-active">
+      <!-- Single Slider -->
+      <div class="single-slider slider-height2">
+              </div>
+            </div>
+  </section>
 
 
-<body>
+
+
 <div class="responsive-container-block container">
-  <p class="text-blk team-head-text">
-    Our Team 
-  </p>
+  <h1 class="text-blk team-head-text">
+  فريق العمل 
+  </h1>
   <div class="responsive-container-block">
     <div class="responsive-cell-block wk-desk-3 wk-ipadp-3 wk-tab-6 wk-mobile-12 card-container">
       <div class="card">
@@ -229,7 +250,7 @@
   </div>
 </div>
 
-</body>
+
 
 </main>
     @endsection
