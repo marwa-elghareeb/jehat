@@ -6,7 +6,7 @@
 <style>
 .slider-area.slider-area2,
 .slider-area2.slider-area2 {
-    background-image: url('public/web-assets/img/hero/jehatp90.png')
+    background-image: url('http://localhost/jehat-test/public/web-assets/img/hero/jehatp90.png')
 }
 .card{
 border-radius:4rem
@@ -73,14 +73,14 @@ border-radius:4rem
           
         </div><br>
     <!--? Blog Area Start-->
-    <section class="blog_area section-padding">
+    <section class="section-top-border">
        
-   
+    <div class="container">
 <!-- Card deck -->
-<div class="card-deck  row  justify-content-center">
+<div class="row gallery-item justify-content-center">
 @foreach($allData as $data)
 
-  <div class="card col-lg-6 mb-5 mb-lg-0">
+  <div class="card d-flex justify-content-center m-2 p-4">
   
     <div class="view overlay">
     <img class="card-img rounded-0"  src="{{ URL ::to ('public/upload/'.$data->image)}}" alt=""
@@ -94,7 +94,7 @@ border-radius:4rem
     <div class="button-one "> 
     <a href="{{ URL :: to ('/department' , $data->id )}}" class=" " role="button" aria-pressed="true"><i class="fa fa-user"></i>الاقسام والموظفين</a>
     </div>
-
+  
   </div>  @endforeach
   <!--       <a  href="{{ URL :: to ('/department' , $data->id )}}"><button type="button" class=" button-one  btn-outline-secondary"><i class="fa fa-user"></i>الاقسام والموظفين</button></a>
  -->

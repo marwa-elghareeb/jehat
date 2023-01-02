@@ -68,7 +68,7 @@ border-radius:4rem
     line-height: 1.3;
     margin-bottom: 22px;
 
-
+}
 
 </style>
 <main>
@@ -94,9 +94,7 @@ border-radius:4rem
   
   
   <div class=" ">
-  <div class="section-tittle">
-<h2> الاسئلة الشائعة </h2>
-          </div>
+ 
           <div class="inner-page pb-5 ">
 	<div class="inner-page-container">
         <div class="container4">
@@ -105,6 +103,9 @@ border-radius:4rem
                 <div class="card-wrapper">
                     <div class="card-box align-center">
                       <br>
+                      <div class="section-tittle">
+<h2> الاسئلة الشائعة </h2>
+          </div>
       <div class="row justify-content-center">
 
         <div class="col-md-offset-1 col-md-10 ">
@@ -112,7 +113,7 @@ border-radius:4rem
           <div class="collapse-wrapper">
           @foreach($allData as $data)
             <div class="accordion" id="accordionExample_{{ $data->id}}">
-              <div class="card">
+              <div class="card ">
                 <div class="card-header panel-heading" id="heading_{{ $data->id}}">
                   <h2 class="mb-0">
                     <a href="#" class="btn-link collapsed" data-toggle="collapse"
@@ -122,7 +123,7 @@ border-radius:4rem
                 </div>
                 <div id="collapse_{{ $data->id}}" class="collapse" aria-labelledby="heading_{{ $data->id}}" 
                 data-parent="#accordionExample_{{ $data->id}}">
-                  <div class="card-body">
+                  <div class="card-body  "  >
                     <h3>
                     {{$data->question_ar}}
                       <br>
