@@ -77,8 +77,20 @@
 
 
 
+p {
+    font-family: "cairo", sans-serif;
+    color: #10285d;
+    font-size: 15px;
+    line-height: 30px;
+    margin-bottom: 15px;
+    font-weight: normal;
+}
 
-
+h1, h2, h3, h4, h5, h6 {
+  font-family: "cairo", sans-serif;
+    color: #1D2547;
+    margin-top: 0px;
+    font-style: normal;
 
 
 
