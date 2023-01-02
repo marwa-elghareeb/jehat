@@ -5,56 +5,25 @@
 
 <style> 
 
-.row {
-    display: -ms-flexbox;
-    display: flex;
-    -ms-flex-wrap: wrap;
-    flex-wrap: wrap;
-    margin-right: 0px;
-    margin-left: 0px;
-}
 
 .slider-area.slider-area3,
 .slider-area3.slider-area3 {
-    background-image: url('public/web-assets/img/hero/ban3a.png')
+    background-image: url('public/web-assets/img/hero/jehatp90.png')
 }
 
-.slider-height2 {
-    min-height: 658px;
-    background-repeat: no-repeat;
-    background-position: center center;
-    background-size: cover
-}
 
-.btn {
-	background: #404DFF;
-    font-size: 25px;
-	border-radius: 10px;
-}
 
-.card{
-border-radius:1rem
-}
+
+
 .card {
-    text-align: right;
+    text-align: center;
     display: flex;
     flex-direction: column;
     align-items: center;
     padding-top: 0px;
-    padding-right: 25px;
+    padding-right: 2px;
     padding-bottom: 0px;
-    padding-left: 25px
-}
-.container3 {
-   
-    margin-top: -200px;
-    margin-right: auto;
-    margin-bottom: 0px;
-    margin-left: auto;
-    padding-top: 0px;
-    padding-right: 0px;
-    padding-bottom: 0px;
-    padding-left: 900px;
+    padding-left: 2px
 }
 
 .section-title h2 {
@@ -64,6 +33,14 @@ border-radius:1rem
   position: relative;
   color: #444347;
 }
+
+.slider-area .hero__caption h1, .slider-area2 .hero__caption h1 {
+  font-family: 'Cairo';
+    font-size: 54px;
+    font-weight: 600;
+    color: #fff;
+    line-height: 1.3;
+    margin-bottom: 22px;}
 
 h1, h2, h3, h4, h5, h6 {
     font-family: 'Cairo';
@@ -81,20 +58,14 @@ h7{
     font-style: normal;
     font-weight: 400;
 }
-.container1 {
-    max-width: 600px;
-    margin-top: -320px;
-    margin-right: auto;
-    margin-bottom: 0px;
-    margin-left: auto;
-    padding-top: 0px;
-    padding-right: 2px;
-    padding-bottom: 0px;
-    padding-left: 0px;
+
+.card{
+border-radius:4rem
 }
-.container4 {
-    max-width: 1500px;
-    margin-top: -170px;
+
+.container1 {
+    max-width: 1600px;
+    margin-top: -320px;
     margin-right: auto;
     margin-bottom: 0px;
     margin-left: auto;
@@ -120,32 +91,32 @@ h7{
 		<div class="slider-active">
 			<!-- Single Slider -->
 			<div class="single-slider slider-height2">
-			<div class="container">
-					<div class="row justify-content-center">
-						<div class="col-xl-8 col-lg-11 col-md-12">
-							<div class="hero__caption hero__caption2 text-right">
-								<h7 data-animation="bounceIn" data-delay="0.2s"> 
-								
-							المركز الاعلامي 
-							</h7>
+			
 
-					</div>
-				</div>
-			</div>
-		</div>
-		</div>
-		</div>
-	</section>
 
- <div class="inner-page pb-5 ">
+	
+      </div>
+    </div>
+  </section>
+  <!--? Our Services Start -->
+  
+  
+ 		  
+ 
+ <div class="inner-page pb-5">
 	<div class="inner-page-container">
-        <div class="container1">
-       
-                      <br>
-
+<div class="container1">
+        <div class="row justify-content-center">
+            <div class="card col-12 col-md-12 col-lg-9">
+                <div class="card-wrapper">
+                    <div class="card-box align-center">
 	
-	
-<div class="card col-12 col-md-12 col-lg-15">
+	 <div class=" ">
+  <div class="section-tittle">
+<h2> المركز الاعلامي</h2>
+          </div>
+					  
+<div class="card col-6 col-md-12 col-lg-4">
 			<div class="section-title h2">
 
 	<a href="{{ asset('public/web-assets/presentation.pdf' ) }}"  " >
@@ -156,7 +127,7 @@ h7{
          
 	<br>
      
-          <div class="card col-12 col-md-12 col-lg-15">
+          <div class="card col-6 col-md-12 col-lg-4">
 			<div class="section-title h2" >
 	<a href="{{ asset('public/web-assets/user guide.pdf' ) }}"  "> 
 	
@@ -164,9 +135,7 @@ h7{
 	</div>      
 </div>
 </div>
-	</div>      
-</div>
-</div>
+
 	
 </h2>
 
@@ -175,14 +144,7 @@ h7{
 <br>
 <br>
 <br>
-<div class="inner-page pb-5 ">
-	<div class="inner-page-container">
-        <div class="container4">
-        <div class="row justify-content-center">
-            <div class="card col-9 col-md-10 col-lg-15">
-                <div class="card-wrapper">
-                    <div class="card-box align-center">
-                      <br>
+
 
 	
 		<h1>شرح منصة مستفيد </h1>
@@ -248,9 +210,7 @@ h7{
 					<h3> الانتقال الى مكتبي </h3>
 				</a>
 			</div>
-		</div>
-	</div>
-</div>
+
 	<div class="section-top-border">
 	<div class="container">
 		<h1>شرح منصة الموظف</h1>
@@ -318,7 +278,15 @@ h7{
 		</div>
 	</div>
 </div>
-
-      </div></div></div></div></div></div></div>
+		</div>
+	</div>
+</div>
+      
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+	
 </main>
 	@endsection

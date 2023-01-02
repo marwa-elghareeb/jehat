@@ -328,7 +328,10 @@ font-size: 30px;}
             <div class="icon-box" data-aos="fade-up" data-aos-delay="100">
               <div class="icon"><i class="bx bxl-dribbble"></i></div>
               <h4 class="title"><a href="">الموارد البشرية </a></h4>
-              <p class="description">Voluptatum deleniti atque corrupti quos dolores et quas molestias excepturi</p>
+              <p class="description">
+تقدم المنصه تقارير واحصائيات 
+متعددة قابله للعرض
+وايضا للطباعة</p>
             </div>
           </div>
 
@@ -339,7 +342,9 @@ font-size: 30px;}
                             </div>
                             <br>
               <h4 class="title"><a href="">الفواتير</a></h4>
-              <p class="description">Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore</p>
+              <p class="description">تقدم المنصه تقارير واحصائيات
+متعددة قابله للعرض
+وايضا للطباعة</p>
             </div>
           </div>
 
@@ -350,7 +355,9 @@ font-size: 30px;}
                             </div>
                             <br>
               <h4 class="title"><a href="">المحررات </a></h4>
-              <p class="description">Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia</p>
+              <p class="description">تقدم المنصه تقارير واحصائيات
+متعددة قابله للعرض
+وايضا للطباعة</p>
             </div>
           </div>
 
@@ -361,7 +368,9 @@ font-size: 30px;}
                             </div>
                             <br>
               <h4 class="title"><a href="">الأجتماعات </a></h4>
-              <p class="description">At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis</p>
+              <p class="description">تقدم المنصه تقارير واحصائيات
+متعددة قابله للعرض
+وايضا للطباعة</p>
             </div>
           </div>
 
@@ -384,7 +393,9 @@ font-size: 30px;}
                             </div>
                             <br>
               <h4 class="title"><a href="">المكاتب الافتراضية</a></h4>
-              <p class="description">Voluptatum deleniti atque corrupti quos dolores et quas molestias excepturi</p>
+              <p class="description">تقدم المنصه تقارير واحصائيات
+متعددة قابله للعرض
+وايضا للطباعة</p>
             </div>
           </div>
 
@@ -392,7 +403,9 @@ font-size: 30px;}
             <div class="icon-box" data-aos="fade-up" data-aos-delay="200">
               <div class="icon"><i class="bx bx-file"></i></div>
               <h4 class="title"><a href="">الفعاليات </a></h4>
-              <p class="description">Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore</p>
+              <p class="description">تقدم المنصه تقارير واحصائيات
+متعددة قابله للعرض
+وايضا للطباعة</p>
             </div>
           </div>
 
@@ -403,7 +416,9 @@ font-size: 30px;}
                             </div>
                             <br>
               <h4 class="title"><a href="">مول</a></h4>
-              <p class="description">Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia</p>
+              <p class="description">تقدم المنصه تقارير واحصائيات
+متعددة قابله للعرض
+وايضا للطباعة</p>
             </div>
           </div>
 
@@ -414,7 +429,9 @@ font-size: 30px;}
                             </div>
                             <br>
               <h4 class="title"><a href="">الحسابات </a></h4>
-              <p class="description">At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis</p>
+              <p class="description">تقدم المنصه تقارير واحصائيات
+متعددة قابله للعرض
+وايضا للطباعة</p>
             </div>
           </div>
 

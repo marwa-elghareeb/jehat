@@ -2,13 +2,44 @@
 
 @section('content')
 
-<style>
-    .screen-img {
-        display: flex !important;
-        justify-content: flex-end !important;
-        margin-left: auto !important;
-        margin-right: 0 !important;
-    }
+<style> 
+
+.slider-area.slider-area2,
+.slider-area2.slider-area2 {
+    background-image: url('public/web-assets/img/hero/jehatp90.png')
+}
+
+
+.card{
+border-radius:4rem
+}
+
+.container1 {
+    max-width: 1380px;
+    margin-top: -320px;
+    margin-right: auto;
+    margin-bottom: 0px;
+    margin-left: auto;
+    padding-top: 0px;
+    padding-right: 30px;
+    padding-bottom: 0px;
+    padding-left: 30px;
+}
+h1{
+     font-family: 'Cairo';
+    color: #000;
+	font-size: 30px;
+    margin-top: 0px;
+    font-style: normal;
+    font-weight: 400;}
+p {
+     font-family: 'Cairo';
+    color: #000;
+	font-size: 15px;
+    margin-top: 0px;
+    font-style: normal;
+    font-weight: 400;}
+
 </style>
 
   <section class="slider-area slider-area2">
@@ -18,12 +49,7 @@
                 <div class="container">
                     <div class="row justify-content-center">
                         <div class="col-xl-8 col-lg-11 col-md-12">
-                            <div class="hero__caption hero__caption2 text-center">
-                                <h1 data-animation="bounceIn" data-delay="0.2s">شروط استخدام المنصة</h1>
-                                <!--div class="screen-img ">
-                                    <img src="{{ asset('public/web-assets/img/gallery/screen.png' ) }}" alt="" class=" w-50">
-                                </div-->
-                            </div>
+                           
                         </div>
                     </div>
                 </div>
@@ -32,13 +58,22 @@
     </section>
 
 
+
+  <div class="inner-page pb-5 ">
+	<div class="inner-page-container">
+        <div class="container1">
+        <div class="row justify-content-center">
+            <div class="card col-9 col-md-10 col-lg-15">
+                <div class="card-wrapper">
+                    <div class="card-box align-center">
+                      <br>
 <section class="sample-text-area">
 			<div class="container box_1170" style="text-align : right">
 				
 				<p class="sample-text">
 					
 <h1>شروط استخدام المنصة </h1>
-
+<br>
 
 <p><b> إن دخولك واستخدامك للموقع يخضع للشروط والأحكام الموضحة أدناه، بالإضافة إلى قوانين المملكة العربية السعودية، دخولك إلى الموقع يعني موافقتك على هذه الشروط والأحكام، سواء كنت مستخدماً مسجلاً أم لا. وبدخولك وتصفحك واستخدامك للموقع فإنك تكون قد قبلت، من دون قيد أو شرط، أحكام وشروط الاستخدام الواردة في هذه الوثيقة.
 
@@ -57,7 +92,7 @@
 جمع أو تخزين المعلومات الشخصية عن الآخرين<br><br> </p>
 					
 				</p>
-			</div>
+			</div></div></div></div></div></div></div></div>
 		</section>
 <main>
 
