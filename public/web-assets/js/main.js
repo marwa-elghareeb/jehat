@@ -117,6 +117,7 @@ var testimonial = $('.h1-testimonial-active');
 if(testimonial.length){
 testimonial.slick({
     dots: true,
+    rtl:true,
     infinite: true,
     speed: 1000,
     autoplay:true,
@@ -229,6 +230,8 @@ $('.top-job-slider').slick({
   infinite: true,
   autoplay: true,
   speed: 400,
+  rtl:true,
+  loop:true,
   arrows: false,
   slidesToShow: 5,
   slidesToScroll: 1,
