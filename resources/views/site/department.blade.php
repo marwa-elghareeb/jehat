@@ -10,6 +10,7 @@
                 <ul class="breadcrumb-list">
                     <li><a href="{{ URL :: to ('/')}}">الرئيسية</a></li>
                     <li>الاقسام والموظفين</li>
+                    <li> ({{ $cData->name_ar}})</li>
                 </ul>
             </div>
         </div>
@@ -38,16 +39,18 @@
                 <div class="col-lg-4 col-md-6 col-sm-12 posts-list">
                     <div class="blog-author">
                         <div class="card">
-                            <img src="web-assets/img/9.jpg" alt="" class="img-fluid team-member-image  img-thumbnail rounded-circle" alt="image1">
+                            <img src="{{ URL ::to ('public/upload/'.$data->image)}}" 
+                            alt="" class="img-fluid team-member-image  img-thumbnail rounded-circle" 
+                            alt="image1">
                             <div class="media-body">
                                 <a href="#">
-                                    <h4 class="text-blk">name</h4>
+                                    <h4 class="text-blk">{{ $data->name }}</h4>
                                 </a>
-                                <p class="text-blk position">position</p>
+                                <p class="text-blk position">{{ $data->position }}</p>
                                 <div class="icon-block">
-                                    <a class="icon" href="mailto:#"><i class="fa fa-envelope"></i></a>
-                                    <a class="icon" href="#"> <i class="fab fa-whatsapp"></i></a>
-                                    <a class="icon" href="#"> <i class="fa fa-link"></i></a>
+                                    <a class="icon" href="mailto:{{ $data->email }}"><i class="fa fa-envelope"></i></a>
+                                    <a class="icon" href="https://wa.me/{{ $data->whats_app }}?text="> <i class="fab fa-whatsapp"></i></a>
+                                    <a class="icon" href="{{ $data->meeting_link }}"> <i class="fa fa-link"></i></a>
                                 </div>
                             </div>
                         </div>
