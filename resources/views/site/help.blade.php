@@ -1,156 +1,93 @@
 @extends('layouts.appPortal')
 
 @section('content')
-<style>
-    .screen-img {
-        display: flex !important;
-        justify-content: flex-end !important;
-        margin-left: auto !important;
-        margin-right: 0 !important;
-    }
-    .slider-area.slider-area2,
-.slider-area2.slider-area2 {
-    background-image: url('public/web-assets/img/hero/jehatp90.png')
-}
 
 
-.container4 {
-    max-width: 1500px;
-    margin-top: -300px;
-    margin-right: auto;
-    margin-bottom: 0px;
-    margin-left: auto;
-    padding-top: 0px;
-    padding-right: 30px;
-    padding-bottom: 0px;
-    padding-left: 30px;
-}
-
-.card{
-border-radius:4rem
-}
-.card {
-    text-align: center;
-    box-shadow: rgb(0 0 0 / 5%) 0px 4px 20px 7px;
-    display: flex;
-    padding-top: 0px; 
-     padding-right: 100px; 
-     padding-bottom: 0px; 
-    padding-left: 100px;
-
-    }
-
-  
-    h7{
-    font-family: 'Cairo';
-    color: #1D2547;
-	font-size: 30px;
-    margin-top: 0px;
-    font-style: normal;
-    font-weight: 400;}
-
-.section-tittle h2 {
-     font-family: 'Cairo';
-    font-size: 30px;
-    display: block;
-    font-weight: 600;
-    line-height: 1.3;
-    margin-bottom: 21px}
-
-
-</style>
-<main>
-    <!--? slider Area Start-->
-    <section class="slider-area slider-area2">
-        <div class="slider-active">
-            <!-- Single Slider -->
-            <div class="single-slider slider-height2">
-                <div class="container">
-                    <div class="row justify-content-center">
-                        <div class="col-xl-8 col-lg-11 col-md-12">
-                            <div class="hero__caption hero__caption2 text-center">
-                                <h7 data-animation="bounceIn" data-delay="0.2s">مركز المساعدة</h7>
-                                <!--div class="screen-img ">
-                                    <img src="{{ asset('public/web-assets/img/gallery/screen.png' ) }}" alt="" class=" w-50">
-                                </div-->
-                            </div>
-                        </div>
-                    </div>
-                </div>
+<!-------------------------------------------------------------------------------->
+<div class="breadcrumb">
+    <div class="container">
+        <div class="row">
+            <div class="col-12">
+                <h2 class="breadcrumbs-title">مركز  
+                    المساعدة          </h2>      <ul class="breadcrumb-list">
+                    <li><a href="{{ URL :: to ('/')}}">الرئيسية</a></li>
+                    <li>مركز المساعدة 
+                    </li>
+                </ul>
             </div>
         </div>
-    </section>
-
-  <div class="inner-page pb-5 ">
-	<div class="inner-page-container">
-        <div class="container4">
-        <div class="row justify-content-center">
-            <div class="card col-9 col-md-10 col-lg-15">
-                <div class="card-wrapper">
-                    <div class="card-box align-center">
-                      <br>
-                      <div class="hero__caption hero__caption2 text-center">
-                                <h7 data-animation="bounceIn" data-delay="0.2s">مركز المساعدة</h7>
-                                <!--div class="screen-img ">
-                                    <img src="{{ asset('public/web-assets/img/gallery/screen.png' ) }}" alt="" class=" w-50">
-                                </div-->
+    </div>
+</div>
+<!-------------------------------------------------------------------------------->
+    <main>
+    
+        <div class="common-question">
+            <div class="container">
+                <div class="card card-container">
+                    <div class="row">
+                        <div class="col-12">
+                            <div class="section-tittle">
+                                <h2> مركز المساعدة  </h2>
                             </div>
-                            <br>
-    <div class="faq-section section-padding40">
-            <div class="row justify-content-center">
-                @foreach($allCat as $data)
-                <div class="col-lg-10">
-                    <div class="section-tittle">
-                        <h2> {{ $data->name_ar}}</h2>
-                    </div>
-                    <div class="collapse-wrapper">
-                        <div class="accordion" id="accordionExample{{ $data->id}}">
-
-                            @foreach($data->child as $child)
-                            
-                            <div class="card">
-                                <div class="card-header" id="headingOne_{{ $child->id}}">
-                                    <h2 class="mb-0">
-                                        <a href="#" class="btn-link collapsed"
-                                         data-toggle="collapse" data-target="#collapseOne_{{ $child->id}}" 
-                                         aria-expanded="false" aria-controls="collapseOne_{{ $child->id}}">
-                                            {{ $child->name_ar }}</a>
-                                    </h2>
-                                </div>
-
-                                <div id="collapseOne_{{ $child->id}}" class="collapse" aria-labelledby="headingOne_{{ $child->id}}" data-parent="#accordionExample{{ $data->id}}">
-
-
-                                    <div class="card-body">
-                                        @foreach ($child->subSub as $ss)
-                                        <h4 style="text-decoration: underline;"> {{ $ss->name_ar }}</h4>
-                                            <br>
-                                            <h4>
-                                            <?php echo strip_tags($ss->pageData); ?>
-
-                                        </h4>
-                                        <hr/>
-                                        @endforeach
-
+                        </div>
+                        <div class="col-12">
+                            <div class="collapse-wrapper">
+                                <div class="accordion" id="accordionExample">
+                                    <div class=" d-block">
+                                        <div class="accordion" id="accordionExample">
+                                            <div class="accordion-item">
+                                              <h2 class="accordion-header" id="headingOne">
+                                                <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                                                  Accordion Item #1
+                                                </button>
+                                              </h2>
+                                              <div id="collapseOne" class="accordion-collapse collapse show" aria-labelledby="headingOne" data-bs-parent="#accordionExample">
+                                                <div class="accordion-body">
+                                                  <strong>This is the first item's accordion body.</strong> It is shown by default, until the collapse plugin adds the appropriate classes that we use to style each element. These classes control the overall appearance, as well as the showing and hiding via CSS transitions. You can modify any of this with custom CSS or overriding our default variables. It's also worth noting that just about any HTML can go within the <code>.accordion-body</code>, though the transition does limit overflow.
+                                                </div>
+                                              </div>
+                                            </div>
+                                            <div class="accordion-item">
+                                              <h2 class="accordion-header" id="headingTwo">
+                                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                                                  Accordion Item #2
+                                                </button>
+                                              </h2>
+                                              <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo" data-bs-parent="#accordionExample">
+                                                <div class="accordion-body">
+                                                  <strong>This is the second item's accordion body.</strong> It is hidden by default, until the collapse plugin adds the appropriate classes that we use to style each element. These classes control the overall appearance, as well as the showing and hiding via CSS transitions. You can modify any of this with custom CSS or overriding our default variables. It's also worth noting that just about any HTML can go within the <code>.accordion-body</code>, though the transition does limit overflow.
+                                                </div>
+                                              </div>
+                                            </div>
+                                            <div class="accordion-item">
+                                              <h2 class="accordion-header" id="headingThree">
+                                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                                                  Accordion Item #3
+                                                </button>
+                                              </h2>
+                                              <div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingThree" data-bs-parent="#accordionExample">
+                                                <div class="accordion-body">
+                                                  <strong>This is the third item's accordion body.</strong> It is hidden by default, until the collapse plugin adds the appropriate classes that we use to style each element. These classes control the overall appearance, as well as the showing and hiding via CSS transitions. You can modify any of this with custom CSS or overriding our default variables. It's also worth noting that just about any HTML can go within the <code>.accordion-body</code>, though the transition does limit overflow.
+                                                </div>
+                                              </div>
+                                            </div>
+                                          </div>
+                                        
+                                        
                                     </div>
-
-
-
                                 </div>
+                                <br>
+    
                             </div>
-                          
-                            @endforeach
-
                         </div>
-                     </div>
-                </div>
-                        @endforeach
                     </div>
                 </div>
+               
             </div>
         </div>
-        </div>
-        </div>
-        </div>
-</main>
+
+
+    </main>
+
+
 @endsection

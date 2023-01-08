@@ -596,7 +596,7 @@ ul {
 }
 .footer-wrappper
 {
-    background: url(../../web-assets/img/gallery/footer-bg.png);
+    background: url(public/img/gallery/footer-bg.png);
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
