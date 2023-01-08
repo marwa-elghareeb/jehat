@@ -39,7 +39,7 @@
             <h4 class="title"><a href=""> المكاتب الافتراضيه</a></h4>
             <p class="description">يتم عرض جميع الشركات الموجوده فى المنصه وكذلك الاقسام الخاصه بها وايضا
               الموظفين</p>
-            <a href="#" class="btn btn-outline-secondary  btn-sm pt-8 ">المزيد</a>
+            <a href="{{ URL :: to ('/allCompanies')}}" class="btn btn-outline-secondary  btn-sm pt-8 ">المزيد</a>
           </div>
         </div>
     

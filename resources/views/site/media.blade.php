@@ -112,6 +112,76 @@
 						</a>
 					</div>
 				</div>
+
+				<hr/>
+
+				<div class="row">
+					<div class="col-12">
+						<h3>شرح منصة الموظف</h3>
+						<div class="row gallery-item">
+							<div class="col-lg-4 col-md-4 col-sm-12">
+								<a class="popup-video btn-icon" href="https://www.jehat.sa/media/mp4/Add_dep.mp4" class="video-wrap position-relative">
+									<img class="single-gallery-image" src="{{ asset('public/web-assets/img/h1.jpg' ) }}">
+									<h3> اضافه وادارة الفواتير الالكترونية</h3>
+								</a>
+							</div>
+							<div class="col-lg-4 col-md-4 col-sm-12">
+								<a class="popup-video btn-icon" href="https://www.jehat.sa/media/mp4/client_register.mp4" class="video-wrap position-relative">
+									<img class="single-gallery-image" src="{{ asset('public/web-assets/img/h2.jpg' ) }}">
+									<h3> اضافه ومتابعه الطلبات </h3>
+								</a>
+							</div>
+							<div class="col-lg-4 col-md-4 col-sm-12">
+								<a class="popup-video btn-icon" href="https://www.jehat.sa/media/mp4/lang.mp4" class="video-wrap position-relative">
+									<img class="single-gallery-image" src="{{ asset('public/web-assets/img/h3.jpg' ) }}">
+									<h3> ادارة الاجتماع اثناء الانعقاد</h3>
+								</a>
+							</div>
+							<div class="col-lg-4 col-md-4 col-sm-12">
+								<a class="popup-video btn-icon" href="https://www.jehat.sa/media/mp4/View_Meeting.mp4" class="video-wrap position-relative">
+									<img class="single-gallery-image" src="{{ asset('public/web-assets/img/h4.jpg' ) }}">
+									<h3>التعليقات وانواع الاسناد</h3>
+								</a>
+							</div>
+							<div class="col-lg-4 col-md-4 col-sm-12">
+								<a class="popup-video btn-icon" href="https://www.jehat.sa/media/mp4/Client_Forget_Password.mp4" class="video-wrap position-relative">
+									<img class="single-gallery-image" src="{{ asset('public/web-assets/img/h5.jpg' ) }}">
+									<h3>ادارة العملاء والاقسام </h3>
+								</a>
+							</div>
+							<div class="col-lg-4 col-md-4 col-sm-12">
+								<a class="popup-video btn-icon" href="https://www.jehat.sa/media/mp4/Edit_Client.mp4" class="video-wrap position-relative">
+									<img class="single-gallery-image" src="{{ asset('public/web-assets/img/h6.jpg' ) }}">
+									<h3> ادارة غرف الفيديو كونفرس</h3>
+								</a>
+							</div>
+							<div class="col-lg-4 col-md-4 col-sm-12">
+								<a class="popup-video btn-icon" href="https://www.jehat.sa/media/mp4/add_m.mp4" class="video-wrap position-relative">
+									<img class="single-gallery-image" src="{{ asset('public/web-assets/img/h7.jpg' ) }}">
+									<h3> الية انشاء الاجتماعات</h3>
+								</a>
+							</div>
+							<div class="col-lg-4 col-md-4 col-sm-12">
+								<a class="popup-video btn-icon" href="https://www.jehat.sa/media/mp4/add_t.mp4" class="video-wrap position-relative">
+									<img class="single-gallery-image" src="{{ asset('public/web-assets/img/h8.jpg' ) }}">
+									<h3> استخدام فلتر بحث المعاملات</h3>
+								</a>
+							</div>
+							<div class="col-lg-4 col-md-4 col-sm-12">
+								<a class="popup-video btn-icon" href="https://www.jehat.sa/media/mp4/Add_Transaction.mp4" class="video-wrap position-relative">
+									<img class="single-gallery-image" src="{{ asset('public/web-assets/img/h9.jpg' ) }}">
+									<h3> ادارة الموظفين </h3>
+								</a>
+							</div>
+							<div class="col-lg-4 col-md-4 col-sm-12">
+								<a class="popup-video btn-icon" href="https://www.jehat.sa/media/mp4/convert.mp4" class="video-wrap position-relative">
+									<img class="single-gallery-image" src="{{ asset('public/web-assets/img/h10.jpg' ) }}">
+									<h3> اضافه واداره المواعيد</h3>
+								</a>
+							</div>
+						</div>
+					</div>
+				</div>
 			</div>
 
 		</div>
