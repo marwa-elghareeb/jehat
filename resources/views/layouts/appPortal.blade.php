@@ -69,7 +69,7 @@
                                     <div class="main-menu d-none d-lg-block">
                                         <nav>
                                             <ul id="navigation">
-                                                <li class=""><a class="active" href="{{ URL :: to ('/')}}">الرئيسية</a></li>
+                                                <li><a class="active" href="{{ URL :: to ('/')}}">الرئيسية</a></li>
                                                 <li><a href="{{ URL :: to ('/aboutUs')}}">من نحن</a></li>
                                                 <li><a href="{{ URL :: to ('/contactUs')}}">تواصل معنا</a></li>
                                                 <li><a href="#">دليل المستخدم</a>
