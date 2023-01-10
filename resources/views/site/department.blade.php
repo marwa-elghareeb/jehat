@@ -34,32 +34,37 @@
 
             <div class="row d-flex">
 
-            @foreach($allEmp as $data)
+                <div class="col-lg-8 col-md-8 col-sm-12">
+                    <div class="row">
+                        @foreach($allEmp as $data)
 
-                <div class="col-lg-4 col-md-6 col-sm-12 posts-list">
-                    <div class="blog-author">
-                        <div class="card">
-                            <img src="{{ URL ::to ('public/upload/'.$data->image)}}" 
-                            alt="" class="img-fluid team-member-image  img-thumbnail rounded-circle" 
-                            alt="image1">
-                            <div class="media-body">
-                                <a href="#">
-                                    <h4 class="text-blk">{{ $data->name }}</h4>
-                                </a>
-                                <p class="text-blk position">{{ $data->position }}</p>
-                                <div class="icon-block">
-                                    <a class="icon" href="mailto:{{ $data->email }}"><i class="fa fa-envelope"></i></a>
-                                    <a class="icon" href="https://wa.me/{{ $data->whats_app }}?text="> <i class="fab fa-whatsapp"></i></a>
-                                    <a class="icon" href="{{ $data->meeting_link }}"> <i class="fa fa-link"></i></a>
+                        <div class="col-lg-6 col-md-12 col-sm-12 posts-list">
+                            <div class="blog-author">
+                                <div class="card">
+                                    <img src="{{ URL ::to ('public/upload/'.$data->image)}}" alt="" class="img-fluid team-member-image  img-thumbnail rounded-circle" alt="image1">
+                                    <div class="media-body">
+                                        <a href="#">
+                                            <h4 class="text-blk">{{ $data->name }}</h4>
+                                        </a>
+                                        <p class="text-blk position">{{ $data->position }}</p>
+                                        <div class="icon-block">
+                                            <a class="icon" href="mailto:{{ $data->email }}"><i class="fa fa-envelope"></i></a>
+                                            <a class="icon" href="https://wa.me/{{ $data->whats_app }}?text="> <i class="fab fa-whatsapp"></i></a>
+                                            <a class="icon" href="{{ $data->meeting_link }}"> <i class="fa fa-link"></i></a>
+                                        </div>
+                                    </div>
                                 </div>
                             </div>
                         </div>
+
+                        @endforeach
+
                     </div>
                 </div>
 
-                @endforeach
 
-                <div class="col-lg-4 col-md-6 col-sm-12 posts-list">
+
+                <div class="col-lg-4 col-md-4 col-sm-12 posts-list">
                     <div class="blog_right_sidebar">
                         <aside class="single_sidebar_widget search_widget">
                             <form action="#">
@@ -79,7 +84,7 @@
                             <ul class="list cat-list text-center">
 
 
-                            @foreach($allData as $data)
+                                @foreach($allData as $data)
                                 <li>
                                     <a href="{{ URL :: to ('/employe' , $data->id )}}" class="d-flex ">
                                         <p class=" text-center"> {{ $data->name_ar }}</p>

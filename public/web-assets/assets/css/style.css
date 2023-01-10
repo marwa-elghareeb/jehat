@@ -324,7 +324,7 @@ ul {
     display: none;
   }
   .owl-slide {
-    background-image: url('../../img/gallery/backgapps.png');
+    
     background-repeat: no-repeat;
     background-size: cover;
     background-position: bottom right;
@@ -428,7 +428,7 @@ ul {
 /*----------------services----------------------*/
 .bg-contain-sections
 {
-    background: url(../../web-assets/img/gallery/down-pg55.png);
+    background: url(../../img/gallery/down-pg55.png);
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center bottom;
@@ -837,6 +837,7 @@ ul.breadcrumb-list li:last-child {
   .libraries .card img
   {
     width: 100%;
+    height: 250px;
     object-fit: cover;
     border-top-left-radius: 4rem;
     border-top-right-radius: 4rem;
