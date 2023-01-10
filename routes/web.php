@@ -54,6 +54,7 @@ Route::get('/', function () {
 });
 Route::get('/aboutUs', [IndexController::class, 'aboutUs']);
 Route::get('/contactUs', [IndexController::class, 'contactUs']);
+Route::post('/contactUsForm', [IndexController::class, 'contactUsForm']);
 Route::get('/media', [IndexController::class, 'media']);
 Route::get('/footerPages', [IndexController::class, 'footerPages']);
 Route::get('/ourTeam', [IndexController::class, 'ourTeam']);

@@ -23,7 +23,12 @@ class DepartmentsController extends Controller
         $allData = Department::all();
         foreach ($allData as $data) {
             $cData = Companies::where('id', $data->company_id)->first();
-            $data->companyName = $cData->name_ar;
+            if(count($cData) > 0)
+            {$data->companyName = $cData->name_ar;}
+            else{
+                $data->companyName = '';
+            }
+            
         }
         return view('admin.department.list')->with('allData', $allData);
     }

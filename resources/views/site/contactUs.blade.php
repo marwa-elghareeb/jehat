@@ -66,31 +66,56 @@
                 </div>
                 <div class="col-lg-8 col-md-7 col-sm-12 my-0">
                     <div class="form">
+                    <form enctype="multipart/form-data" method="post" 
+                            action="{{ URL :: to ('/contactUsForm')}}">
+                            {{ csrf_field() }}
                         <div class="row">
                             <div class="col-lg-6 col-md-12">
                                 <div class="form-group mb-30">
-                                    <input type="text" class="form-control" placeholder="الاسم">
+                                    <input type="text" name="name" class="form-control" placeholder="الاسم">
+                                    @if($errors->has('name'))
+                                        <div class="error">{{ $errors->first('name') }}</div>
+                                        @endif
                                 </div>
                             </div>
                             <div class="col-lg-6 col-md-12">
                                 <div class="form-group mb-30">
-                                    <input type="text" class="form-control" placeholder="الاسم">
+                                    <input type="text" name="phone" class="form-control" placeholder="رقم الجوال">
+                                    @if($errors->has('phone'))
+                                        <div class="error">{{ $errors->first('phone') }}</div>
+                                        @endif
                                 </div>
                             </div>
                             <div class="col-lg-12 col-md-12">
                                 <div class="form-group mb-30">
-                                    <input type="text" class="form-control" placeholder="الاسم">
+                                    <input type="text" name="email" class="form-control" placeholder="البريد الالكترونى">
+                                    @if($errors->has('email'))
+                                        <div class="error">{{ $errors->first('email') }}</div>
+                                        @endif
+                                </div>
+                            </div>
+                            <div class="col-lg-12 col-md-12">
+                                <div class="form-group mb-30">
+                                    <input type="text" name="subject" class="form-control" placeholder=" عنوان الرساله">
+                                    @if($errors->has('subject'))
+                                        <div class="error">{{ $errors->first('subject') }}</div>
+                                        @endif
                                 </div>
                             </div>
                             <div class="col-12">
                                 <div class="form-group mb-30">
-                                    <textarea class="form-control" id="exampleFormControlTextarea1" placeholder="محتوي الرسالة" rows="6"></textarea>
+                                    <textarea class="form-control" name="message" id="exampleFormControlTextarea1" placeholder="محتوي الرسالة" rows="6"></textarea>
+                                    @if($errors->has('message'))
+                                        <div class="error">{{ $errors->first('message') }}</div>
+                                        @endif
                                 </div>
                             </div>
                             <div class="col-12">
                                 <button type="submit" class="send-button">إرسال</button>
                             </div>
+                            
                         </div>
+                        </form>
                     </div>
                 </div>
             </div>

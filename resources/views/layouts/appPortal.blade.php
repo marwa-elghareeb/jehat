@@ -4,7 +4,7 @@
 <head>
     <meta charset="utf-8">
     <meta http-equiv="x-ua-compatible" content="ie=edge">
-    <title>  جهات</title>
+    <title> جهات</title>
     <meta name="description" content="">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="" href="">
@@ -49,6 +49,12 @@
         </div>
     </div>
     <!-- Preloader Start -->
+    <?php
+    $currentURL = url()->current();
+  
+    var_dump($currentURL);
+    ?>
+
     <header>
         <!-- Header Start -->
         <div class="header-area header-transparent">
@@ -69,7 +75,7 @@
                                     <div class="main-menu d-none d-lg-block">
                                         <nav>
                                             <ul id="navigation">
-                                                <li><a class="active" href="{{ URL :: to ('/')}}">الرئيسية</a></li>
+                                                <li><a class="active" href="{{ URL :: to ('/')}}">الرئيسية </a></li>
                                                 <li><a href="{{ URL :: to ('/aboutUs')}}">من نحن</a></li>
                                                 <li><a href="{{ URL :: to ('/contactUs')}}">تواصل معنا</a></li>
                                                 <li><a href="#">دليل المستخدم</a>
@@ -114,8 +120,7 @@
 
     <section class="wantToWork-area ">
         <div class="container">
-            <div class="wants-wrapper w-padding2 section-bg2" 
-            data-background=" {{ asset('public/web-assets/img/gallery/backgapps.png')}}">
+            <div class="wants-wrapper w-padding2 section-bg2" data-background=" {{ asset('public/web-assets/img/gallery/backgapps.png')}}">
                 <div class="row align-items-center justify-content-center">
                     <div class="col-xl-7 col-lg-9 col-md-8">
                         <div class="wantToWork-caption text-center">

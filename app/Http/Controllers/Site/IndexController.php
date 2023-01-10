@@ -18,6 +18,21 @@ class IndexController extends Controller
     {
         return view('site.contactUs');
     }
+    public function contactUsForm(Request $request)
+    {
+        //validation
+        $request->validate([
+            'name' => 'required|max:255',
+            'phone' => 'required|max:255',
+            'email' => 'required|max:255',
+            'subject' => 'required|max:255',
+            'message' => 'required',
+
+        ]);
+        //send email
+        $name = $request->name;
+
+    }
 
 
     public function aboutUs()
