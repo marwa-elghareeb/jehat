@@ -27,9 +27,9 @@
                 <div class="col-xl-8 col-lg-11 col-md-12">
                     <div class="hero__caption hero__caption2 text-center mb-50">
                         <h1 data-animation="bounceIn" data-delay="0.2s">
-                            <a href="{{ URL :: to ('/cards')}}">    الاقسام والموظفين</a>
-                          
-                            </h1>
+                            <a href="{{ URL :: to ('/cards')}}"> الاقسام والموظفين</a>
+
+                        </h1>
                     </div>
                 </div>
             </div>
@@ -46,26 +46,26 @@
 
                         @foreach($allData as $data)
 
-<div class="col-lg-6 col-md-12 col-sm-12 posts-list">
-    <div class="blog-author">
-        <div class="card">
-            <img src="{{ URL ::to ('public/upload/'.$data->image)}}" alt="" class="img-fluid team-member-image  img-thumbnail rounded-circle" alt="image1">
-            <div class="media-body">
-                <a href="#">
-                    <h4 class="text-blk">{{ $data->name }}</h4>
-                </a>
-                <p class="text-blk position">{{ $data->position }}</p>
-                <div class="icon-block">
-                    <a class="icon" href="mailto:{{ $data->email }}"><i class="fa fa-envelope"></i></a>
-                    <a class="icon" href="https://wa.me/{{ $data->whats_app }}?text="> <i class="fab fa-whatsapp"></i></a>
-                    <a class="icon" href="{{ $data->meeting_link }}"> <i class="fa fa-link"></i></a>
-                </div>
-            </div>
-        </div>
-    </div>
-</div>
+                        <div class="col-lg-6 col-md-12 col-sm-12 posts-list">
+                            <div class="blog-author">
+                                <div class="card">
+                                    <img src="{{ URL ::to ('public/upload/'.$data->image)}}" alt="" class="img-fluid team-member-image  img-thumbnail rounded-circle" alt="image1">
+                                    <div class="media-body">
+                                        <a href="#">
+                                            <h4 class="text-blk">{{ $data->name }}</h4>
+                                        </a>
+                                        <p class="text-blk position">{{ $data->position }}</p>
+                                        <div class="icon-block">
+                                            <a class="icon" href="mailto:{{ $data->email }}"><i class="fa fa-envelope"></i></a>
+                                            <a class="icon" href="https://wa.me/{{ $data->whats_app }}?text="> <i class="fab fa-whatsapp"></i></a>
+                                            <a class="icon" href="{{ $data->meeting_link }}"> <i class="fa fa-link"></i></a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
 
-@endforeach
+                        @endforeach
 
 
                         @else

@@ -36,6 +36,8 @@
 
                 <div class="col-lg-8 col-md-8 col-sm-12">
                     <div class="row">
+
+                        @if(count($allData) >0)
                         @foreach($allEmp as $data)
 
                         <div class="col-lg-6 col-md-12 col-sm-12 posts-list">
@@ -58,6 +60,14 @@
                         </div>
 
                         @endforeach
+                        @else
+
+                        <div class="alert alert-primary">
+                        لا يوجد بيانات فى هذا القسم.
+
+                        </div>
+
+                        @endif
 
                     </div>
                 </div>
@@ -68,11 +78,10 @@
                     <div class="blog_right_sidebar">
                         <aside class="single_sidebar_widget search_widget">
                             <form action="{{ URL :: to ('/searchEmp')}}" method="post">
-                            {{ csrf_field() }}
+                                {{ csrf_field() }}
                                 <div class="form-group">
                                     <div class="input-group mb-3">
-                                        <input type="text" class="form-control" 
-                                        placeholder='البحث عن موظف' name="search" required>
+                                        <input type="text" class="form-control" placeholder='البحث عن موظف' name="search" required>
                                         <div class="input-group-append">
                                             <button class="btns" type="button">
                                                 <i class="ti-search"></i></button>
@@ -80,11 +89,9 @@
                                     </div>
                                 </div>
                                 @if($errors->has('search'))
-                                        <div class="error">{{ $errors->first('search') }}</div>
-                                        @endif
-                                <button 
-                                class="button rounded-0 primary-bg text-white w-100 btn_1 boxed-btn" 
-                                type="submit">بحث</button>
+                                <div class="error">{{ $errors->first('search') }}</div>
+                                @endif
+                                <button class="button rounded-0 primary-bg text-white w-100 btn_1 boxed-btn" type="submit">بحث</button>
                             </form>
                         </aside>
                         <aside class="single_sidebar_widget post_category_widget  text-center">
@@ -106,7 +113,7 @@
                     </div>
                 </div>
 
-                
+
             </div>
         </div>
     </section>

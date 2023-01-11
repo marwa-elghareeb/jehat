@@ -36,6 +36,8 @@
 
             <div class="col-lg-8 col-md-8 col-sm-12">
                     <div class="row">
+
+                    @if(count($allData) >0)
                         @foreach($allData as $data)
 
                         <div class="col-lg-6 col-md-12 col-sm-12 posts-list">
@@ -58,6 +60,13 @@
                         </div>
 
                         @endforeach
+                        @else
+
+                        <div class="alert alert-primary">
+                            لا يوجد بيانات فى هذا القسم.
+                        </div>
+
+                        @endif
 
                     </div>
                 </div>
