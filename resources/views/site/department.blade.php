@@ -67,16 +67,24 @@
                 <div class="col-lg-4 col-md-4 col-sm-12 posts-list">
                     <div class="blog_right_sidebar">
                         <aside class="single_sidebar_widget search_widget">
-                            <form action="#">
+                            <form action="{{ URL :: to ('/searchEmp')}}" method="post">
+                            {{ csrf_field() }}
                                 <div class="form-group">
                                     <div class="input-group mb-3">
-                                        <input type="text" class="form-control" placeholder='البحث عن موظف'>
+                                        <input type="text" class="form-control" 
+                                        placeholder='البحث عن موظف' name="search" required>
                                         <div class="input-group-append">
-                                            <button class="btns" type="button"><i class="ti-search"></i></button>
+                                            <button class="btns" type="button">
+                                                <i class="ti-search"></i></button>
                                         </div>
                                     </div>
                                 </div>
-                                <button class="button rounded-0 primary-bg text-white w-100 btn_1 boxed-btn" type="submit">بحث</button>
+                                @if($errors->has('search'))
+                                        <div class="error">{{ $errors->first('search') }}</div>
+                                        @endif
+                                <button 
+                                class="button rounded-0 primary-bg text-white w-100 btn_1 boxed-btn" 
+                                type="submit">بحث</button>
                             </form>
                         </aside>
                         <aside class="single_sidebar_widget post_category_widget  text-center">

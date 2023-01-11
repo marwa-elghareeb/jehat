@@ -211,6 +211,17 @@ class IndexController extends Controller
         'cData' => $cData ]);
     }
 
+    public function searchEmp(Request $request)
+    {
+        
+
+        $allData = Employees::where('name', 'LIKE', '%' . $request->search . '%')->get();
+       
+    
+        return view('site.searchEmp')->with(['allData' => $allData]);
+    }
+
+
     
 
 }
