@@ -50,7 +50,8 @@ class IndexController extends Controller
     }
     public function ourTeam()
     {
-        return view('site.ourTeam');
+        $allData = Employees::all();
+        return view('site.ourTeam')->with([ 'allData' => $allData ]);;
     }
 
     public function allfaq()

@@ -1,256 +1,62 @@
 @extends('layouts.appPortal')
 @section('content')
-<style> 
 
-.slider-area.slider-area2,
-.slider-area2.slider-area2 {
-    background-image: url('public/web-assets/img/hero/jehatp90.png')
-}
-
-
-.card{
-border-radius:4rem
-}
-
-</style>
-<main>
-    <!--?  <section class="slider-area slider-area2">
-        <div class="slider-active">
-            <!-- Single Slider
-            <div class="single-slider slider-height2">
-                <div class="container">
-                    <div class="row justify-content-center">
-                        <div class="col-xl-8 col-lg-11 col-md-12">
-                            <div class="hero__caption hero__caption2 text-center">
-                                <h1 data-animation="bounceIn" data-delay="0.2s"> فريق العمل </h1>
-
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>-->
-
-    <!--? Our Services Start -->
-    <section class="slider-area slider-area2">
-    <div class="slider-active">
-      <!-- Single Slider -->
-      <div class="single-slider slider-height2">
-              </div>
-            </div>
-  </section>
-
-
-
-
-<div class="responsive-container-block container">
-  <h1 class="text-blk team-head-text">
-  فريق العمل 
-  </h1>
-  <div class="responsive-container-block">
-    <div class="responsive-cell-block wk-desk-3 wk-ipadp-3 wk-tab-6 wk-mobile-12 card-container">
-      <div class="card">
-        <div class="team-image-wrapper">
-           <img src=" {{ asset('public/web-assets/img/11.jpg' ) }}" class="img-fluid  img-thumbnail rounded-circle" alt="image1">
-            class="team-member-image" />
-        </div>
-        <p class="text-blk name">Saad Al Mohsen
-        </p>
-        <p class="text-blk position"> Chairman of Board of Directors 
-        </p>
-      
-        <div class="social-icons">
-          <a href="https://www.twitter.com" target="_blank">
-            <img src="https://workik-widget-assets.s3.amazonaws.com/widget-assets/images/Icon.svg"
-              class="twitter-icon" />
-          </a>
-          <a href="https://www.facebook.com" target="_blank">
-            <img src="https://workik-widget-assets.s3.amazonaws.com/widget-assets/images/Icon-1.svg"
-              class="facebook-icon" />
-          </a>
-        </div>
-      </div>
-    </div>
-
-
-    <div class="responsive-cell-block wk-desk-3 wk-ipadp-3 wk-tab-6 wk-mobile-12 card-container">
-      <div class="card">
-        <div class="team-image-wrapper">
-      <img src=" {{ asset('public/web-assets/img/e15.jpg' ) }}" class="img-fluid  img-thumbnail rounded-circle" alt="image1">
-            class="team-member-image" />
-        </div>
-        <p class="text-blk name">Emad Zaree
-        </p>
-        <p class="text-blk position">Director of Development
-        </p>
-       
-        <div class="social-icons">
-          <a href="https://www.twitter.com" target="_blank">
-            <img src="https://workik-widget-assets.s3.amazonaws.com/widget-assets/images/Icon.svg"
-              class="twitter-icon" />
-          </a>
-          <a href="https://www.facebook.com" target="_blank">
-            <img src="https://workik-widget-assets.s3.amazonaws.com/widget-assets/images/Icon-1.svg"
-              class="facebook-icon" />
-          </a>
-        </div>
-      </div>
-    </div>
-
-
-    <div class="responsive-cell-block wk-desk-3 wk-ipadp-3 wk-tab-6 wk-mobile-12 card-container">
-      <div class="card">
-        <div class="team-image-wrapper">
-         <img src="{{ asset('public/web-assets/img/12.jpg  ' ) }}" class="img-fluid  img-thumbnail rounded-circle" alt="image1">
-            class="team-member-image" />
-        </div>
-        <p class="text-blk name">Ahmed Basuony
-        </p>
-        <p class="text-blk position">IT Manager 
-        </p>
-        
-        <div class="social-icons">
-          <a href="https://www.twitter.com" target="_blank">
-            <img src="https://workik-widget-assets.s3.amazonaws.com/widget-assets/images/Icon.svg"
-              class="twitter-icon" />
-          </a>
-          <a href="https://www.facebook.com" target="_blank">
-            <img src="https://workik-widget-assets.s3.amazonaws.com/widget-assets/images/Icon-1.svg"
-              class="facebook-icon" />
-          </a>
-        </div>
-      </div>
-    </div>
-
-
-    <div class="responsive-cell-block wk-desk-3 wk-ipadp-3 wk-tab-6 wk-mobile-12 card-container">
-      <div class="card">
-        <div class="team-image-wrapper">
-           <img src=" {{ asset('public/web-assets/img/13.jpg ' ) }}" class="img-fluid  img-thumbnail rounded-circle" alt="image1">
-            class="team-member-image" />
-        </div>
-        <p class="text-blk name">Datuk Hj Abdul Rahim
-        </p>
-        <p class="text-blk position">CEO of Malaysia
-        </p>
-       
-        <div class="social-icons">
-          <a href="https://www.twitter.com" target="_blank">
-            <img src="https://workik-widget-assets.s3.amazonaws.com/widget-assets/images/Icon.svg"
-              class="twitter-icon" />
-          </a>
-          <a href="https://www.facebook.com" target="_blank">
-            <img src="https://workik-widget-assets.s3.amazonaws.com/widget-assets/images/Icon-1.svg"
-              class="facebook-icon" />
-          </a>
-        </div>
-      </div>
-    </div>
-
-
-    <div class="responsive-cell-block wk-desk-3 wk-ipadp-3 wk-tab-6 wk-mobile-12 card-container">
-      <div class="card">
-        <div class="team-image-wrapper">
-         <img src=" {{ asset('public/web-assets/img/a10.jpg' ) }}" class="img-fluid  img-thumbnail rounded-circle" alt="image1">
-            class="team-member-image" />
-        </div>
-        <p class="text-blk name">Ayman Ahmed Khalifa
-        </p>
-        <p class="text-blk position">CEO of Saudi
-        </p>
-        
-        <div class="social-icons">
-          <a href="https://www.twitter.com" target="_blank">
-            <img src="https://workik-widget-assets.s3.amazonaws.com/widget-assets/images/Icon.svg"
-              class="twitter-icon" />
-          </a>
-          <a href="https://www.facebook.com" target="_blank">
-            <img src="https://workik-widget-assets.s3.amazonaws.com/widget-assets/images/Icon-1.svg"
-              class="facebook-icon" />
-          </a>
-        </div>
-      </div>
-    </div>
-
-
-    <div class="responsive-cell-block wk-desk-3 wk-ipadp-3 wk-tab-6 wk-mobile-12 card-container">
-      <div class="card">
-        <div class="team-image-wrapper">
-         <img src=" {{ asset('public/web-assets/img/9.jpg' ) }}" class="img-fluid  img-thumbnail rounded-circle" alt="image1">
-            class="team-member-image" />
-        </div>
-        <p class="text-blk name">Dr. Fadi Abu Fawzy
-        </p>
-        <p class="text-blk position">CEO of USA
-        </p>
-      
-        <div class="social-icons">
-          <a href="https://www.twitter.com" target="_blank">
-            <img src="https://workik-widget-assets.s3.amazonaws.com/widget-assets/images/Icon.svg"
-              class="twitter-icon" />
-          </a>
-          <a href="https://www.facebook.com" target="_blank">
-            <img src="https://workik-widget-assets.s3.amazonaws.com/widget-assets/images/Icon-1.svg"
-              class="facebook-icon" />
-          </a>
-        </div>
-      </div>
-    </div>
-
-
-    <div class="responsive-cell-block wk-desk-3 wk-ipadp-3 wk-tab-6 wk-mobile-12 card-container">
-      <div class="card">
-        <div class="team-image-wrapper">
-        <img src=" {{ asset('public/web-assets/img/8.jpg' ) }}" class="img-fluid  img-thumbnail rounded-circle" alt="image1">
-            class="team-member-image" />
-        </div>
-        <p class="text-blk name">Dr. Mohammad Saleh Ali
-        </p>
-        <p class="text-blk position">CEO oF YEMEN
-        </p>
-        
-        <div class="social-icons">
-          <a href="https://www.twitter.com" target="_blank">
-            <img src="https://workik-widget-assets.s3.amazonaws.com/widget-assets/images/Icon.svg"
-              class="twitter-icon" />
-          </a>
-          <a href="https://www.facebook.com" target="_blank">
-            <img src="https://workik-widget-assets.s3.amazonaws.com/widget-assets/images/Icon-1.svg"
-              class="facebook-icon" />
-          </a>
-        </div>
-      </div>
-    </div>
-
-
-    <div class="responsive-cell-block wk-desk-3 wk-ipadp-3 wk-tab-6 wk-mobile-12 card-container">
-      <div class="card">
-        <div class="team-image-wrapper">
-         <img src=" {{ asset('public/web-assets/img/e16.jpg' ) }}" class="img-fluid  img-thumbnail rounded-circle" alt="image1">
-            class="team-member-image" />
-        </div>
-        <p class="text-blk name">Ezzedine Hassan Othman
-        </p>
-        <p class="text-blk position">CEO of Sudan
-        </p>
-       
-        <div class="social-icons">
-          <a href="https://www.twitter.com" target="_blank">
-            <img src="https://workik-widget-assets.s3.amazonaws.com/widget-assets/images/Icon.svg"
-              class="twitter-icon" />
-          </a>
-          <a href="https://www.facebook.com" target="_blank">
-            <img src="https://workik-widget-assets.s3.amazonaws.com/widget-assets/images/Icon-1.svg"
-              class="facebook-icon" />
-          </a>
-        </div>
+<!-------------------------------------------------------------------------------->
+<div class="breadcrumb">
+  <div class="container">
+    <div class="row">
+      <div class="col-12">
+        <h2 class="breadcrumbs-title">فريق
+          <span>العمل</span>
+        </h2>
+        <ul class="breadcrumb-list">
+          <li><a href="index.html">الرئيسية</a></li>
+          <li>فريق العمل</li>
+        </ul>
       </div>
     </div>
   </div>
 </div>
+<!-------------------------------------------------------------------------------->
+<div class="team-work">
+  <div class="container">
+    <div class="card card-container">
+      <div class="row">
+        <div class="col-12">
+          <h1 class="text-blk team-head-text">
+            فريق العمل 
+          </h1>
+        </div>
+      </div>
+      <div class="row">
 
 
+        @foreach($allData as $data)
+        <div class="col-lg-3 col-md-4 col-sm-12 mb-30">
+          <div class="card">
+            <div class="team-image-wrapper">
+              <img src="{{ URL ::to ('public/upload/'.$data->image)}}" class="img-fluid  img-thumbnail rounded-circle" alt="image1">
+            </div>
+            <p class="text-blk name">{{ $data->name }}
+            </p>
+            <p class="text-blk position"> {{ $data->position }}
+            </p>
 
-</main>
-    @endsection
+            <div class="social-icons">
+              <a class="icon" href="mailto:{{ $data->email }}"><i class="fa fa-envelope"></i></a>
+              <a class="icon" href="https://wa.me/{{ $data->whats_app }}?text="> <i class="fab fa-whatsapp"></i></a>
+              <a class="icon" href="{{ $data->meeting_link }}"> <i class="fa fa-link"></i></a>
+            </div>
+          </div>
+        </div>
+
+        @endforeach
+
+      </div>
+    </div>
+
+  </div>
+</div>
+
+
+@endsection

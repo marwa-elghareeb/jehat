@@ -48,6 +48,40 @@
                                     </div>
                                 </div>
 
+                                <div class="form-group row align-items-center">
+                                    <label class="col-sm-3 col-form-label text-label">Select Department Name </label>
+                                    <div class="col-lg-9">
+                                        <select class="form-control" name="department_id">
+                                            <option class="text-muted" value="0"> Select Department</option>
+                                            @foreach($allDept as $data)
+                                            <option value="{{ $data->id }}">{{ $data->name_ar }}</option>
+                                            @endforeach
+
+                                        </select>
+                                        @if($errors->has('department_id'))
+                                        <div class="error">{{ $errors->first('department_id') }}</div>
+                                        @endif
+                                    
+                                    </div>
+                                </div>
+
+                                <div class="form-group row align-items-center">
+                                    <label class="col-sm-3 col-form-label text-label">Select Event Name </label>
+                                    <div class="col-lg-9">
+                                        <select class="form-control" name="event_id">
+                                            <option class="text-muted" value="0"> Select Event</option>
+                                            @foreach($allEvents as $data)
+                                            <option value="{{ $data->id }}">{{ $data->name_ar }}</option>
+                                            @endforeach
+
+                                        </select>
+                                        @if($errors->has('event_id'))
+                                        <div class="error">{{ $errors->first('event_id') }}</div>
+                                        @endif
+                                    
+                                    </div>
+                                </div>
+
 
                                 <div class="form-group row align-items-center">
                                     <label class="col-sm-3 col-form-label text-label">Employee Name</label>

@@ -5,6 +5,8 @@ namespace App\Http\Controllers\Admin;
 use App\Http\Controllers\Controller;
 use App\Models\Employees;
 use App\Models\Companies;
+use App\Models\Department;
+use App\Models\Events;
 use Illuminate\Http\Request;
 
 class EmployeesController extends Controller
@@ -30,7 +32,10 @@ class EmployeesController extends Controller
     {
         //
         $allData = Companies::all();
-        return view('admin.employee.create')->with('allData', $allData);
+        $allDept = Department::all();
+        $allEvents = Events::all();
+        return view('admin.employee.create')->with([ 'allData'=> $allData ,
+        'allDept'=> $allDept ,'allEvents'=> $allEvents ]);
     }
 
     /**
@@ -44,6 +49,7 @@ class EmployeesController extends Controller
         //validation
         $request->validate([
             'company_id' => 'required',
+            'department_id' => 'required',
             'name' => 'required|max:255',
             'position' => 'required|max:255',
             'meeting_link' => 'required',
@@ -56,6 +62,8 @@ class EmployeesController extends Controller
         //Store
         $data = new Employees();
         $data->company_id = $request->company_id;
+        $data->department_id = $request->department_id;
+        $data->event_id = $request->event_id;
         $data->name = $request->name;
         $data->position = $request->position;
         $data->meeting_link = $request->meeting_link;
@@ -91,8 +99,11 @@ class EmployeesController extends Controller
     public function edit($id)
     {
         $allData = Companies::all();
+        $allDept = Department::all();
         $editData = Employees::where('id',$id)->first();
-        return view('admin.employee.edit')->with(['allData'=> $allData, 'editData'=> $editData]);
+        $allEvents = Events::all();
+        return view('admin.employee.edit')->with(['allData'=> $allData, 
+        'editData'=> $editData ,'allDept'=> $allDept ,'allEvents'=> $allEvents]);
     }
 
     /**
@@ -107,6 +118,7 @@ class EmployeesController extends Controller
         //validation
         $request->validate([
             'company_id' => 'required',
+            'department_id' => 'required',
             'name' => 'required|max:255',
             'position' => 'required|max:255',
             'meeting_link' => 'required',
@@ -118,6 +130,8 @@ class EmployeesController extends Controller
         //Update
         $data = Employees::find($id);
         $data->company_id = $request->company_id;
+        $data->department_id = $request->department_id;
+        $data->event_id = $request->event_id;
         $data->name = $request->name;
         $data->position = $request->position;
         $data->meeting_link = $request->meeting_link;

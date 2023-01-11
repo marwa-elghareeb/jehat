@@ -176,8 +176,8 @@
                                 <div class="footer-tittle">
                                     <h4>عن منصة جهات</h4>
                                     <ul>
-                                        <li><a href="#"> من نحن </a></li>
-                                        <li><a href="#"> فريق العمل </a></li>
+                                        <li><a href="{{ URL :: to ('/aboutUs')}}"> من نحن </a></li>
+                                        <li><a href="{{ URL :: to ('/ourTeam')}}"> فريق العمل </a></li>
                                         <li><a href="#">الشهادات</a></li>
                                         <li><a href="#">اعضاء الادارة</a></li>
 
@@ -205,8 +205,8 @@
                                     <h4>تواصل معنا</h4>
                                     <ul>
                                         <li><a href="#">الدعم الفني</a></li>
-                                        <li><a href="#">info@jehat.sa</a></li>
-                                        <li><a href="#">+966553777769</a></li>
+                                        <li><a href="mailto:info@jehat.sa" target="_blank">info@jehat.sa</a></li>
+                                        <li><a href="https://wa.me/966553777769?text=" target="_blank">+966553777769</a></li>
 
                                     </ul>
                                 </div>
@@ -224,7 +224,7 @@
                                 <div class="footer-copy-right text-center">
                                     <p>
 
-                                        جميع الحقوق محفوظة منصة جهات &copy; 2022
+                                        جميع الحقوق محفوظة منصة جهات &copy; 2023
 
                                     </p>
                                 </div>
