@@ -49,11 +49,7 @@
         </div>
     </div>
     <!-- Preloader Start -->
-    <?php
-    $currentURL = url()->current();
-  
-    var_dump($currentURL);
-    ?>
+
 
     <header>
         <!-- Header Start -->
@@ -75,17 +71,25 @@
                                     <div class="main-menu d-none d-lg-block">
                                         <nav>
                                             <ul id="navigation">
-                                                <li><a class="active" href="{{ URL :: to ('/')}}">الرئيسية </a></li>
-                                                <li><a href="{{ URL :: to ('/aboutUs')}}">من نحن</a></li>
-                                                <li><a href="{{ URL :: to ('/contactUs')}}">تواصل معنا</a></li>
-                                                <li><a href="#">دليل المستخدم</a>
+                                                <li><a @if(Request::segment(1) == '') class="active"  @endif
+                                                href="{{ URL :: to ('/')}}">الرئيسية </a></li>
+                                                <li><a @if(Request::segment(1) == 'aboutUs') class="active"  @endif 
+                                                href="{{ URL :: to ('/aboutUs')}}">من نحن</a></li>
+                                                <li><a @if(Request::segment(1) == 'contactUs') class="active"  @endif 
+                                                href="{{ URL :: to ('/contactUs')}}">تواصل معنا</a></li>
+                                                <li><a @if(Request::segment(1) == 'helpcenter' || 
+                                                Request::segment(1) == 'media' ||
+                                                Request::segment(1) == 'question') class="active"  @endif 
+                                                href="#">دليل المستخدم</a>
                                                     <ul class="submenu">
                                                         <li><a href="{{ URL :: to ('/helpcenter')}}">مركز المساعدة</a></li>
                                                         <li><a href="{{ URL :: to ('/media')}}">المركز الأعلامي </a></li>
                                                         <li><a href="{{ URL :: to ('/question')}}">اسئلة شائعة</a></li>
                                                     </ul>
-                                                <li><a href="{{ URL :: to ('/cards')}}">الأبراج الأفتراضية</a></li>
-                                                <li><a href="{{ URL :: to ('/news')}}"> الاخبار</a></li>
+                                                <li><a @if(Request::segment(1) == 'cards') class="active" @endif 
+                                                href="{{ URL :: to ('/cards')}}">الأبراج الأفتراضية</a></li>
+                                                <li><a @if(Request::segment(1) == 'news') class="active" @endif 
+                                                href="{{ URL :: to ('/news')}}"> الاخبار</a></li>
                                             </ul>
                                         </nav>
                                     </div>

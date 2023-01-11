@@ -23,7 +23,7 @@ class DepartmentsController extends Controller
         $allData = Department::all();
         foreach ($allData as $data) {
             $cData = Companies::where('id', $data->company_id)->first();
-            if(count($cData) > 0)
+            if($cData)
             {$data->companyName = $cData->name_ar;}
             else{
                 $data->companyName = '';
