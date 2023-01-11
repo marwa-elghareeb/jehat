@@ -65,6 +65,11 @@
                     </div>
                 </div>
                 <div class="col-lg-8 col-md-7 col-sm-12 my-0">
+                <div class="content-wrapper">
+            @if(Session::has('flash_message'))
+            <p class="alert alert-info">{{ Session::get('flash_message') }}</p>
+            @endif
+        </div>
                     <div class="form">
                     <form enctype="multipart/form-data" method="post" 
                             action="{{ URL :: to ('/contactUsForm')}}">

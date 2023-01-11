@@ -30,7 +30,8 @@ class IndexController extends Controller
 
         ]);
         //send email
-        $name = $request->name;
+       // mail("info@jehat.sa",$request->name,$request->message);
+        return back()->with('flash_message','تم ارسال الرساله بنجاح وسيتم التواصل فى اقرب وقت');
 
     }
 
