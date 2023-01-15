@@ -21,7 +21,7 @@
 }
 
 .theme-bg {
-    background: #404DFF
+    background: #009688
 }
 
 .brand-bg {
@@ -41,15 +41,15 @@
 }
 
 .theme-color {
-    color: #404DFF
+    color: #009688
 }
 
 
 
 .boxed-btn:hover {
-    background: #404DFF;
+    background: #009688;
     color: #fff !important;
-    border: 1px solid #404DFF
+    border: 1px solid #009688
 }
 
 .boxed-btn:focus {
@@ -355,7 +355,7 @@ hr {
 }
 
 .btn {
-    background: #404DFF;
+    background: #009688;
     font-family: "Raleway", sans-serif;
     text-transform: capitalize;
     padding: 25px 38px;
@@ -387,7 +387,7 @@ hr {
     top: 0;
     width: 101%;
     height: 101%;
-    background: #AE59FF;
+    background: #009688;
     z-index: 1;
     border-radius: 5px;
     transition: transform 0.5s;
@@ -489,7 +489,7 @@ hr {
 }
 
 .white-btn::before {
-    background: #404DFF;
+    background: #009688;
     color: #fff !important
 }
 
@@ -520,7 +520,7 @@ hr {
 }
 
 .submit-btn2 {
-    background: #404DFF;
+    background: #009688;
     width: 100%;
     height: 60px;
     padding: 10px 20px;
@@ -600,7 +600,7 @@ hr {
 }
 
 .border-btn:hover {
-    color: #404DFF !important
+    color: #009688 !important
 }
 
 .section-over1 {
@@ -628,7 +628,7 @@ hr {
 
 #scrollUp,
 #back-top {
-    background: #404DFF;
+    background: #009688;
     height: 50px;
     width: 50px;
     z-index: 9999;
@@ -663,13 +663,13 @@ hr {
 }
 
 .all-btn {
-    color: #404DFF;
+    color: #009688;
     text-decoration: underline;
     font-size: 16px
 }
 
 .all-btn:hover {
-    color: #404DFF;
+    color: #009688;
     text-decoration: underline;
     letter-spacing: 1px
 }
@@ -2096,7 +2096,7 @@ hr {
     position: relative;
     border-style: solid;
     border-width: 1px;
-    border-top-color: #404DFF;
+    border-top-color: #009688;
     border-bottom-color: transparent;
     border-left-color: transparent;
     border-right-color: transparent;
@@ -2631,7 +2631,7 @@ hr {
     font-size: 18px;
     font-weight: 700;
     margin-bottom: 22px;
-    color: #404DFF;
+    color: #009688;
     text-transform: capitalize;
     display: inline-block;
     letter-spacing: 0.05em
@@ -2691,7 +2691,7 @@ hr {
 }
 
 .theme-bg {
-    background: #404DFF
+    background: #009688
 }
 
 .brand-bg {
@@ -2711,7 +2711,7 @@ hr {
 }
 
 .theme-color {
-    color: #404DFF
+    color: #009688
 }
 
 @media only screen and (min-width: 768px) and (max-width: 991px) {
@@ -2896,7 +2896,7 @@ hr {
 }
 
 .header-sticky.sticky-bar {
-    background: #5e3ecf;
+    background: #009688;
 }
 
 .header-sticky.sticky-bar.sticky .main-menu ul li a {
@@ -2947,7 +2947,7 @@ hr {
 
 .mobile_menu .slicknav_menu .slicknav_nav a:hover {
     background: transparent;
-    color: #404DFF
+    color: #009688
 }
 
 .mobile_menu .slicknav_menu .slicknav_nav a {
@@ -3285,7 +3285,7 @@ hr {
 .about-area2 .about-caption .about-icon {
     width: 80px;
     height: 80px;
-    background: #CC51FF;
+    background: #009688;
     border-radius: 50px;
     display: inline-block;
     position: relative;
@@ -3499,7 +3499,7 @@ hr {
 }
 
 .collapse-wrapper .card-header a.btn-link {
-    color: #404DFF
+    color: #009688
 }
 
 .collapse-wrapper .card-header a.collapsed {
@@ -3509,14 +3509,14 @@ hr {
 .collapse-wrapper .card-header h2 a.collapsed::after {
     content: "\e61a";
     font-weight: 800;
-    color: #404DFF
+    color: #009688
 }
 
 .collapse-wrapper .card-header h2 a::after {
     position: absolute;
     top: 22px;
     font-size: 15px;
-    color: #404DFF;
+    color: #009688;
     left: 8px;
     font-weight: 600;
     content: "\e622";
@@ -3682,7 +3682,7 @@ hr {
 }
 
 .h1-testimonial-active.dot-style .slick-active button {
-    color: #404DFF
+    color: #009688
 }
 
 .slick-initialized .slick-slide {
@@ -3765,7 +3765,7 @@ hr {
 }
 
 .our-services .single-services .services-cap h5 a:hover {
-    color: #404DFF
+    color: #009688
 }
 
 .our-services .single-services .services-cap p {
@@ -3775,7 +3775,7 @@ hr {
 }
 
 .our-services .single-services .services-cap a.more-btn {
-    color: #404DFF;
+    color: #009688;
     font-size: 18px;
     font-weight: 400
 }
@@ -3785,7 +3785,7 @@ hr {
 }
 
 .our-services .single-services:hover .services-ion span {
-    color: #404DFF
+    color: #009688
 }
 
 @media (max-width: 575px) {
@@ -3892,7 +3892,7 @@ hr {
 }
 
 .top-jobs .single-top-jobs .services-cap h5 a:hover {
-    color: #404DFF
+    color: #009688
 }
 
 .top-jobs .single-top-jobs .services-cap p {
@@ -3900,7 +3900,7 @@ hr {
 }
 
 .top-jobs .single-top-jobs .services-cap a.more-btn {
-    color: #404DFF;
+    color: #009688;
     font-size: 18px;
     font-weight: 400
 }
@@ -3910,7 +3910,7 @@ hr {
 }
 
 .top-jobs .single-top-jobs:hover .services-ion span {
-    color: #404DFF
+    color: #009688
 }
 
 .top-jobs .single-top-jobs .stickers {
@@ -4027,7 +4027,7 @@ hr {
 }
 
 .footer-area .info.error {
-    color: #404DFF
+    color: #009688
 }
 
 .footer-bottom-area .footer-border {
@@ -4043,16 +4043,16 @@ hr {
 }
 
 .footer-bottom-area .footer-copy-right p i {
-    color: #404DFF
+    color: #009688
 }
 
 .footer-bottom-area .footer-copy-right p a {
-    color: #404DFF
+    color: #009688
 }
 
 .footer-social a {
-    background: rgba(128, 136, 255, 0.1);
-    color: #8088FF;
+    background: hsl(174deg 100% 29% / 10%);
+    color: #ffffff;
     width: 40px;
     height: 40px;
     border-radius: 50%;
@@ -4060,12 +4060,12 @@ hr {
     line-height: 40px;
     display: inline-block;
     text-align: center;
-    margin-right: 0px
+    margin-right: 0px;
 }
 
 .footer-social a:hover {
     color: #fff;
-    background: #404DFF
+    background: #009688
 }
 
 .footer-social a i {
@@ -4147,11 +4147,11 @@ hr {
 }
 
 .login-form .form-input input::placeholder {
-    color: #404DFF
+    color: #009688
 }
 
 .login-form .form-input input[type="submit"] {
-    background: #404DFF;
+    background: #009688;
     color: #fff;
     border: none;
     cursor: pointer;
@@ -4165,13 +4165,13 @@ hr {
 
 .login-form .form-input input[type="submit"]:hover {
     background: #000;
-    background: #404DFF
+    background: #009688
 }
 
 .login-form .forget {
     display: block;
     margin-top: 30px;
-    color: #404DFF;
+    color: #009688;
     font-weight: 600;
     text-decoration: underline;
     margin-bottom: 5px
@@ -4183,7 +4183,7 @@ hr {
 
 .login-form .registration {
     display: block;
-    color: #404DFF;
+    color: #009688;
     font-weight: 600;
     text-decoration: underline;
     margin-bottom: 5px
@@ -4330,7 +4330,7 @@ hr {
 }
 
 .home-blog-area .home-blog-single .blog-img-cap .blog-cap h3 a:hover {
-    color: #404DFF
+    color: #009688
 }
 
 @media only screen and (min-width: 768px) and (max-width: 991px) {
@@ -4364,7 +4364,7 @@ hr {
 }
 
 .home-blog-single:hover .blog-img-cap .blog-img .blog-date {
-    background: #404DFF
+    background: #009688
 }
 
 .home-blog-single:hover .blog-img-cap .blog-img img {
@@ -4390,7 +4390,7 @@ hr {
 
 .blog_area a:hover,
 .blog_area a :hover {
-    background: -webkit-linear-gradient(131deg, #404DFF 0%, #404DFF 99%);
+    background: -webkit-linear-gradient(131deg, #009688 0%, #009688 99%);
     background-clip: text;
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
@@ -4831,7 +4831,7 @@ hr {
 }
 
 .blog_details a:hover {
-    color: #404DFF
+    color: #009688
 }
 
 .blog_details h2 {
@@ -4889,7 +4889,7 @@ hr {
     left: 10px;
     display: block;
     color: #fff;
-    background-color: #404DFF;
+    background-color: #009688;
     padding: 8px 15px;
     border-radius: 5px
 }
@@ -4969,14 +4969,14 @@ hr {
 }
 .input-group-append
 {
-    background: #404dff;
+    background: #009688;
 }
 .blog_right_sidebar .search_widget .input-group button {
     border-left: 0;
     border: 0;
     padding: 12px 15px;
     cursor: pointer;
-    background: #404dff;
+    background: #009688;
 }
 
 .blog_right_sidebar .search_widget .input-group button i {
@@ -5094,7 +5094,7 @@ hr {
 }
 
 .blog_right_sidebar .tag_cloud_widget ul li a:hover {
-    background: #404DFF;
+    background: #009688;
     color: #fff !important;
     -webkit-text-fill-color: #fff;
     text-decoration: none;
@@ -5308,7 +5308,7 @@ hr {
 }
 
 .single-post-area .blog-author a:hover {
-    color: #404DFF
+    color: #009688
 }
 
 .single-post-area .blog-author p {
@@ -5611,7 +5611,7 @@ hr {
 }
 
 .contact-info .media-body h3 a:hover {
-    color: #1f2b7b
+    color: #009688
 }
 
 .contact-info .media-body p {
@@ -5701,7 +5701,7 @@ hr {
 }
 
 .contact-section .btn_2:hover {
-    background-color: #1f2b7b
+    background-color: #009688
 }
 
 .breadcam_bg {
@@ -5989,7 +5989,7 @@ sup,
 sub,
 u,
 del {
-    color: #1f2b7b
+    color: #009688
 }
 
 .typography h1,
@@ -6101,25 +6101,25 @@ del {
 
 .genric-btn.primary {
     color: #fff;
-    background: #1f2b7b;
+    background: #009688;
     border: 1px solid transparent
 }
 
 .genric-btn.primary:hover {
-    color: #1f2b7b;
-    border: 1px solid #1f2b7b;
+    color: #009688;
+    border: 1px solid #009688;
     background: #fff
 }
 
 .genric-btn.primary-border {
-    color: #1f2b7b;
-    border: 1px solid #1f2b7b;
+    color: #009688;
+    border: 1px solid #009688;
     background: #fff
 }
 
 .genric-btn.primary-border:hover {
     color: #fff;
-    background: #1f2b7b;
+    background: #009688;
     border: 1px solid transparent
 }
 
@@ -6255,7 +6255,7 @@ del {
 .generic-blockquote {
     padding: 30px 50px 30px 30px;
     background: #f9f9ff;
-    border-left: 2px solid #1f2b7b
+    border-left: 2px solid #009688
 }
 
 .progress-table-wrap {
@@ -6385,7 +6385,7 @@ del {
     position: absolute;
     width: 14px;
     height: 14px;
-    border: 3px solid #1f2b7b;
+    border: 3px solid #009688;
     background: #fff;
     top: 4px;
     left: 0;
@@ -6398,7 +6398,7 @@ del {
 
 .ordered-list li {
     list-style-type: decimal-leading-zero;
-    color: #1f2b7b;
+    color: #009688;
     font-weight: 500;
     line-height: 1.82em !important
 }
@@ -6411,7 +6411,7 @@ del {
 .ordered-list-alpha li {
     margin-left: 30px;
     list-style-type: lower-alpha;
-    color: #1f2b7b;
+    color: #009688;
     font-weight: 500;
     line-height: 1.82em !important
 }
@@ -6424,7 +6424,7 @@ del {
 .ordered-list-roman li {
     margin-left: 30px;
     list-style-type: lower-roman;
-    color: #1f2b7b;
+    color: #009688;
     font-weight: 500;
     line-height: 1.82em !important
 }
@@ -6496,7 +6496,7 @@ del {
 
 .single-input-primary:focus {
     outline: none;
-    border: 1px solid #1f2b7b
+    border: 1px solid #009688
 }
 
 .single-input-accent {
@@ -6557,7 +6557,7 @@ del {
     width: 15px;
     height: 15px;
     border-radius: 50%;
-    background: #1f2b7b;
+    background: #009688;
     -webkit-transition: all 0.2s;
     -moz-transition: all 0.2s;
     -o-transition: all 0.2s;
@@ -6640,7 +6640,7 @@ del {
 }
 
 .primary-switch input:checked+label:before {
-    background: #1f2b7b
+    background: #009688
 }
 
 .confirm-switch {
@@ -6989,12 +6989,12 @@ del {
 }
 
 .default-select .nice-select .list .option.selected {
-    color: #1f2b7b;
+    color: #009688;
     background: transparent
 }
 
 .default-select .nice-select .list .option:hover {
-    color: #1f2b7b;
+    color: #009688;
     background: transparent
 }
 
@@ -7044,12 +7044,12 @@ del {
 }
 
 .form-select .nice-select .list .option.selected {
-    color: #1f2b7b;
+    color: #009688;
     background: transparent
 }
 
 .form-select .nice-select .list .option:hover {
-    color: #1f2b7b;
+    color: #009688;
     background: transparent
 }
 
