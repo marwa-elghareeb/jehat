@@ -43,6 +43,8 @@ Route::post('/search', [IndexController::class, 'search']);
 Route::get('/cards', [IndexController::class, 'cards']);
 Route::get('/towers', [IndexController::class, 'towers']);
 Route::get('/allCompanies', [IndexController::class, 'companies']);
+Route::get('/reception/{id}', [IndexController::class, 'reception']);
+Route::get('/userLogin', [IndexController::class, 'userLogin']);
 Route::get('/department/{id}', [IndexController::class, 'department']);
 Route::get('/employe/{id}', [IndexController::class, 'employees']);
 Route::get('/allEvents', [IndexController::class, 'events']);

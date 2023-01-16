@@ -58,6 +58,16 @@
                                 </div>
 
                                 <div class="form-group row align-items-center">
+                                    <label class="col-sm-3 col-form-label text-label">Reception link</label>
+                                    <div class="col-sm-9">
+                                        <div class="input-group">
+                                            <input type="text" class="form-control" value="{{ $editData->reception_link}}" name="reception_link" id="validationDefaultUsername1" aria-describedby="validationDefaultUsername1">
+                                        </div>
+                                       
+                                    </div>
+                                </div>
+
+                                <div class="form-group row align-items-center">
                                     <label class="col-sm-3 col-form-label text-label">Upload Images</label>
                                     <div class="col-sm-9">
                                         <div class="input-group">
