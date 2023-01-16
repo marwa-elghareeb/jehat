@@ -4,23 +4,29 @@ use Illuminate\Database\Migrations\Migration;
 use Illuminate\Database\Schema\Blueprint;
 use Illuminate\Support\Facades\Schema;
 
-class CreateCompaniesTable extends Migration
+class Media extends Migration
 {
     /**
-     * Run the migrations. 
+     * Run the migrations.
      *
      * @return void
      */
     public function up()
     {
-        Schema::create('companies', function (Blueprint $table) {
+        Schema::create('Media', function (Blueprint $table) {
             $table->id();
+            $table->string('title_ar');
+            $table->string('title_en');
             $table->string('name_ar');
             $table->string('name_en');
-            $table->string('reception_link');
+            $table->string('desc_ar');
+            $table->string('desc_en');
             $table->string('image');
-            $table->timestamps();
+            $table->string('link');
+           
+            
         });
+        //
     }
 
     /**
@@ -30,6 +36,6 @@ class CreateCompaniesTable extends Migration
      */
     public function down()
     {
-        Schema::dropIfExists('companies');
+        //
     }
 }

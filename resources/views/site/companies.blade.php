@@ -46,7 +46,7 @@
                             <h1 class="card-title"> {{ $data->name_ar }}</h1>
                         </div>
                         <div class="button-one ">
-                            <a href="{{ URL :: to ('/department' , $data->id )}}" class=" " 
+                            <a href="{{ URL :: to ('/reception' , $data->id )}}" class=" " 
                             role="button" aria-pressed="true">
                             <i class="fa fa-user"></i>الاقسام والموظفين</a>
                         </div>
