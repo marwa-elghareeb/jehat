@@ -10,34 +10,7 @@ use App\Http\Controllers\Admin\ActivityController;
 use App\Http\Controllers\Admin\FAQController;
 use App\Http\Controllers\Admin\DepartmentsController;
 use App\Http\Controllers\Admin\EventsController;
-
 use App\Http\Controllers\Site\IndexController;
-//use Illuminate\Support\Facades\Route;
-use App\Http\Controllers\ProductController;
-use App\Http\Controllers\ClientController;
-use App\Http\Controllers\FluentController;
-use App\Http\Controllers\LoginController;
-use App\Http\Controllers\SessionController;
-use App\Http\Controllers\PostController;
-use App\Http\Controllers\PaginationController;
-use App\Http\Controllers\UploadController;
-use App\Http\Controllers\RoleController;
-use App\Http\Controllers\UserController;
-use App\PayementGeteway\Payment;
-use App\Http\Controllers\MailController;
-use App\Http\Controllers\EmployeeController;
-use App\Http\Controllers\ExportpdfController;
-use App\Http\Controllers\ImageController;
-use App\Http\Controllers\DropzoneController;
-use App\Http\Controllers\GalleryController;
-use App\Http\Controllers\EditorController;
-use App\Http\Controllers\StudentController;
-use App\Http\Controllers\ContactController;
-
-
-use App\Http\Controllers\TestController;
-use App\Http\Controllers\ZipController;
-use App\Http\Controllers\AuthController;
 /*
 |--------------------------------------------------------------------------
 | Web Routes
