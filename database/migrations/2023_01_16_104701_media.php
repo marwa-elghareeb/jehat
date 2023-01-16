@@ -23,7 +23,7 @@ class Media extends Migration
             $table->string('desc_en');
             $table->string('image');
             $table->string('link');
-           
+            $table->timestamps();
             
         });
         //
