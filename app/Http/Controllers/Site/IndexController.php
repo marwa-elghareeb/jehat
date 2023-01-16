@@ -165,6 +165,15 @@ class IndexController extends Controller
         return view('site.companies')->with([ 'allData' => $allData ]);
     }
 
+    public function reception($id)
+    {
+        return view('site.reception');
+    }
+
+    public function userLogin()
+    {
+        return view('site.userLogin');
+    }
     public function department($id)
     {
         $cData = Companies::where('id', $id)->first();

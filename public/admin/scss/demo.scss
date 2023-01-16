@@ -1,6 +1,6 @@
 .radio-demo-colored {
     .form-radio {
-        flex-basis: (100% / 7 );
+        flex-basis: (100% / 7);
         margin-bottom: 2rem;
     }
 }
@@ -8,9 +8,10 @@
 .demo-checkbox {
     label {
         margin-bottom: 2rem;
-        min-width    : 20rem;
+        min-width: 20rem;
     }
 }
+
 .form-check {
     padding-left: 0;
 }
@@ -18,7 +19,7 @@
 .demo-radio-button {
     label {
         margin-bottom: 2rem;
-        min-width    : 20rem;
+        min-width: 20rem;
     }
 }
 
@@ -34,6 +35,7 @@
 .basic-filled-in-checkboxes {
     .form-check {
         flex-basis: (100% / 7);
+        
     }
 }
 

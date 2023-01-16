@@ -51,6 +51,7 @@ class CompaniesController extends Controller
         $data = new Companies();
         $data->name_ar = $request->name_ar;
         $data->name_en = $request->name_en;
+        $data->reception_link = $request->reception_link;
         if ($request->file('images')) {
             $file = $request->file('images');
             $filename = date('YmdHi') . $file->getClientOriginalName();
@@ -107,6 +108,7 @@ class CompaniesController extends Controller
 
         $data->name_ar = $request->name_ar;
         $data->name_en = $request->name_en;
+        $data->reception_link = $request->reception_link;
         if ($request->file('images')) {
             $file = $request->file('images');
             $filename = date('YmdHi') . $file->getClientOriginalName();

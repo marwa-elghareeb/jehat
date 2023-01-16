@@ -7,7 +7,7 @@ use Illuminate\Support\Facades\Schema;
 class CreateCompaniesTable extends Migration
 {
     /**
-     * Run the migrations.
+     * Run the migrations. 
      *
      * @return void
      */
@@ -17,6 +17,7 @@ class CreateCompaniesTable extends Migration
             $table->id();
             $table->string('name_ar');
             $table->string('name_en');
+            $table->string('reception_link');
             $table->string('image');
             $table->timestamps();
         });
