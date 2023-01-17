@@ -1,8 +1,10 @@
 <?php
 
-namespace App\Http\Controllers;
+namespace App\Http\Controllers\Admin;
 
-use Illuminate\Http\Request;
+use App\Http\Controllers\Controller;
+use App\model\contact;
+
 
 class ContactController extends Controller
 {
@@ -14,6 +16,8 @@ class ContactController extends Controller
     public function index()
     {
         //
+        $allData = Contact::all();
+        return view('admin.contact.list')->with(['allData' => $allData]);
     }
 
     /**

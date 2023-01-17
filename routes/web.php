@@ -15,7 +15,6 @@ use App\Http\Controllers\Admin\aboutusController;
 use App\Http\Controllers\Admin\MediaController;
 use App\Http\Controllers\Admin\NewsController;
 use App\Http\Controllers\Admin\CardsController;
-
 use App\Http\Controllers\Site\IndexController;
 /*
 |--------------------------------------------------------------------------
@@ -47,6 +46,7 @@ Route::get('/question', [IndexController::class, 'question']);
 Route::post('/search', [IndexController::class, 'search']);
 //Towers
 Route::get('/cards', [IndexController::class, 'cards']);
+Route::get('/contact', [IndexController::class, 'contact']);
 Route::get('/towers', [IndexController::class, 'towers']);
 Route::get('/allCompanies', [IndexController::class, 'companies']);
 Route::get('/reception/{id}', [IndexController::class, 'reception']);
