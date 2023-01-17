@@ -2,8 +2,8 @@
 namespace App\Http\Controllers\Admin;
 
 use App\Http\Controllers\Controller;
-
 use Illuminate\Http\Request;
+use App\Models\Cards;
 
 class CardsController extends Controller
 {
@@ -15,6 +15,8 @@ class CardsController extends Controller
     public function index()
     {
         //
+        $allData = Cards::all();
+        return view('admin.cards.list')->with(['allData' => $allData]);
     }
 
     /**

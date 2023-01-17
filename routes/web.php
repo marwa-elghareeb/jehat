@@ -11,6 +11,11 @@ use App\Http\Controllers\Admin\FAQController;
 use App\Http\Controllers\Admin\DepartmentsController;
 use App\Http\Controllers\Admin\ContactController;
 use App\Http\Controllers\Admin\EventsController;
+use App\Http\Controllers\Admin\aboutusController;
+use App\Http\Controllers\Admin\MediaController;
+use App\Http\Controllers\Admin\NewsController;
+use App\Http\Controllers\Admin\CardsController;
+
 use App\Http\Controllers\Site\IndexController;
 /*
 |--------------------------------------------------------------------------
