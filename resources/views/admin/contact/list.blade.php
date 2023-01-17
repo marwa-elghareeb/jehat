@@ -9,13 +9,13 @@
     <div class="container-fluid">
         <div class="row page-titles">
             <div class="col p-md-0">
-                <h4>contact</h4>
+                <h4>Media</h4>
             </div>
             <div class="col p-md-0">
                 <ol class="breadcrumb">
-                    <li class="breadcrumb-item"><a href="{{ route('media-data.index') }}">Contact</a>
+                    <li class="breadcrumb-item"><a href="{{ route('media-data.index') }}">Cards</a>
                     </li>
-                    <li class="breadcrumb-item active">contact</li>
+                    <li class="breadcrumb-item active">Show Media</li>
                 </ol>
             </div>
         </div>
