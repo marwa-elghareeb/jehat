@@ -2,8 +2,8 @@
 namespace App\Http\Controllers\Admin;
 
 use App\Http\Controllers\Controller;
-
 use Illuminate\Http\Request;
+use App\Models\about;
 
 class aboutusController extends Controller
 {
@@ -14,7 +14,8 @@ class aboutusController extends Controller
      */
     public function index()
     {
-        //
+         $allData = about::all();
+        return view('admin.about.list')->with(['allData' => $allData]);
     }
 
     /**

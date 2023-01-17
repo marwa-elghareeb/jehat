@@ -68,7 +68,7 @@ Route::group(['middleware' => ['auth']], function () {
     Route::resource('faq', FAQController::class);
     Route::resource('departments', DepartmentsController::class);
     Route::resource('events', EventsController::class);
-    Route::resource('aboutus-data', aboutusController::class);
+    Route::resource('about-data', aboutusController::class);
     Route::resource('media-data', MediaController::class);
     Route::resource('news-data', NewsController::class);
     Route::resource('cards-data', CardsController::class);
