@@ -11,7 +11,7 @@ use App\Http\Controllers\Admin\FAQController;
 use App\Http\Controllers\Admin\DepartmentsController;
 use App\Http\Controllers\Admin\ContactController;
 use App\Http\Controllers\Admin\EventsController;
-use App\Http\Controllers\Admin\aboutusController;
+use App\Http\Controllers\Admin\AboutusController;
 use App\Http\Controllers\Admin\MediaController;
 use App\Http\Controllers\Admin\NewsController;
 use App\Http\Controllers\Admin\CardsController;
@@ -68,7 +68,7 @@ Route::group(['middleware' => ['auth']], function () {
     Route::resource('faq', FAQController::class);
     Route::resource('departments', DepartmentsController::class);
     Route::resource('events', EventsController::class);
-    Route::resource('about-data', aboutusController::class);
+    Route::resource('about-data', AboutusController::class);
     Route::resource('media-data', MediaController::class);
     Route::resource('news-data', NewsController::class);
     Route::resource('cards-data', CardsController::class);
