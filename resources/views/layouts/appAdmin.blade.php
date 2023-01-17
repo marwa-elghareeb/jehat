@@ -14,23 +14,23 @@
     <link href="{{ asset('admin/assets/plugins/datatables/css/jquery.dataTables.min.css')}}" rel="stylesheet">
     <link href="{{ asset('admin/assets/plugins/nestable2/css/jquery.nestable.min.css')}}" rel="stylesheet">
     <script>
-    function myFunction() {
-       
-        var isArabic = /^([\u0600-\u06ff]|[\u0750-\u077f]|[\ufb50-\ufbc1]|[\ufbd3-\ufd3f]|[\ufd50-\ufd8f]|[\ufd92-\ufdc7]|[\ufe70-\ufefc]|[\ufdf0-\ufdfd]|[ ])*$/g;        
-          if(isArabic.test($.trim($('#fname').val()))){
-           // console.log('is arabic');
-          }else{
-           // console.log('not arabic');
-            document.getElementById('fname').value = '';
-            alert("يقبل حروف عربى فقط");
-          }
-    }
-</script>
+        function myFunction() {
+
+            var isArabic = /^([\u0600-\u06ff]|[\u0750-\u077f]|[\ufb50-\ufbc1]|[\ufbd3-\ufd3f]|[\ufd50-\ufd8f]|[\ufd92-\ufdc7]|[\ufe70-\ufefc]|[\ufdf0-\ufdfd]|[ ])*$/g;
+            if (isArabic.test($.trim($('#fname').val()))) {
+                // console.log('is arabic');
+            } else {
+                // console.log('not arabic');
+                document.getElementById('fname').value = '';
+                alert("يقبل حروف عربى فقط");
+            }
+        }
+    </script>
 
 </head>
 
 <body>
-    
+
     <!--*******************
         Preloader start
     ********************-->
@@ -45,7 +45,7 @@
         Preloader end
     ********************-->
 
-    
+
     <!--**********************************
         Main wrapper start
     ***********************************-->
@@ -58,7 +58,7 @@
             <div class="brand-logo"><a href="#"><b><img src="{{ asset('admin/assets/images/logo.png')}}" alt=""> </b><span class="brand-title"><img src="../../assets/images/logo-text.png" alt=""></span></a>
             </div>
             <div class="nav-control">
-                <div class="hamburger"><span class="line"></span>  <span class="line"></span>  <span class="line"></span>
+                <div class="hamburger"><span class="line"></span> <span class="line"></span> <span class="line"></span>
                 </div>
             </div>
         </div>
@@ -69,7 +69,7 @@
         <!--**********************************
             Header start
         ***********************************-->
-        <div class="header">    
+        <div class="header">
             <div class="header-content">
                 <div class="header-left">
                     <ul>
@@ -92,24 +92,23 @@
                 </div>
                 <div class="header-right">
                     <ul>
-                       
+
                         <li class="icons">
                             <a href="javascript:void(0)" class="log-user">
-                                <!--img src="{{ asset('admin/assets/images/avatar/1.jpg')}}" alt=""--> 
-                                <span>{{ Auth::user()->name }}</span>  
+                                <!--img src="{{ asset('admin/assets/images/avatar/1.jpg')}}" alt=""-->
+                                <span>{{ Auth::user()->name }}</span>
                                 <i class="fa fa-caret-down f-s-14" aria-hidden="true"></i>
                             </a>
                             <div class="drop-down dropdown-profile animated bounceInDown">
                                 <div class="dropdown-content-body">
                                     <ul>
-                                        
-                                        <li><a  href="{{ route('logout') }}" onclick="event.preventDefault();
-                                                     document.getElementById('logout-form').submit();"
-                                                     ><i class="icon-power"></i> <span>Logout</span></a>
 
-                                                     <form id="logout-form" action="{{ route('logout') }}" method="POST" class="d-none">
-                                        @csrf
-                                    </form>
+                                        <li><a href="{{ route('logout') }}" onclick="event.preventDefault();
+                                                     document.getElementById('logout-form').submit();"><i class="icon-power"></i> <span>Logout</span></a>
+
+                                            <form id="logout-form" action="{{ route('logout') }}" method="POST" class="d-none">
+                                                @csrf
+                                            </form>
                                         </li>
                                     </ul>
                                 </div>
@@ -126,15 +125,15 @@
         <!--**********************************
             Sidebar start
         ***********************************-->
-        <div class="nk-sidebar">           
+        <div class="nk-sidebar">
             <div class="nk-nav-scroll">
                 <ul class="metismenu" id="menu">
-                  
+
                     <li class="mega-menu mega-menu-lg">
-                        <a class="has-arrow" href="{{ route('home') }}" aria-expanded="false" style="width: max-content;cursor: pointer;" >
+                        <a class="has-arrow" href="{{ route('home') }}" aria-expanded="false" style="width: max-content;cursor: pointer;">
                             <i class="mdi mdi-view-dashboard"></i><span class="nav-text">Dashboard</span>
                         </a>
-                    
+
                     </li>
 
 
@@ -142,7 +141,7 @@
                         <a class="has-arrow" href="{{ route('list.index') }}" aria-expanded="false" style="width: max-content;cursor: pointer;">
                             <i class="mdi mdi-view-list"></i><span class="nav-text">Categories</span>
                         </a>
-                    
+
                     </li>
 
 
@@ -150,14 +149,14 @@
                         <a class="has-arrow" href="{{ route('pages.index') }}" aria-expanded="false" style="width: max-content;cursor: pointer;">
                             <i class="mdi mdi-table"></i><span class="nav-text">Pages</span>
                         </a>
-                    
+
                     </li>
 
                     <li class="mega-menu mega-menu-lg">
                         <a class="has-arrow" href="{{ route('faq.index') }}" aria-expanded="false" style="width: max-content;cursor: pointer;">
                             <i class="fa fa-question-circle"></i><span class="nav-text">FAQ</span>
                         </a>
-                    
+
                     </li>
 
 
@@ -165,35 +164,66 @@
                         <a class="has-arrow" href="{{ route('companies.index') }}" aria-expanded="false" style="width: max-content;cursor: pointer;">
                             <i class="mdi mdi-widgets"></i><span class="nav-text">Companies</span>
                         </a>
-                    
+
                     </li>
 
                     <li class="mega-menu mega-menu-lg">
                         <a class="has-arrow" href="{{ route('departments.index') }}" aria-expanded="false" style="width: max-content;cursor: pointer;">
                             <i class="fa fa-building"></i><span class="nav-text">Departments</span>
                         </a>
-                    
+
                     </li>
 
                     <li class="mega-menu mega-menu-lg">
                         <a class="has-arrow" href="{{ route('employees.index') }}" aria-expanded="false" style="width: max-content;cursor: pointer;">
                             <i class="fa fa-users"></i><span class="nav-text">Employees</span>
                         </a>
-                    
+
                     </li>
 
-                    
+                    <li class="mega-menu mega-menu-lg">
+                        <a class="has-arrow" href="{{ route('aboutus-data.index') }}" aria-expanded="false" style="width: max-content;cursor: pointer;">
+                            <i class="mdi mdi-gradient"></i><span class="nav-text">About US</span>
+                        </a>
+
+                    </li>
+                    <li class="mega-menu mega-menu-lg">
+                        <a class="has-arrow" href="{{ route('media-data.index') }}" aria-expanded="false" style="width: max-content;cursor: pointer;">
+                            <i class="mdi mdi-television-guide"></i><span class="nav-text">Media</span>
+                        </a>
+
+                    </li>
+
+                    <li class="mega-menu mega-menu-lg">
+                        <a class="has-arrow" href="{{ route('news-data.index') }}" aria-expanded="false" style="width: max-content;cursor: pointer;">
+                            <i class="mdi mdi-book-open-page-variant"></i><span class="nav-text">News</span>
+                        </a>
+
+                    </li>
+
+                    <li class="mega-menu mega-menu-lg">
+                        <a class="has-arrow" href="{{ route('cards-data.index') }}" aria-expanded="false" style="width: max-content;cursor: pointer;">
+                            <i class="mdi mdi-page-layout-body"></i><span class="nav-text">Cards</span>
+                        </a>
+
+                    </li>
+
+                    <li class="mega-menu mega-menu-lg">
+                        <a class="has-arrow" href="{{ route('contact-data.index') }}" aria-expanded="false" style="width: max-content;cursor: pointer;">
+                            <i class="mdi mdi-email-outline"></i><span class="nav-text">Contact Us</span>
+                        </a>
+
+                    </li>
 
 
                     <li class="mega-menu mega-menu-lg">
                         <a class="has-arrow" href="{{ route('activitylog.index') }}" aria-expanded="false" style="width: max-content;cursor: pointer;">
                             <i class="fa fa-list"></i><span class="nav-text">Activity</span>
                         </a>
-                    
                     </li>
 
-                    
-                    
+
+
                 </ul>
             </div>
         </div>
@@ -208,8 +238,8 @@
         <!--**********************************
             Content body end
         ***********************************-->
-        
-        
+
+
         <!--**********************************
             Footer start
         ***********************************-->
@@ -222,11 +252,11 @@
             Footer end
         ***********************************-->
 
-        
+
         <!--**********************************
             Right sidebar start
         ***********************************-->
-       
+
         <!--**********************************
             Right sidebar end
         ***********************************-->
@@ -243,7 +273,7 @@
     <script src="{{ asset('admin/js/settings.js')}}"></script>
     <script src="{{ asset('admin/js/gleek.js')}}"></script>
     <script src="{{ asset('admin/js/styleSwitcher.js')}}"></script>
-    
+
     <!-- Chartjs chart -->
     <script src="{{ asset('admin/assets/plugins/chart.js/Chart.bundle.min.js')}}"></script>
     <script src="{{ asset('admin/assets/plugins/d3v3/index.js')}}"></script>
@@ -253,7 +283,7 @@
     <script src="{{ asset('admin/assets/plugins/datamaps/datamaps.usa.min.js')}}"></script>
     <script src="{{ asset('admin/js/dashboard/dashboard-1.js')}}"></script>
     <script src="{{ asset('admin/js/plugins-init/datamap-usa-init.js')}}"></script>
-   <!-- Data Tables -->
+    <!-- Data Tables -->
     <script src="{{ asset('admin/assets/plugins/datatables/js/jquery.dataTables.min.js')}}"></script>
     <script src="{{ asset('admin/js/plugins-init/datatables.init.js')}}"></script>
     <!-- Check Editor -->
@@ -264,4 +294,5 @@
     <script src="{{ asset('admin/main/js/plugins-init/nestable.init.js')}}"></script>
 
 </body>
+
 </html>

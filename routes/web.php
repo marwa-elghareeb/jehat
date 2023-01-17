@@ -9,6 +9,7 @@ use App\Http\Controllers\Admin\EmployeesController;
 use App\Http\Controllers\Admin\ActivityController;
 use App\Http\Controllers\Admin\FAQController;
 use App\Http\Controllers\Admin\DepartmentsController;
+use App\Http\Controllers\Admin\ContactController;
 use App\Http\Controllers\Admin\EventsController;
 use App\Http\Controllers\Site\IndexController;
 /*
@@ -62,8 +63,15 @@ Route::group(['middleware' => ['auth']], function () {
     Route::resource('faq', FAQController::class);
     Route::resource('departments', DepartmentsController::class);
     Route::resource('events', EventsController::class);
-    Route::get('/contact-us',[ContactController::class,'contact']);
-    Route::post('contact',[ContactController::class,'sendEmail'])->name('contact.us');
+    Route::resource('aboutus-data', aboutusController::class);
+    Route::resource('media-data', MediaController::class);
+    Route::resource('news-data', NewsController::class);
+    Route::resource('cards-data', CardsController::class);
+    Route::resource('contact-data', ContactController::class);
+
+    //
+   // Route::get('/contact-us',[ContactController::class,'contact']);
+    //Route::post('contact',[ContactController::class,'sendEmail'])->name('contact.us');
 
 
 });

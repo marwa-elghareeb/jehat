@@ -4,7 +4,7 @@ namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
 
-class Controllrt-Media extends Controller
+class ContactController extends Controller
 {
     /**
      * Display a listing of the resource.
