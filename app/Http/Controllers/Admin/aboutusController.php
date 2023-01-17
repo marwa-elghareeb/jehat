@@ -2,10 +2,10 @@
 namespace App\Http\Controllers\Admin;
 
 use App\Http\Controllers\Controller;
-
 use Illuminate\Http\Request;
+use App\Models\AboutUs;
 
-class aboutusController extends Controller
+class AboutusController extends Controller
 {
     /**
      * Display a listing of the resource.
@@ -14,7 +14,8 @@ class aboutusController extends Controller
      */
     public function index()
     {
-        //
+         $allData = AboutUs::all();
+        return view('admin.aboutus.list')->with(['allData' => $allData]);
     }
 
     /**

@@ -2,8 +2,8 @@
 namespace App\Http\Controllers\Admin;
 
 use App\Http\Controllers\Controller;
-
 use Illuminate\Http\Request;
+use App\Models\Media;
 
 class MediaController extends Controller
 {
@@ -15,6 +15,8 @@ class MediaController extends Controller
     public function index()
     {
         //
+        $allData = Media::all();
+        return view('admin.Media.list')->with(['allData' => $allData]);
     }
 
     /**

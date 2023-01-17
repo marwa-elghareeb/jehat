@@ -182,7 +182,7 @@
                     </li>
 
                     <li class="mega-menu mega-menu-lg">
-                        <a class="has-arrow" href="{{ route('aboutus-data.index') }}" aria-expanded="false" style="width: max-content;cursor: pointer;">
+                        <a class="has-arrow" href="{{ route('about-data.index') }}" aria-expanded="false" style="width: max-content;cursor: pointer;">
                             <i class="mdi mdi-gradient"></i><span class="nav-text">About US</span>
                         </a>
 
