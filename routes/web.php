@@ -26,6 +26,32 @@ use App\Http\Controllers\Site\IndexController;
 | contains the "web" middleware group. Now create something great!
 |
 */
+use Illuminate\Support\Facades\App;
+
+$locale = App::currentLocale();
+
+ 
+if (App::isLocale('en')) {
+    var_dump($locale);
+}
+ 
+Route::get('/greeting/{locale}', function ($locale) {
+    if (! in_array($locale, ['ar', 'en'])) {
+        abort(400);
+    }
+ 
+    App::setLocale($locale);
+ 
+    //
+});
+
+Route::get('language/{locale}', function ($locale) {
+    app()->setLocale($locale);
+    session()->put('locale', $locale);
+
+    return redirect()->back();
+});
+
 //Portal Routes:
 Route::get('/', function () {
     return view('welcome');

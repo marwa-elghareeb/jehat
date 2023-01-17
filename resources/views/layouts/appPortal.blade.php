@@ -90,14 +90,20 @@
                                                 href="{{ URL :: to ('/cards')}}">الأبراج الأفتراضية</a></li>
                                                 <li><a @if(Request::segment(1) == 'news') class="active" @endif 
                                                 href="{{ URL :: to ('/news')}}"> الاخبار</a></li>
+                                                
+                                                
                                             </ul>
                                         </nav>
                                     </div>
-                                    <!-- Header-btn -->
+                                   
                                     <div class="header-right-btn d-none d-lg-block ml-65">
-                                        <a href="https://app.jehat.sa/client_login.aspx" class="border-btn">تسجيل
-                                            الدخول</a>
+
+                                        <!--a href="https://app.jehat.sa/client_login.aspx" class="border-btn">تسجيل
+                                            الدخول</a-->
+                                            <a href="#">
+                                                     <i class="fa fa-language" aria-hidden="true"></i></a>
                                     </div>
+                                  
                                 </div>
                             </div>
                             <!-- Mobile Menu -->
