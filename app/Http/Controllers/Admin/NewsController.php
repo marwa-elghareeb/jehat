@@ -4,7 +4,7 @@ namespace App\Http\Controllers\Admin;
 use App\Http\Controllers\Controller;
 
 use Illuminate\Http\Request;
-
+use App\Models\news;
 class NewsController extends Controller
 {
     /**
@@ -15,6 +15,8 @@ class NewsController extends Controller
     public function index()
     {
         //
+        $allData = news::all();
+        return view('admin.news.list')->with(['allData' => $allData]);
     }
 
     /**
