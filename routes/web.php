@@ -26,7 +26,7 @@ use App\Http\Controllers\Site\IndexController;
 | contains the "web" middleware group. Now create something great!
 |
 */
-use Illuminate\Support\Facades\App;
+/*use Illuminate\Support\Facades\App;
 
 $locale = App::currentLocale();
 
@@ -51,7 +51,7 @@ Route::get('language/{locale}', function ($locale) {
 
     return redirect()->back();
 });
-
+*/
 //Portal Routes:
 Route::get('/', function () {
     return view('welcome');
