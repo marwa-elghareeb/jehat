@@ -69,6 +69,8 @@ class AboutusController extends Controller
                  $data->image = '';
              }
              $data->save();
+             return redirect()->route('about-data.index');
+
     }
 
     /**
