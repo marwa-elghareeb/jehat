@@ -150,6 +150,10 @@ class AboutusController extends Controller
      */
     public function destroy($id)
     {
-        //
+        //        $data = AboutUs::find($id);
+
+        AboutUs::destroy($id);
+        return redirect()->route('about-data.index')->with('flash_message', 'Item deleted!');
+
     }
 }
