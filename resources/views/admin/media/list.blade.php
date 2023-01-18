@@ -9,13 +9,13 @@
     <div class="container-fluid">
         <div class="row page-titles">
             <div class="col p-md-0">
-                <h4>contact</h4>
+                <h4>Media</h4>
             </div>
             <div class="col p-md-0">
                 <ol class="breadcrumb">
-                    <li class="breadcrumb-item"><a href="{{ route('media-data.index') }}">Contact</a>
+                    <li class="breadcrumb-item"><a href="{{ route('media-data.index') }}">Media</a>
                     </li>
-                    <li class="breadcrumb-item active">contact</li>
+                    <li class="breadcrumb-item active">Media</li>
                 </ol>
             </div>
         </div>
@@ -25,20 +25,20 @@
 
         <div class="row">
             <div class="col-lg-12">
-                <div class="media button-Media">
-                    <div class="media-body">
-                        <a href="{{ route('media-data.create') }}"
+                <div class="card button-card">
+                    <div class="card-body">
+                        <a href="{{ route('cards-data.create') }}" 
                         type="button" class="btn btn-rounded btn-info" style="float: right;">
                             <span class="btn-icon-left text-info">
                                 <i class="fa fa-plus color-info"></i> </span>Add</a>
 
 
                     </div>
-                </div>
+                    </div>   
             </div>
         </div>
 
-        <div class="content-wrapper">
+        <div class="content-wrapper"> 
             @if(Session::has('flash_message'))
             <p class="alert alert-info">{{ Session::get('flash_message') }}</p>
             @endif
@@ -46,8 +46,8 @@
 
         <div class="row">
             <div class="col-12">
-                <div class="media">
-                    <div class="media-body">
+                <div class="card">
+                    <div class="card-body">
                         <div class="table-responsive">
                             <table class="example display" style="min-width: 845px">
                                 <thead>
@@ -55,7 +55,7 @@
                                         <th>#</th>
                                         <th>Name (Ar)</th>
                                         <th>Name (En)</th>
-
+                                
                                         <th>Edit</th>
                                         <th>Delete</th>
 
@@ -70,7 +70,7 @@
                                         <td>{{ $data->name_ar }}</td>
                                         <td>{{ $data->name_en }}</td>
 
-
+                                    
 
                                         <td>
                                             <a href="{{ route('media-data.edit', $data->id ) }}" type="button" class="btn btn-rounded btn-secondary">
@@ -100,7 +100,7 @@
                                         <th>#</th>
                                         <th>Name (Ar)</th>
                                         <th>Name (En)</th>
-
+                                       
                                         <th>Edit</th>
                                         <th>Delete</th>
 
