@@ -5,17 +5,18 @@
 <!--**********************************
             Content body start
         ***********************************-->
-<div class="content-body">
+
+        <div class="content-body">
     <div class="container-fluid">
         <div class="row page-titles">
             <div class="col p-md-0">
-                <h4>Media</h4>
+                <h4>contact</h4>
             </div>
             <div class="col p-md-0">
                 <ol class="breadcrumb">
-                    <li class="breadcrumb-item"><a href="{{ route('media-data.index') }}">Cards</a>
+                    <li class="breadcrumb-item"><a href="{{ route('contact-data.index') }}">list</a>
                     </li>
-                    <li class="breadcrumb-item active">Show Media</li>
+                    <li class="breadcrumb-item active">Show list</li>
                 </ol>
             </div>
         </div>
@@ -25,9 +26,9 @@
 
         <div class="row">
             <div class="col-lg-12">
-                <div class="media button-Media">
-                    <div class="media-body">
-                        <a href="{{ route('media-data.create') }}"
+                <div class="card button-card">
+                    <div class="card-body">
+                        <a href="{{ route('contact-data.create') }}"
                         type="button" class="btn btn-rounded btn-info" style="float: right;">
                             <span class="btn-icon-left text-info">
                                 <i class="fa fa-plus color-info"></i> </span>Add</a>
@@ -46,8 +47,8 @@
 
         <div class="row">
             <div class="col-12">
-                <div class="media">
-                    <div class="media-body">
+                <div class="card">
+                    <div class="card-body">
                         <div class="table-responsive">
                             <table class="example display" style="min-width: 845px">
                                 <thead>
@@ -73,13 +74,13 @@
 
 
                                         <td>
-                                            <a href="{{ route('media-data.edit', $data->id ) }}" type="button" class="btn btn-rounded btn-secondary">
+                                            <a href="{{ route('about-data.edit', $data->id ) }}" type="button" class="btn btn-rounded btn-secondary">
                                                 <i class="fa fa-pencil color-secondary"></i> </a>
                                         </td>
 
                                         <td>
 
-                                            <form method="POST" action="{{route('media-data.destroy', $data->id) }}">
+                                            <form method="POST" action="{{route('about-data.destroy', $data->id) }}">
                                                 @method('DELETE')
                                                 <button type="submit" class="btn btn-rounded btn-danger">
                                                     <i class="fa fa-close color-danger"></i></button>
@@ -128,6 +129,4 @@
 <!--**********************************
             Content body end
         ***********************************-->
-
-
-@endsection
+        @endsection

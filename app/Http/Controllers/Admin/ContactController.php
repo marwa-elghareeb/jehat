@@ -1,11 +1,9 @@
 <?php
-
 namespace App\Http\Controllers\Admin;
 
 use App\Http\Controllers\Controller;
 use Illuminate\Http\Request;
 use App\Models\Contact;
-
 
 class ContactController extends Controller
 {
@@ -27,7 +25,8 @@ class ContactController extends Controller
      * @return \Illuminate\Http\Response
      */
     public function create()
-    {
+    {        return view('admin.contact.create');
+
         //
     }
 
@@ -75,6 +74,7 @@ class ContactController extends Controller
     {
         //
     }
+
 
     /**
      * Remove the specified resource from storage.

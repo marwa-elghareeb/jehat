@@ -30,6 +30,30 @@
                              action="{{ route('media-data.store') }}">
                                 {{ csrf_field() }}
 
+                                <div class="form-group row align-items-center">
+                                    <label class="col-sm-3 col-form-label text-label"> Title(Ar)</label>
+                                    <div class="col-sm-9">
+                                        <div class="input-group">
+                                            <input type="text" class="form-control" name="title_ar" id="validationDefaultUsername1" aria-describedby="validationDefaultUsername1">
+                                        </div>
+                                        @if($errors->has('title_ar'))
+                                        <div class="error">{{ $errors->first('titel_ar') }}</div>
+                                        @endif
+                                    </div>
+                                </div>
+
+                                <div class="form-group row align-items-center">
+                                    <label class="col-sm-3 col-form-label text-label"> Title(En)</label>
+                                    <div class="col-sm-9">
+                                        <div class="input-group">
+                                            <input type="text" class="form-control" name="title_en" id="validationDefaultUsername1" aria-describedby="validationDefaultUsername1">
+                                        </div>
+                                        @if($errors->has('title_en'))
+                                        <div class="error">{{ $errors->first('titel_en') }}</div>
+                                        @endif
+                                    </div>
+                                </div>
+
 
                                 <div class="form-group row align-items-center">
                                     <label class="col-sm-3 col-form-label text-label"> name (Ar)</label>
@@ -51,6 +75,30 @@
                                         </div>
                                         @if($errors->has('name_en'))
                                         <div class="error">{{ $errors->first('name_en') }}</div>
+                                        @endif
+                                    </div>
+                                </div>
+
+                                <div class="form-group row align-items-center">
+                                    <label class="col-sm-3 col-form-label text-label"> desc(Ar)</label>
+                                    <div class="col-sm-9">
+                                        <div class="input-group">
+                                            <input type="text" class="form-control" name="desc_ar" id="validationDefaultUsername1" aria-describedby="validationDefaultUsername1">
+                                        </div>
+                                        @if($errors->has('desc_ar'))
+                                        <div class="error">{{ $errors->first('desc_ar') }}</div>
+                                        @endif
+                                    </div>
+                                </div>
+
+                                <div class="form-group row align-items-center">
+                                    <label class="col-sm-3 col-form-label text-label"> desc(En)</label>
+                                    <div class="col-sm-9">
+                                        <div class="input-group">
+                                            <input type="text" class="form-control" name="desc_en" id="validationDefaultUsername1" aria-describedby="validationDefaultUsername1">
+                                        </div>
+                                        @if($errors->has('desc_en'))
+                                        <div class="error">{{ $errors->first('desc_en') }}</div>
                                         @endif
                                     </div>
                                 </div>
