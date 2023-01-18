@@ -38,6 +38,26 @@ class MediaController extends Controller
      */
     public function store(Request $request)
     {
+        //validation
+        $request->validate([
+            'name_ar' => 'required|max:255',
+            'name_en' => 'required|max:255',
+            'image' => 'required|mimes:jpeg,png,jpg,gif'
+
+        ]);
+        //Store
+        $data = new Media();
+        $data->name_ar = $request->name_ar;
+        $data->name_en = $request->name_en;
+        $data->link = $request->link;
+        if ($request->file('image')) {
+            $file = $request->file('image');
+            $filename = date('YmdHi') . $file->getClientOriginalName();
+            $file->move(public_path('upload'), $filename);
+        }
+        $data->image = $filename;
+        $data->save();
+        return redirect()->route('media.index');
         //
     }
 
@@ -60,6 +80,8 @@ class MediaController extends Controller
      */
     public function edit($id)
     {
+        $editData = Media::where('id', $id)->first();
+        return view('admin.media.edit')->with(['editData' => $editData]);
         //
     }
 
@@ -73,6 +95,29 @@ class MediaController extends Controller
     public function update(Request $request, $id)
     {
         //
+         //validation
+         $request->validate([
+            'name_ar' => 'required|max:255',
+            'name_en' => 'required|max:255',
+            'image' => 'mimes:jpeg,png,jpg,gif'
+
+        ]);
+
+        //Update
+        $data = Media::find($id);
+
+        $data->name_ar = $request->name_ar;
+        $data->name_en = $request->name_en;
+        $data->link = $request->link;
+        if ($request->file('image')) {
+            $file = $request->file('image');
+            $filename = date('YmdHi') . $file->getClientOriginalName();
+            $file->move(public_path('upload'), $filename);
+            $data->image = $filename;
+        } else {
+        }
+        $data->save();
+        return redirect()->route('media.index');
     }
 
     /**
@@ -83,6 +128,7 @@ class MediaController extends Controller
      */
     public function destroy($id)
     {
+       
         //
     }
 }
