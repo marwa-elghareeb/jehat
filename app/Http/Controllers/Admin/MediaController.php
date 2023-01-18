@@ -64,8 +64,9 @@ class MediaController extends Controller
             $file->move(public_path('upload'), $filename);
         }
         $data->image = $filename;
+        $data->link = $request->link;
         $data->save();
-        return redirect()->route('media.index');
+        return redirect()->route('media-data.index');
         //
     }
 
@@ -125,7 +126,7 @@ class MediaController extends Controller
         } else {
         }
         $data->save();
-        return redirect()->route('media.index');
+        return redirect()->route('media-data.index');
     }
 
     /**

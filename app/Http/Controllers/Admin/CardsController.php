@@ -48,6 +48,21 @@ class CardsController extends Controller
             'desc_en' => 'required',
         
         ]);
+        //Store
+        $data = new Cards();
+        $data->name_ar = $request->name_ar;
+        $data->name_en = $request->name_en;
+        $data->link = $request->link;
+        if ($request->file('images')) {
+            $file = $request->file('images');
+            $filename = date('YmdHi') . $file->getClientOriginalName();
+            $file->move(public_path('upload'), $filename);
+        }
+        $data->image = $filename;
+        $data->desc_ar = $request->desc_ar;
+        $data->desc_en = $request->desc_en;
+        $data->save();
+        return redirect()->route('cards-data.index');
     }
 
     /**

@@ -120,7 +120,7 @@
                                     <label class="col-sm-3 col-form-label text-label">Upload Image</label>
                                     <div class="col-sm-9">
                                         <div class="input-group">
-                                            <input type="file" class="form-control" name="image" id="validationDefaultUsername9" aria-describedby="inputGroupPrepend2">
+                                            <input type="file"  name="image" id="validationDefaultUsername9" aria-describedby="inputGroupPrepend2">
                                         </div>
                                         
 

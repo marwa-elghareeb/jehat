@@ -26,8 +26,7 @@
                     <div class="card-body">
                         <h4 class="card-title mb-4">Add New Item</h4>
                         <div class="basic-form">
-                            <form role="form" enctype="multipart/form-data" method="post"
-                             action="{{ route('media-data.store') }}">
+                            <form role="form" enctype="multipart/form-data" method="post" action="{{ route('media-data.store') }}">
                                 {{ csrf_field() }}
 
                                 <div class="form-group row align-items-center">
@@ -109,7 +108,7 @@
                                         <div class="input-group">
                                             <input type="text" class="form-control" name="link" id="validationDefaultUsername1" aria-describedby="validationDefaultUsername1">
                                         </div>
-                                      
+
                                     </div>
                                 </div>
 
@@ -117,7 +116,7 @@
                                     <label class="col-sm-3 col-form-label text-label">image</label>
                                     <div class="col-sm-9">
                                         <div class="input-group">
-                                            <input type="file"  name="image" id="validationDefaultUsername9" aria-describedby="inputGroupPrepend2">
+                                            <input type="file" name="image" id="validationDefaultUsername9" aria-describedby="inputGroupPrepend2">
                                         </div>
                                         @if($errors->has('image'))
                                         <div class="error">{{ $errors->first('image') }}</div>
@@ -125,7 +124,7 @@
 
                                     </div>
                                 </div>
-                                
+
 
 
                                 <div style="float: right;">
@@ -143,8 +142,8 @@
 
 
 
-        </div>
     </div>
-    <!-- #/ container -->
 </div>
-        @endsection
+<!-- #/ container -->
+</div>
+@endsection

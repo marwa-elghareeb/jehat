@@ -1,4 +1,5 @@
 <?php
+
 namespace App\Http\Controllers\Admin;
 
 use App\Http\Controllers\Controller;
@@ -38,11 +39,8 @@ class ContactController extends Controller
      */
     public function store(Request $request)
 
-    {var_dump('test');
-
-
-
-        //
+    {
+        
         $request->validate([
             //'parent_id' => 'required',
             'name_ar' => 'required',
@@ -57,22 +55,22 @@ class ContactController extends Controller
             'link' => 'required',
 
         ]);
-    //store
-    $data - new contact();
-    $data->name_ar -$request->name_ar;
-    $data->name_en -$request->name_en;
-    $data->desc_ar -$request->desc_ar;
-    $data->desc_en -$request->desc_en;
-    $data->address_ar -$request->address_ar;
-    $data->address_en -$request->address_en;
-    $data->email -$request->email;
-    $data->number -$request->number;
-    $data->map -$request->map;
-    $data->link -$request->link;
-    $data->save();
-
-
-}
+        //store
+        $data = new contact();
+        $data->name_ar = $request->name_ar;
+        $data->name_en = $request->name_en;
+        $data->desc_ar = $request->desc_ar;
+        $data->desc_en = $request->desc_en;
+        $data->address_ar = $request->address_ar;
+        $data->address_en = $request->address_en;
+        $data->email = $request->email;
+        $data->number = $request->number;
+        $data->map = $request->map;
+        $data->link = $request->link;
+        $data->save();
+        //var_dump( $data);
+        return redirect()->route('contact-data.index');
+    }
 
     /**
      * Display the specified resource.
