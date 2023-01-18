@@ -43,7 +43,9 @@
                         <div class="col-lg-6 col-md-12 col-sm-12 posts-list">
                             <div class="blog-author">
                                 <div class="card">
-                                    <img src="{{ URL ::to ('public/upload/'.$data->image)}}" alt="" class="img-fluid team-member-image  img-thumbnail rounded-circle" alt="image1">
+                                    <!-- src="{{ URL ::to ('public/upload/'.$data->image)}}"-->
+                                    <img  src="{{ asset('public/web-assets/img/hero/m.png')}}"
+                                    alt="" class="img-fluid team-member-image  img-thumbnail rounded-circle" alt="image1">
                                     <div class="media-body">
                                         <a href="#">
                                             <h4 class="text-blk">{{ $data->name }}</h4>

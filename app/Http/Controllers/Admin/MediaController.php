@@ -16,7 +16,7 @@ class MediaController extends Controller
     {
         //
         $allData = Media::all();
-        return view('admin.Media.list')->with(['allData' => $allData]);
+        return view('admin.media.list')->with(['allData' => $allData]);
     }
 
     /**
@@ -27,6 +27,7 @@ class MediaController extends Controller
     public function create()
     {
         //
+        return view('admin.media.create');
     }
 
     /**

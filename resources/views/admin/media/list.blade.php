@@ -27,7 +27,7 @@
             <div class="col-lg-12">
                 <div class="card button-card">
                     <div class="card-body">
-                        <a href="{{ route('cards-data.create') }}" 
+                        <a href="{{ route('media-data.create') }}" 
                         type="button" class="btn btn-rounded btn-info" style="float: right;">
                             <span class="btn-icon-left text-info">
                                 <i class="fa fa-plus color-info"></i> </span>Add</a>

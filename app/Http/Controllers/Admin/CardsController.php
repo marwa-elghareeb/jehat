@@ -27,6 +27,7 @@ class CardsController extends Controller
     public function create()
     {
         //
+        return view('admin.cards.create');
     }
 
     /**
@@ -38,6 +39,15 @@ class CardsController extends Controller
     public function store(Request $request)
     {
         //
+        $request->validate([
+            'name_ar' => 'required',
+            'name_en' => 'required',
+            'link' => 'required',
+            'image' => 'required',
+            'desc_ar' => 'required',
+            'desc_en' => 'required',
+        
+        ]);
     }
 
     /**
