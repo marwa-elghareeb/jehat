@@ -37,22 +37,7 @@
                                     <div class="alert alert-danger"> {{ $error }}</div>
                                     @endforeach
 
-                                                <div class="form-group row align-items-center">
-                                    <label class="col-sm-3 col-form-label text-label">Select Parent </label>
-                                    <div class="col-lg-9">
-                                        <select class="form-control" name="parent_id">
-                                            <option class="text-muted" value="0"> Select Parent</option>
-                                            @foreach($allData as $data)
-                                            <option @if($editData->category_id == $data->id) selected @endif value="{{ $data->id }}">{{ $data->name_ar }}</option>
-                                            @endforeach
-
-                                        </select>
-                                        @if($errors->has('parent_id'))
-                                        <div class="error">{{ $errors->first('parent_id') }}</div>
-                                        @endif
-                                    
-                                    </div>
-                                </div>
+                           
                                 </ul-->
 
                     

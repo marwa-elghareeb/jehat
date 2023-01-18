@@ -93,8 +93,9 @@ class AboutusController extends Controller
     public function edit($id)
     {
         //
-        $editData = AboutUs::where('id',$id)->first();
-        return view('admin.aboutus.edit')->with(['allData'=> $allData, 'editData'=> $editData]);
+        $editData = AboutUs::where('id', $id)->first();
+        return view('admin.aboutus.edit')->with(['editData' => $editData]);
+      
     }
 
     /**
