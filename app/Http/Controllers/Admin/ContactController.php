@@ -25,9 +25,9 @@ class ContactController extends Controller
      * @return \Illuminate\Http\Response
      */
     public function create()
-    {        return view('admin.contact.create');
-
+    {
         //
+        return view('admin.contact.create');
     }
 
     /**
@@ -37,9 +37,42 @@ class ContactController extends Controller
      * @return \Illuminate\Http\Response
      */
     public function store(Request $request)
-    {
+
+    {var_dump('test');
+
+
+
         //
-    }
+        $request->validate([
+            //'parent_id' => 'required',
+            'name_ar' => 'required',
+            'name_en' => 'required',
+            'desc_ar' => 'required',
+            'desc_en' => 'required',
+            'address_ar' => 'required',
+            'address_en' => 'required',
+            'email' => 'required',
+            'number' => 'required',
+            'map' => 'required',
+            'link' => 'required',
+
+        ]);
+    //store
+    $data - new contact();
+    $data->name_ar -$request->name_ar;
+    $data->name_en -$request->name_en;
+    $data->desc_ar -$request->desc_ar;
+    $data->desc_en -$request->desc_en;
+    $data->address_ar -$request->address_ar;
+    $data->address_en -$request->address_en;
+    $data->email -$request->email;
+    $data->number -$request->number;
+    $data->map -$request->map;
+    $data->link -$request->link;
+    $data->save();
+
+
+}
 
     /**
      * Display the specified resource.
