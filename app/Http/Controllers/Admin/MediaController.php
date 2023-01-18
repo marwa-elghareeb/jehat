@@ -38,18 +38,26 @@ class MediaController extends Controller
      */
     public function store(Request $request)
     {
-        //validation
-        $request->validate([
-            'name_ar' => 'required|max:255',
-            'name_en' => 'required|max:255',
-            'image' => 'required|mimes:jpeg,png,jpg,gif'
-
+       //validation
+       $request->validate([
+        //'parent_id' => 'required',
+        'name_ar' => 'required|max:255',
+        'name_en' => 'required|max:255',
+        'title_ar' => 'required|max:255',
+        'title_en' => 'required|max:255',
+        'desc_ar' => 'required',
+        'desc_en' => 'required',
+        'image' => 'mimes:jpeg,png,jpg,gif'
+    
         ]);
-        //Store
-        $data = new Media();
-        $data->name_ar = $request->name_ar;
-        $data->name_en = $request->name_en;
-        $data->link = $request->link;
+       //Store
+       $data = new Media();
+       $data->name_ar = $request->name_ar;
+       $data->name_en = $request->name_en;
+       $data->title_ar = $request->title_ar;
+       $data->title_en = $request->title_en;
+       $data->desc_ar = $request->desc_ar;
+       $data->desc_en = $request->desc_en;
         if ($request->file('image')) {
             $file = $request->file('image');
             $filename = date('YmdHi') . $file->getClientOriginalName();
