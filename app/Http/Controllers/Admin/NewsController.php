@@ -69,10 +69,11 @@ class NewsController extends Controller
              $file-> move(public_path('upload'), $filename);
             // $data['image']= $filename;
             $data->images = $filename;
-         }else{
-             $data->images = '';
-         }
-         $data->save();
+        }else{
+            $data->image = '';
+        }
+        $data->save();
+        return redirect()->route('news-data.index');
     }
 
     /**
@@ -95,6 +96,8 @@ class NewsController extends Controller
     public function edit($id)
     {
         //
+        $editData = news::where('id', $id)->first();
+        return view('admin.news.edit')->with(['editData' => $editData]);
     }
 
     /**
@@ -107,6 +110,41 @@ class NewsController extends Controller
     public function update(Request $request, $id)
     {
         //
+        $request->validate([
+            //'parent_id' => 'required',
+            'name_ar' => 'required|max:255',
+            'name_en' => 'required|max:255',
+            'title_ar' => 'required|max:255',
+            'title_en' => 'required|max:255',
+            'description_ar' => 'required',
+            'description_en' => 'required',
+            'images' => 'mimes:jpeg,png,jpg,gif',
+            'link'=>'required',
+            'news_date' =>'date',
+        
+        ]);
+        //Update
+        $data = new News();
+         $data->name_ar = $request->name_ar;
+         $data->name_en = $request->name_en;
+         $data->title_ar = $request->title_ar;
+         $data->title_en = $request->title_en;
+         $data->description_ar = $request->description_ar;
+         $data->description_en = $request->description_en;
+         $data->link = $request->link;
+         $data->news_date = $request->news_date;
+
+         if($request->file('images')){
+             $file= $request->file('images');
+             $filename= date('YmdHi').$file->getClientOriginalName();
+             $file-> move(public_path('upload'), $filename);
+            // $data['image']= $filename;
+            $data->images = $filename;
+        }else{  
+        }
+        $data->save();
+        return redirect()->route('news-data.index');
+
     }
 
     /**
