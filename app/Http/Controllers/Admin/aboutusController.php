@@ -93,6 +93,8 @@ class AboutusController extends Controller
     public function edit($id)
     {
         //
+        $editData = AboutUs::where('id',$id)->first();
+        return view('admin.aboutus.edit')->with(['allData'=> $allData, 'editData'=> $editData]);
     }
 
     /**
@@ -105,6 +107,38 @@ class AboutusController extends Controller
     public function update(Request $request, $id)
     {
         //
+         //validation
+         $request->validate([
+            'name_ar' => 'required|max:255',
+            'name_en' => 'required|max:255',
+            'title_ar' => 'required|max:255',
+            'title_en' => 'required|max:255',
+            'desc_ar' => 'required',
+            'desc_en' => 'required',
+            'image' => 'mimes:jpeg,png,jpg,gif'
+        
+        ]);
+           //Update
+           $data = AboutUs::find($id);
+
+           $data->name_ar = $request->name_ar;
+           $data->name_en = $request->name_en;
+           $data->title_ar = $request->title_ar;
+           $data->title_en = $request->title_en;
+           $data->desc_ar = $request->desc_ar;
+           $data->desc_en = $request->desc_en;
+   
+           if($request->file('image')){
+               $file= $request->file('image');
+               $filename= date('YmdHi').$file->getClientOriginalName();
+               $file-> move(public_path('upload'), $filename);
+              // $data['image']= $filename;
+              $data->image = $filename;
+           }else{  
+           }
+           $data->save();
+           return redirect()->route('about-data.index');
+
     }
 
     /**
