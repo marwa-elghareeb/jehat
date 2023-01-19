@@ -31,19 +31,24 @@
         </div>
       </div>
       <div class="row">
+
+
+      @foreach($allData as $data)
         <div class="col-lg-4 col-md-6 col-sm-12 mb-30">
           <div class="icon-box h-100" data-aos="fade-up" data-aos-delay="100">
             <div class="box-img-item  text-center">
-              <img src="{{ asset('public/web-assets/img/icon/icons8-office-100.png')}} " alt="">
+              <img src="{{ URL ::to ('public/upload/'.$data->image)}} " alt="">
             </div>
-            <h4 class="title"><a href=""> المكاتب الافتراضيه</a></h4>
+            <h4 class="title"><a href="">  {{ $data->name_ar }}</a></h4>
             <p class="description">يتم عرض جميع الشركات الموجوده فى المنصه وكذلك الاقسام الخاصه بها وايضا
-              الموظفين</p>
+              الموظفين
+            
+            </p>
             <a href="{{ URL :: to ('/allCompanies')}}" class="btn btn-outline-secondary  btn-sm pt-8 ">المزيد</a>
           </div>
         </div>
-    
-        <div class="col-lg-4 col-md-6 col-sm-12 mb-30">
+        @endforeach
+        <!--div class="col-lg-4 col-md-6 col-sm-12 mb-30">
           <div class="icon-box h-100" data-aos="fade-up" data-aos-delay="200">
             <div class="box-img-item  text-center">
               <img src="{{ asset('public/web-assets/img/icon/icons8-office-1001.png')}} " alt="">
@@ -79,7 +84,7 @@
             <button type="button" class="btn btn-outline-secondary  pt-8 btn-sm">المزيد</button>
     
           </div>
-        </div>
+        </div-->
         
         
       </div>

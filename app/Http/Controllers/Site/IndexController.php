@@ -16,13 +16,6 @@ class IndexController extends Controller
         $allData = Employees::all();
         return view('site.ourTeam')->with([ 'allData' => $allData ]);;
     }
-
-    public function allfaq()
-    {
-        return view('site.allfaq');
-    }
-
-
     /*===Help Center==============================*/
     
     public function help()

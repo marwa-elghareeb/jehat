@@ -36,7 +36,7 @@
   </div>
   <!-- slide 02 -->
   <div class="slide">
-    <div class="owl-slide h-100" style="background-image: url('public/web-assets/img/hero/jehat91.jpg');">
+    <div class="owl-slide h-100" style="background-image: url('public/web-assets/img/hero/Untitled-34.png');">
       <div class="owl-text text-center">
         <div class="container">
           <div class="row justify-content-center">
@@ -67,7 +67,7 @@
   </div>
   <!-- slide 03 -->
   <div class="slide">
-    <div class="owl-slide h-100">
+    <div class="owl-slide h-100" style="background-image: url('public/web-assets/img/hero/Untitled-12.png');">
       <div class="owl-text text-center">
         <div class="container">
           <div class="row justify-content-center">

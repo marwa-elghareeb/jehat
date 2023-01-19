@@ -9,13 +9,15 @@ use App\Models\Companies;
 use App\Models\Department;
 use App\Models\Employees;
 use App\Models\Events;
+use App\Models\Cards;
 
 class TowerSiteController extends Controller
 {
     /*====Tower=============================*/
     public function cards()
     {
-        return view('site.cards');
+        $allData = Cards::all();
+        return view('site.cards')->with(['allData' => $allData]);
     }
     public function towers()
     {

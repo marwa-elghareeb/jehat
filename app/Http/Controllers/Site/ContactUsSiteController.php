@@ -9,6 +9,7 @@ class ContactUsSiteController extends Controller
     //
     public function index()
     {
+        
         return view('site.contactUs');
     }
     public function contactUsForm(Request $request)
