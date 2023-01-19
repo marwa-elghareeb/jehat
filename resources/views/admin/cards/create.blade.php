@@ -76,7 +76,7 @@
                                     <label class="col-sm-3 col-form-label text-label">Image</label>
                                     <div class="col-sm-9">
                                         <div class="input-group">
-                                            <input type="file"  name="image" id="validationDefaultUsername1" aria-describedby="validationDefaultUsername1">
+                                            <input type="file"  name="images" id="validationDefaultUsername1" aria-describedby="validationDefaultUsername1">
                                         </div>
                                         @if($errors->has('image'))
                                         <div class="error">{{ $errors->first('image') }}</div>

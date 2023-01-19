@@ -217,6 +217,15 @@
 
 
                     <li class="mega-menu mega-menu-lg">
+                        <a class="has-arrow" href="{{ route('footer-pages-data.index') }}" aria-expanded="false" style="width: max-content;cursor: pointer;">
+                            <i class="fa fa-list"></i><span class="nav-text">Footer Pages</span>
+                        </a>
+
+                    </li>
+
+                    
+
+                    <li class="mega-menu mega-menu-lg">
                         <a class="has-arrow" href="{{ route('activitylog.index') }}" aria-expanded="false" style="width: max-content;cursor: pointer;">
                             <i class="fa fa-list"></i><span class="nav-text">Activity</span>
                         </a>
