@@ -40,7 +40,7 @@ class ContactController extends Controller
     public function store(Request $request)
 
     {
-        
+
         $request->validate([
             //'parent_id' => 'required',
             'name_ar' => 'required',
@@ -92,6 +92,8 @@ class ContactController extends Controller
     public function edit($id)
     {
         //
+        $editData = contact::where('id', $id)->first();
+        return view('admin.contact.edit')->with(['editData' => $editData]);
     }
 
     /**
@@ -104,7 +106,40 @@ class ContactController extends Controller
     public function update(Request $request, $id)
     {
         //
+         //validation
+         $request->validate([
+            'name_ar' => 'required',
+            'name_en' => 'required',
+            'desc_ar' => 'required',
+            'desc_en' => 'required',
+            'address_ar' => 'required',
+            'address_en' => 'required',
+            'email' => 'required',
+            'number' => 'required',
+            'map' => 'required',
+            'link' => 'required',
+        ]);
+        //Update
+        $data = contact::find($id);
+
+        $data->name_ar = $request->name_ar;
+        $data->name_en = $request->name_en;
+        $data->desc_ar = $request->desc_ar;
+        $data->desc_en = $request->desc_en;
+        $data->address_ar = $request->address_ar;
+        $data->address_en = $request->address_en;
+        $data->email = $request->email;
+        $data->number = $request->number;
+        $data->map = $request->map;
+        $data->link = $request->link;
+        $data->save();
+        //var_dump( $data);
+        return redirect()->route('contact-data.index');
     }
+
+
+
+    
 
 
     /**
@@ -115,6 +150,9 @@ class ContactController extends Controller
      */
     public function destroy($id)
     {
-        //
+                //        $data = contact::find($id);
+        contact::destroy($id);
+        return redirect()->route('contact-data.index')->with('flash_message', 'Item deleted!');
     }
 }
+

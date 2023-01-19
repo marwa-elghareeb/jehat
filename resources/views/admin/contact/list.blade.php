@@ -74,13 +74,13 @@
 
 
                                         <td>
-                                            <a href="{{ route('about-data.edit', $data->id ) }}" type="button" class="btn btn-rounded btn-secondary">
+                                            <a href="{{ route('contact-data.edit', $data->id ) }}" type="button" class="btn btn-rounded btn-secondary">
                                                 <i class="fa fa-pencil color-secondary"></i> </a>
                                         </td>
 
                                         <td>
 
-                                            <form method="POST" action="{{route('about-data.destroy', $data->id) }}">
+                                            <form method="POST" action="{{route('contact-data.destroy', $data->id) }}">
                                                 @method('DELETE')
                                                 <button type="submit" class="btn btn-rounded btn-danger">
                                                     <i class="fa fa-close color-danger"></i></button>
