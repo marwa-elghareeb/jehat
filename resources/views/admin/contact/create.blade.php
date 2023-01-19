@@ -33,7 +33,7 @@
 
 
                                 <div class="form-group row align-items-center">
-                                    <label class="col-sm-3 col-form-label text-label"> name (Ar)</label>
+                                    <label class="col-sm-3 col-form-label text-label"> name (ar)</label>
                                     <div class="col-sm-9">
                                         <div class="input-group">
                                             <input type="text" class="form-control" name="name_ar" id="validationDefaultUsername1" aria-describedby="validationDefaultUsername1">
@@ -45,7 +45,7 @@
                                 </div>
 
                                 <div class="form-group row align-items-center">
-                                    <label class="col-sm-3 col-form-label text-label"> name (En)</label>
+                                    <label class="col-sm-3 col-form-label text-label"> name (en)</label>
                                     <div class="col-sm-9">
                                         <div class="input-group">
                                             <input type="text" class="form-control" name="name_en" id="validationDefaultUsername1" aria-describedby="validationDefaultUsername1">
@@ -58,7 +58,7 @@
 
 
                                 <div class="form-group row align-items-center">
-                                    <label class="col-sm-3 col-form-label text-label">address (Ar)</label>
+                                    <label class="col-sm-3 col-form-label text-label">address (ar)</label>
                                     <div class="col-sm-9">
                                         <div class="input-group">
                                             <input type="text" class="form-control" name="address_ar" onkeyup="myFunction()" id="fname" id="validationDefaultUsername1" aria-describedby="validationDefaultUsername1">
@@ -70,7 +70,7 @@
                                 </div>
 
                                 <div class="form-group row align-items-center">
-                                    <label class="col-sm-3 col-form-label text-label">address(En)</label>
+                                    <label class="col-sm-3 col-form-label text-label">address(en)</label>
                                     <div class="col-sm-9">
                                         <div class="input-group">
                                             <input type="text" class="form-control" name="address_en" id="validationDefaultUsername1" aria-describedby="validationDefaultUsername1">
@@ -83,13 +83,13 @@
 
                                 <div class="form-group row align-items-center">
 
-                                    <label class="col-sm-3 col-form-label text-label">emile(En)</label>
+                                    <label class="col-sm-3 col-form-label text-label">email</label>
                                     <div class="col-sm-9">
                                         <div class="input-group">
-                                            <input type="text" class="form-control" name="emile_en" id="validationDefaultUsername1" aria-describedby="validationDefaultUsername1">
+                                            <input type="text" class="form-control" name="email" id="validationDefaultUsername1" aria-describedby="validationDefaultUsername1">
                                         </div>
-                                        @if($errors->has('emile_en'))
-                                        <div class="error">{{ $errors->first('emile_en') }}</div>
+                                        @if($errors->has('email'))
+                                        <div class="error">{{ $errors->first('email') }}</div>
 
 
 
@@ -97,43 +97,43 @@
                                     </div>
                                 </div>
                                 <div class="form-group row align-items-center">
-                                    <label class="col-sm-3 col-form-label text-label">number(En)</label>
+                                    <label class="col-sm-3 col-form-label text-label">number</label>
                                     <div class="col-sm-9">
                                         <div class="input-group">
-                                            <input type="text" class="form-control" name="number_en" id="validationDefaultUsername1" aria-describedby="validationDefaultUsername1">
+                                            <input type="text" class="form-control" name="number" id="validationDefaultUsername1" aria-describedby="validationDefaultUsername1">
                                         </div>
-                                        @if($errors->has('number_en'))
-                                        <div class="error">{{ $errors->first('number_en') }}</div>
+                                        @if($errors->has('number'))
+                                        <div class="error">{{ $errors->first('number') }}</div>
                                         @endif
                                     </div>
                                 </div>
                                 <div class="form-group row align-items-center">
-                                    <label class="col-sm-3 col-form-label text-label">map(En)</label>
+                                    <label class="col-sm-3 col-form-label text-label">map</label>
                                     <div class="col-sm-9">
                                         <div class="input-group">
-                                            <input type="text" class="form-control" name="map_en" id="validationDefaultUsername1" aria-describedby="validationDefaultUsername1">
+                                            <input type="text" class="form-control" name="map" id="validationDefaultUsername1" aria-describedby="validationDefaultUsername1">
                                         </div>
-                                        @if($errors->has('map_en'))
-                                        <div class="error">{{ $errors->first('map_en') }}</div>
+                                        @if($errors->has('map'))
+                                        <div class="error">{{ $errors->first('map') }}</div>
 
                                         @endif
                                     </div>
                                 </div>
                                 <div class="form-group row align-items-center">
-                                    <label class="col-sm-3 col-form-label text-label">link(En)</label>
+                                    <label class="col-sm-3 col-form-label text-label">link</label>
                                     <div class="col-sm-9">
                                         <div class="input-group">
-                                            <input type="text" class="form-control" name="link_en" id="validationDefaultUsername1" aria-describedby="validationDefaultUsername1">
+                                            <input type="text" class="form-control" name="link" id="validationDefaultUsername1" aria-describedby="validationDefaultUsername1">
                                         </div>
-                                        @if($errors->has('link_en'))
-                                        <div class="error">{{ $errors->first('link_en') }}</div>
+                                        @if($errors->has('link'))
+                                        <div class="error">{{ $errors->first('link') }}</div>
 
                                         @endif
                                     </div>
                                 </div>
 
                                 <div class="form-group row">
-                                    <label class="col-sm-3 col-form-label text-label">description (Ar)</label>
+                                    <label class="col-sm-3 col-form-label text-label">description (ar)</label>
                                     <div class="col-sm-9">
                                         <div class="input-group">
                                             <textarea class="form-control" name="desc_ar" rows="6"></textarea>
@@ -145,7 +145,7 @@
                                 </div>
 
                                 <div class="form-group row">
-                                    <label class="col-sm-3 col-form-label text-label">description (En)</label>
+                                    <label class="col-sm-3 col-form-label text-label">description (en)</label>
                                     <div class="col-sm-9">
                                         <div class="input-group">
                                             <textarea class="form-control" name="desc_en" rows="6"></textarea>
