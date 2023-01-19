@@ -156,5 +156,7 @@ class NewsController extends Controller
     public function destroy($id)
     {
         //
+        news::destroy($id);
+        return redirect()->route('news-data.index')->with('flash_message', 'Item deleted!');
     }
 }
