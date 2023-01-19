@@ -124,7 +124,7 @@ class NewsController extends Controller
         
         ]);
         //Update
-        $data = new News();
+        $data = news::find($id);
          $data->name_ar = $request->name_ar;
          $data->name_en = $request->name_en;
          $data->title_ar = $request->title_ar;
