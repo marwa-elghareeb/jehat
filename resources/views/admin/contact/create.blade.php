@@ -33,7 +33,7 @@
 
 
                                 <div class="form-group row align-items-center">
-                                    <label class="col-sm-3 col-form-label text-label"> Name (Ar)</label>
+                                    <label class="col-sm-3 col-form-label text-label"> name (Ar)</label>
                                     <div class="col-sm-9">
                                         <div class="input-group">
                                             <input type="text" class="form-control" name="name_ar" id="validationDefaultUsername1" aria-describedby="validationDefaultUsername1">
@@ -45,7 +45,7 @@
                                 </div>
 
                                 <div class="form-group row align-items-center">
-                                    <label class="col-sm-3 col-form-label text-label"> Name (En)</label>
+                                    <label class="col-sm-3 col-form-label text-label"> name (En)</label>
                                     <div class="col-sm-9">
                                         <div class="input-group">
                                             <input type="text" class="form-control" name="name_en" id="validationDefaultUsername1" aria-describedby="validationDefaultUsername1">
@@ -58,76 +58,76 @@
 
 
                                 <div class="form-group row align-items-center">
-                                    <label class="col-sm-3 col-form-label text-label">Address (Ar)</label>
+                                    <label class="col-sm-3 col-form-label text-label">address (Ar)</label>
                                     <div class="col-sm-9">
                                         <div class="input-group">
-                                            <input type="text" class="form-control" name="Address_ar" onkeyup="myFunction()" id="fname" id="validationDefaultUsername1" aria-describedby="validationDefaultUsername1">
+                                            <input type="text" class="form-control" name="address_ar" onkeyup="myFunction()" id="fname" id="validationDefaultUsername1" aria-describedby="validationDefaultUsername1">
                                         </div>
-                                        @if($errors->has('Address_ar'))
-                                        <div class="error">{{ $errors->first('Address_ar') }}</div>
+                                        @if($errors->has('address_ar'))
+                                        <div class="error">{{ $errors->first('address_ar') }}</div>
                                         @endif
                                     </div>
                                 </div>
 
                                 <div class="form-group row align-items-center">
-                                    <label class="col-sm-3 col-form-label text-label">Address(En)</label>
+                                    <label class="col-sm-3 col-form-label text-label">address(En)</label>
                                     <div class="col-sm-9">
                                         <div class="input-group">
-                                            <input type="text" class="form-control" name="Address_en" id="validationDefaultUsername1" aria-describedby="validationDefaultUsername1">
+                                            <input type="text" class="form-control" name="address_en" id="validationDefaultUsername1" aria-describedby="validationDefaultUsername1">
                                         </div>
-                                        @if($errors->has('Address_en'))
-                                        <div class="error">{{ $errors->first('Address_en') }}</div>
+                                        @if($errors->has('address_en'))
+                                        <div class="error">{{ $errors->first('address_en') }}</div>
                                         @endif
                                     </div>
                                 </div>
 
                                 <div class="form-group row align-items-center">
-                                    <label class="col-sm-3 col-form-label text-label">Emile(En)</label>
+                                    <label class="col-sm-3 col-form-label text-label">emile(En)</label>
                                     <div class="col-sm-9">
                                         <div class="input-group">
-                                            <input type="text" class="form-control" name="Emile_en" id="validationDefaultUsername1" aria-describedby="validationDefaultUsername1">
+                                            <input type="text" class="form-control" name="emile_en" id="validationDefaultUsername1" aria-describedby="validationDefaultUsername1">
                                         </div>
-                                        @if($errors->has('Emile_en'))
-                                        <div class="error">{{ $errors->first('Emile_en') }}</div>
+                                        @if($errors->has('emile_en'))
+                                        <div class="error">{{ $errors->first('emile_en') }}</div>
                                         @endif
                                     </div>
                                 </div>
                                 <div class="form-group row align-items-center">
-                                    <label class="col-sm-3 col-form-label text-label">Number(En)</label>
+                                    <label class="col-sm-3 col-form-label text-label">number(En)</label>
                                     <div class="col-sm-9">
                                         <div class="input-group">
-                                            <input type="text" class="form-control" name="Number_en" id="validationDefaultUsername1" aria-describedby="validationDefaultUsername1">
+                                            <input type="text" class="form-control" name="number_en" id="validationDefaultUsername1" aria-describedby="validationDefaultUsername1">
                                         </div>
-                                        @if($errors->has('Number_en'))
-                                        <div class="error">{{ $errors->first('Number_en') }}</div>
+                                        @if($errors->has('number_en'))
+                                        <div class="error">{{ $errors->first('number_en') }}</div>
                                         @endif
                                     </div>
                                 </div>
                                 <div class="form-group row align-items-center">
-                                    <label class="col-sm-3 col-form-label text-label">Map(En)</label>
+                                    <label class="col-sm-3 col-form-label text-label">map(En)</label>
                                     <div class="col-sm-9">
                                         <div class="input-group">
-                                            <input type="text" class="form-control" name="Map_en" id="validationDefaultUsername1" aria-describedby="validationDefaultUsername1">
+                                            <input type="text" class="form-control" name="map_en" id="validationDefaultUsername1" aria-describedby="validationDefaultUsername1">
                                         </div>
-                                        @if($errors->has('Map_en'))
-                                        <div class="error">{{ $errors->first('Map_en') }}</div>
+                                        @if($errors->has('map_en'))
+                                        <div class="error">{{ $errors->first('map_en') }}</div>
                                         @endif
                                     </div>
                                 </div>
                                 <div class="form-group row align-items-center">
-                                    <label class="col-sm-3 col-form-label text-label">Link(En)</label>
+                                    <label class="col-sm-3 col-form-label text-label">link(En)</label>
                                     <div class="col-sm-9">
                                         <div class="input-group">
-                                            <input type="text" class="form-control" name="Link_en" id="validationDefaultUsername1" aria-describedby="validationDefaultUsername1">
+                                            <input type="text" class="form-control" name="link_en" id="validationDefaultUsername1" aria-describedby="validationDefaultUsername1">
                                         </div>
-                                        @if($errors->has('Link_en'))
-                                        <div class="error">{{ $errors->first('Link_en') }}</div>
+                                        @if($errors->has('link_en'))
+                                        <div class="error">{{ $errors->first('link_en') }}</div>
                                         @endif
                                     </div>
                                 </div>
 
                                 <div class="form-group row">
-                                    <label class="col-sm-3 col-form-label text-label">Description (Ar)</label>
+                                    <label class="col-sm-3 col-form-label text-label">description (Ar)</label>
                                     <div class="col-sm-9">
                                         <div class="input-group">
                                             <textarea  class="form-control" id="ck_editor" name="desc_ar" rows="6"></textarea>
@@ -139,7 +139,7 @@
                                 </div>
 
                                 <div class="form-group row">
-                                    <label class="col-sm-3 col-form-label text-label">Description (En)</label>
+                                    <label class="col-sm-3 col-form-label text-label">description (En)</label>
                                     <div class="col-sm-9">
                                         <div class="input-group">
                                             <textarea  class="form-control"  id="ck_editor" name="desc_en" rows="6"></textarea>
