@@ -2,10 +2,11 @@
 namespace App\Http\Controllers\Admin;
 
 use App\Http\Controllers\Controller;
-use Illuminate\Http\Request;
-use App\Models\Cards;
 
-class CardsController extends Controller
+
+use Illuminate\Http\Request;
+
+class FooterPagesController extends Controller
 {
     /**
      * Display a listing of the resource.
@@ -15,8 +16,6 @@ class CardsController extends Controller
     public function index()
     {
         //
-        $allData = Cards::all();
-        return view('admin.cards.list')->with(['allData' => $allData]);
     }
 
     /**
@@ -27,7 +26,6 @@ class CardsController extends Controller
     public function create()
     {
         //
-        return view('admin.cards.create');
     }
 
     /**
@@ -39,30 +37,6 @@ class CardsController extends Controller
     public function store(Request $request)
     {
         //
-        $request->validate([
-            'name_ar' => 'required',
-            'name_en' => 'required',
-            'link' => 'required',
-            'images' => 'required',
-            'desc_ar' => 'required',
-            'desc_en' => 'required',
-        
-        ]);
-        //Store
-        $data = new Cards();
-        $data->name_ar = $request->name_ar;
-        $data->name_en = $request->name_en;
-        $data->link = $request->link;
-        if ($request->file('images')) {
-            $file = $request->file('images');
-            $filename = date('YmdHi') . $file->getClientOriginalName();
-            $file->move(public_path('upload'), $filename);
-        }
-        $data->image = $filename;
-        $data->desc_ar = $request->desc_ar;
-        $data->desc_en = $request->desc_en;
-        $data->save();
-        return redirect()->route('cards-data.index');
     }
 
     /**

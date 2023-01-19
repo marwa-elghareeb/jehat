@@ -8,7 +8,7 @@
             </div>
             <div class="col p-md-0">
                 <ol class="breadcrumb">
-                    <li class="breadcrumb-item"><a href="{{ route('media.index') }}">Media</a>
+                    <li class="breadcrumb-item"><a href="{{ route('media-data.index') }}">Media</a>
                     </li>
 
                     <li class="breadcrumb-item active">Edit Media
@@ -26,7 +26,8 @@
                     <div class="card-body">
                         <h4 class="card-title mb-4">Edit Item</h4>
                         <div class="basic-form">
-                            <form role="form" enctype="multipart/form-data" method="post" action="{{ route('media.update' , $editData->id) }}">
+                            <form role="form" enctype="multipart/form-data" method="post" 
+                            action="{{ route('media-data.update' , $editData->id) }}">
                                 {{ csrf_field() }}
                                 {{ method_field('PATCH') }}
 

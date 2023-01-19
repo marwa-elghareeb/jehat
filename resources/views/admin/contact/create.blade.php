@@ -28,7 +28,8 @@
                     <div class="card-body">
                         <h4 class="card-title mb-4">Add New </h4>
                         <div class="basic-form">
-                            <form role="form" enctype="multipart/form-data" method="post" action="{{ route('contact-data.store') }}">
+                            <form role="form" enctype="multipart/form-data" method="post"
+                            action="{{ route('contact-data.store') }}">
                                 {{ csrf_field() }}
 
 
@@ -82,6 +83,7 @@
                                 </div>
 
                                 <div class="form-group row align-items-center">
+<<<<<<< HEAD
                                     <label class="col-sm-3 col-form-label text-label">emile(En)</label>
                                     <div class="col-sm-9">
                                         <div class="input-group">
@@ -89,10 +91,14 @@
                                         </div>
                                         @if($errors->has('emile_en'))
                                         <div class="error">{{ $errors->first('emile_en') }}</div>
+=======
+
+>>>>>>> 2708076cba2f1e85d392a29369b32088b7a44797
                                         @endif
                                     </div>
                                 </div>
                                 <div class="form-group row align-items-center">
+<<<<<<< HEAD
                                     <label class="col-sm-3 col-form-label text-label">number(En)</label>
                                     <div class="col-sm-9">
                                         <div class="input-group">
@@ -100,10 +106,13 @@
                                         </div>
                                         @if($errors->has('number_en'))
                                         <div class="error">{{ $errors->first('number_en') }}</div>
+=======
+>>>>>>> 2708076cba2f1e85d392a29369b32088b7a44797
                                         @endif
                                     </div>
                                 </div>
                                 <div class="form-group row align-items-center">
+<<<<<<< HEAD
                                     <label class="col-sm-3 col-form-label text-label">map(En)</label>
                                     <div class="col-sm-9">
                                         <div class="input-group">
@@ -111,10 +120,14 @@
                                         </div>
                                         @if($errors->has('map_en'))
                                         <div class="error">{{ $errors->first('map_en') }}</div>
+=======
+
+>>>>>>> 2708076cba2f1e85d392a29369b32088b7a44797
                                         @endif
                                     </div>
                                 </div>
                                 <div class="form-group row align-items-center">
+<<<<<<< HEAD
                                     <label class="col-sm-3 col-form-label text-label">link(En)</label>
                                     <div class="col-sm-9">
                                         <div class="input-group">
@@ -122,6 +135,9 @@
                                         </div>
                                         @if($errors->has('link_en'))
                                         <div class="error">{{ $errors->first('link_en') }}</div>
+=======
+
+>>>>>>> 2708076cba2f1e85d392a29369b32088b7a44797
                                         @endif
                                     </div>
                                 </div>
@@ -130,7 +146,7 @@
                                     <label class="col-sm-3 col-form-label text-label">description (Ar)</label>
                                     <div class="col-sm-9">
                                         <div class="input-group">
-                                            <textarea  class="form-control" id="ck_editor" name="desc_ar" rows="6"></textarea>
+                                            <textarea  class="form-control" name="desc_ar" rows="6"></textarea>
                                         </div>
                                         @if($errors->has('desc_ar'))
                                         <div class="error">{{ $errors->first('desc_ar') }}</div>
@@ -142,19 +158,13 @@
                                     <label class="col-sm-3 col-form-label text-label">description (En)</label>
                                     <div class="col-sm-9">
                                         <div class="input-group">
-                                            <textarea  class="form-control"  id="ck_editor" name="desc_en" rows="6"></textarea>
+                                            <textarea  class="form-control"  name="desc_en" rows="6"></textarea>
                                         </div>
                                         @if($errors->has('desc_en'))
                                         <div class="error">{{ $errors->first('desc_en') }}</div>
                                         @endif
                                     </div>
                                 </div>
-
-
-                                    </div>
-                                </div>
-
-
 
                                 <div style="float: right;">
                                     <button type="submit" class="btn btn-primary btn-form">Submit</button>
