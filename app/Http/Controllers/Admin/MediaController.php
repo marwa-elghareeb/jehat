@@ -137,6 +137,15 @@ class MediaController extends Controller
      */
     public function destroy($id)
     {
+
+        $getData = Media::where('media_id', $id)->get();
+        if (count($getData) > 0) {
+            return redirect()->route('media.index')->with('flash_message','لا يمكن حذف هذا القسم');
+        } else {
+
+            Media::destroy($id);
+            return redirect()->route('media.index')->with('flash_message', 'Item deleted!');
+        }
        
         //
     }
