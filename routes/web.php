@@ -16,6 +16,13 @@ use App\Http\Controllers\Admin\MediaController;
 use App\Http\Controllers\Admin\NewsController;
 use App\Http\Controllers\Admin\CardsController;
 use App\Http\Controllers\Admin\FooterPagesController;
+//WebSite 
+use App\Http\Controllers\Site\AboutUsSiteController;
+use App\Http\Controllers\Site\ContactUsSiteController;
+use App\Http\Controllers\Site\MediaSiteController;
+use App\Http\Controllers\Site\FooterSiteController;
+use App\Http\Controllers\Site\NewsSiteController;
+use App\Http\Controllers\Site\TowerSiteController;
 use App\Http\Controllers\Site\IndexController;
 /*
 |--------------------------------------------------------------------------
@@ -27,61 +34,32 @@ use App\Http\Controllers\Site\IndexController;
 | contains the "web" middleware group. Now create something great!
 |
 */
-/*use Illuminate\Support\Facades\App;
-
-$locale = App::currentLocale();
-
- 
-if (App::isLocale('en')) {
-    var_dump($locale);
-}
- 
-Route::get('/greeting/{locale}', function ($locale) {
-    if (! in_array($locale, ['ar', 'en'])) {
-        abort(400);
-    }
- 
-    App::setLocale($locale);
- 
-    //
-});
-
-Route::get('language/{locale}', function ($locale) {
-    app()->setLocale($locale);
-    session()->put('locale', $locale);
-
-    return redirect()->back();
-});
-*/
 //Portal Routes:
-Route::get('/', function () {
-    return view('welcome');
-});
-Route::get('/aboutUs', [IndexController::class, 'aboutUs']);
-Route::get('/contactUs', [IndexController::class, 'contactUs']);
-Route::post('/contactUsForm', [IndexController::class, 'contactUsForm']);
-Route::get('/media', [IndexController::class, 'media']);
-Route::get('/footerPages', [IndexController::class, 'footerPages']);
+Route::get('/', function () {return view('welcome');});
+Route::get('/aboutUs', [AboutUsSiteController::class, 'index'] );
+Route::get('/contactUs', [ContactUsSiteController::class, 'index']);
+Route::post('/contactUsForm', [ContactUsSiteController::class, 'contactUsForm']);
+Route::get('/media', [MediaSiteController::class, 'index']);
+Route::get('/footerPages', [FooterSiteController::class, 'index']);
+Route::get('/news', [NewsSiteController::class, 'index']);
 Route::get('/ourTeam', [IndexController::class, 'ourTeam']);
-Route::get('/news', [IndexController::class, 'news']);
-Route::post('/searchEmp', [IndexController::class, 'searchEmp']);
-
 //Help Center
 Route::get('/helpcenter', [IndexController::class, 'help']);
 Route::get('/helpcenter/{id}', [IndexController::class, 'helpDetails']);
 Route::get('/question', [IndexController::class, 'question']);
 Route::post('/search', [IndexController::class, 'search']);
 //Towers
-Route::get('/cards', [IndexController::class, 'cards']);
-Route::get('/contact', [IndexController::class, 'contact']);
-Route::get('/towers', [IndexController::class, 'towers']);
-Route::get('/allCompanies', [IndexController::class, 'companies']);
-Route::get('/reception/{id}', [IndexController::class, 'reception']);
-Route::get('/userLogin', [IndexController::class, 'userLogin']);
-Route::get('/department/{id}', [IndexController::class, 'department']);
-Route::get('/employe/{id}', [IndexController::class, 'employees']);
-Route::get('/allEvents', [IndexController::class, 'events']);
-Route::get('/employeesEvent/{id}', [IndexController::class, 'employeesEvent']);
+Route::get('/cards', [TowerSiteController::class, 'cards']);
+Route::get('/towers', [TowerSiteController::class, 'towers']);
+Route::get('/allCompanies', [TowerSiteController::class, 'companies']);
+Route::get('/reception/{id}', [TowerSiteController::class, 'reception']);
+Route::get('/userLogin', [TowerSiteController::class, 'userLogin']);
+Route::get('/department/{id}', [TowerSiteController::class, 'department']);
+Route::get('/employe/{id}', [TowerSiteController::class, 'employees']);
+Route::post('/searchEmp', [TowerSiteController::class, 'searchEmp']);
+//Events
+Route::get('/allEvents', [TowerSiteController::class, 'events']);
+Route::get('/employeesEvent/{id}', [TowerSiteController::class, 'employeesEvent']);
 
 //Admin
 Auth::routes();
@@ -101,10 +79,6 @@ Route::group(['middleware' => ['auth']], function () {
     Route::resource('cards-data', CardsController::class);
     Route::resource('contact-data', ContactController::class);
     Route::resource('footer-pages-data', FooterPagesController::class);
-
-    //
-   // Route::get('/contact-us',[ContactController::class,'contact']);
-    //Route::post('contact',[ContactController::class,'sendEmail'])->name('contact.us');
 
 
 });

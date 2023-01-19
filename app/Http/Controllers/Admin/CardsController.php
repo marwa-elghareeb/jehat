@@ -85,6 +85,8 @@ class CardsController extends Controller
     public function edit($id)
     {
         //
+        $editData = Cards::where('id', $id)->first();
+        return view('admin.cards.edit')->with(['editData' => $editData]);
     }
 
     /**
