@@ -19,8 +19,8 @@ class CreateAboutUsTable extends Migration
             $table->string('name_en');
             $table->string('title_ar');
             $table->string('title_en');
-            $table->string('desc_ar');
-            $table->string('desc_en');
+            $table->text('desc_ar');
+            $table->text('desc_en');
             $table->string('image');
             $table->timestamps();
         });
