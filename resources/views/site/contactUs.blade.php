@@ -38,25 +38,26 @@
                 </div>
             </div>
             <div class="row align-items-center">
-                <div class="col-lg-4 col-md-5 col-sm-12 my-0">
-                    <div class="contact-infos media-body">
+            @foreach($allData as $data)
+
+            <div class="col-lg-4 col-md-5 col-sm-12 my-0">
+                <div class="contact-infos media-body">
                         <div class="contact-info media-body">
                             <h3 class="title" style="overflow: hidden; font-family: cairo"></h3>
                             <br>
                             <div class="media-body">
-                                <h3>السعودية</h3>
-                                <p>الرياض, مخرج 24</p>
-                                <img alt="" height="50" src="{{ asset('public/web-assets/img/Whatsapp.png')}}" width="52"><span>+966553777769</span>
+                                <h3>{{ $data->name_ar }}</h3>
+                                <p>{{ $data->address_ar }}</p>
+                                <img alt="" height="50" src="{{ asset('public/web-assets/img/Whatsapp.png')}}" width="52"><span>{{ $data->number }}</span>
                                 <div class="info phone">
-                                    <img alt="" height="50" src="{{ asset('public/web-assets/img/Whatsapp.png')}}" width="52"><span>+966 5555
-                                        4418</span>
+                                    <img alt="" height="50" src="{{ asset('public/web-assets/img/Whatsapp.png')}}" width="52"><span>{{ $data->number }}</span>
                                 </div>
-                                <p>من الاحد الى الخميس<br> من الساعة ٩ صباحا الى ٥ مساء</p>
+                                <p>{{ $data->desc_ar }}</p>
                             </div>
                         </div>
                         <div class="contact-info">
                             <div class="info media-body">
-                                <span>info@jehat.sa
+                                <span>{{ $data->email }}
                                 </span>
                                 <span class="contact-info__icon"><i class="ti-email"></i></span>
                                 <p>على مدار 24 ساعة</p>
@@ -64,6 +65,7 @@
                         </div>
                     </div>
                 </div>
+                @endforeach
                 <div class="col-lg-8 col-md-7 col-sm-12 my-0">
                 <div class="content-wrapper">
             @if(Session::has('flash_message'))
@@ -71,7 +73,7 @@
             @endif
         </div>
                     <div class="form">
-                    <form enctype="multipart/form-data" method="post" 
+                    <form enctype="multipart/form-data" method="post"
                             action="{{ URL :: to ('/contactUsForm')}}">
                             {{ csrf_field() }}
                         <div class="row">
@@ -118,7 +120,7 @@
                             <div class="col-12">
                                 <button type="submit" class="send-button">إرسال</button>
                             </div>
-                            
+
                         </div>
                         </form>
                     </div>

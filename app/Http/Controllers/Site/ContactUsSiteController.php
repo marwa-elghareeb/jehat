@@ -3,16 +3,18 @@ namespace App\Http\Controllers\Site;
 
 use App\Http\Controllers\Controller;
 use Illuminate\Http\Request;
+use App\Models\contact;
 
 class ContactUsSiteController extends Controller
 {
     //
     public function index()
     {
-        
-        return view('site.contactUs');
+        $allData = contact::all();
+        return view('site.contactUS')->with(['allData' => $allData]);
+
     }
-    public function contactUsForm(Request $request)
+    public function ContactUsForm(Request $request)
     {
         //validation
         $request->validate([
