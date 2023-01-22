@@ -23,6 +23,24 @@
                 <div class="card">
                     <div class="card-wrapper">
                        
+                    @foreach($allData as $data)
+                                <div class="card-box align-center">
+                                    <section class="sample-text-area">
+                                        <div class="container box_1170" style="text-align : right">
+
+                                            <p class="sample-text">
+
+                                            <h1>{{ $data->name_ar }}</h1>
+                                            <br>
+
+                                            <p class="description" >  {{ $data->desc_ar }} 
+                                                    </p>
+                                        </div>
+                                </div>
+                                    </section>
+                                    @endforeach
+
+
 
                     
                     </div>
