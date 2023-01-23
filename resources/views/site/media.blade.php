@@ -45,6 +45,39 @@
 							<h2><img class="pdf" src="{{ asset('public/web-assets/img/icon/pdficon.svg')}} " alt=""> تحميل ملف دليل المستخدم </h2>
 						</a>
 					</div>
+
+					{{ $allData[0]->title_ar }} </h1>
+                                        </div>
+                                        <p class="description wow fadeInUp">
+                                   
+                                        {{ strip_tags( $allData[0]->desc_ar ) }}
+										</p>
+                                        <div class="singiture wow fadeInUp" data-wow-delay="0.5s">
+                                            <h2 class="sub-title wow fadeInUp">
+                                            {{ $allData[4]->title_ar }}</h2>
+                                            <h3>   {{ $allData[4]->name_ar }}</h3>
+                                            <img src="{{ URL ::to ('public/upload/'.$allData[4]->image)}}" class="wow fadeInUp" data-wow-delay="0.6s" alt="sign">
+                                        </div>
+
+										</div>
+                                        <div class="services-cap">
+                                            <h3 class="font-weight-bold text-center">{{ $allData[1]->title_ar }}</h5>
+                                                <p class=" text-center">{{ strip_tags( $allData[1]->desc_ar ) }}</p>
+                                        </div>
+
+										<div class="services-cap">
+                                            <h3 class="font-weight-bold text-center">{{ $allData[2]->title_ar }} </h3>
+                                            <p class=" text-center">  {{ strip_tags( $allData[2]->desc_ar ) }}</p>
+                                        </div>
+
+										<div class="services-cap">
+                                            <h3 class="font-weight-bold text-center"> {{ $allData[3]->title_ar }}</h3>
+                                            <p class=" text-center"> {{ strip_tags( $allData[3]->desc_ar ) }}</p>
+                                        </div>
+
+
+
+
 				</div>
 				<div class="row">
 					<div class="col-12">
