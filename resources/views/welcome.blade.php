@@ -5,7 +5,7 @@
 <div class="main-slider-part owl-slider" id="owl-slider">
   <!-- slide 01 -->
   <div class="slide">
-    <div class="owl-slide h-100" style="background-image: url('public/web-assets/img/hero/jehat90.png');">
+    <div class="owl-slide h-100" style="background-image: url('public/web-assets/img/hero/Untitled-55.png');">
       <div class="owl-text text-center">
         <div class="container">
           <div class="row justify-content-center">

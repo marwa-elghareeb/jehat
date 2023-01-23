@@ -22,7 +22,7 @@
             <div class="row">
                 <div class="col-12">
                     <div class="section-title" data-aos="fade-up">
-                        <h1 data-animation="bounceIn" data-delay="0.2s"> </h1>
+                        <h1 data-animation="bounceIn" data-delay="0.2s"> {{ $cData->name_ar}} </h1>
 
                     </div>
                 </div>
@@ -39,7 +39,8 @@
                         <p class="description">يتم عرض جميع الشركات الموجوده فى المنصه وكذلك الاقسام الخاصه بها
                             وايضا
                             الموظفين</p>
-                        <a href="#" class="btn btn-outline-secondary  btn-sm pt-8 ">الدخول</a>
+                        <a href="{{ $cData->reception_link}}"  target="_blank"
+                        class="btn btn-outline-secondary  btn-sm pt-8 ">الدخول</a>
                     </div>
                 </div>
 
@@ -50,7 +51,7 @@
                         </div>
                         <h4 class="title"><a href="companies.html">الاقسام والموظفين </a></h4>
                         <p class="description">عرض جميع المعارض الموجود فى المنصه وتفاصيل كل معرض</p>
-                        <a href="{{ URL :: to ('/userLogin')}}" class="btn btn-outline-secondary  pt-8 btn-sm">الدخول</a>
+                        <a href="{{ URL :: to ('/userLogin/'.$cData->id)}}" class="btn btn-outline-secondary  pt-8 btn-sm">الدخول</a>
 
                     </div>
                 </div>

@@ -32,12 +32,17 @@ class TowerSiteController extends Controller
 
     public function reception($id)
     {
-        return view('site.reception');
+        $cData = Companies::where('id', $id)->first();
+        return view('site.reception')->with(['cData' => $cData]);
     }
 
-    public function userLogin()
+    public function userLogin($id)
     {
-        return view('site.userLogin');
+        return view('site.userLogin')->with(['id' => $id]);
+    }
+    public function userLoginForm(Request $request)
+    {
+        
     }
     public function department($id)
     {

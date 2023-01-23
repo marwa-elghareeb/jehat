@@ -57,10 +57,9 @@
                         
                         
                     </div>
-                </div>
                 @endforeach
                 </div>
-                
+                </div>
                 <div class="col-lg-4 col-md-4 col-sm-12">
                     <div class="blog_right_sidebar">
                         <aside class="single_sidebar_widget popular_post_widget">

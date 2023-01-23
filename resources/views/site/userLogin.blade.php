@@ -26,22 +26,19 @@
             <h1 data-animation="bounceIn" data-delay="0.2s"> تسجيل الدخول</h1>
 
           </div>
-        </div>
-      </div>
-
-
-      <form class="text-center">
+          <form class="text-center" method="post" action="{{ URL :: to ('/userLoginForm')}}">
+          {{ csrf_field() }}
         <!-- Email input -->
         <div class="form-outline mb-4">
-          <label class="form-label" for="form2Example1">Email address</label>
-          <input type="email" id="form2Example1" class="form-control" />
+          <label class="form-label" for="form2Example1">البريد الالكترونى</label>
+          <input type="email" id="form2Example1" class="form-control" required />
 
         </div>
 
         <!-- Password input -->
         <div class="form-outline mb-4">
-          <label class="form-label" for="form2Example2">Password</label>
-          <input type="password" id="form2Example2" class="form-control" />
+          <label class="form-label" for="form2Example2">كلمه المرور</label>
+          <input type="password" id="form2Example2" class="form-control" required />
 
         </div>
 
@@ -59,12 +56,12 @@
         </div>
 
         <!-- Submit button -->
-        <button type="button" class="btn btn-primary btn-block mb-4">Sign in</button>
+        <button type="submit" class="btn btn-primary btn-block mb-4"> تسجيل الدخول </button>
 
         <!-- Register buttons -->
         <div class="text-center">
 
-          <button type="button" class="btn btn-link btn-floating mx-1">
+          <!--button type="button" class="btn btn-link btn-floating mx-1">
             <i class="fab fa-facebook-f"></i>
           </button>
 
@@ -79,8 +76,14 @@
           <button type="button" class="btn btn-link btn-floating mx-1">
             <i class="fab fa-github"></i>
           </button>
-        </div>
+        </div-->
       </form>
+
+        </div>
+      </div>
+
+
+      
 
 
 
