@@ -69,6 +69,7 @@
                                         <th>{{ $i ++ }}</th>
                                         <td>{{ $data->name_ar }}</td>
                                         <td>{{ $data->name_en }}</td>
+                                        
 
                                     
 
