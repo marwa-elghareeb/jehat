@@ -34,8 +34,8 @@
                                 <div class="form-group row align-items-center">
                                     <label class="col-sm-3 col-form-label text-label"> Title(Ar)</label>
                                     <div class="col-sm-9">
-                                        <div class="input-group">
-                                            <input type="text" class="form-control" name="title_ar" id="validationDefaultUsername1" aria-describedby="validationDefaultUsername1">
+                                    <div class="input-group">
+                                            <input type="text" class="form-control" onkeyup="myFunction()" id="fname" value="{{ $editData->title_ar}}" name="title_ar" id="validationDefaultUsername1" aria-describedby="validationDefaultUsername1">
                                         </div>
                                         @if($errors->has('title_ar'))
                                         <div class="error">{{ $errors->first('titel_ar') }}</div>
@@ -46,17 +46,15 @@
                                 <div class="form-group row align-items-center">
                                     <label class="col-sm-3 col-form-label text-label"> Title(En)</label>
                                     <div class="col-sm-9">
-                                        <div class="input-group">
-                                            <input type="text" class="form-control" name="title_en" id="validationDefaultUsername1" aria-describedby="validationDefaultUsername1">
+                                    <div class="input-group">
+                                            <input type="text" class="form-control" value="{{ $editData->title_en}}" name="title_en" id="validationDefaultUsername1" aria-describedby="validationDefaultUsername1">
                                         </div>
+    
                                         @if($errors->has('title_en'))
                                         <div class="error">{{ $errors->first('titel_en') }}</div>
                                         @endif
                                     </div>
-                                </div>
-
-
-                        
+                                </div>                        
 
                                 <div class="form-group row align-items-center">
                                     <label class="col-sm-3 col-form-label text-label">name (Ar)</label>
@@ -85,8 +83,8 @@
                                 <div class="form-group row align-items-center">
                                     <label class="col-sm-3 col-form-label text-label"> desc(Ar)</label>
                                     <div class="col-sm-9">
-                                        <div class="input-group">
-                                            <input type="text" class="form-control" name="desc_ar" id="validationDefaultUsername1" aria-describedby="validationDefaultUsername1">
+                                    <div class="input-group">
+                                            <textarea class="form-control" name="desc_ar" rows="6">{{ $editData->desc_ar}}</textarea>
                                         </div>
                                         @if($errors->has('desc_ar'))
                                         <div class="error">{{ $errors->first('desc_ar') }}</div>
@@ -97,8 +95,8 @@
                                 <div class="form-group row align-items-center">
                                     <label class="col-sm-3 col-form-label text-label"> desc(En)</label>
                                     <div class="col-sm-9">
-                                        <div class="input-group">
-                                            <input type="text" class="form-control" name="desc_en" id="validationDefaultUsername1" aria-describedby="validationDefaultUsername1">
+                                    <div class="input-group">
+                                            <textarea class="form-control" name="desc_en" rows="6">{{ $editData->desc_en}}</textarea>
                                         </div>
                                         @if($errors->has('desc_en'))
                                         <div class="error">{{ $errors->first('desc_en') }}</div>
@@ -110,7 +108,7 @@
                                     <label class="col-sm-3 col-form-label text-label">link</label>
                                     <div class="col-sm-9">
                                         <div class="input-group">
-                                            <input type="text" class="form-control" value="{{ $editData->reception_link}}" name="link" id="validationDefaultUsername1" aria-describedby="validationDefaultUsername1">
+                                            <input type="text" class="form-control" value="{{ $editData->link}}" name="link" id="validationDefaultUsername1" aria-describedby="validationDefaultUsername1">
                                         </div>
                                        
                                     </div>
@@ -119,9 +117,10 @@
                                 <div class="form-group row align-items-center">
                                     <label class="col-sm-3 col-form-label text-label">Image</label>
                                     <div class="col-sm-9">
-                                        <div class="input-group">
-                                            <input type="file" class="form-control" name="image" id="validationDefaultUsername9" aria-describedby="inputGroupPrepend2">
+                                    <div class="input-group">
+                                            <input type="file"  name="image" id="validationDefaultUsername9"  value="{{ $editData->image}}"  aria-describedby="inputGroupPrepend2">
                                         </div>
+                                        
                                         @if($errors->has('image'))
                                         <div class="error">{{ $errors->first('image') }}</div>
                                         @endif

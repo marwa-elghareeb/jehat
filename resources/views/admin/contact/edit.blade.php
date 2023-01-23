@@ -39,12 +39,11 @@
 
 
                                 </ul-->
-
                                 <div class="form-group row align-items-center">
-                                    <label class="col-sm-3 col-form-label text-label"> name (ar)</label>
+                                    <label class="col-sm-3 col-form-label text-label"> Name (Ar)</label>
                                     <div class="col-sm-9">
                                         <div class="input-group">
-                                            <input type="text" class="form-control" name="name_ar" id="validationDefaultUsername1" aria-describedby="validationDefaultUsername1">
+                                            <input type="text" class="form-control" onkeyup="myFunction()" id="fname" value="{{ $editData->name_ar}}" name="name_ar" id="validationDefaultUsername1" aria-describedby="validationDefaultUsername1">
                                         </div>
                                         @if($errors->has('name_ar'))
                                         <div class="error">{{ $errors->first('name_ar') }}</div>
@@ -52,11 +51,13 @@
                                     </div>
                                 </div>
 
+
+
                                 <div class="form-group row align-items-center">
-                                    <label class="col-sm-3 col-form-label text-label"> name (en)</label>
+                                    <label class="col-sm-3 col-form-label text-label">Name (En)</label>
                                     <div class="col-sm-9">
                                         <div class="input-group">
-                                            <input type="text" class="form-control" name="name_en" id="validationDefaultUsername1" aria-describedby="validationDefaultUsername1">
+                                            <input type="text" class="form-control" value="{{ $editData->name_en}}" name="name_en" id="validationDefaultUsername1" aria-describedby="validationDefaultUsername1">
                                         </div>
                                         @if($errors->has('name_en'))
                                         <div class="error">{{ $errors->first('name_en') }}</div>
@@ -64,12 +65,11 @@
                                     </div>
                                 </div>
 
-
                                 <div class="form-group row align-items-center">
                                     <label class="col-sm-3 col-form-label text-label">address (ar)</label>
                                     <div class="col-sm-9">
                                         <div class="input-group">
-                                            <input type="text" class="form-control" name="address_ar" onkeyup="myFunction()" id="fname" id="validationDefaultUsername1" aria-describedby="validationDefaultUsername1">
+                                            <input type="text" class="form-control" value="{{ $editData->address_ar}}" name="address_ar" onkeyup="myFunction()" id="fname" id="validationDefaultUsername1" aria-describedby="validationDefaultUsername1">
                                         </div>
                                         @if($errors->has('address_ar'))
                                         <div class="error">{{ $errors->first('address_ar') }}</div>
@@ -81,7 +81,7 @@
                                     <label class="col-sm-3 col-form-label text-label">address(en)</label>
                                     <div class="col-sm-9">
                                         <div class="input-group">
-                                            <input type="text" class="form-control" name="address_en" id="validationDefaultUsername1" aria-describedby="validationDefaultUsername1">
+                                            <input type="text" class="form-control" name="address_en"  value="{{ $editData->address_en}}" id="validationDefaultUsername1" aria-describedby="validationDefaultUsername1">
                                         </div>
                                         @if($errors->has('address_en'))
                                         <div class="error">{{ $errors->first('address_en') }}</div>
@@ -94,7 +94,7 @@
                                     <label class="col-sm-3 col-form-label text-label">email</label>
                                     <div class="col-sm-9">
                                         <div class="input-group">
-                                            <input type="text" class="form-control" name="email" id="validationDefaultUsername1" aria-describedby="validationDefaultUsername1">
+                                            <input type="text" class="form-control" name="email" value="{{ $editData->email}}" id="validationDefaultUsername1" aria-describedby="validationDefaultUsername1">
                                         </div>
                                         @if($errors->has('email'))
                                         <div class="error">{{ $errors->first('email') }}</div>
@@ -108,7 +108,7 @@
                                     <label class="col-sm-3 col-form-label text-label">number</label>
                                     <div class="col-sm-9">
                                         <div class="input-group">
-                                            <input type="text" class="form-control" name="number" id="validationDefaultUsername1" aria-describedby="validationDefaultUsername1">
+                                            <input type="text" class="form-control" name="number" value="{{ $editData->number}}"  id="validationDefaultUsername1" aria-describedby="validationDefaultUsername1">
                                         </div>
                                         @if($errors->has('number'))
                                         <div class="error">{{ $errors->first('number') }}</div>
@@ -119,7 +119,7 @@
                                     <label class="col-sm-3 col-form-label text-label">map</label>
                                     <div class="col-sm-9">
                                         <div class="input-group">
-                                            <input type="text" class="form-control" name="map" id="validationDefaultUsername1" aria-describedby="validationDefaultUsername1">
+                                            <input type="text" class="form-control" name="map"   value="{{ $editData->map}}" id="validationDefaultUsername1" aria-describedby="validationDefaultUsername1">
                                         </div>
                                         @if($errors->has('map'))
                                         <div class="error">{{ $errors->first('map') }}</div>
@@ -131,7 +131,7 @@
                                     <label class="col-sm-3 col-form-label text-label">link</label>
                                     <div class="col-sm-9">
                                         <div class="input-group">
-                                            <input type="text" class="form-control" name="link" id="validationDefaultUsername1" aria-describedby="validationDefaultUsername1">
+                                            <input type="text" class="form-control" name="link"   value="{{ $editData->link}}" id="validationDefaultUsername1" aria-describedby="validationDefaultUsername1">
                                         </div>
                                         @if($errors->has('link'))
                                         <div class="error">{{ $errors->first('link') }}</div>
@@ -143,8 +143,9 @@
                                 <div class="form-group row">
                                     <label class="col-sm-3 col-form-label text-label">description (ar)</label>
                                     <div class="col-sm-9">
+                                     
                                         <div class="input-group">
-                                            <textarea class="form-control" name="desc_ar" rows="6"></textarea>
+                                            <textarea class="form-control" name="desc_ar" rows="6">{{ $editData->desc_ar}}</textarea>
                                         </div>
                                         @if($errors->has('desc_ar'))
                                         <div class="error">{{ $errors->first('desc_ar') }}</div>
@@ -155,8 +156,8 @@
                                 <div class="form-group row">
                                     <label class="col-sm-3 col-form-label text-label">description (en)</label>
                                     <div class="col-sm-9">
-                                        <div class="input-group">
-                                            <textarea class="form-control" name="desc_en" rows="6"></textarea>
+                                    <div class="input-group">
+                                            <textarea class="form-control" name="desc_en" rows="6">{{ $editData->desc_en}}</textarea>
                                         </div>
                                         @if($errors->has('desc_en'))
                                         <div class="error">{{ $errors->first('desc_en') }}</div>

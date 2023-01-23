@@ -10,8 +10,8 @@ class MediaSiteController extends Controller
 {
     public function index()
     {
-        return view('site.media');
         $allData = Media::all();
-        return view('site.media')->with(['allData' => $allData]); 
+        return view('site.media')->with(['allData' => $allData]);
+
     }
 }

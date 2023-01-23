@@ -66,12 +66,12 @@
                             <h3 class="widget_title" style="color: #2d2d2d;">اخر الأخبار</h3>
                             <div class="media post_item">
                            
-                                <img src="{{ asset('public/web-assets/img/post/post_1.png')}}" alt="post">
+                                <img src="{{ URL ::to ('public/upload/'.$data->images)}}" alt="post">
                                 <div class="media-body">
                                     <a href="blog_details.html">
-                                        <h3>From life was you fish...</h3>
+                                        <h3>{{ $data->name_ar }}</h3>
                                     </a>
-                                    <p>January 12, 2019</p>
+                                    <p>{{ $data->news_date }}</p>
                                 </div>
                             </div>
                          

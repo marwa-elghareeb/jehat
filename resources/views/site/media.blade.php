@@ -40,57 +40,44 @@
 						</a>
 					</div>
 					<div class="col-lg-6 col-md-6 col-sm-12">
-						<a class="download-pdf" href="{{ asset('public/web-assets/user guide.pdf')}}">
-
-							<h2><img class="pdf" src="{{ asset('public/web-assets/img/icon/pdficon.svg')}} " alt=""> تحميل ملف دليل المستخدم </h2>
-						</a>
-					</div>
-
-					{{ $allData[0]->title_ar }} </h1>
-                                        </div>
-                                        <p class="description wow fadeInUp">
-                                   
-                                        {{ strip_tags( $allData[0]->desc_ar ) }}
-										</p>
-                                        <div class="singiture wow fadeInUp" data-wow-delay="0.5s">
-                                            <h2 class="sub-title wow fadeInUp">
-                                            {{ $allData[4]->title_ar }}</h2>
-                                            <h3>   {{ $allData[4]->name_ar }}</h3>
-                                            <img src="{{ URL ::to ('public/upload/'.$allData[4]->image)}}" class="wow fadeInUp" data-wow-delay="0.6s" alt="sign">
-                                        </div>
-
-										</div>
-                                        <div class="services-cap">
-                                            <h3 class="font-weight-bold text-center">{{ $allData[1]->title_ar }}</h5>
-                                                <p class=" text-center">{{ strip_tags( $allData[1]->desc_ar ) }}</p>
-                                        </div>
-
-										<div class="services-cap">
-                                            <h3 class="font-weight-bold text-center">{{ $allData[2]->title_ar }} </h3>
-                                            <p class=" text-center">  {{ strip_tags( $allData[2]->desc_ar ) }}</p>
-                                        </div>
-
-										<div class="services-cap">
-                                            <h3 class="font-weight-bold text-center"> {{ $allData[3]->title_ar }}</h3>
-                                            <p class=" text-center"> {{ strip_tags( $allData[3]->desc_ar ) }}</p>
-                                        </div>
-
-
+                            <a class="download-pdf" href="web-assets/user guide.pdf"> 
+            
+                                <h2><img class="pdf" src="{{ asset('public/web-assets/img/icon/pdficon.svg')}} " alt=""> تحميل ملف دليل المستخدم  </h2></a>
+                        </div>
 
 
 				</div>
-				<div class="row">
-					<div class="col-12">
-						<h1 class="explain">شرح منصة مستفيد </h1>
-					</div>
-					<div class="col-lg-4 col-md-4 col-sm-12">
-						<a class="popup-video btn-icon" href="https://www.jehat.sa/media/mp4/Add_dep.mp4" class="video-wrap position-relative">
-							<img class="single-gallery-image" src="{{ asset('public/web-assets/img/g1.jpg')}}">
 
-							<h3> انشاء جهه جديده </h3>
-						</a>
-					</div>
-					<div class="col-lg-4 col-md-4 col-sm-12">
+				<br>
+				<div class="col-12">
+                            <h1 class="explain">شرح منصة مستفيد </h1>
+                        </div>
+				<div class="row">
+				<div class="row gallery-item">
+
+						@foreach($allData as $data)
+                        <div class="col-lg-4 col-md-4 col-sm-12">
+                            <a class="popup-video btn-icon"
+                                href="{{ URL ::to ('public/upload/'.$data->link)}}"
+                                class="video-wrap position-relative">
+                                <img class="single-gallery-image"  src="{{ URL ::to ('public/upload/'.$data->image)}}">
+                                <h3>{{ $data->title_ar}}</h3>
+                            </a>
+                        </div>@endforeach
+						</div>
+                </div>
+        </div>
+
+
+
+
+
+
+
+</main>
+
+<!---------------------------------
+<div class="col-lg-4 col-md-4 col-sm-12">
 						<a class="popup-video btn-icon" href="https://www.jehat.sa/media/mp4/client_register.mp4" class="video-wrap position-relative">
 							<img class="single-gallery-image" src="{{ asset('public/web-assets/img/g5.jpg')}}">
 							<h3> الية التسجيل كمستفيد </h3>
@@ -212,21 +199,7 @@
 									<h3> اضافه واداره المواعيد</h3>
 								</a>
 							</div>
-						</div>
-					</div>
-				</div>
-			</div>
-
-		</div>
-	</div>
-
-
-
-
-
-
-</main>
-
+----------------------------------------------->
 
 
 @endsection
