@@ -5,6 +5,7 @@ use App\Http\Controllers\Controller;
 use App\Models\FooterPages;
 
 use Illuminate\Http\Request;
+use Illuminate\Support\Str;
 
 class FooterPagesController extends Controller
 {
@@ -59,8 +60,9 @@ class FooterPagesController extends Controller
              $data->title_en = $request->title_en;
              $data->desc_ar = $request->desc_ar;
              $data->desc_en = $request->desc_en;
-     
+             $data->slug = Str::slug($request->slug);
         
+             
              $data->save();
              return redirect()->route('footer-pages-data.index');
 
@@ -122,7 +124,7 @@ class FooterPagesController extends Controller
            $data->title_en = $request->title_en;
            $data->desc_ar = $request->desc_ar;
            $data->desc_en = $request->desc_en;
-   
+           $data->slug = Str::slug($request->slug);
            $data->save();
            return redirect()->route('footer-pages-data.index');
 

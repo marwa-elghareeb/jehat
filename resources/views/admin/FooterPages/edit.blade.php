@@ -118,6 +118,19 @@
 
                              
 
+                                <div class="form-group row align-items-center">
+                                    <label class="col-sm-3 col-form-label text-label"> slug</label>
+                                    <div class="col-sm-9">
+                                        <div class="input-group">
+                                            <input type="text" class="form-control"  id="fname" value="{{ $editData->slug}}" name="slug" >
+                                        </div>
+                                    
+                                </div>
+
+
+
+                                
+
 
                                 <div style="float: right;">
                                     <button type="submit" class="btn btn-primary btn-form">Submit</button>

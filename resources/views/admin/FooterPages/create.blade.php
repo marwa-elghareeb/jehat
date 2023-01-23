@@ -105,7 +105,14 @@
                                 </div>
 
                               
-                                
+                                <div class="form-group row align-items-center">
+                                    <label class="col-sm-3 col-form-label text-label"> slug </label>
+                                    <div class="col-sm-9">
+                                        <div class="input-group">
+                                            <input type="text" class="form-control" name="slug">
+                                        </div>
+                                </div>
+                                </div>
 
 
                                 <div style="float: right;">
