@@ -192,25 +192,19 @@
                                 </div>
                             </div>
                         </div>
-                        
                         <div class="col-xl-3 col-lg-3 col-md-4 col-sm-6">
                             <div class="single-footer-caption mb-50">
                                 <div class="footer-tittle">
                                     <h4>المسؤولية القانونية</h4>
                                     <ul>
-                                        
                                         <li><a href="#">شروط استخدام المنصة</a></li>
-                                        @foreach($allData as $data)
-                                        <li><a href="#">{{ $data->slug }}</a></li>
-                                         @endforeach
+                                        <li><a href="#">حماية العملاء</a></li>
+                                        <li><a href="#">سياسة الخصوصية</a></li>
                                         <li><a href="#">شركائنا</a></li>
-                                        
                                     </ul>
                                 </div>
                             </div>
                         </div>
-                       
-
                         <div class="col-xl-3 col-lg-3 col-md-4 col-sm-6">
                             <div class="single-footer-caption mb-50">
                                 <div class="footer-tittle">
