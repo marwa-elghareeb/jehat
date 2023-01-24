@@ -47,6 +47,7 @@ class MediaController extends Controller
         'title_en' => 'required|max:255',
         'desc_ar' => 'required',
         'desc_en' => 'required',
+        'link'=>'required',
         'image' => 'mimes:jpeg,png,jpg,gif'
     
         ]);
@@ -58,13 +59,14 @@ class MediaController extends Controller
        $data->title_en = $request->title_en;
        $data->desc_ar = $request->desc_ar;
        $data->desc_en = $request->desc_en;
+       $data->link = $request->link;
         if ($request->file('image')) {
             $file = $request->file('image');
             $filename = date('YmdHi') . $file->getClientOriginalName();
             $file->move(public_path('upload'), $filename);
         }
         $data->image = $filename;
-        $data->link = $request->link;
+     
         $data->save();
         return redirect()->route('media-data.index');
         //
@@ -108,8 +110,12 @@ class MediaController extends Controller
          $request->validate([
             'name_ar' => 'required|max:255',
             'name_en' => 'required|max:255',
+            'title_ar' => 'required|max:255',
+            'title_en' => 'required|max:255',
+            'desc_ar' => 'required',
+            'desc_en' => 'required',
+            'link'=>'required',
             'image' => 'mimes:jpeg,png,jpg,gif'
-
         ]);
 
         //Update
@@ -117,6 +123,10 @@ class MediaController extends Controller
 
         $data->name_ar = $request->name_ar;
         $data->name_en = $request->name_en;
+        $data->title_ar = $request->title_ar;
+        $data->title_en = $request->title_en;
+        $data->desc_ar = $request->desc_ar;
+        $data->desc_en = $request->desc_en;
         $data->link = $request->link;
         if ($request->file('image')) {
             $file = $request->file('image');
@@ -138,14 +148,11 @@ class MediaController extends Controller
     public function destroy($id)
     {
 
-        $getData = Media::where('media_id', $id)->get();
-        if (count($getData) > 0) {
-            return redirect()->route('media.index')->with('flash_message','لا يمكن حذف هذا القسم');
-        } else {
+        
+        Media::destroy($id);
+        return redirect()->route('media-data.index')->with('flash_message', 'Item deleted!');
 
-            Media::destroy($id);
-            return redirect()->route('media.index')->with('flash_message', 'Item deleted!');
-        }
+     
        
         //
     }

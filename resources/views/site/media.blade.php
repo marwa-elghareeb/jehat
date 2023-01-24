@@ -58,7 +58,7 @@
 						@foreach($allData as $data)
                         <div class="col-lg-4 col-md-4 col-sm-12">
                             <a class="popup-video btn-icon"
-                                href="{{ URL ::to ('public/upload/'.$data->link)}}"
+                                href="{{ URL ::to ($data->link)}}"
                                 class="video-wrap position-relative">
                                 <img class="single-gallery-image"  src="{{ URL ::to ('public/upload/'.$data->image)}}">
                                 <h3>{{ $data->title_ar}}</h3>
