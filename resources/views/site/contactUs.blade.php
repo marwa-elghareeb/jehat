@@ -27,19 +27,18 @@
                 <div class="col-lg-7 col-md-10 col-sm-12">
                     <div class="hero__caption hero__caption2 text-center ">
 
-                        <h1 class="contct" data-animation="bounceIn" data-delay="0.2s">تواصل معنا نحن هنا لمساعدتك</h1>
+                        <h1 class="contct" data-animation="bounceIn" data-delay="0.2s"> تواصل معنا نحن هنا لمساعدتك</h1>
 
-                        <!--p data-animation="fadeInUp" data-delay="0.4s">
+                        <p data-animation="fadeInUp" data-delay="0.4s">
                             بحاجة الى التحدث معنا؟
                             نحن نستمع إليك. يرجى اختيار وسيلة الاتصال المفضلة لديك
-                            وسيقوم أحد موظفينا بالتواصل معك قريبًا. ... سوف يسعدنا أن نسمع صوتك</p-->
+                            وسيقوم أحد موظفينا بالتواصل معك قريبًا. ... سوف يسعدنا أن نسمع صوتك</p>
 
                     </div>
                 </div>
             </div>
             <div class="row align-items-center">
             @foreach($allData as $data)
-
             <div class="col-lg-4 col-md-5 col-sm-12 my-0">
                 <div class="contact-infos media-body">
                         <div class="contact-info media-body">
@@ -48,7 +47,6 @@
                             <div class="media-body">
                                 <h3>{{ $data->name_ar }}</h3>
                                 <p>{{ $data->address_ar }}</p>
-                                <img alt="" height="50" src="{{ asset('public/web-assets/img/Whatsapp.png')}}" width="52"><span>{{ $data->number }}</span>
                                 <div class="info phone">
                                     <img alt="" height="50" src="{{ asset('public/web-assets/img/Whatsapp.png')}}" width="52"><span>{{ $data->number }}</span>
                                 </div>
