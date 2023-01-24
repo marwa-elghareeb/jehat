@@ -98,10 +98,10 @@
                                    
                                     <div class="header-right-btn d-none d-lg-block ml-65">
 
-                                        <!--a href="https://app.jehat.sa/client_login.aspx" class="border-btn">تسجيل
-                                            الدخول</a-->
-                                            <a href="#">
-                                                     <i class="fa fa-language" aria-hidden="true"></i></a>
+                                        <a href="https://app.jehat.sa/client_login.aspx" class="border-btn">تسجيل
+                                            الدخول</a>
+                                            <!--a href="#">
+                                                     <i class="fa fa-language" aria-hidden="true"></i></a-->
                                     </div>
                                   
                                 </div>
@@ -184,9 +184,7 @@
                                     <ul>
                                         <li><a href="{{ URL :: to ('/aboutUs')}}"> من نحن </a></li>
                                         <li><a href="{{ URL :: to ('/ourTeam')}}"> فريق العمل </a></li>
-                                        <li><a href="#">الشهادات</a></li>
-                                        <li><a href="#">اعضاء الادارة</a></li>
-
+                                
 
                                     </ul>
                                 </div>
@@ -195,12 +193,11 @@
                         <div class="col-xl-3 col-lg-3 col-md-4 col-sm-6">
                             <div class="single-footer-caption mb-50">
                                 <div class="footer-tittle">
-                                    <h4>المسؤولية القانونية</h4>
+                                    <h4> روابط مهمه</h4>
                                     <ul>
-                                        <li><a href="#">شروط استخدام المنصة</a></li>
-                                        <li><a href="#">حماية العملاء</a></li>
-                                        <li><a href="#">سياسة الخصوصية</a></li>
-                                        <li><a href="#">شركائنا</a></li>
+                                    @foreach($footerPages as $data)
+                                        <li><a href="{{URL :: to ('/footerPages',$data->slug )}}">  {{ $data->name_ar}}</a></li>
+                                        @endforeach
                                     </ul>
                                 </div>
                             </div>

@@ -6,6 +6,7 @@ use App\Http\Controllers\Controller;
 use App\Models\Companies;
 use App\Models\Employees;
 use Illuminate\Http\Request;
+use Illuminate\Support\Str;
 
 class CompaniesController extends Controller
 {
@@ -58,6 +59,7 @@ class CompaniesController extends Controller
             $file->move(public_path('upload'), $filename);
         }
         $data->image = $filename;
+        $data->slug = Str::slug($request->name_ar);
         $data->save();
         return redirect()->route('companies.index');
     }
@@ -116,6 +118,7 @@ class CompaniesController extends Controller
             $data->image = $filename;
         } else {
         }
+        $data->slug = Str::slug($request->name_ar);
         $data->save();
         return redirect()->route('companies.index');
     }

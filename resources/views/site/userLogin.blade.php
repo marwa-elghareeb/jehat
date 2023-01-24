@@ -31,14 +31,14 @@
         <!-- Email input -->
         <div class="form-outline mb-4">
           <label class="form-label" for="form2Example1">البريد الالكترونى</label>
-          <input type="email" id="form2Example1" class="form-control" required />
+          <input type="email" name="email" id="form2Example1" class="form-control" required />
 
         </div>
 
         <!-- Password input -->
         <div class="form-outline mb-4">
           <label class="form-label" for="form2Example2">كلمه المرور</label>
-          <input type="password" id="form2Example2" class="form-control" required />
+          <input type="password" name="password" id="form2Example2" class="form-control" required />
 
         </div>
 

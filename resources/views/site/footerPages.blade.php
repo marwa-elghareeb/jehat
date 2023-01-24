@@ -6,10 +6,10 @@
     <div class="container">
         <div class="row">
             <div class="col-12">
-                <h2 class="breadcrumbs-title"> صفحات <span> الفوتر</span></h2>
+                <h2 class="breadcrumbs-title"> روابط <span> مهمه</span></h2>
                 <ul class="breadcrumb-list">
-                    <li><a href="#">الرئيسية</a></li>
-                    <li>صفحات الفوتر  </li>
+                    <li><a href="{{ URL :: to ('/')}}">الرئيسية</a></li>
+                    <li> {{ $allData->name_ar }} </li>
                 </ul>
             </div>
         </div>
@@ -22,27 +22,26 @@
             <div class=" col-xxl-12 col-lg-12 col-md-12 col-12">
                 <div class="card">
                     <div class="card-wrapper">
-                       
-                    @foreach($allData as $data)
-                                <div class="card-box align-center">
-                                    <section class="sample-text-area">
-                                        <div class="container box_1170" style="text-align : right">
 
-                                            <p class="sample-text">
+                        
+                        <div class="card-box align-center">
+                            <section class="sample-text-area">
+                                <div class="container box_1170" style="text-align : right">
 
-                                            <h1>{{ $data->name_ar }}</h1>
-                                            <br>
+                                    <p class="sample-text">
 
-                                            <p class="description" >  {{ $data->desc_ar }} 
-                                                    </p>
-                                        </div>
+                                    <h1>{{ $allData->name_ar }}</h1>
+                                    <br>
+
+                                    <p class="description"> {{ $allData->desc_ar }}
+                                    </p>
                                 </div>
-                                    </section>
-                                    @endforeach
+                        </div>
+                        </section>
+                     
 
 
 
-                    
                     </div>
 
                 </div>

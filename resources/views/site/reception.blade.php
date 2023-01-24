@@ -51,7 +51,7 @@
                         </div>
                         <h4 class="title"><a href="companies.html">الاقسام والموظفين </a></h4>
                         <p class="description">عرض جميع المعارض الموجود فى المنصه وتفاصيل كل معرض</p>
-                        <a href="{{ URL :: to ('/userLogin/'.$cData->id)}}" class="btn btn-outline-secondary  pt-8 btn-sm">الدخول</a>
+                        <a href="{{ URL :: to ('/userLogin/'.$cData->slug)}}" class="btn btn-outline-secondary  pt-8 btn-sm">الدخول</a>
 
                     </div>
                 </div>

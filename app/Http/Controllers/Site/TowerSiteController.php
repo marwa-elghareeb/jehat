@@ -30,18 +30,20 @@ class TowerSiteController extends Controller
         return view('site.companies')->with(['allData' => $allData]);
     }
 
-    public function reception($id)
+    public function reception($slug)
     {
-        $cData = Companies::where('id', $id)->first();
+        $cData = Companies::where('slug', $slug)->first();
         return view('site.reception')->with(['cData' => $cData]);
     }
 
-    public function userLogin($id)
+    public function userLogin($slug)
     {
-        return view('site.userLogin')->with(['id' => $id]);
+        return view('site.userLogin')->with(['slug' => $slug]);
     }
     public function userLoginForm(Request $request)
     {
+        $name = $request->name;
+        $password = $request->password;
         
     }
     public function department($id)

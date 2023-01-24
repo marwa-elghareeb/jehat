@@ -8,8 +8,8 @@
     <div class="container">
         <div class="row">
             <div class="col-12">
-                <h2 class="breadcrumbs-title">المكاتب
-                    <span>الافتراضيه</span>
+                <h2 class="breadcrumbs-title">شركات
+                    <span>المجموعه</span>
                 </h2>
                 <ul class="breadcrumb-list">
                     <li><a href="{{ URL :: to ('/')}}">الرئيسية</a></li>
@@ -46,7 +46,7 @@
                             <h1 class="card-title"> {{ $data->name_ar }}</h1>
                         </div>
                         <div class="button-one ">
-                            <a href="{{ URL :: to ('/reception' , $data->id )}}" class=" " 
+                            <a href="{{ URL :: to ('/reception' , $data->slug )}}" class=" " 
                             role="button" aria-pressed="true">
                             <i class="fa fa-user"></i>الاقسام والموظفين</a>
                         </div>
