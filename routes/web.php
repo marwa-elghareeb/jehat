@@ -42,6 +42,7 @@ Route::post('/contactUsForm', [ContactUsSiteController::class, 'contactUsForm'])
 Route::get('/media', [MediaSiteController::class, 'index']);
 Route::get('/footerPages/{slug}', [FooterSiteController::class, 'index']);
 Route::get('/news', [NewsSiteController::class, 'index']);
+Route::get('/news-details/{id}', [NewsSiteController::class, 'newsDetails']);
 Route::get('/ourTeam', [IndexController::class, 'ourTeam']);
 //Help Center
 Route::get('/helpcenter', [IndexController::class, 'help']);
@@ -55,7 +56,7 @@ Route::get('/allCompanies', [TowerSiteController::class, 'companies']);
 Route::get('/reception/{slug}', [TowerSiteController::class, 'reception']);
 Route::get('/userLogin/{slug}', [TowerSiteController::class, 'userLogin']);
 Route::post('/userLoginForm', [TowerSiteController::class, 'userLoginForm']);
-Route::get('/department/{id}', [TowerSiteController::class, 'department']);
+Route::get('/department/{slug}', [TowerSiteController::class, 'department']);
 Route::get('/employe/{id}', [TowerSiteController::class, 'employees']);
 Route::post('/searchEmp', [TowerSiteController::class, 'searchEmp']);
 //Events

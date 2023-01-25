@@ -36,19 +36,25 @@
                     <div class="blog_left_sidebar">
                         <article class="blog_item">
                             <div class="blog_item_img">
-                                <img class="card-img rounded-0" src= "{{ URL ::to ('public/upload/'.$data->images)}}" alt="">
+                                <img class="card-img rounded-0" 
+                                src= "{{ URL ::to ('public/upload/'.$data->images)}}" alt="">
                                 <a href="#" class="blog_item_date">
                                     <h3>يناير</h3>
                                     <p>2023</p>
                                 </a>
                             </div>
                             <div class="blog_details">
-                                <a class="d-inline-block" href="blog_details.html">
+                                <a class="d-inline-block" href="#">
                                 <h2 class="blog-head" style="color: #2d2d2d;">{{ $data->name_ar }}</h2>
-                                    <!--<h2 class="blog-head" style="color: #2d2d2d;">حضور صاحب السمو الملكي الأمير/ فيصل بن بندر بن عبدالعزيز آل سعود، أمير منطقة الرياض، انتخابات مجلس إدارة جمعية بن باز الخيرية وذلك عبر #منصة_جهات</h2>-->
+                                    <!--<h2 class="blog-head" style="color: 
+                                    #2d2d2d;">حضور صاحب السمو الملكي الأمير/ فيصل بن بندر بن عبدالع
+                                    زيز آل سعود، أمير منطقة الرياض،
+                                     انتخابات مجلس إدارة جمعية 
+                                    بن باز الخيرية وذلك عبر #منصة_جهات</h2>-->
                                 </a>
                                 <ul class="blog-info-link">
-                                    <li><a href="#"><i class="fa fa-comments"></i> المزيد من الأخبار</a></li>
+                                    <li><a href="#">
+                                        <i class="fa fa-comments"></i> المزيد من التفاصيل</a></li>
                                 </ul>
                             </div>
                             </div>
@@ -68,7 +74,7 @@
                            
                                 <img src="{{ URL ::to ('public/upload/'.$data->images)}}" alt="post">
                                 <div class="media-body">
-                                    <a href="blog_details.html">
+                                    <a href="#">
                                         <h3>{{ $data->name_ar }}</h3>
                                     </a>
                                     <p>{{ $data->news_date }}</p>

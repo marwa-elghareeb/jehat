@@ -24,7 +24,9 @@
         <div class="col-12">
           <div class="section-title" data-aos="fade-up">
             <h1 data-animation="bounceIn" data-delay="0.2s"> تسجيل الدخول</h1>
-
+            @if(Session::has('flash_message'))
+            <p class="alert alert-danger">{{ Session::get('flash_message') }}</p>
+            @endif
           </div>
           <form class="text-center" method="post" action="{{ URL :: to ('/userLoginForm')}}">
           {{ csrf_field() }}
@@ -41,7 +43,7 @@
           <input type="password" name="password" id="form2Example2" class="form-control" required />
 
         </div>
-
+        <input type="hidden" name="slug" value="{{ $slug }}" />
         <!-- 2 column grid layout for inline styling -->
         <div class="row mb-4">
           <div class="col d-flex justify-content-center">

@@ -44,18 +44,32 @@ class TowerSiteController extends Controller
     {
         $email = $request->email;
         $password = $request->password;
-        if($email == 'admin@admin.com' && $password == '123456') {
-            $allData = Cards::all();
-            return view('site.cards')->with(['allData' => $allData]);
-            
+        $slug = $request->slug;
+        if ($email == 'admin@admin.com' && $password == '123456') {
+
+            //return redirect()->route('department/'.$slug);
+            $cData = Companies::where('slug', $slug)->first();
+            $id = $cData->id;
+            $allData = Department::where('company_id', $cData->id)->get();
+            foreach ($allData as $data) {
+                $allE = Employees::where('department_id', $data->id)->get();
+                $data->empCount = count($allE);
+            }
+            $allEmp = Employees::where('company_id', $id)->get();
+            return view('site.department')->with([
+                'allData' => $allData, 'allEmp' => $allEmp,
+                'cData' => $cData
+            ]);
+            return view('site.department')->with(['slug',  $slug]);
+        } else {
+            return back()->with('flash_message', 'يوجد خطأ فى البيانات');
         }
-           
-        
     }
-    public function department($id)
+    public function department($slug)
     {
-        $cData = Companies::where('id', $id)->first();
-        $allData = Department::where('company_id', $id)->get();
+        $cData = Companies::where('slug', $slug)->first();
+        $id = $cData->id;
+        $allData = Department::where('company_id', $cData->id)->get();
         foreach ($allData as $data) {
             $allE = Employees::where('department_id', $data->id)->get();
             $data->empCount = count($allE);
