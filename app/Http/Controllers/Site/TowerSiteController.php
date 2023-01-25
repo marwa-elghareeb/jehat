@@ -42,8 +42,14 @@ class TowerSiteController extends Controller
     }
     public function userLoginForm(Request $request)
     {
-        $name = $request->name;
+        $email = $request->email;
         $password = $request->password;
+        if($email == 'admin@admin.com' && $password == '123456') {
+            $allData = Cards::all();
+            return view('site.cards')->with(['allData' => $allData]);
+            
+        }
+           
         
     }
     public function department($id)
