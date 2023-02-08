@@ -31,7 +31,7 @@
 						</div>
 					</div>
 					<div class="col-lg-6 col-md-6 col-sm-12">
-						<a class="download-pdf" href="{{ asset('public/web-assets/presentation.pdf')}}">
+						<a class="download-pdf" href="{{ asset('public/portal-assets/media/presentation.pdf')}}">
 							<h2>
 								<img class="pdf" src="{{ asset('public/web-assets/img/icon/pdficon.svg')}} " alt="">
 								تحميل ملف آلية عمل المنصة
@@ -40,13 +40,14 @@
 						</a>
 					</div>
 					<div class="col-lg-6 col-md-6 col-sm-12">
-                            <a class="download-pdf" href="web-assets/user guide.pdf"> 
+                            <a class="download-pdf" href="public/portal-assets/media/user guide.pdf"> 
             
                                 <h2><img class="pdf" src="{{ asset('public/web-assets/img/icon/pdficon.svg')}} " alt=""> تحميل ملف دليل المستخدم  </h2></a>
                         </div>
 
 
 				</div>
+<!-------------------------------------------------------------------------------->
 
 				<br>
 				<div class="col-12">

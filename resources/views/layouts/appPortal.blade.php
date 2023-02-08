@@ -84,7 +84,7 @@
                                                     <ul class="submenu">
                                                         <li><a href="{{ URL :: to ('/helpcenter')}}">مركز المساعدة</a></li>
                                                         <li><a href="{{ URL :: to ('/media')}}">المركز الأعلامي </a></li>
-                                                        <li><a href="{{ URL :: to ('/question')}}">اسئلة شائعة</a></li>
+                                                        <li><a href="{{ URL :: to ('/question')}}">الاسئلة الشائعة  </a></li>
                                                     </ul>
                                                 <li><a @if(Request::segment(1) == 'cards') class="active" @endif 
                                                 href="{{ URL :: to ('/cards')}}">الأبراج الأفتراضية</a></li>

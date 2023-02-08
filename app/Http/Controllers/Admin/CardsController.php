@@ -43,7 +43,7 @@ class CardsController extends Controller
             'name_ar' => 'required',
             'name_en' => 'required',
             'link' => 'required',
-            'images' => 'required',
+            'image' => 'required',
             'desc_ar' => 'required',
             'desc_en' => 'required',
         
@@ -53,8 +53,8 @@ class CardsController extends Controller
         $data->name_ar = $request->name_ar;
         $data->name_en = $request->name_en;
         $data->link = $request->link;
-        if ($request->file('images')) {
-            $file = $request->file('images');
+        if ($request->file('image')) {
+            $file = $request->file('image');
             $filename = date('YmdHi') . $file->getClientOriginalName();
             $file->move(public_path('upload'), $filename);
         }
@@ -99,6 +99,36 @@ class CardsController extends Controller
     public function update(Request $request, $id)
     {
         //
+        $request->validate([
+            'name_ar' => 'required|max:255',
+            'name_en' => 'required|max:255',
+            'image' => 'mimes:jpeg,png,jpg,gif',
+            'link'=>'required',
+            'desc_ar' => 'required',
+            'desc_en' => 'required',
+         
+        
+        ]);
+             //Update
+             $data = Cards::find($id);
+
+             $data->name_ar = $request->name_ar;
+             $data->name_en = $request->name_en;
+             $data->desc_ar = $request->desc_ar;
+             $data->desc_en = $request->desc_en;
+             $data->link = $request->link;
+     
+             if($request->file('image')){
+                $file= $request->file('image');
+                $filename= date('YmdHi').$file->getClientOriginalName();
+                $file-> move(public_path('upload'), $filename);
+               // $data['image']= $filename;
+               $data->image= $filename;
+           }else{
+               $data->image = '';
+           }
+           $data->save();
+             return redirect()->route('cards-data.index');
     }
 
     /**
@@ -110,5 +140,9 @@ class CardsController extends Controller
     public function destroy($id)
     {
         //
+        
+        Cards::destroy($id);
+        return redirect()->route('cards-data.index')->with('flash_message', 'Item deleted!');
+
     }
 }
