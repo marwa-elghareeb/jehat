@@ -39,7 +39,8 @@
                 <img src="assets/img/news.jpeg" alt="" class="img-fluid">
               </div>
 
-              <h2 class="title">Dolorum optio tempore voluptas dignissimos cumque fuga qui quibusdam quia</h2>
+              <h2 class="title">حضور صاحب السمو الملكي الأمير فيصل بن بندر بن عبدالعزيز آل سعود، أمير منطقة الرياض، انتخابات مجلس إدارة جمعية بن باز الخيرية وذلك عبر منصة جهات
+</h2>
 
               <div class="meta-top">
                 <ul>
