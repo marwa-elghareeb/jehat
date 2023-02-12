@@ -13,7 +13,7 @@
     <!-- CSS here -->
     <link rel="preconnect" href="https://fonts.gstatic.com ">
     <!--old-bootstrap-->
-    <!--<link rel="stylesheet" href="web-assets/css/bootstrap.min.css">-->
+    <link rel="stylesheet" href="web-assets/css/bootstrap.min.css">
     <!--Bootstrap v5.3-->
     <link rel="stylesheet" href="{{ asset('public/web-assets/assets/css/bootstrap.rtl.min.css')}}">
     <link rel="stylesheet" href="{{ asset('public/web-assets/css/owl.carousel.min.css')}}">
@@ -29,7 +29,6 @@
     <link rel="stylesheet" href="{{ asset('public/web-assets/css/slick.css')}} ">
     <link rel="stylesheet" href="{{ asset('public/web-assets/css/nice-select.css')}} ">
     <link rel="stylesheet" href="{{ asset('public/web-assets/css/style.css')}} ">
-
 
     <!--New Style-->
     <link rel="stylesheet" href="{{ asset('public/web-assets/assets/css/style.css')}}">
