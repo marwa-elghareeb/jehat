@@ -19,7 +19,7 @@ class CreateWebsiteusersTable extends Migration
             $table->string('fullname_en');
             $table->string('gender_type');
             $table->string('nationality');
-            $table->string('identity_number');
+            $table->string('identity_number')->unique();
             $table->string('email')->unique();
             $table->string('password');
             $table->timestamps();
