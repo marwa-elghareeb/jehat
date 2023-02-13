@@ -222,6 +222,13 @@
                         </a>
 
                     </li>
+                    
+                    <li class="mega-menu mega-menu-lg">
+                        <a class="has-arrow" href="{{ route('registrationandlogin-data.index') }}" aria-expanded="false" style="width: max-content;cursor: pointer;">
+                            <i class="fa fa-list"></i><span class="nav-text">User website</span>
+                        </a>
+
+                    </li>
 
                     
 

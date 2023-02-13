@@ -16,6 +16,8 @@ use App\Http\Controllers\Admin\MediaController;
 use App\Http\Controllers\Admin\NewsController;
 use App\Http\Controllers\Admin\CardsController;
 use App\Http\Controllers\Admin\FooterPagesController;
+use App\Http\Controllers\Admin\RegistrationAndLoginController;
+
 //WebSite 
 use App\Http\Controllers\Site\AboutUsSiteController;
 use App\Http\Controllers\Site\ContactUsSiteController;
@@ -39,6 +41,8 @@ use App\Http\Controllers\Site\UsersWebsiteController;
 Route::get('/', function () {return view('welcome');});
 Route::get('/user-register', [UsersWebsiteController::class, 'index'] );
 Route::post('/user-register-form', [UsersWebsiteController::class, 'userForm'] );
+Route::get('/user-login', [UsersWebsiteController::class, 'userLogin'] );
+Route::post('/user-Login-form', [UsersWebsiteController::class, 'loginForm'] );
 
 Route::get('/aboutUs', [AboutUsSiteController::class, 'index'] );
 Route::get('/contactUs', [ContactUsSiteController::class, 'index']);
@@ -85,6 +89,8 @@ Route::group(['middleware' => ['auth']], function () {
     Route::resource('cards-data', CardsController::class);
     Route::resource('contact-data', ContactController::class);
     Route::resource('footer-pages-data', FooterPagesController::class);
+    Route::resource('registrationandlogin-data',RegistrationAndLoginController ::class);
+
 
 
 });

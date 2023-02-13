@@ -46,4 +46,36 @@ class UsersWebsiteController extends Controller
        
 
     }
+
+
+    public function userLogin()
+    {
+       
+        return view('site.userLogin');      
+
+    }
+    
+    public function loginForm(Request $request)
+    {
+
+      
+        $data = new UsersWebsite();
+             $data->fullname_ar = $request->fullname_ar;
+             $data->fullname_en= $request->fullname_en;
+             $data->gender_type = $request->gender_type;
+             $data->nationality = $request->nationality;
+             $data->identity_numbe = $request->identity_numbe;
+             $data->email = $request->email;
+             $data->password= $request->password;
+        
+             
+             $data->save();
+           
+             return view('site.userLogin');  
+       
+
+    }
+
+    
 }
+
