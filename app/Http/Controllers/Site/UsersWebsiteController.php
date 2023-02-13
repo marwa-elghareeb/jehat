@@ -11,12 +11,11 @@ class UsersWebsiteController extends Controller
     public function index()
     {
        
-        $allData = UsersWebsite::all();
-        return view('site.userregister')->with(['allData' => $allData]);      
+        return view('site.userregister');      
 
     }
 
-    public function userForm()
+    public function userForm(Request $request)
     {
 
         //Add User

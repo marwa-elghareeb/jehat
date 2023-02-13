@@ -39,6 +39,7 @@ use App\Http\Controllers\Site\UsersWebsiteController;
 Route::get('/', function () {return view('welcome');});
 Route::get('/user-register', [UsersWebsiteController::class, 'index'] );
 Route::post('/user-register-form', [UsersWebsiteController::class, 'userForm'] );
+
 Route::get('/aboutUs', [AboutUsSiteController::class, 'index'] );
 Route::get('/contactUs', [ContactUsSiteController::class, 'index']);
 Route::post('/contactUsForm', [ContactUsSiteController::class, 'contactUsForm']);
