@@ -54,8 +54,8 @@
                                 <thead>
                                     <tr>
                                         <th>#</th>
-                                        <th>Name (Ar)</th>
-                                        <th>Name (En)</th>
+                                        <th>fullname </th>
+                                        <th>email</th>
                                 
                                         <th>Edit</th>
                                         <th>Delete</th>
