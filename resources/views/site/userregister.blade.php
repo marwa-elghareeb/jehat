@@ -63,10 +63,17 @@
                             action="{{ URL :: to ('/user-register-form')}}">
                         {{ csrf_field() }}
                             <div class="form-group form-box">
-                                <input type="text" name="fullname" class="input-text" placeholder=" الإسم الثلاثي بالعربية ">
+                                <input type="text" name="fullname_ar" class="input-text" placeholder=" الإسم الثلاثي بالعربية ">
+                                @if($errors->has('fullname_ar'))
+                                        <div class="error">{{ $errors->first('fullname_ar') }}</div>
+                                        @endif
+                            
                             </div>
                             <div class="form-group form-box">
-                                <input type="text" name="fullname" class="input-text" placeholder=" الإسم الثلاثي بالإنجليزي ">
+                                <input type="text" name="fullname_en" class="input-text" placeholder=" الإسم الثلاثي بالإنجليزي ">
+                                @if($errors->has('fullname_en'))
+                                        <div class="error">{{ $errors->first('fullname_en') }}</div>
+                                        @endif
                             </div>
                             <div class="form-group form-box">
                                 <input type="number" name="fullname" class="input-text" placeholder=" الهوية (هوية وطنية / إقامة / جواز سفر)">

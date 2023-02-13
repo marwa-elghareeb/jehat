@@ -15,7 +15,7 @@ class RegistrationAndLoginController extends Controller
     public function index()
     {
          $allData = UsersWebsite::all();
-        return view('admin.registrationandlogin-data.list')->with(['allData' => $allData]);
+        return view('admin.registrationandlogin.list')->with(['allData' => $allData]);
     }
 
     /**
@@ -26,7 +26,7 @@ class RegistrationAndLoginController extends Controller
     public function create()
     {
         //
-        return view('admin.registrationandlogin-data.create');
+        return view('admin.registrationandlogin.create');
     }
 
     /**

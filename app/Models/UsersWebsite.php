@@ -12,7 +12,7 @@ use Illuminate\Foundation\Auth\User as Authenticatable;
 class UsersWebsite extends Authenticatable
 {
   
-    use HasApiTokens, HasFactory, Notifiable;
+    use HasFactory, Notifiable;
 
     
     /**
