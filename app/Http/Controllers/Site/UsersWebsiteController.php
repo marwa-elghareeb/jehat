@@ -28,10 +28,21 @@ class UsersWebsiteController extends Controller
             'identity_number' => 'required|max:11|unique:users_websites',
             'email' => 'required|max:255|unique:users_websites',
             'phone' => 'required|unique:users_websites',
-            'password' => 'required|max:255',
             'captcha' => 'required|captcha'
 
         ]);
+        $rules=[
+            'password'=>'required|min:8',
+        ];
+        $error_messages=[
+            'password.min'=>'password length must be greater than 8 characters',
+        ];
+        $validator=  validator($request->all(), $rules, $error_messages);
+        if ($validator->fails()) {
+            return redirect('')
+                        ->withErrors($validator)
+                        ->withInput();
+       }
     
              $data = new UsersWebsite();
              $data->fullname_ar = $request->fullname_ar;

@@ -40,7 +40,10 @@ function checkInputNumber() {
             } else {
                 // console.log('not arabic');
                 document.getElementById('alphaExp').value = '';
-                alert("يقبل حروف بالإنجليزي فقط");
+               // alert("يقبل حروف بالإنجليزي فقط");
+                $("#fullname_en").html('يقبل حروف عربى فقط');
+
+                
             }
         }
 
@@ -54,6 +57,7 @@ function checkInputNumber() {
                 // document.getElementById('fullname_ar').value = 'يقبل حروف عربى فقط';
                 // alert("يقبل حروف عربى فقط");
                 $("#fullname_ar").html('يقبل حروف عربى فقط');
+                
             }
 
         }
@@ -66,11 +70,15 @@ function checkInputNumber() {
 
             } else {
                 document.getElementById('email').value = '';
-                alert("يقبل الايميل  فقط");
+                //alert("يقبل الايميل  فقط");
+                $("#email").html('يقبل الايميل فقط');
+
             }
 
 
         }
+        
+        
     </script>
     <!-- End Google Tag Manager -->
     <title>تسجيل مستخدم جديد</title>
@@ -137,7 +145,7 @@ function checkInputNumber() {
 
                             </div>
                             <div class="form-group form-box">
-                                <input type="text" name="fullname_en" value="{{ old('fullname_en') }}" onkeyup="myFunction1()" id="alphaExp" id="validationDefaultUsername1" aria-describedby="validationDefaultUsername1" class="input-text" placeholder=" الإسم الثلاثي بالإنجليزي ">
+                                <input type="text" name="fullname_en" value="{{ old('fullname_en') }}" onkeyup="myFunction1()" id="fullname_en" id="validationDefaultUsername1" aria-describedby="validationDefaultUsername1" class="input-text" placeholder=" الإسم الثلاثي بالإنجليزي ">
                                 @if($errors->has('fullname_en'))
                                 <div class="error" style="color:red">{{ $errors->first('fullname_en') }}</div>
                                 @endif
