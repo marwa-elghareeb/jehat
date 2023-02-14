@@ -33,6 +33,7 @@
     <!--New Style-->
     <link rel="stylesheet" href="{{ asset('public/web-assets/assets/css/style.css')}}">
     <link rel="stylesheet" href="{{ asset('public/web-assets/assets/css/responsive.css')}}">
+   
 </head>
 
 <body dir="rtl">

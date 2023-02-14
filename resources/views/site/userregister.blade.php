@@ -2,8 +2,21 @@
 <html lang="ar" dir="rtl">
 
 <head>
-    <!-- Google Tag Manager -->
+
+    <!-- Google Tag Manager
+function checkInputNumber() {
+    
+    if('/^[A-Za-z]+$/'.test(number)){
+        // console.log('is arabic');
+    } else {
+            // console.log('not arabic');
+              document.getElementById('number').value = '';
+            alert("يقبل اعداد فقط");
+             }
+    
+} -->
     <script>
+ 
         (function(w, d, s, l, i) {
             w[l] = w[l] || [];
             w[l].push({
@@ -18,6 +31,46 @@
                 'https://www.googletagmanager.com/gtm.js?id=' + i + dl;
             f.parentNode.insertBefore(j, f);
         })(window, document, 'script', 'dataLayer', 'GTM-TAGCODE');
+        //          يقبل حروف عربى فقط
+        function myFunction1() {
+        var alphaExp = /^[a-zA-Z]+$/;
+        if (alphaExp.test($.trim($('#alphaExp').val()))) {
+           
+          // alert("يقبل حروف  فقط");
+
+            }
+            else {
+            // console.log('not arabic');
+              document.getElementById('alphaExp').value = '';
+                alert("يقبل حروف بالإنجليزي فقط");
+             }}
+
+        function myFunction() {
+        var isArabic = /^([\u0600-\u06ff]|[\u0750-\u077f]|[\ufb50-\ufbc1]|[\ufbd3-\ufd3f]|[\ufd50-\ufd8f]|[\ufd92-\ufdc7]|[\ufe70-\ufefc]|[\ufdf0-\ufdfd]|[ ])*$/g;
+            if (isArabic.test($.trim($('#arabic').val()))) {
+           // console.log('is arabic');
+          } else {
+            // console.log('not arabic');
+              document.getElementById('arabic').value = '';
+            alert("يقبل حروف عربى فقط");
+             }
+    
+}
+function validateEmail() {
+  var reEmail = /^(?:[\w\!\#\$\%\&\'\*\+\-\/\=\?\^\`\{\|\}\~]+\.)*[\w\!\#\$\%\&\'\*\+\-\/\=\?\^\`\{\|\}\~]+@(?:(?:(?:[a-zA-Z0-9](?:[a-zA-Z0-9\-](?!\.)){0,61}[a-zA-Z0-9]?\.)+[a-zA-Z0-9](?:[a-zA-Z0-9\-](?!$)){0,61}[a-zA-Z0-9]?)|(?:\[(?:(?:[01]?\d{1,2}|2[0-4]\d|25[0-5])\.){3}(?:[01]?\d{1,2}|2[0-4]\d|25[0-5])\]))$/;
+
+  if(reEmail.test($.trim($('#email').val()))) {
+            //alert("يقبل الايميل  فقط");
+    
+  } else {
+              document.getElementById('email').value = '';
+             alert("يقبل الايميل  فقط");
+        }
+
+
+}
+
+
     </script>
     <!-- End Google Tag Manager -->
     <title>تسجيل مستخدم جديد</title>
@@ -64,20 +117,20 @@
                         {{ csrf_field() }}
                             <div class="form-group form-box">
                                 <!--label>لإسم الثلاثي بالعربية </label-->
-                                <input type="text" name="fullname_ar" value="{{ old('fullname_ar') }}" class="input-text" placeholder=" الإسم الثلاثي بالعربية ">
+                                <input type="text" name="fullname_ar" onkeyup="myFunction()" id="arabic" id="validationDefaultUsername1" aria-describedby="validationDefaultUsername1" value="{{ old('fullname_ar') }}" class="input-text" placeholder=" الإسم الثلاثي بالعربية ">
                                 @if($errors->has('fullname_ar'))
                                         <div class="error" style="color:red">{{ $errors->first('fullname_ar') }}</div>
                                         @endif
                             
                             </div>
                             <div class="form-group form-box">
-                                <input type="text" name="fullname_en" value="{{ old('fullname_en') }}" class="input-text" placeholder=" الإسم الثلاثي بالإنجليزي ">
+                                <input type="text" name="fullname_en" value="{{ old('fullname_en') }}" onkeyup="myFunction1()" id="alphaExp" id="validationDefaultUsername1" aria-describedby="validationDefaultUsername1" class="input-text" placeholder=" الإسم الثلاثي بالإنجليزي ">
                                 @if($errors->has('fullname_en'))
                                         <div class="error" style="color:red">{{ $errors->first('fullname_en') }}</div>
                                         @endif
                             </div>
                             <div class="form-group form-box">
-                                <input  type="text" name="identity_number" value="{{ old('identity_number') }}" class="input-text" placeholder=" الهوية (هوية وطنية / إقامة / جواز سفر)">
+                                <input  name="identity_number" value="{{ old('identity_number') }}"  inputmode="numeric" oninput="this.value = this.value.replace(/\D+/g, '')"   class="input-text" placeholder=" الهوية (هوية وطنية / إقامة / جواز سفر)">
                                 @if($errors->has('identity_number'))
                                         <div class="error" style="color:red">{{ $errors->first('identity_number') }}</div>
                                         @endif
@@ -95,14 +148,14 @@
                                         @endif
                             </div>
                             <div class="form-group form-box">
-                                <input type="text" name="phone" value="{{ old('phone') }}" class="input-text" placeholder=" رقم الجوال">
+                                <input  name="phone" value="{{ old('phone') }}" class="input-text" inputmode="numeric" oninput="this.value = this.value.replace(/\D+/g, '')" placeholder=" رقم الجوال">
                                 @if($errors->has('phone'))
                                         <div class="error" style="color:red">{{ $errors->first('phone') }}</div>
                                         @endif
                             </div>
 
                             <div class="form-group form-box">
-                                <input type="email" name="email" value="{{ old('email') }}" class="input-text" placeholder="البريد الإلكتروني">
+                                <input type="email" name="email" value="{{ old('email') }}" onkeyup="validateEmail()" id="email" id="validationDefaultUsername1" id="validationDefaultUsername1" aria-describedby="validationDefaultUsername1"  class="input-text" placeholder="البريد الإلكتروني">
                                 @if($errors->has('email'))
                                         <div class="error" style="color:red">{{ $errors->first('email') }}</div>
                                         @endif
