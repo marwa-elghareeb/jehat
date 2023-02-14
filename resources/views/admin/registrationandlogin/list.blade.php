@@ -60,9 +60,11 @@
                                         <th>fullname </th>
                                         <th>number </th>
                                         <th>email</th>
+
+                                        <th>Assign Roles</th>
                                 
-                                        <th>Edit</th>
-                                        <th>Delete</th>
+                                        <!--th>Edit</th>
+                                        <th>Delete</th-->
 
                                     </tr>
                                 </thead>
@@ -75,10 +77,11 @@
                                         <td>{{ $data->fullname_ar }}</td>
                                         <td>{{ $data->number}}</td>
                                         <td>{{ $data->email}}</td>
+                                        <td></td>
 
                                     
 
-                                        <td>
+                                        <!--td>
                                             <a href="{{ route('registrationandlogin-data.edit', $data->id ) }}" type="button" class="btn btn-rounded btn-secondary">
                                                 <i class="fa fa-pencil color-secondary"></i> </a>
                                         </td>
@@ -94,7 +97,7 @@
 
 
 
-                                        </td>
+                                        </td-->
 
                                     </tr>
 
@@ -104,11 +107,10 @@
                                 <tfoot>
                                     <tr>
                                         <th>#</th>
-                                        <th>Name (Ar)</th>
-                                        <th>Name (En)</th>
-                                       
-                                        <th>Edit</th>
-                                        <th>Delete</th>
+                                        <th>fullname </th>
+                                        <th>number </th>
+                                        <th>email</th>
+                                        <th>Assign Roles</th>
 
                                     </tr>
                                 </tfoot>

@@ -63,45 +63,46 @@
                             action="{{ URL :: to ('/user-register-form')}}">
                         {{ csrf_field() }}
                             <div class="form-group form-box">
-                                <input type="text" name="fullname_ar" class="input-text" placeholder=" الإسم الثلاثي بالعربية ">
+                                <!--label>لإسم الثلاثي بالعربية </label-->
+                                <input type="text" name="fullname_ar" value="{{ old('fullname_ar') }}" class="input-text" placeholder=" الإسم الثلاثي بالعربية ">
                                 @if($errors->has('fullname_ar'))
                                         <div class="error" style="color:red">{{ $errors->first('fullname_ar') }}</div>
                                         @endif
                             
                             </div>
                             <div class="form-group form-box">
-                                <input type="text" name="fullname_en" class="input-text" placeholder=" الإسم الثلاثي بالإنجليزي ">
+                                <input type="text" name="fullname_en" value="{{ old('fullname_en') }}" class="input-text" placeholder=" الإسم الثلاثي بالإنجليزي ">
                                 @if($errors->has('fullname_en'))
                                         <div class="error" style="color:red">{{ $errors->first('fullname_en') }}</div>
                                         @endif
                             </div>
                             <div class="form-group form-box">
-                                <input  type="text" name="identity_number" class="input-text" placeholder=" الهوية (هوية وطنية / إقامة / جواز سفر)">
+                                <input  type="text" name="identity_number" value="{{ old('identity_number') }}" class="input-text" placeholder=" الهوية (هوية وطنية / إقامة / جواز سفر)">
                                 @if($errors->has('identity_number'))
                                         <div class="error" style="color:red">{{ $errors->first('identity_number') }}</div>
                                         @endif
                             </div>
                             <div class="form-group form-box">
-                                <input type="text" name="gender_type" class="input-text" placeholder=" النوع">
+                                <input type="text" name="gender_type" value="{{ old('gender_type') }}" class="input-text" placeholder=" النوع">
                                 @if($errors->has('gender_type'))
                                         <div class="error" style="color:red">{{ $errors->first('gender_type') }}</div>
                                         @endif
                             </div>
                             <div class="form-group form-box">
-                                <input type="text" name="nationality" class="input-text" placeholder=" الجنسية">
+                                <input type="text" name="nationality" value="{{ old('nationality') }}" class="input-text" placeholder=" الجنسية">
                                 @if($errors->has('nationality'))
                                         <div class="error" style="color:red">{{ $errors->first('nationality') }}</div>
                                         @endif
                             </div>
                             <div class="form-group form-box">
-                                <input type="text" name="number" class="input-text" placeholder=" رقم الجوال">
-                                @if($errors->has('number'))
-                                        <div class="error" style="color:red">{{ $errors->first('number') }}</div>
+                                <input type="text" name="phone" value="{{ old('phone') }}" class="input-text" placeholder=" رقم الجوال">
+                                @if($errors->has('phone'))
+                                        <div class="error" style="color:red">{{ $errors->first('phone') }}</div>
                                         @endif
                             </div>
 
                             <div class="form-group form-box">
-                                <input type="email" name="email" class="input-text" placeholder="البريد الإلكتروني">
+                                <input type="email" name="email" value="{{ old('email') }}" class="input-text" placeholder="البريد الإلكتروني">
                                 @if($errors->has('email'))
                                         <div class="error" style="color:red">{{ $errors->first('email') }}</div>
                                         @endif

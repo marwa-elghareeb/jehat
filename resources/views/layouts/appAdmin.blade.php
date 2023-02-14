@@ -136,102 +136,78 @@
 
                     </li>
 
+                    <li><a class="has-arrow" href="javascript:void()" 
+                    aria-expanded="false"><i class="mdi mdi-view-list"></i> 
+                    <span class="nav-text">Help Center</span> </a>
+                        <ul aria-expanded="false">
+                            <li><a href="{{ route('list.index') }}">Categories</a>
+                            </li>
+                            <li><a href="{{ route('pages.index') }}">Pages</a>
+                            </li>
+                            <li><a href="{{ route('faq.index') }}">FAQ</a>
+                            </li>
+                        </ul>
+                    </li>
 
-                    <li class="mega-menu mega-menu-lg">
-                        <a class="has-arrow" href="{{ route('list.index') }}" aria-expanded="false" style="width: max-content;cursor: pointer;">
-                            <i class="mdi mdi-view-list"></i><span class="nav-text">Categories</span>
-                        </a>
+        
+                    <li><a class="has-arrow" href="javascript:void()" 
+                    aria-expanded="false"><i class="mdi mdi-page-layout-body"></i> 
+                    <span class="nav-text">Tower</span> </a>
+                        <ul aria-expanded="false">
+                            <li><a href="{{ route('companies.index') }}">Companies</a>
+                            </li>
+                            <li><a href="{{ route('departments.index') }}">Departments</a>
+                            </li>
+                            <li><a href="{{ route('employees.index') }}">Employees</a>
+                            </li>
+                        </ul>
+                    </li>
 
+                    <li><a class="has-arrow" href="javascript:void()" 
+                    aria-expanded="false"><i class="mdi mdi-television-guide"></i> 
+                    <span class="nav-text">Website Data</span> </a>
+                        <ul aria-expanded="false">
+                            <li><a href="{{ route('about-data.index') }}">About US</a>
+                            </li>
+                            <li><a href="{{ route('media-data.index') }}">Media</a>
+                            </li>
+                            <li><a href="{{ route('news-data.index') }}">News</a>
+                            </li>
+                            <li><a href="{{ route('contact-data.index') }}">Contact Us</a>
+                            </li>
+                            <li><a href="{{ route('footer-pages-data.index') }}">Footer Pages</a>
+                            </li>
+
+                        </ul>
+                    </li>
+
+                   
+
+                    <li><a class="has-arrow" href="javascript:void()" 
+                    aria-expanded="false"><i class="mdi mdi-ticket"></i> 
+                    <span class="nav-text">Main</span> </a>
+                        <ul aria-expanded="false">
+                            <li><a href="{{ route('registrationandlogin-data.index') }}">User website</a>
+                            </li>
+                            <li><a href="{{ route('cards-data.index') }}">Cards</a>
+                            </li>
+                            
+                        </ul>
                     </li>
 
 
-                    <li class="mega-menu mega-menu-lg">
-                        <a class="has-arrow" href="{{ route('pages.index') }}" aria-expanded="false" style="width: max-content;cursor: pointer;">
-                            <i class="mdi mdi-table"></i><span class="nav-text">Pages</span>
-                        </a>
-
+                    <li><a class="has-arrow" href="javascript:void()" 
+                    aria-expanded="false"><i class="mdi mdi-chart-bar"></i> 
+                    <span class="nav-text">Users & Roles</span> </a>
+                        <ul aria-expanded="false">
+                            <li><a href="#"></a>
+                            </li>
+                            <li><a href="#"></a>
+                            </li>
+                            
+                        </ul>
                     </li>
-
-                    <li class="mega-menu mega-menu-lg">
-                        <a class="has-arrow" href="{{ route('faq.index') }}" aria-expanded="false" style="width: max-content;cursor: pointer;">
-                            <i class="fa fa-question-circle"></i><span class="nav-text">FAQ</span>
-                        </a>
-
-                    </li>
-
-
-                    <li class="mega-menu mega-menu-lg">
-                        <a class="has-arrow" href="{{ route('companies.index') }}" aria-expanded="false" style="width: max-content;cursor: pointer;">
-                            <i class="mdi mdi-widgets"></i><span class="nav-text">Companies</span>
-                        </a>
-
-                    </li>
-
-                    <li class="mega-menu mega-menu-lg">
-                        <a class="has-arrow" href="{{ route('departments.index') }}" aria-expanded="false" style="width: max-content;cursor: pointer;">
-                            <i class="fa fa-building"></i><span class="nav-text">Departments</span>
-                        </a>
-
-                    </li>
-
-                    <li class="mega-menu mega-menu-lg">
-                        <a class="has-arrow" href="{{ route('employees.index') }}" aria-expanded="false" style="width: max-content;cursor: pointer;">
-                            <i class="fa fa-users"></i><span class="nav-text">Employees</span>
-                        </a>
-
-                    </li>
-
-                    <li class="mega-menu mega-menu-lg">
-                        <a class="has-arrow" href="{{ route('about-data.index') }}" aria-expanded="false" style="width: max-content;cursor: pointer;">
-                            <i class="mdi mdi-gradient"></i><span class="nav-text">About US</span>
-                        </a>
-
-                    </li>
-                    <li class="mega-menu mega-menu-lg">
-                        <a class="has-arrow" href="{{ route('media-data.index') }}" aria-expanded="false" style="width: max-content;cursor: pointer;">
-                            <i class="mdi mdi-television-guide"></i><span class="nav-text">Media</span>
-                        </a>
-
-                    </li>
-
-                    <li class="mega-menu mega-menu-lg">
-                        <a class="has-arrow" href="{{ route('news-data.index') }}" aria-expanded="false" style="width: max-content;cursor: pointer;">
-                            <i class="mdi mdi-book-open-page-variant"></i><span class="nav-text">News</span>
-                        </a>
-
-                    </li>
-
-                    <li class="mega-menu mega-menu-lg">
-                        <a class="has-arrow" href="{{ route('cards-data.index') }}" aria-expanded="false" style="width: max-content;cursor: pointer;">
-                            <i class="mdi mdi-page-layout-body"></i><span class="nav-text">Cards</span>
-                        </a>
-
-                    </li>
-
-                    <li class="mega-menu mega-menu-lg">
-                        <a class="has-arrow" href="{{ route('contact-data.index') }}" aria-expanded="false" style="width: max-content;cursor: pointer;">
-                            <i class="mdi mdi-email-outline"></i><span class="nav-text">Contact Us</span>
-                        </a>
-
-                    </li>
-
-
-                    <li class="mega-menu mega-menu-lg">
-                        <a class="has-arrow" href="{{ route('footer-pages-data.index') }}" aria-expanded="false" style="width: max-content;cursor: pointer;">
-                            <i class="fa fa-list"></i><span class="nav-text">Footer Pages</span>
-                        </a>
-
-                    </li>
-                    
-                    <li class="mega-menu mega-menu-lg">
-                        <a class="has-arrow" href="{{ route('registrationandlogin-data.index') }}" aria-expanded="false" style="width: max-content;cursor: pointer;">
-                            <i class="fa fa-list"></i><span class="nav-text">User website</span>
-                        </a>
-
-                    </li>
-
-                    
-
+            
                     <li class="mega-menu mega-menu-lg">
                         <a class="has-arrow" href="{{ route('activitylog.index') }}" aria-expanded="false" style="width: max-content;cursor: pointer;">
                             <i class="fa fa-list"></i><span class="nav-text">Activity</span>

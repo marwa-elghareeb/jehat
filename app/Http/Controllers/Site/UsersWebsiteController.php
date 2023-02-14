@@ -25,9 +25,9 @@ class UsersWebsiteController extends Controller
             'fullname_en' => 'required|max:255',
             'gender_type' => 'required|max:255',
             'nationality' => 'required|max:255',
-            'number' => 'required',
-            'identity_number' => 'required',
-            'email' => 'required|max:255',
+            'identity_number' => 'required|max:11|unique:users_websites',
+            'email' => 'required|max:255|unique:users_websites',
+            'phone' => 'required|unique:users_websites',
             'password' => 'required|max:255',
 
         ]);
@@ -36,15 +36,15 @@ class UsersWebsiteController extends Controller
              $data->fullname_ar = $request->fullname_ar;
              $data->fullname_en= $request->fullname_en;
              $data->gender_type = $request->gender_type;
+             $data->phone = $request->phone;
              $data->nationality = $request->nationality;
-             $data->number = $request->number;
              $data->identity_number = $request->identity_number;
              $data->email = $request->email;
              $data->password= $request->password;
-        
-             
              $data->save();
-             return view('site.userregister');  
+
+
+            // return view('site.userregister');  
        
 
     }
