@@ -46,6 +46,7 @@ class RegistrationAndLoginController extends Controller
             'gender_type' => 'required|max:255',
             'nationality' => 'required|max:255',
             'identity_number' => 'required|max:255',
+            'number' => 'required',
             'email' => 'required|max:255',
             'password' => 'required|max:255',
 
@@ -56,6 +57,7 @@ class RegistrationAndLoginController extends Controller
              $data->fullname_en= $request->fullname_en;
              $data->gender_type = $request->gender_type;
              $data->nationality = $request->nationality;
+             $data->number = $request->number;
              $data->identity_numbe = $request->identity_numbe;
              $data->email = $request->email;
              $data->password= $request->password;
@@ -73,6 +75,68 @@ class RegistrationAndLoginController extends Controller
      * @param  int  $id
      * @return \Illuminate\Http\Response
      */
+    public function edit($id)
+    {
+        //
+        $editData = UsersWebsite::where('id', $id)->first();
+        return view('admin.registrationandlogin.edit')->with(['editData' => $editData]);
+      
+    }
+
+    /**
+     * Update the specified resource in storage.
+     *
+     * @param  \Illuminate\Http\Request  $request
+     * @param  int  $id
+     * @return \Illuminate\Http\Response
+     */
+    public function update(Request $request, $id)
+    {
+        //
+         //validation
+         $request->validate([
+            'fullname_ar' => 'required|max:255',
+            'fullname_en' => 'required|max:255',
+            'gender_type' => 'required|max:255',
+            'nationality' => 'required|max:255',
+            'identity_number' => 'required|max:255',
+            'number' => 'required',
+            'email' => 'required|max:255',
+            'password' => 'required|max:255',
+        
+        ]);
+           //Update
+           $data = UsersWebsite::find($id);
+
+           $data->fullname_ar = $request->fullname_ar;
+             $data->fullname_en= $request->fullname_en;
+             $data->gender_type = $request->gender_type;
+             $data->nationality = $request->nationality;
+             $data->number = $request->number;
+             $data->identity_numbe = $request->identity_numbe;
+             $data->email = $request->email;
+             $data->password= $request->password;
+   
+          
+           $data->save();
+           return redirect()->route('registrationandlogin-data.index');
+
+    }
+
+    /**
+     * Remove the specified resource from storage.
+     *
+     * @param  int  $id
+     * @return \Illuminate\Http\Response
+     */
+    public function destroy($id)
+    {
+        //       
+
+        UsersWebsite::destroy($id);
+        return redirect()->route('registrationandlogin-data.index')->with('flash_message', 'Item deleted!');
+
+    }
     public function show($id)
     {
         //

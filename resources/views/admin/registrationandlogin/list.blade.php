@@ -10,7 +10,7 @@
     <div class="container-fluid">
         <div class="row page-titles">
             <div class="col p-md-0">
-                <h4>User  </h4>
+                <h4>Users Website  </h4>
             </div>
             <div class="col p-md-0">
                 <ol class="breadcrumb">
@@ -58,6 +58,7 @@
                                     <tr>
                                         <th>#</th>
                                         <th>fullname </th>
+                                        <th>number </th>
                                         <th>email</th>
                                 
                                         <th>Edit</th>
@@ -72,6 +73,7 @@
                                     <tr>
                                         <th>{{ $i ++ }}</th>
                                         <td>{{ $data->fullname_ar }}</td>
+                                        <td>{{ $data->number}}</td>
                                         <td>{{ $data->email}}</td>
 
                                     
