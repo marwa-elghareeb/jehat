@@ -57,9 +57,9 @@
                                 <thead>
                                     <tr>
                                         <th>#</th>
-                                        <th>fullname </th>
-                                        <th>number </th>
-                                        <th>email</th>
+                                        <th>Fullname </th>
+                                        <th>Phone </th>
+                                        <th>Email</th>
 
                                         <th>Assign Roles</th>
                                 
@@ -75,7 +75,7 @@
                                     <tr>
                                         <th>{{ $i ++ }}</th>
                                         <td>{{ $data->fullname_ar }}</td>
-                                        <td>{{ $data->number}}</td>
+                                        <td>{{ $data->phone}}</td>
                                         <td>{{ $data->email}}</td>
                                         <td></td>
 
@@ -107,9 +107,9 @@
                                 <tfoot>
                                     <tr>
                                         <th>#</th>
-                                        <th>fullname </th>
-                                        <th>number </th>
-                                        <th>email</th>
+                                        <th>Fullname </th>
+                                        <th>Phone </th>
+                                        <th>Email</th>
                                         <th>Assign Roles</th>
 
                                     </tr>

@@ -39,8 +39,11 @@ use App\Http\Controllers\Site\UsersWebsiteController;
 */
 //Portal Routes:
 Route::get('/', function () {return view('welcome');});
+//
 Route::get('/user-register', [UsersWebsiteController::class, 'index'] );
 Route::post('/user-register-form', [UsersWebsiteController::class, 'userForm'] );
+Route::get('/reload-captcha', [CaptchaServiceController::class, 'reloadCaptcha']);
+//
 Route::get('/user-login', [UsersWebsiteController::class, 'userLogin'] );
 Route::post('/user-Login-form', [UsersWebsiteController::class, 'loginForm'] );
 

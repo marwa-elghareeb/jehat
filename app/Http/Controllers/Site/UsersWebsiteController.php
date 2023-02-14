@@ -29,6 +29,7 @@ class UsersWebsiteController extends Controller
             'email' => 'required|max:255|unique:users_websites',
             'phone' => 'required|unique:users_websites',
             'password' => 'required|max:255',
+            'captcha' => 'required|captcha'
 
         ]);
     
@@ -47,6 +48,10 @@ class UsersWebsiteController extends Controller
             // return view('site.userregister');  
        
 
+    }
+    public function reloadCaptcha()
+    {
+        //return response()->json(['captcha'=> captcha_img()]);
     }
 
 
