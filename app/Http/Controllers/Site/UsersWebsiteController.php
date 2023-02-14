@@ -19,29 +19,31 @@ class UsersWebsiteController extends Controller
     {
 
         //Add User
-         //validation
+         //validation 
          $request->validate([
             'fullname_ar' => 'required|max:255',
             'fullname_en' => 'required|max:255',
             'gender_type' => 'required|max:255',
             'nationality' => 'required|max:255',
-            'identity_number' => 'required|max:255',
+            'number' => 'required',
+            'identity_number' => 'required',
             'email' => 'required|max:255',
             'password' => 'required|max:255',
 
         ]);
     
-            /* $data = new UsersWebsite();
+             $data = new UsersWebsite();
              $data->fullname_ar = $request->fullname_ar;
              $data->fullname_en= $request->fullname_en;
              $data->gender_type = $request->gender_type;
              $data->nationality = $request->nationality;
-             $data->identity_numbe = $request->identity_numbe;
+             $data->number = $request->number;
+             $data->identity_number = $request->identity_number;
              $data->email = $request->email;
              $data->password= $request->password;
         
              
-             $data->save();*/
+             $data->save();
              return view('site.userregister');  
        
 
@@ -60,12 +62,13 @@ class UsersWebsiteController extends Controller
 
       
         $data = new UsersWebsite();
-             $data->fullname_ar = $request->fullname_ar;
-             $data->fullname_en= $request->fullname_en;
-             $data->gender_type = $request->gender_type;
-             $data->nationality = $request->nationality;
-             $data->identity_numbe = $request->identity_numbe;
-             $data->email = $request->email;
+            // $data->fullname_ar = $request->fullname_ar;
+            // $data->fullname_en= $request->fullname_en;
+            // $data->gender_type = $request->gender_type;
+            // $data->number = $request->number;
+             //$data->nationality = $request->nationality;
+             $data->identity_number = $request->identity_number;
+            // $data->email = $request->email;
              $data->password= $request->password;
         
              

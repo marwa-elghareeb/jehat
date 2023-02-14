@@ -23,8 +23,8 @@
 
 
 
-
-        <div class="row">
+<!--**********************************
+             <div class="row">
             <div class="col-lg-12">
                 <div class="card button-card">
                     <div class="card-body">
@@ -38,6 +38,9 @@
                 </div>
             </div>
         </div>
+        ***********************************-->
+
+     
 
         <div class="content-wrapper">
             @if(Session::has('flash_message'))

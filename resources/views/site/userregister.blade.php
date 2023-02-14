@@ -76,7 +76,7 @@
                                         @endif
                             </div>
                             <div class="form-group form-box">
-                                <input type="number" name="identity_number" class="input-text" placeholder=" الهوية (هوية وطنية / إقامة / جواز سفر)">
+                                <input  type="text" name="identity_number" class="input-text" placeholder=" الهوية (هوية وطنية / إقامة / جواز سفر)">
                                 @if($errors->has('identity_number'))
                                         <div class="error" style="color:red">{{ $errors->first('identity_number') }}</div>
                                         @endif
@@ -94,14 +94,23 @@
                                         @endif
                             </div>
                             <div class="form-group form-box">
-                                <input type="number" name="fullname" class="input-text" placeholder=" رقم الجوال">
+                                <input type="text" name="number" class="input-text" placeholder=" رقم الجوال">
+                                @if($errors->has('number'))
+                                        <div class="error" style="color:red">{{ $errors->first('number') }}</div>
+                                        @endif
                             </div>
 
                             <div class="form-group form-box">
                                 <input type="email" name="email" class="input-text" placeholder="البريد الإلكتروني">
+                                @if($errors->has('email'))
+                                        <div class="error" style="color:red">{{ $errors->first('email') }}</div>
+                                        @endif
                             </div>
                             <div class="form-group form-box">
-                                <input type="password" name="Password" class="input-text" placeholder="الرقم السري">
+                                <input type="password" name="password" class="input-text" placeholder="الرقم السري">
+                                @if($errors->has('password'))
+                                        <div class="error" style="color:red">{{ $errors->first('password') }}</div>
+                                        @endif
                             </div>
 
                             <div class="form-group form-box">

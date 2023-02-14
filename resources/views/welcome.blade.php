@@ -54,21 +54,31 @@
             <div class="row">
                 <div class="col-lg-12">
                     <div class="form-section">
+                    
                         <div class="logo-2">
                             <a href="#">
                                 <img src="{{ asset('public/login-style/assets/img/logos/logo-2.png')}}" alt="logo">
                             </a>
                         </div>
                         <h3>قم بإدخال بيانات الدخول الخاصة بحسابك</h3>
-                        <form action="#" method="GET">
+                        <form enctype="multipart/form-data" method="post"
+                            action="{{ URL :: to ('/user-Login-form')}}">
+                            {{ csrf_field() }}
                             <div class="form-group form-box">
-                                <input type="email" name="email" class="input-text" placeholder="رقم الهوية">
+                                
+                                <input type="text" name="identity_number" class="input-text" placeholder="رقم الهوية">
+                                @if($errors->has('identity_number'))
+                                        <div class="error" style="color:red">{{ $errors->first('identity_number') }}</div>
+                                        @endif
                             </div>
                             <div class="form-group form-box">
-                                <input type="password" name="Password" class="input-text" placeholder="كلمة المرور">
+                               <input type="password" name="password" class="input-text" placeholder="كلمة المرور">
+                               @if($errors->has('password'))
+                                        <div class="error" style="color:red">{{ $errors->first('password') }}</div>
+                                        @endif
                             </div>
                             <div class="form-group mb-0 clearfix">
-                                <button type="submit" class="btn-md btn-theme float-left">تسجيل الدخول </button>
+                               <button type="submit" class="btn-md btn-theme float-left">تسجيل الدخول </button>
                                 <a href="#" class="forgot-password">نسيت كلمة المرور ؟</a>
                             </div>
                             <div class="extra-login clearfix">
