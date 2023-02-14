@@ -29,7 +29,7 @@ class UsersWebsiteController extends Controller
             'email' => 'required|max:255|unique:users_websites',
             'phone' => 'required|unique:users_websites',
             'captcha' => 'required|captcha',
-            'password' => ['required', 'confirmed', Password::min(8)
+            'password' => ['required', 'confirmed'
              ->mixedCase()
             ->letters()
             ->numbers()
