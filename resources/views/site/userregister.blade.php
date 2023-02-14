@@ -174,8 +174,12 @@ function checkInputNumber() {
                                 @endif
                             </div-->
 
-                            <div class="form-group form-box">
-                                <input type="text" name="nationality" value="{{ old('nationality') }}" class="input-text" placeholder=" الجنسية">
+                            <div class="form-group ">
+                            <select name="nationality"  value="{{ old('nationality') }}" class="form-control FormControlSelect1" id="exampleFormControlSelect1">
+                                    <option>الجنسية </option>
+                                    <option value="1">سعودي</option>
+                                    <option value="2">غير سعودي</option>
+                                </select>
                                 @if($errors->has('nationality'))
                                 <div class="error" style="color:red">{{ $errors->first('nationality') }}</div>
                                 @endif
