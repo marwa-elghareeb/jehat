@@ -29,18 +29,8 @@ class UsersWebsiteController extends Controller
             'email' => 'required|max:255|unique:users_websites',
             'phone' => 'required|unique:users_websites',
             'captcha' => 'required|captcha',
-            'password' => ['required', 'confirmed'
-             ->mixedCase()
-            ->letters()
-            ->numbers()
-            ->symbols()
-            ->uncompromised(),
-                ],
-            ]);
-
-        
-        
     
+            ]);
              $data = new UsersWebsite();
              $data->fullname_ar = $request->fullname_ar;
              $data->fullname_en= $request->fullname_en;

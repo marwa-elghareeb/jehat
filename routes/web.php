@@ -40,6 +40,7 @@ use App\Http\Controllers\Site\UsersWebsiteController;
 */
 //Portal Routes:
 Route::get('/', function () {return view('welcome');});
+Route::get('/homepage', function () {return view('homePages');});
 //
 Route::get('/user-register', [UsersWebsiteController::class, 'index'] );
 Route::post('/user-register-form', [UsersWebsiteController::class, 'userForm'] );
