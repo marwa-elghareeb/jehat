@@ -5,10 +5,9 @@ namespace App\Http\Controllers\Auth;
 use App\Http\Controllers\Controller;
 use App\Providers\RouteServiceProvider;
 use App\Models\User;
-use Illuminate\Foundation\Auth\RegistersUsers;
 use Illuminate\Support\Facades\Hash;
 use Illuminate\Support\Facades\Validator;
-
+use Illuminate\Foundation\Auth\RegistersUsers;
 class RegisterController extends Controller
 {
     /*
@@ -51,9 +50,17 @@ class RegisterController extends Controller
     {
         return Validator::make($data, [
             'name' => ['required', 'string', 'max:255'],
+            'fullname_ar' => ['required', 'string', 'max:255'],
+            'fullname_en' => ['required', 'string', 'max:255'],
+            'identity_number' => 'required|max:11|unique:users',
             'email' => ['required', 'string', 'email', 'max:255', 'unique:users'],
+            'phone' => 'required|unique:users',
             'password' => ['required', 'string', 'min:8', 'confirmed'],
+             // 'captcha' => 'required|captcha',
+           
+           
         ]);
+      //  dd(request()->all());
     }
 
     /**
@@ -64,10 +71,19 @@ class RegisterController extends Controller
      */
     protected function create(array $data)
     {
+      //  return($data);
         return User::create([
             'name' => $data['name'],
+            'fullname_ar' => $data['fullname_ar'],
+            'fullname_en' => $data['fullname_en'],
+            'identity_number' => $data['identity_number'],
+            'phone' => $data['phone'],
+            'gender_type' => $data['gender_type'],
+            'nationality' => $data['nationality'],
             'email' => $data['email'],
             'password' => Hash::make($data['password']),
         ]);
     }
+
+
 }

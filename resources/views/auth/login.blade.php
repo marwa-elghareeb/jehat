@@ -1,7 +1,56 @@
 @extends('layouts.app')
 
 @section('content')
-<div class="container">
+
+
+
+    <!-- Login 2 start -->
+    <div class="login-2">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12">
+                    <div class="form-section">
+                    
+                        <div class="logo-2">
+                            <a href="#">
+                                <img src="{{ asset('public/login-style/assets/img/logos/logo-2.png')}}" alt="logo">
+                            </a>
+                        </div>
+                        <h3>قم بإدخال بيانات الدخول الخاصة بحسابك</h3>
+                        <form enctype="multipart/form-data" method="post"
+                            action="{{ route('login') }}">
+                            @csrf
+                            <div class="form-group form-box">
+                                
+                                <input type="text" name="email" class="input-text" placeholder=" البريد الالكترونى">
+                                @if($errors->has('email'))
+                                        <div class="error" style="color:red">{{ $errors->first('email') }}</div>
+                                        @endif
+                            </div>
+                            <div class="form-group form-box">
+                               <input type="password" name="password" class="input-text" placeholder="كلمة المرور">
+                               @if($errors->has('password'))
+                                        <div class="error" style="color:red">{{ $errors->first('password') }}</div>
+                                        @endif
+                            </div>
+                            <div class="form-group mb-0 clearfix">
+                               <button type="submit" class="btn-md btn-theme float-left">تسجيل الدخول </button>
+                                <a href="{{ route('password.request') }}" class="forgot-password">نسيت كلمة المرور ؟</a>
+                            </div>
+                            <div class="extra-login clearfix">
+                            </div>
+                        </form>
+                        <p>ليس لديك حساب؟<a href="{{ URL :: to ('/register')}}" class="thembo"> سجل هنا </a></p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Login 2 end -->
+
+
+
+<!--div class="container">
     <div class="row justify-content-center">
         <div class="col-md-8">
             <div class="card">
@@ -58,9 +107,9 @@
                                 </button>
 
                                 @if (Route::has('password.request'))
-                                    <!--a class="btn btn-link" href="{{ route('password.request') }}">
+                                    <a class="btn btn-link" href="{{ route('password.request') }}">
                                         {{ __('Forgot Your Password?') }}
-                                    </a-->
+                                    </a>
                                 @endif
                             </div>
                         </div>
@@ -69,5 +118,5 @@
             </div>
         </div>
     </div>
-</div>
+</div-->
 @endsection

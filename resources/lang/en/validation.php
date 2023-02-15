@@ -144,6 +144,7 @@ return [
     'custom' => [
         'attribute-name' => [
             'rule-name' => 'custom-message',
+            
         ],
     ],
 
@@ -158,6 +159,17 @@ return [
     |
     */
 
-    'attributes' => [],
+    'attributes' => [
+        'fullname_ar' => ' Arabic Name',
+        'fullname_en' => ' English Name',
+        'identity_number' => 'Identity Number',
+        'gender_type' => 'Gender',
+        'nationality' => 'Nationality',
+        'phone' => 'Phone',
+        'email' => 'Email',
+        
+        
+
+    ],
 
 ];

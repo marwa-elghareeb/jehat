@@ -31,7 +31,7 @@ function checkInputNumber() {
             f.parentNode.insertBefore(j, f);
         })(window, document, 'script', 'dataLayer', 'GTM-TAGCODE');
         //          يقبل حروف عربى فقط
-     
+
 
         function myFunction() {
             var isArabic = /^([\u0600-\u06ff]|[\u0750-\u077f]|[\ufb50-\ufbc1]|[\ufbd3-\ufd3f]|[\ufd50-\ufd8f]|[\ufd92-\ufdc7]|[\ufe70-\ufefc]|[\ufdf0-\ufdfd]|[ ])*$/g;
@@ -43,10 +43,11 @@ function checkInputNumber() {
                 // document.getElementById('fullname_ar').value = 'يقبل حروف عربى فقط';
                 // alert("يقبل حروف عربى فقط");
                 $("#fullname_ar").html('يقبل حروف عربى فقط');
-                
+
             }
 
         }
+
         function myFunction1() {
             var alphaExp = /^[a-zA-Z]+$/;
             if (alphaExp.test($.trim($('#fullname_en').val()))) {
@@ -56,13 +57,13 @@ function checkInputNumber() {
             } else {
                 // console.log('not arabic');
                 document.getElementById('alphaExp').value = '';
-               // alert("يقبل حروف بالإنجليزي فقط");
+                // alert("يقبل حروف بالإنجليزي فقط");
                 $("#fullname_en").html('يقبل حروف بالإنجليزي فقط');
 
-                
+
             }
         }
-        
+
         function validateEmail() {
             var reEmail = /^(?:[\w\!\#\$\%\&\'\*\+\-\/\=\?\^\`\{\|\}\~]+\.)*[\w\!\#\$\%\&\'\*\+\-\/\=\?\^\`\{\|\}\~]+@(?:(?:(?:[a-zA-Z0-9](?:[a-zA-Z0-9\-](?!\.)){0,61}[a-zA-Z0-9]?\.)+[a-zA-Z0-9](?:[a-zA-Z0-9\-](?!$)){0,61}[a-zA-Z0-9]?)|(?:\[(?:(?:[01]?\d{1,2}|2[0-4]\d|25[0-5])\.){3}(?:[01]?\d{1,2}|2[0-4]\d|25[0-5])\]))$/;
 
@@ -78,10 +79,6 @@ function checkInputNumber() {
 
 
         }
-
-
-        
-        
     </script>
     <!-- End Google Tag Manager -->
     <title>تسجيل مستخدم جديد</title>
@@ -148,7 +145,7 @@ function checkInputNumber() {
 
                             </div>
                             <div class="form-group form-box">
-                                <input type="text" name="fullname_en" value="{{ old('fullname_en') }}" onkeyup="myFunction1()" id="alphaExp" id="validationDefaultUsername1" aria-describedby="validationDefaultUsername1" class="input-text" placeholder=" الإسم الثلاثي بالإنجليزي ">
+                                <input type="text" name="fullname_en" value="{{ old('fullname_en') }}"  id="alphaExp" id="validationDefaultUsername1" aria-describedby="validationDefaultUsername1" class="input-text" placeholder=" الإسم الثلاثي بالإنجليزي ">
                                 <div class="error" style="color:red">
                                     <label id="fullname_en"></label>
                                 </div>
@@ -164,7 +161,7 @@ function checkInputNumber() {
                             </div>
                             <div class="form-group">
                                 <!--label for="exampleFormControlSelect1">Example select</label-->
-                                <select name="gender_type"  class="form-control FormControlSelect1" id="exampleFormControlSelect1">
+                                <select name="gender_type" class="form-control FormControlSelect1" id="exampleFormControlSelect1">
                                     <option>النوع </option>
                                     <option value="1">ذكر</option>
                                     <option value="2">انثى</option>
@@ -181,7 +178,7 @@ function checkInputNumber() {
                             </div-->
 
                             <div class="form-group ">
-                            <select name="nationality"  value="{{ old('nationality') }}" class="form-control FormControlSelect1" id="exampleFormControlSelect1">
+                                <select name="nationality" value="{{ old('nationality') }}" class="form-control FormControlSelect1" id="exampleFormControlSelect1">
                                     <option>الجنسية </option>
                                     <option value="1">سعودي</option>
                                     <option value="2">غير سعودي</option>
@@ -198,7 +195,7 @@ function checkInputNumber() {
                             </div>
 
                             <div class="form-group form-box">
-                                <input type="email" name="email" value="{{ old('email') }}" onkeyup="validateEmail()" id="reEmail" id="validationDefaultUsername1" id="validationDefaultUsername1" aria-describedby="validationDefaultUsername1" class="input-text" placeholder="البريد الإلكتروني">
+                                <input type="email" name="email" value="{{ old('email') }}"  id="reEmail" id="validationDefaultUsername1" id="validationDefaultUsername1" aria-describedby="validationDefaultUsername1" class="input-text" placeholder="البريد الإلكتروني">
                                 <div class="error" style="color:red">
                                     <label id="email"></label>
                                 </div>
@@ -214,9 +211,9 @@ function checkInputNumber() {
                             </div>
 
                             <div class="form-group form-box">
-                                <input type="password" name="password" class="input-text" placeholder=" تأكيد الرقم السرى">
-                                @if($errors->has('password'))
-                                <div class="error" style="color:red">{{ $errors->first('password') }}</div>
+                                <input type="password" name="password_confirmation" class="input-text" placeholder=" تأكيد الرقم السرى">
+                                @if($errors->has('password_confirmation'))
+                                <div class="error" style="color:red">{{ $errors->first('password_confirmation') }}</div>
                                 @endif
                             </div>
 
@@ -234,7 +231,10 @@ function checkInputNumber() {
                                 </div>
                             </div>
                             <div class="form-group mb-4">
-                                <input id="captcha" type="text" class="form-control" placeholder="Enter Captcha" name="captcha">
+                                <input id="captcha" type="text" class="form-control" placeholder="ادخل الرقم" name="captcha">
+                                @if($errors->has('captcha'))
+                                <div class="error" style="color:red">{{ $errors->first('captcha') }}</div>
+                                @endif
                             </div>
 
 
@@ -245,7 +245,7 @@ function checkInputNumber() {
                             </div>
 
                         </form>
-                        
+
                         <p>لديك حساب؟<a href="{{ URL :: to ('/')}}" class="thembo"> تسجيل الدخول من هنا </a></p>
                     </div>
                 </div>

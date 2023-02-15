@@ -25,7 +25,7 @@
       <div class="row">
         <div class="col-12">
           <div class="section-title" data-aos="fade-up">
-            <h1 data-animation="bounceIn" data-delay="0.2s">منصة جهات</h1>
+            <h1 data-animation="bounceIn" data-delay="0.2s">منصة جهات  </h1>
           
         </div>
         </div>
