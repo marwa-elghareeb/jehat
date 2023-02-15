@@ -17,6 +17,8 @@ use App\Http\Controllers\Admin\NewsController;
 use App\Http\Controllers\Admin\CardsController;
 use App\Http\Controllers\Admin\FooterPagesController;
 use App\Http\Controllers\Admin\RegistrationAndLoginController;
+use App\Http\Controllers\Admin\RoleController;
+
 
 //WebSite 
 use App\Http\Controllers\Site\AboutUsSiteController;
@@ -30,7 +32,7 @@ use App\Http\Controllers\Site\UsersWebsiteController;
 
 /*
 |--------------------------------------------------------------------------
-| Web Routes 
+| Web Routes  
 |--------------------------------------------------------------------------
 |
 | Here is where you can register web routes for your application. These
@@ -94,6 +96,8 @@ Route::group(['middleware' => ['auth']], function () {
     Route::resource('contact-data', ContactController::class);
     Route::resource('footer-pages-data', FooterPagesController::class);
     Route::resource('registrationandlogin-data',RegistrationAndLoginController ::class);
+    Route::resource('role', RoleController::class);
+
 
 
 
