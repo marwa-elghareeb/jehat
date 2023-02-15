@@ -200,7 +200,7 @@
                     aria-expanded="false"><i class="mdi mdi-chart-bar"></i> 
                     <span class="nav-text">Users & Roles</span> </a>
                         <ul aria-expanded="false">
-                            <li><a href="#"></a>
+                        <li><a href="{{ route('role.index') }}">role</a>
                             </li>
                             <li><a href="#"></a>
                             </li>
