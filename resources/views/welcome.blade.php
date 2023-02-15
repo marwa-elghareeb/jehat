@@ -79,7 +79,7 @@
                             </div>
                             <div class="form-group mb-0 clearfix">
                                <button type="submit" class="btn-md btn-theme float-left">تسجيل الدخول </button>
-                                <a href="#" class="forgot-password">نسيت كلمة المرور ؟</a>
+                                <a href="{{ URL :: to ('/forgotPassword')}}" class="forgot-password">نسيت كلمة المرور ؟</a>
                             </div>
                             <div class="extra-login clearfix">
                             </div>
