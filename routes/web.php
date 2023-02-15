@@ -27,9 +27,10 @@ use App\Http\Controllers\Site\NewsSiteController;
 use App\Http\Controllers\Site\TowerSiteController;
 use App\Http\Controllers\Site\IndexController;
 use App\Http\Controllers\Site\UsersWebsiteController;
+
 /*
 |--------------------------------------------------------------------------
-| Web Routes
+| Web Routes 
 |--------------------------------------------------------------------------
 |
 | Here is where you can register web routes for your application. These
@@ -43,10 +44,9 @@ Route::get('/', function () {return view('welcome');});
 Route::get('/user-register', [UsersWebsiteController::class, 'index'] );
 Route::post('/user-register-form', [UsersWebsiteController::class, 'userForm'] );
 Route::get('/reload-captcha', [CaptchaServiceController::class, 'reloadCaptcha']);
-//
+Route::get('/forgotPassword', [UsersWebsiteController::class, 'forgotPassword'] );
 Route::get('/user-login', [UsersWebsiteController::class, 'userLogin'] );
 Route::post('/user-Login-form', [UsersWebsiteController::class, 'loginForm'] );
-
 Route::get('/aboutUs', [AboutUsSiteController::class, 'index'] );
 Route::get('/contactUs', [ContactUsSiteController::class, 'index']);
 Route::post('/contactUsForm', [ContactUsSiteController::class, 'contactUsForm']);

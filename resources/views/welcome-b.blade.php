@@ -5,7 +5,7 @@
     <link rel="stylesheet" href="{{ asset('public/web-assets/css/style-login.css')}} ">
     <link rel="stylesheet" href="web-assets/css/bootstrap.min.css">
     <link rel="stylesheet" href="{{ asset('public/web-assets/css/fontawesome-all.min.css')}} ">
-    <link rel="stylesheet" href="{{ asset('public/web-assets//css/flaticon.css')}}">
+    <link rel="stylesheet" href="{{ asset('public/web-assets/css/flaticon.css')}}">
     </head>
 
 

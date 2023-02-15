@@ -91,6 +91,12 @@ class UsersWebsiteController extends Controller
        
 
     }
+    public function forgotPassword()
+    {
+       
+        return view('site.forgotPassword');      
+
+    }
 
     
 }
