@@ -42,7 +42,7 @@
 
                             </div>
                             <div class="form-group form-box">
-                                <input type="text" name="fullname_en" onkeyup="myFunction1()" value="{{ old('fullname_en') }}"  id="name_en" id="validationDefaultUsername1" aria-describedby="validationDefaultUsername1" class="input-text" placeholder=" الإسم الثلاثي بالإنجليزي ">
+                                <input type="text" name="fullname_en" onkeyup="validateEnglish()" value="{{ old('fullname_en') }}"  id="english" id="validationDefaultUsername1" aria-describedby="validationDefaultUsername1" class="input-text" placeholder=" الإسم الثلاثي بالإنجليزي ">
                                 <div class="error" style="color:red">
                                     <label id="fullname_en"></label>
                                 </div>
@@ -87,7 +87,7 @@
                             </div>
 
                             <div class="form-group form-box">
-                                <input type="email" name="email" value="{{ old('email') }}"  onkeyup="validateEmail()" id="reEmail" id="validationDefaultUsername1" id="validationDefaultUsername1" aria-describedby="validationDefaultUsername1" class="input-text" placeholder="البريد الإلكتروني">
+                                <input type="email" name="email" value="{{ old('email') }}"   id="validationDefaultUsername1" id="validationDefaultUsername1" aria-describedby="validationDefaultUsername1" class="input-text" placeholder="البريد الإلكتروني">
                                 <div class="error" style="color:red">
                                     <label id="email"></label>
                                 </div>

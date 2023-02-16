@@ -74,7 +74,6 @@
             if (isArabic.test($.trim($('#arabic').val()))) {
                 // console.log('is arabic');
             } else {
-                // console.log('not arabic');
                 document.getElementById('arabic').value = '';
                 // document.getElementById('fullname_ar').value = 'يقبل حروف عربى فقط';
                 // alert("يقبل حروف عربى فقط");
@@ -84,29 +83,18 @@
 
         }
 
-        function myFunction1() {
-            var name_en = /^[a-zA-Z]+$/;
-            if (name_en.test($.trim($('#fullname_en').val()))) {
+     
 
-            }else {
-                document.getElementById('name_en').value = '';
-                $("#fullname_en").html('يقبل حروف بالإنجليزي فقط');
+        function validateEnglish() {
+            var isEnglish= /^[a-zA-Z'\)\(.-]+$/g;
 
-                // alert("يقبل حروف بالإنجليزي فقط");
-
-            }
-        }
-
-        function validateEmail() {
-            var reEmail = /^(?:[\w\!\#\$\%\&\'\*\+\-\/\=\?\^\`\{\|\}\~]+\.)*[\w\!\#\$\%\&\'\*\+\-\/\=\?\^\`\{\|\}\~]+@(?:(?:(?:[a-zA-Z0-9](?:[a-zA-Z0-9\-](?!\.)){0,61}[a-zA-Z0-9]?\.)+[a-zA-Z0-9](?:[a-zA-Z0-9\-](?!$)){0,61}[a-zA-Z0-9]?)|(?:\[(?:(?:[01]?\d{1,2}|2[0-4]\d|25[0-5])\.){3}(?:[01]?\d{1,2}|2[0-4]\d|25[0-5])\]))$/;
-
-            if (reEmail.test($.trim($('#email').val()))) {
+            if (isEnglish.test($.trim($('#english').val()))) {
                 //alert("يقبل الايميل  فقط");
 
             } else {
-                document.getElementById('reEmail').value = '';
+                document.getElementById('english').value = '';
                 //alert("يقبل الايميل  فقط");
-                $("#email").html('يقبل الايميل فقط');
+                $("#fullname_en").html('ييقبل حروف بالإنجليزي فقط');
 
             }
 
