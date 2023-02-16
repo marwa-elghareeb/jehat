@@ -38,7 +38,9 @@
             </div>
         </div>
     </div>
-</div>
+    </div>
+
+@endsection
 <!-- Login 2 end -->
 
 <!--div class="container">
@@ -84,4 +86,4 @@
         </div>
     </div>
 </div-->
-@endsection
+
