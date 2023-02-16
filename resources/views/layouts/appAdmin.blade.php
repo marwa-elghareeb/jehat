@@ -8,11 +8,11 @@
     <title>Jehat</title>
     <!-- Favicon icon -->
     <link rel="icon" type="image/png" sizes="16x16" href="#">
-    <link href="{{ asset('admin/css/style.css')}}" rel="stylesheet">
-    <link href="{{ asset('admin/assets/plugins/animate/animate.min.css')}}" rel="stylesheet">
-    <link href="{{ asset('admin/assets/plugins/bootstrap-select/dist/css/bootstrap-select.min.css')}}" rel="stylesheet">
-    <link href="{{ asset('admin/assets/plugins/datatables/css/jquery.dataTables.min.css')}}" rel="stylesheet">
-    <link href="{{ asset('admin/assets/plugins/nestable2/css/jquery.nestable.min.css')}}" rel="stylesheet">
+    <link href="{{ asset('public/admin/css/style.css')}}" rel="stylesheet">
+    <link href="{{ asset('public/admin//assets/plugins/animate/animate.min.css')}}" rel="stylesheet">
+    <link href="{{ asset('public/admin//assets/plugins/bootstrap-select/dist/css/bootstrap-select.min.css')}}" rel="stylesheet">
+    <link href="{{ asset('public/admin//assets/plugins/datatables/css/jquery.dataTables.min.css')}}" rel="stylesheet">
+    <link href="{{ asset('public/admin//assets/plugins/nestable2/css/jquery.nestable.min.css')}}" rel="stylesheet">
     <script>
         function myFunction() {
 
@@ -55,7 +55,7 @@
             Nav header start
         ***********************************-->
         <div class="nav-header">
-            <div class="brand-logo"><a href="#"><b><img src="{{ asset('admin/assets/images/logo.png')}}" alt=""> </b><span class="brand-title"><img src="../../assets/images/logo-text.png" alt=""></span></a>
+            <div class="brand-logo"><a href="#"><b><img src="{{ asset('public/admin//assets/images/logo.png')}}" alt=""> </b><span class="brand-title"><img src="../../assets/images/logo-text.png" alt=""></span></a>
             </div>
             <div class="nav-control">
                 <div class="hamburger"><span class="line"></span> <span class="line"></span> <span class="line"></span>
@@ -95,7 +95,7 @@
 
                         <li class="icons">
                             <a href="javascript:void(0)" class="log-user">
-                                <!--img src="{{ asset('admin/assets/images/avatar/1.jpg')}}" alt=""-->
+                                <!--img src="{{ asset('public/admin//assets/images/avatar/1.jpg')}}" alt=""-->
                                 <span>{{ Auth::user()->name }}</span>
                                 <i class="fa fa-caret-down f-s-14" aria-hidden="true"></i>
                             </a>
@@ -260,30 +260,30 @@
     <!--**********************************
         Scripts
     ***********************************-->
-    <script src="{{ asset('admin/assets/plugins/common/common.min.js')}}"></script>
-    <script src="{{ asset('admin/js/custom.min.js')}}"></script>
-    <script src="{{ asset('admin/js/settings.js')}}"></script>
-    <script src="{{ asset('admin/js/gleek.js')}}"></script>
-    <script src="{{ asset('admin/js/styleSwitcher.js')}}"></script>
+    <script src="{{ asset('public/admin//assets/plugins/common/common.min.js')}}"></script>
+    <script src="{{ asset('public/admin//js/custom.min.js')}}"></script>
+    <script src="{{ asset('public/admin//js/settings.js')}}"></script>
+    <script src="{{ asset('public/admin//js/gleek.js')}}"></script>
+    <script src="{{ asset('public/admin//js/styleSwitcher.js')}}"></script>
 
     <!-- Chartjs chart -->
-    <script src="{{ asset('admin/assets/plugins/chart.js/Chart.bundle.min.js')}}"></script>
-    <script src="{{ asset('admin/assets/plugins/d3v3/index.js')}}"></script>
-    <script src="{{ asset('admin/assets/plugins/topojson/topojson.min.js')}}"></script>
-    <script src="{{ asset('admin/assets/plugins/datamaps/datamaps.world.min.js')}}"></script>
-    <script src="{{ asset('admin/js/plugins-init/datamap-world-init.js')}}"></script>
-    <script src="{{ asset('admin/assets/plugins/datamaps/datamaps.usa.min.js')}}"></script>
-    <script src="{{ asset('admin/js/dashboard/dashboard-1.js')}}"></script>
-    <script src="{{ asset('admin/js/plugins-init/datamap-usa-init.js')}}"></script>
+    <script src="{{ asset('public/admin//assets/plugins/chart.js/Chart.bundle.min.js')}}"></script>
+    <script src="{{ asset('public/admin//assets/plugins/d3v3/index.js')}}"></script>
+    <script src="{{ asset('public/admin//assets/plugins/topojson/topojson.min.js')}}"></script>
+    <script src="{{ asset('public/admin//assets/plugins/datamaps/datamaps.world.min.js')}}"></script>
+    <script src="{{ asset('public/admin//js/plugins-init/datamap-world-init.js')}}"></script>
+    <script src="{{ asset('public/admin//assets/plugins/datamaps/datamaps.usa.min.js')}}"></script>
+    <script src="{{ asset('public/admin//js/dashboard/dashboard-1.js')}}"></script>
+    <script src="{{ asset('public/admin//js/plugins-init/datamap-usa-init.js')}}"></script>
     <!-- Data Tables -->
-    <script src="{{ asset('admin/assets/plugins/datatables/js/jquery.dataTables.min.js')}}"></script>
-    <script src="{{ asset('admin/js/plugins-init/datatables.init.js')}}"></script>
+    <script src="{{ asset('public/admin//assets/plugins/datatables/js/jquery.dataTables.min.js')}}"></script>
+    <script src="{{ asset('public/admin//js/plugins-init/datatables.init.js')}}"></script>
     <!-- Check Editor -->
-    <script src="{{ asset('admin/assets/plugins/ckeditor/ckeditor.js')}}"></script>
-    <script src="{{ asset('admin/js/plugins-init/editor-ck-init.js')}}"></script>
+    <script src="{{ asset('public/admin//assets/plugins/ckeditor/ckeditor.js')}}"></script>
+    <script src="{{ asset('public/admin//js/plugins-init/editor-ck-init.js')}}"></script>
     <!-- Nestable js -->
-    <script src="{{ asset('admin/assets/plugins/nestable2/js/jquery.nestable.min.js')}}"></script>
-    <script src="{{ asset('admin/main/js/plugins-init/nestable.init.js')}}"></script>
+    <script src="{{ asset('public/admin//assets/plugins/nestable2/js/jquery.nestable.min.js')}}"></script>
+    <script src="{{ asset('public/admin//main/js/plugins-init/nestable.init.js')}}"></script>
 
 </body>
 
