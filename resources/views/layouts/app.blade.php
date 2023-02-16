@@ -85,17 +85,14 @@
         }
 
         function myFunction1() {
-            var alphaExp = /^[a-zA-Z]+$/;
-            if (alphaExp.test($.trim($('#fullname_en').val()))) {
+            var name_en = /^[a-zA-Z]+$/;
+            if (name_en.test($.trim($('#fullname_en').val()))) {
 
-                // alert("يقبل حروف  فقط");
-
-            } else {
-                // console.log('not arabic');
-                document.getElementById('alphaExp').value = '';
-                // alert("يقبل حروف بالإنجليزي فقط");
+            }else {
+                document.getElementById('name_en').value = '';
                 $("#fullname_en").html('يقبل حروف بالإنجليزي فقط');
 
+                // alert("يقبل حروف بالإنجليزي فقط");
 
             }
         }

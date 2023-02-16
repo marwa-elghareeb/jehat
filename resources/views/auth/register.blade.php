@@ -42,13 +42,15 @@
 
                             </div>
                             <div class="form-group form-box">
-                                <input type="text" name="fullname_en" value="{{ old('fullname_en') }}"  id="alphaExp" id="validationDefaultUsername1" aria-describedby="validationDefaultUsername1" class="input-text" placeholder=" الإسم الثلاثي بالإنجليزي ">
+                                <input type="text" name="fullname_en" onkeyup="myFunction1()" value="{{ old('fullname_en') }}"  id="name_en" id="validationDefaultUsername1" aria-describedby="validationDefaultUsername1" class="input-text" placeholder=" الإسم الثلاثي بالإنجليزي ">
                                 <div class="error" style="color:red">
                                     <label id="fullname_en"></label>
                                 </div>
                                 @if($errors->has('fullname_en'))
                                 <div class="error" style="color:red">{{ $errors->first('fullname_en') }}</div>
                                 @endif
+
+                                
                             </div>
                             <div class="form-group form-box">
                                 <input name="identity_number" maxlength="11" value="{{ old('identity_number') }}" inputmode="numeric" oninput="this.value = this.value.replace(/\D+/g, '')" class="input-text" placeholder=" الهوية (هوية وطنية / إقامة / جواز سفر)">
@@ -85,7 +87,7 @@
                             </div>
 
                             <div class="form-group form-box">
-                                <input type="email" name="email" value="{{ old('email') }}"  id="reEmail" id="validationDefaultUsername1" id="validationDefaultUsername1" aria-describedby="validationDefaultUsername1" class="input-text" placeholder="البريد الإلكتروني">
+                                <input type="email" name="email" value="{{ old('email') }}"  onkeyup="validateEmail()" id="reEmail" id="validationDefaultUsername1" id="validationDefaultUsername1" aria-describedby="validationDefaultUsername1" class="input-text" placeholder="البريد الإلكتروني">
                                 <div class="error" style="color:red">
                                     <label id="email"></label>
                                 </div>
