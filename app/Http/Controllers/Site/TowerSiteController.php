@@ -68,7 +68,8 @@ class TowerSiteController extends Controller
     {
         $cData = Companies::where('slug', $slug)->first();
         $id = $cData->id;
-        $allData = Department::where('company_id', $cData->id)->get();
+        $allData = Department::where('company_id', $id)->get();
+    
         foreach ($allData as $data) {
             $allE = Employees::where('department_id', $data->id)->get();
             $data->empCount = count($allE);

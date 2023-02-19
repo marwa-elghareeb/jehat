@@ -44,7 +44,7 @@
               الموظفين
             
             </p>
-            <a href="{{ URL :: to ('/allCompanies')}}" class="btn btn-outline-secondary  btn-sm pt-8 ">المزيد</a>
+            <a href="{{ $data->link }}" class="btn btn-outline-secondary  btn-sm pt-8 ">المزيد</a>
           </div>
         </div>
         @endforeach

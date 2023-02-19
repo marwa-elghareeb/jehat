@@ -98,17 +98,17 @@
                         <li class="icons">
                             <a href="javascript:void(0)" class="log-user">
                                 <!--img src="{{ asset('public/admin//assets/images/avatar/1.jpg')}}" alt=""-->
-                                <span>{{ Auth::user()->name }}</span>
+                                <span>{{  auth()->guard('admin')->user()->name }}</span>
                                 <i class="fa fa-caret-down f-s-14" aria-hidden="true"></i>
                             </a>
                             <div class="drop-down dropdown-profile animated bounceInDown">
                                 <div class="dropdown-content-body">
                                     <ul>
 
-                                        <li><a href="{{ route('logout') }}" onclick="event.preventDefault();
+                                        <li><a href="{{ route('adminLogout') }}" onclick="event.preventDefault();
                                                      document.getElementById('logout-form').submit();"><i class="icon-power"></i> <span>Logout</span></a>
 
-                                            <form id="logout-form" action="{{ route('logout') }}" method="POST" class="d-none">
+                                            <form id="logout-form" action="{{ route('adminLogout') }}" method="POST" class="d-none">
                                                 @csrf
                                             </form>
                                         </li>

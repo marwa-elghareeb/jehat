@@ -78,9 +78,10 @@ Route::get('/employeesEvent/{id}', [TowerSiteController::class, 'employeesEvent'
 Route::get('/reload-captcha', [CaptchaServiceController::class, 'reloadCaptcha']);
 
 //Admin
-Route::group(['prefix' => 'admin', 'namespace' => 'Admin'], function () {
+Route::group(['prefix' => 'admin'], function () {
     Route::get('/login', [AdminAuthController::class, 'getLogin'])->name('adminLogin');
     Route::post('/login', [AdminAuthController::class, 'postLogin'])->name('adminLoginPost');
+    Route::post('/adminLogout', [AdminAuthController::class, 'adminLogout'])->name('adminLogout');
     Route::group(['middleware' => 'adminauth'], function () {
         Route::get('/adminhome', function () {
             return view('admin.adminhome');
@@ -110,5 +111,9 @@ Auth::routes();
 Route::group(['middleware' => ['auth']], function () {
     Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name('home');
     Route::get('/allCompanies', [TowerSiteController::class, 'companies']);
+    Route::get('/reception/{slug}', [TowerSiteController::class, 'reception']);
+    Route::get('/department/{slug}', [TowerSiteController::class, 'department']);
+    Route::get('/employe/{id}', [TowerSiteController::class, 'employees']);
+    Route::post('/searchEmp', [TowerSiteController::class, 'searchEmp']);
 
 });

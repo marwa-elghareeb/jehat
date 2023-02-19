@@ -4,6 +4,7 @@ namespace App\Http\Controllers\Admin;
 use App\Http\Controllers\Controller;
 use Illuminate\Http\Request;
 use App\Models\UsersWebsite;
+use App\Models\User;
 
 class RegistrationAndLoginController extends Controller
 {
@@ -14,7 +15,7 @@ class RegistrationAndLoginController extends Controller
      */
     public function index()
     {
-         $allData = UsersWebsite::all();
+         $allData = User::where('role_id', 1)->get();
         return view('admin.registrationandlogin.list')->with(['allData' => $allData]);
     }
 

@@ -37,7 +37,7 @@
                 <div class="col-lg-8 col-md-8 col-sm-12">
                     <div class="row">
 
-                        @if(count($allData) >0)
+                        @if(count($allEmp) >0)
                         @foreach($allEmp as $data)
 
                         <div class="col-lg-6 col-md-12 col-sm-12 posts-list">

@@ -96,10 +96,14 @@
                                         </nav>
                                     </div>
                                    
+                                    
                                     <div class="header-right-btn d-none d-lg-block ml-65">
-
+                                    @guest
                                         <a href="https://app.jehat.sa/client_login.aspx" class="border-btn">تسجيل
                                             الدخول</a>
+                                            @else
+                                            {{ Auth::user()->name }}
+                                            @endguest
                                             <!--a href="#">
                                                      <i class="fa fa-language" aria-hidden="true"></i></a-->
                                     </div>
