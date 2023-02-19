@@ -3,12 +3,6 @@
 
 
 <!-- Owl Carousal
-<style>
-.background-image-filter background-image url{
-	filter:brightness(50%);
-</style>
-
-}
  -->
 <div class="main-slider-part owl-slider" id="owl-slider">
   <!-- slide 01 -->
@@ -32,7 +26,7 @@
 
                 </p>
 
-                <a href="#" class="btn hero-btn" data-animation="fadeInUp" data-delay="0.7s">منصة
+                <a href="{{ URL :: to ('/register')}}" class="btn hero-btn" data-animation="fadeInUp" data-delay="0.7s">منصة
                   جهات
                 </a>
               </div>
@@ -63,7 +57,7 @@
 
                 </p>
 
-                <a href="#" class="btn hero-btn" data-animation="fadeInUp" data-delay="0.7s">منصة
+                <a href="{{ URL :: to ('/register')}}" class="btn hero-btn" data-animation="fadeInUp" data-delay="0.7s">منصة
                   جهات
                 </a>
               </div>
@@ -94,7 +88,7 @@
 
                 </p>
 
-                <a href="#" class="btn hero-btn" data-animation="fadeInUp" data-delay="0.7s">منصة
+                <a href="{{ URL :: to ('/register')}}" class="btn hero-btn" data-animation="fadeInUp" data-delay="0.7s">منصة
                   جهات
                 </a>
               </div>
@@ -111,7 +105,7 @@
     <div class="container">
 
       <div class="section-title" data-aos="fade-up">
-        <h2>مركز جهات للتواصل الرقمي الموحد</h2>
+        <h2>    منصه جهات </h2>
       </div>
       <div class="row">
         <div class="col-md-4 col-lg-3 col-sm-6 col-xs-12 mb-30">
@@ -162,53 +156,7 @@
               وايضا للطباعة</p>
           </div>
         </div>
-        <div class="col-md-4 col-lg-3 col-sm-6 col-xs-12 mb-30">
-          <div class="icon-box h-100" data-aos="fade-up" data-aos-delay="100">
-            <div class="text-center">
-              <img src=" {{ asset('public/web-assets/img/icon/of1.png')}} " alt="">
-            </div>
-            <br>
-            <h4 class="title"><a href="">المكاتب الافتراضية</a></h4>
-            <p class="description">تقدم المنصه تقارير واحصائيات
-              متعددة قابله للعرض
-              وايضا للطباعة</p>
-          </div>
-        </div>
-
-        <div class="col-md-4 col-lg-3 col-sm-6 col-xs-12 mb-30">
-          <div class="icon-box h-100" data-aos="fade-up" data-aos-delay="200">
-            <div class="icon"><i class="bx bx-file"></i></div>
-            <h4 class="title"><a href="">الفعاليات </a></h4>
-            <p class="description">تقدم المنصه تقارير واحصائيات
-              متعددة قابله للعرض
-              وايضا للطباعة</p>
-          </div>
-        </div>
-
-        <div class="col-md-4 col-lg-3 col-sm-6 col-xs-12 mb-30">
-          <div class="icon-box h-100" data-aos="fade-up" data-aos-delay="300">
-            <div class="text-center">
-              <img src=" {{ asset('public/web-assets/img/icon/mall1.png')}} " alt="">
-            </div>
-            <br>
-            <h4 class="title"><a href="">مول</a></h4>
-            <p class="description">تقدم المنصه تقارير واحصائيات
-              متعددة قابله للعرض
-              وايضا للطباعة</p>
-          </div>
-        </div>
-
-        <div class="col-md-4 col-lg-3 col-sm-6 col-xs-12 mb-30">
-          <div class="icon-box h-100" data-aos="fade-up" data-aos-delay="400">
-            <div class="text-center">
-              <img src=" {{ asset('public/web-assets/img/icon/co1.png')}} " alt="">
-            </div>
-            <br>
-            <h4 class="title"><a href="">الحسابات </a></h4>
-            <p class="description">تقدم المنصه تقارير واحصائيات
-              متعددة قابله للعرض
-              وايضا للطباعة</p>
-          </div>
+        
         </div>
       </div>
 
@@ -282,7 +230,10 @@
 
       <div class="col-xl-6 col-lg-6 col-md-6 col-sm-12 my-0">
         <div class="ratio ratio-16x9 text-center mt-4 mb-4 ">
-          <iframe class="embed-responsive-item" src="{{ asset('public/web-assets/img/jehat 2.mp4')}}" style="max-width: 100%;height: 100%;" allowfullscreen></iframe>
+          <!--iframe class="embed-responsive-item" 
+          src="{{ asset('public/web-assets/img/jehat 2.mp4')}}" 
+          style="max-width: 100%;height: 100%;" allowfullscreen>
+        </iframe-->
 
         </div>
       </div>

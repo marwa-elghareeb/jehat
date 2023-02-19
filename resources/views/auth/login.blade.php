@@ -12,7 +12,7 @@
                     <div class="form-section">
                     
                         <div class="logo-2">
-                            <a href="#">
+                            <a href="{{ URL :: to ('/homepage')}}">
                                 <img src="{{ asset('public/login-style/assets/img/logos/logo-2.png')}}" alt="logo">
                             </a>
                         </div>

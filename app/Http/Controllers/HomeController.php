@@ -6,6 +6,7 @@ use App\Models\Categories;
 use App\Models\Pages;
 use App\Models\User;
 use Illuminate\Http\Request;
+use App\Models\Cards;
 
 class HomeController extends Controller
 {
@@ -30,6 +31,9 @@ class HomeController extends Controller
         $categories = Categories::all();
         $pages = Pages::all();
 
-        return view('home')->with(['userCount'=> count($users) , 'catCount'=> count($categories) , 'pagesCount'=> count($pages) ,]);
+        $allData = Cards::all();
+
+        return view('home')->with(['userCount'=> count($users) , 
+        'catCount'=> count($categories) , 'pagesCount'=> count($pages) ,'allData' => $allData]);
     }
 }

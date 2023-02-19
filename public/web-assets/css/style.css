@@ -2773,8 +2773,10 @@ hr {
 
 @media only screen and (min-width: 1200px) and (max-width: 1600px) {
     .header-area .header-bottom {
-        padding: 0px 30px
+        padding: 0px 30px;
+        background : #009688;
     }
+    
 }
 
 @media only screen and (min-width: 992px) and (max-width: 1199px) {

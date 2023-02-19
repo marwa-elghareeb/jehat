@@ -20,15 +20,19 @@ class RedirectIfAuthenticated
     public function handle(Request $request, Closure $next, ...$guards)
     {
         $guards = empty($guards) ? [null] : $guards;
-
-        foreach ($guards as $guard) {
-            if ($user->role_id ==0){
-                return redirect(RouteServiceProvider::HOME);
-            }elseif($user->role_id ==1 ){
-                return redirect('/cards');
-
-            }
         
+        foreach ($guards as $guard) {
+            if (Auth::guard($guard)->check()) {
+                return redirect(RouteServiceProvider::HOME);
+
+               /* if (Auth::user()->name == 'marwa') {
+
+                    return redirect()->route('cards');
+                }elseif (Auth::user()->name == 'Admin') {
+                    return redirect(RouteServiceProvider::HOME);
+                }*/
+           }
+
            
          
         }
@@ -36,19 +40,3 @@ class RedirectIfAuthenticated
         return $next($request);
     }
 }
-/** 
- if (auth()-> user() -> id == 0){
-                return redirect(RouteServiceProvider::HOME);
-            }elseif(auth()-> user()->id ==1 ){
-                return redirect('/cards');
-
-            }
-if (Auth::guard($guard)->check()) {
-                return redirect(RouteServiceProvider::HOME);
-            }
-            
-            
-            else{
-                return redirect('/cards');
-            }
- */

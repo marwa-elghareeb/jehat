@@ -1,96 +1,97 @@
-@extends('layouts.appAdmin')
+@extends('layouts.appPortal')
 
 @section('content')
-<!--div class="container">
-    <div class="row justify-content-center">
-        <div class="col-md-8">
-            <div class="card">
-                <div class="card-header">{{ __('Dashboard') }}</div>
 
-                <div class="card-body">
-                    @if (session('status'))
-                        <div class="alert alert-success" role="alert">
-                            {{ session('status') }}
-                        </div>
-                    @endif
-
-                    {{ __('You are logged in!') }}
-                </div>
-            </div>
+<!-------------------------------------------------------------------------------->
+<div class="breadcrumb">
+  <div class="container">
+      <div class="row">
+          <div class="col-12">
+              <h2 class="breadcrumbs-title">منصة 
+                <span>جهات</span></h2>
+              <ul class="breadcrumb-list">
+                  <li><a href="{{ URL :: to ('/')}}">الرئيسية</a></li>
+                  <li>منصة جهات
+                  </li>
+              </ul>
+          </div>
+      </div>
+  </div>
+</div>
+<!-------------------------------------------------------------------------------->
+<section id="services" class="services jehat-stage">
+  <div class="container">
+    <div class="card">
+      <div class="row">
+        <div class="col-12">
+          <div class="section-title" data-aos="fade-up">
+            <h1 data-animation="bounceIn" data-delay="0.2s">منصة جهات  </h1>
+          
         </div>
+        </div>
+      </div>
+      <div class="row">
+
+
+      @foreach($allData as $data)
+        <div class="col-lg-4 col-md-6 col-sm-12 mb-30">
+          <div class="icon-box h-100" data-aos="fade-up" data-aos-delay="100">
+            <div class="box-img-item  text-center">
+              <img src="{{ URL ::to ('public/upload/'.$data->image)}} " alt="">
+            </div>
+            <h4 class="title"><a href="">  {{ $data->name_ar }}</a></h4>
+            <p class="description">يتم عرض جميع الشركات الموجوده فى المنصه وكذلك الاقسام الخاصه بها وايضا
+              الموظفين
+            
+            </p>
+            <a href="{{ URL :: to ('/allCompanies')}}" class="btn btn-outline-secondary  btn-sm pt-8 ">المزيد</a>
+          </div>
+        </div>
+        @endforeach
+        <!--div class="col-lg-4 col-md-6 col-sm-12 mb-30">
+          <div class="icon-box h-100" data-aos="fade-up" data-aos-delay="200">
+            <div class="box-img-item  text-center">
+              <img src="{{ asset('public/web-assets/img/icon/icons8-office-1001.png')}} " alt="">
+            </div>
+            <h4 class="title"><a href="#">مكتبى </a></h4>
+            <p class="description">عرض جميع المعارض الموجود فى المنصه وتفاصيل كل معرض</p>
+            <a href="https://app.jehat.sa/client_login.aspx"
+              class="btn btn-outline-secondary  pt-8 btn-sm">المزيد</a>
+    
+          </div>
+        </div>
+    
+        <div class="col-lg-4 col-md-6 col-sm-12 mb-30">
+          <div class="icon-box h-100" data-aos="fade-up" data-aos-delay="300">
+            <div class="box-img-item text-center">
+              <img src=" {{ asset('public/web-assets/img/icon/icons8-shop-100.png')}} " alt="">
+            </div>
+            <h4 class="title"><a href="#">المتاجر الالكترونيه</a></h4>
+            <p class="description">يتم العمل عليها فى الوقت الحالى وسيتم رفعها قريبا</p>
+            <button type="button" class="btn btn-outline-secondary  pt-8 btn-sm">المزيد</button>
+    
+          </div>
+        </div>
+    
+        <div class="col-lg-4 col-md-6 col-sm-12 mb-30">
+          <div class="icon-box h-100" data-aos="fade-up" data-aos-delay="400">
+            <div class="box-img-item text-center">
+              <img src=" {{ asset('public/web-assets/img/icon/icons8-office-100.png')}} " alt="">
+            </div>
+            <h4 class="title"><a href="#">المعارض الافتراضيه</a></h4>
+            <p class="description">يتم عرض جميع الشركات الموجوده فى المنصه وكذلك الاقسام الخاصه بها وايضا
+              الموظفين</p>
+            <button type="button" class="btn btn-outline-secondary  pt-8 btn-sm">المزيد</button>
+    
+          </div>
+        </div-->
+        
+        
+      </div>
     </div>
-</div-->
-
-
-
-<div class="content-body">
-            <div class="container-fluid">
-                <div class="row page-titles">
-                    <div class="col p-md-0">
-                        <h4>Dashboard</h4>
-                    </div>
-                    <div class="col p-md-0">
-                        <ol class="breadcrumb">
-                            <li class="breadcrumb-item"><a href="javascript:void(0)">Home</a>
-                            </li>
-                            <li class="breadcrumb-item active">
-                                <a href="#">Dashboard</a>
-                            </li>
-                        </ol>
-                    </div>
-                </div>
-                <div class="row" id="dragdrop">
-                    <div class="col-md-4 col-sm-12">
-                        <div class="card">
-                            <div class="card-body">
-                                <div class="stat-widget-two">
-                                    <div class="media">
-                                        <div class="media-body">
-                                            <h2 class="mt-0 mb-1 text-info">{{$userCount}}</h2><span class="">Total Users</span>
-                                        </div>
-                                        <img class="ml-3" src="{{ asset('admin/assets/images/icons/1.png')}}" alt="">
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-md-4 col-sm-12">
-                        <div class="card">
-                            <div class="card-body">
-                                <div class="stat-widget-two">
-                                    <div class="media">
-                                        <div class="media-body">
-                                            <h2 class="mt-0 mb-1 text-danger">{{$catCount}}</h2><span class="">Total Categories</span>
-                                        </div>
-                                        <img class="ml-3" src="{{ asset('admin/assets/images/icons/2.png')}}" alt="">
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-md-4 col-sm-12">
-                        <div class="card">
-                            <div class="card-body">
-                                <div class="stat-widget-two">
-                                    <div class="media">
-                                        <div class="media-body">
-                                            <h2 class="mt-0 mb-1 text-warning">{{$pagesCount}}</h2>
-                                            <span class="">Total Pages</span>
-                                        </div>
-                                        <img class="ml-3" src="{{ asset('admin/assets/images/icons/3.png')}}" alt="">
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-               
-               
-               
-            </div>
-        </div>
-
-
+  </div>
+      
+</section>
 
 
 @endsection

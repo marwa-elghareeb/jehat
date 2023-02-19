@@ -9,7 +9,7 @@
                 <div class="col-lg-12 col-md-12">
                     <div class="form-section">
                         <div class="logo-2">
-                            <a href="#">
+                            <a href="{{ URL :: to ('/homepage')}}">
                                 <img src="{{ asset('public/login-style/assets/img/logos/logo-2.png')}}" alt="logo">
                             </a>
                         </div>
@@ -114,12 +114,12 @@
                                 class="input-text" placeholder=" Caption">
                             </div-->
 
-                            <div class="form-group ">
+                            <!--div class="form-group ">
                                 <div class="captcha">
                                     <span>{!! captcha_img() !!}</span>
                                     <!--button type="button" class="btn btn-danger" class="reload" id="reload">
                         &#x21bb;
-                    </button-->
+                    </button>
                                 </div>
                             </div>
                             <div class="form-group mb-4">
@@ -127,7 +127,7 @@
                                 @if($errors->has('captcha'))
                                 <div class="error" style="color:red">{{ $errors->first('captcha') }}</div>
                                 @endif
-                            </div>
+                            </div-->
 
 
                             <div class="form-group mb-0 clearfix">
