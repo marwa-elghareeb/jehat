@@ -1,11 +1,19 @@
 @extends('layouts.appPortal')
 @section('content')
 
-<!-- Owl Carousal -->
+
+<!-- Owl Carousal
+<style>
+.background-image-filter background-image url{
+	filter:brightness(50%);
+</style>
+
+}
+ -->
 <div class="main-slider-part owl-slider" id="owl-slider">
   <!-- slide 01 -->
   <div class="slide">
-    <div class="owl-slide h-100" style="background-image: url('public/web-assets/img/hero/Untitled-55.png');">
+    <div class="owl-slide h-100 background-image-filter" style="background-image: url('public/web-assets/img/hero/test1.JPEG');">
       <div class="owl-text text-center">
         <div class="container">
           <div class="row justify-content-center">
@@ -36,7 +44,7 @@
   </div>
   <!-- slide 02 -->
   <div class="slide">
-    <div class="owl-slide h-100" style="background-image: url('public/web-assets/img/hero/Untitled-34.png');">
+    <div class="owl-slide h-100 background-image-filter" style="background-image: url('public/web-assets/img/hero/test2.JPEG') ; ">
       <div class="owl-text text-center">
         <div class="container">
           <div class="row justify-content-center">
@@ -67,7 +75,7 @@
   </div>
   <!-- slide 03 -->
   <div class="slide">
-    <div class="owl-slide h-100" style="background-image: url('public/web-assets/img/hero/Untitled-12.png');">
+    <div class="owl-slide h-100 background-image-filter" style="background-image: url('public/web-assets/img/hero/test3.JPEG');">
       <div class="owl-text text-center">
         <div class="container">
           <div class="row justify-content-center">
