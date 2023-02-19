@@ -22,16 +22,33 @@ class RedirectIfAuthenticated
         $guards = empty($guards) ? [null] : $guards;
 
         foreach ($guards as $guard) {
-        
-            if (Auth::guard($guard)->check()) {
+            if ($user->role_id ==0){
                 return redirect(RouteServiceProvider::HOME);
-            }
-            
-            /*else{
+            }elseif($user->role_id ==1 ){
                 return redirect('/cards');
-            }*/
+
+            }
+        
+           
+         
         }
 
         return $next($request);
     }
 }
+/** 
+ if (auth()-> user() -> id == 0){
+                return redirect(RouteServiceProvider::HOME);
+            }elseif(auth()-> user()->id ==1 ){
+                return redirect('/cards');
+
+            }
+if (Auth::guard($guard)->check()) {
+                return redirect(RouteServiceProvider::HOME);
+            }
+            
+            
+            else{
+                return redirect('/cards');
+            }
+ */
