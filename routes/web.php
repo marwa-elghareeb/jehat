@@ -60,20 +60,7 @@ Route::get('/helpcenter', [IndexController::class, 'help']);
 Route::get('/helpcenter/{id}', [IndexController::class, 'helpDetails']);
 Route::get('/question', [IndexController::class, 'question']);
 Route::post('/search', [IndexController::class, 'search']);
-//Towers
-/*
-Route::get('/cards', TowerSiteController::class, 'cards');
-Route::get('/towers', [TowerSiteController::class, 'towers']);
-Route::get('/allCompanies', [TowerSiteController::class, 'companies']);
-Route::get('/reception/{slug}', [TowerSiteController::class, 'reception']);
-Route::get('/userLogin/{slug}', [TowerSiteController::class, 'userLogin']);
-Route::post('/userLoginForm', [TowerSiteController::class, 'userLoginForm']);
-Route::get('/department/{slug}', [TowerSiteController::class, 'department']);
-Route::get('/employe/{id}', [TowerSiteController::class, 'employees']);
-Route::post('/searchEmp', [TowerSiteController::class, 'searchEmp']);
-//Events
-Route::get('/allEvents', [TowerSiteController::class, 'events']);
-Route::get('/employeesEvent/{id}', [TowerSiteController::class, 'employeesEvent']);*/
+
 //Caption
 Route::get('/reload-captcha', [CaptchaServiceController::class, 'reloadCaptcha']);
 
@@ -117,3 +104,20 @@ Route::group(['middleware' => ['auth']], function () {
     Route::post('/searchEmp', [TowerSiteController::class, 'searchEmp']);
 
 });
+
+
+
+//Towers
+/*
+Route::get('/cards', TowerSiteController::class, 'cards');
+Route::get('/towers', [TowerSiteController::class, 'towers']);
+Route::get('/allCompanies', [TowerSiteController::class, 'companies']);
+Route::get('/reception/{slug}', [TowerSiteController::class, 'reception']);
+Route::get('/userLogin/{slug}', [TowerSiteController::class, 'userLogin']);
+Route::post('/userLoginForm', [TowerSiteController::class, 'userLoginForm']);
+Route::get('/department/{slug}', [TowerSiteController::class, 'department']);
+Route::get('/employe/{id}', [TowerSiteController::class, 'employees']);
+Route::post('/searchEmp', [TowerSiteController::class, 'searchEmp']);
+//Events
+Route::get('/allEvents', [TowerSiteController::class, 'events']);
+Route::get('/employeesEvent/{id}', [TowerSiteController::class, 'employeesEvent']);*/
