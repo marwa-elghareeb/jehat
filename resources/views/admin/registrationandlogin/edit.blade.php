@@ -96,7 +96,7 @@
                                     <label class="col-sm-3 col-form-label text-label">nationality</label>
                                     <div class="col-sm-9">
                                         <div class="input-group">
-                                            <input class="form-control" name="nationality" >{{ $editData->nationality}}</input>
+                                            <input class="form-control" name="nationality" value="{{ $editData->nationality}}" >
                                         </div>
                                         @if($errors->has('nationality'))
                                         <div class="error">{{ $errors->first('nationality') }}</div>
@@ -108,7 +108,7 @@
                                     <label class="col-sm-3 col-form-label text-label">identity_number</label>
                                     <div class="col-sm-9">
                                         <div class="input-group">
-                                            <input class="form-control" name="identity_number" >{{ $editData->identity_number}}</input>
+                                            <input class="form-control" name="identity_number" value="{{ $editData->identity_number}}">
                                         </div>
                                         @if($errors->has('identity_number'))
                                         <div class="error">{{ $errors->first('identity_number') }}</div>
@@ -119,7 +119,7 @@
                                     <label class="col-sm-3 col-form-label text-label">email</label>
                                     <div class="col-sm-9">
                                         <div class="input-group">
-                                            <input class="form-control" name="email" >{{ $editData->email}}</input>
+                                            <input class="form-control" name="email" value="{{ $editData->email}}" >
                                         </div>
                                         @if($errors->has('email'))
                                         <div class="error">{{ $errors->first('email') }}</div>
@@ -127,26 +127,22 @@
                                     </div>
                                 </div>
 
-                                <div class="form-group row">
-                                    <label class="col-sm-3 col-form-label text-label">password</label>
-                                    <div class="col-sm-9">
-                                        <div class="input-group">
-                                            <input class="form-control" name="password" >{{ $editData->password}}</input>
-                                        </div>
-                                        @if($errors->has('password'))
-                                        <div class="error">{{ $errors->first('password') }}</div>
+                               
+
+                                <div class="form-group row align-items-center">
+                                    <label class="col-sm-3 col-form-label text-label">Role </label>
+                                    <div class="col-lg-9">
+                                        <select class="form-control" name="role_id">
+                                            <option class="text-muted" value="0"> Select Role</option>
+                                            @foreach($allData as $data)
+                                            <option value="{{ $data->id }}">{{ $data->name_ar }}</option>
+                                            @endforeach
+
+                                        </select>
+                                        @if($errors->has('role_id'))
+                                        <div class="error">{{ $errors->first('company_id') }}</div>
                                         @endif
-                                    </div>
-                                </div>
-                                <div class="form-group row">
-                                    <label class="col-sm-3 col-form-label text-label">Assign Roles</label>
-                                    <div class="col-sm-9">
-                                        <div class="input-group">
-                                            <input class="form-control" name="" >{{ $editData-> }}</input>
-                                        </div>
-                                        @if($errors->has(''))
-                                        <div class="error">{{ $errors->first('') }}</div>
-                                        @endif
+                                    
                                     </div>
                                 </div>
 

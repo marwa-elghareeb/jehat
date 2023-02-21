@@ -1,21 +1,23 @@
 <?php
+
 namespace App\Http\Controllers\Admin;
 
 use App\Http\Controllers\Controller;
 use Illuminate\Http\Request;
 use App\Models\UsersWebsite;
 use App\Models\User;
+use App\Models\role;
 
 class RegistrationAndLoginController extends Controller
 {
-     /**
+    /**
      * Display a listing of the resource.
      *
      * @return \Illuminate\Http\Response
      */
     public function index()
     {
-         $allData = User::where('role_id', 1)->get();
+        $allData = User::where('role_id', 1)->get();
         return view('admin.registrationandlogin.list')->with(['allData' => $allData]);
     }
 
@@ -39,9 +41,9 @@ class RegistrationAndLoginController extends Controller
     public function store(Request $request)
     {
         //
-         //Add User
-         //validation
-         $request->validate([
+        //Add User
+        //validation
+        $request->validate([
             'fullname_ar' => 'required|max:255',
             'fullname_en' => 'required|max:255',
             'gender_type' => 'required|max:255',
@@ -52,22 +54,21 @@ class RegistrationAndLoginController extends Controller
             'password' => 'required|max:255',
 
         ]);
-             //Store
-             $data = new UsersWebsite();
-             $data->fullname_ar = $request->fullname_ar;
-             $data->fullname_en= $request->fullname_en;
-             $data->gender_type = $request->gender_type;
-             $data->nationality = $request->nationality;
-             $data->number = $request->number;
-             $data->identity_numbe = $request->identity_numbe;
-             $data->email = $request->email;
-             $data->password= $request->password;
+        //Store
+        $data = new UsersWebsite();
+        $data->fullname_ar = $request->fullname_ar;
+        $data->fullname_en = $request->fullname_en;
+        $data->gender_type = $request->gender_type;
+        $data->nationality = $request->nationality;
+        $data->number = $request->number;
+        $data->identity_numbe = $request->identity_numbe;
+        $data->email = $request->email;
+        $data->password = $request->password;
 
-     
-            
-             $data->save();
-             return redirect()->route('registrationandlogin-data.index');
 
+
+        $data->save();
+        return redirect()->route('registrationandlogin-data.index');
     }
 
     /**
@@ -80,8 +81,8 @@ class RegistrationAndLoginController extends Controller
     {
         //
         $editData = UsersWebsite::where('id', $id)->first();
-        return view('admin.registrationandlogin.edit')->with(['editData' => $editData]);
-      
+        $allData = role::all();
+        return view('admin.registrationandlogin.edit')->with(['editData' => $editData, 'allData' => $allData]);
     }
 
     /**
@@ -94,8 +95,8 @@ class RegistrationAndLoginController extends Controller
     public function update(Request $request, $id)
     {
         //
-         //validation
-         $request->validate([
+        //validation
+        $request->validate([
             'fullname_ar' => 'required|max:255',
             'fullname_en' => 'required|max:255',
             'gender_type' => 'required|max:255',
@@ -104,24 +105,22 @@ class RegistrationAndLoginController extends Controller
             'number' => 'required',
             'email' => 'required|max:255',
             'password' => 'required|max:255',
-        
+
         ]);
-           //Update
-           $data = UsersWebsite::find($id);
+        //Update
+        $data = UsersWebsite::find($id);
 
-           $data->fullname_ar = $request->fullname_ar;
-             $data->fullname_en= $request->fullname_en;
-             $data->gender_type = $request->gender_type;
-             $data->nationality = $request->nationality;
-             $data->number = $request->number;
-             $data->identity_numbe = $request->identity_numbe;
-             $data->email = $request->email;
-             $data->password= $request->password;
-   
-          
-           $data->save();
-           return redirect()->route('registrationandlogin-data.index');
-
+        $data->fullname_ar = $request->fullname_ar;
+        $data->fullname_en = $request->fullname_en;
+        $data->gender_type = $request->gender_type;
+        $data->nationality = $request->nationality;
+        $data->number = $request->number;
+        $data->identity_numbe = $request->identity_numbe;
+        $data->email = $request->email;
+        $data->password = $request->password;
+        $data->role_id = $request->role_id;
+        $data->save();
+        return redirect()->route('registrationandlogin-data.index');
     }
 
     /**
@@ -136,7 +135,6 @@ class RegistrationAndLoginController extends Controller
 
         UsersWebsite::destroy($id);
         return redirect()->route('registrationandlogin-data.index')->with('flash_message', 'Item deleted!');
-
     }
     public function show($id)
     {
