@@ -62,7 +62,7 @@
                                         <th>Email</th>
 
                                         <th>Assign Roles</th>
-                                
+                                        <th>Edit</th>
                                         <!--th>Edit</th>
                                         <th>Delete</th-->
 
@@ -78,7 +78,9 @@
                                         <td>{{ $data->phone}}</td>
                                         <td>{{ $data->email}}</td>
                                         <td></td>
-
+                                        <td><a href="{{ route('registrationandlogin-data.edit', $data->id ) }}" type="button" class="btn btn-rounded btn-secondary">
+                                                <i class="fa fa-pencil color-secondary"></i> </a>
+                                        </td>
                                     
 
                                         <!--td>

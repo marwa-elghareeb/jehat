@@ -126,6 +126,7 @@
                                         @endif
                                     </div>
                                 </div>
+
                                 <div class="form-group row">
                                     <label class="col-sm-3 col-form-label text-label">password</label>
                                     <div class="col-sm-9">
@@ -134,6 +135,17 @@
                                         </div>
                                         @if($errors->has('password'))
                                         <div class="error">{{ $errors->first('password') }}</div>
+                                        @endif
+                                    </div>
+                                </div>
+                                <div class="form-group row">
+                                    <label class="col-sm-3 col-form-label text-label">Assign Roles</label>
+                                    <div class="col-sm-9">
+                                        <div class="input-group">
+                                            <input class="form-control" name="" >{{ $editData-> }}</input>
+                                        </div>
+                                        @if($errors->has(''))
+                                        <div class="error">{{ $errors->first('') }}</div>
                                         @endif
                                     </div>
                                 </div>
