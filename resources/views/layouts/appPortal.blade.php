@@ -72,7 +72,7 @@
                                         <nav>
                                             <ul id="navigation">
                                                 <li><a @if(Request::segment(1) == '') class="active"  @endif
-                                                href="{{ URL :: to ('/')}}">الرئيسية </a></li>
+                                                href="{{ URL :: to ('/homepage')}}">الرئيسية </a></li>
                                                 <li><a @if(Request::segment(1) == 'aboutUs') class="active"  @endif 
                                                 href="{{ URL :: to ('/aboutUs')}}">من نحن</a></li>
                                                 <li><a @if(Request::segment(1) == 'contactUs') class="active"  @endif 
