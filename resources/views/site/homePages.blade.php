@@ -230,11 +230,10 @@
 
       <div class="col-xl-6 col-lg-6 col-md-6 col-sm-12 my-0">
         <div class="ratio ratio-16x9 text-center mt-4 mb-4 ">
-          <!--iframe class="embed-responsive-item" 
-          src="{{ asset('public/web-assets/img/jehat 2.mp4')}}" 
+        <video class="embed-responsive-item" 
+          src="{{ asset('public/web-assets/img/jehat 2.mp4')}}" controls
           style="max-width: 100%;height: 100%;" allowfullscreen>
-        </iframe-->
-
+        </video>
         </div>
       </div>
     </div>
