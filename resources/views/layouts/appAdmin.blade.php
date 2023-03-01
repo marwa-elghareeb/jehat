@@ -210,10 +210,17 @@
                         </ul>
                     </li>
             
-                    <li class="mega-menu mega-menu-lg">
-                        <a class="has-arrow" href="{{ route('activitylog.index') }}" aria-expanded="false" style="width: max-content;cursor: pointer;">
+                    <li >
+                        <a class="has-arrow" href="{{ route('activitylog.index') }}" aria-expanded="false" >
                             <i class="fa fa-list"></i><span class="nav-text">Activity</span>
                         </a>
+                        <ul aria-expanded="false">
+                        <li><a href="{{ route('settings.index') }}">Settings</a>
+                            </li>
+                            <li><a href="#"></a>
+                            </li>
+                            
+                        </ul>
                     </li>
 
 

@@ -18,6 +18,7 @@ use App\Http\Controllers\Admin\CardsController;
 use App\Http\Controllers\Admin\FooterPagesController;
 use App\Http\Controllers\Admin\RegistrationAndLoginController;
 use App\Http\Controllers\Admin\RoleController;
+use App\Http\Controllers\Admin\SettingsController;
 use App\Http\Controllers\Admin\AdminAuthController;
 
 //WebSite 
@@ -89,6 +90,8 @@ Route::group(['prefix' => 'admin'], function () {
         Route::resource('footer-pages-data', FooterPagesController::class);
         Route::resource('registrationandlogin-data', RegistrationAndLoginController::class);
         Route::resource('role', RoleController::class);
+        Route::resource('settings',SettingsController::class);
+
     });
 });
 
