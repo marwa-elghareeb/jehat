@@ -36,4 +36,7 @@ class HomeController extends Controller
         return view('home')->with(['userCount'=> count($users) , 
         'catCount'=> count($categories) , 'pagesCount'=> count($pages) ,'allData' => $allData]);
     }
+    public function languageDemo(){
+        return view('languageDemo');
+    }
 }

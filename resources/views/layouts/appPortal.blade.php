@@ -91,6 +91,18 @@
                                                 <li><a @if(Request::segment(1) == 'news') class="active" @endif 
                                                 href="{{ URL :: to ('/news')}}"> الاخبار</a></li>
                                                 
+                                                <li class="nav-item dropdown">
+                                                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                                  {{ Config::get('languages')[App::getLocale()] }}
+                                                </a>
+                                               <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                                                @foreach (Config::get('languages') as $lang => $language)
+                                                  @if ($lang != App::getLocale())
+                                                 <a class="dropdown-item"  href="{{ route('lang.switch', $lang) }}"> {{$language}}</a>
+                                                  @endif
+                                                @endforeach
+                                              </div>
+                                               </li>
                                                 
                                             </ul>
                                         </nav>
@@ -110,6 +122,7 @@
                                   
                                 </div>
                             </div>
+
                             <!-- Mobile Menu -->
                             <div class="col-12 col-sm-6">
                                 <div class="mobile_menu d-block d-lg-none"></div>
@@ -119,7 +132,10 @@
                 </div>
             </div>
         </div>
-        <!-- Header End -->
+        <!-- Header End 
+        
+                     
+    -->
     </header>
     <!-- header end -->
 

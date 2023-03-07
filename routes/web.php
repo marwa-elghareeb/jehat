@@ -108,9 +108,13 @@ Route::group(['middleware' => ['auth']], function () {
 
 });
 
+//Language
 
+Route::get('lang/{lang}', ['as' => 'lang.switch', 'uses' => 'App\Http\Controllers\LanguageController@switchLang']);
+Route::get('/languageDemo', 'App\Http\Controllers\HomeController@languageDemo');
 
 //Towers
+
 /*
 Route::get('/cards', TowerSiteController::class, 'cards');
 Route::get('/towers', [TowerSiteController::class, 'towers']);

@@ -105,7 +105,7 @@
     <div class="container">
 
       <div class="section-title" data-aos="fade-up">
-        <h2>    منصه جهات </h2>
+        <h2>   {{__('site.jehat_platform')}}</h2>
       </div>
       <div class="row">
         <div class="col-md-4 col-lg-3 col-sm-6 col-xs-12 mb-30">
