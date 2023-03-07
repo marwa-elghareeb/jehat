@@ -43,7 +43,7 @@ use App\Http\Controllers\Site\IndexController;
 */
 //Portal Routes:
 Route::get('/', function () {
-    return view('auth.login');
+    return view('site.homePages');
 });
 Route::get('/homepage', function () {
     return view('site.homePages');

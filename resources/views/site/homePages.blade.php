@@ -101,7 +101,7 @@
 </div>
 <div class="bg-contain-sections section-padding40">
   <!-- Services Section -->
-  <section id="services" class="services pb-80">
+  <!--section id="services" class="services pb-80">
     <div class="container">
 
       <div class="section-title" data-aos="fade-up">
@@ -160,7 +160,7 @@
         </div>
       </div>
 
-    </div>
+    </div-->
   </section>
   <!------------------------------->
   <section class="section">
