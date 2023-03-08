@@ -26,8 +26,8 @@
 
                 </p>
 
-                <a href="{{ URL :: to ('/register')}}" class="btn hero-btn" data-animation="fadeInUp" data-delay="0.7s">منصة
-                  جهات
+                <a href="{{ URL :: to ('/register')}}" class="btn hero-btn" data-animation="fadeInUp" data-delay="0.7s">
+                {{__('site.jehat_platform')}}
                 </a>
               </div>
             </div>
@@ -215,7 +215,7 @@
           </div>
           <!-- Section Tittle -->
           <div class="section-tittle mb-25">
-            <h2>منصة الجهات</h2>
+            <h2>{{__('site.jehat_platform')}}</h2>
           </div>
           <p class="mb-20">
             أول أبراج مكتبية أفتراضية .... نعم اول أبراج أفتراضيه تعكس الواقع الفعلي للابراج المكتبيه
