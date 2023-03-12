@@ -42,12 +42,14 @@ use App\Http\Controllers\Site\IndexController;
 |
 */
 //Portal Routes:
+
 Route::get('/', function () {
-    return view('site.homePages');
-});
+      return view('site.homePages');
+     });
 Route::get('/homepage', function () {
     return view('site.homePages');
-});
+   });
+
 Route::get('/aboutUs', [AboutUsSiteController::class, 'index']);
 Route::get('/contactUs', [ContactUsSiteController::class, 'index']);
 Route::post('/contactUsForm', [ContactUsSiteController::class, 'contactUsForm']);
@@ -110,8 +112,16 @@ Route::group(['middleware' => ['auth']], function () {
 
 //Language
 
-Route::get('lang/{lang}', ['as' => 'lang.switch', 'uses' => 'App\Http\Controllers\LanguageController@switchLang']);
-Route::get('/languageDemo', 'App\Http\Controllers\HomeController@languageDemo');
+Route::group(['prefix' => '{locale}'], function () {
+   Route::get('/', function () {
+      return view('site.homePages');
+     })->middleware('setLocale');
+});
+Route::group(['prefix' => '{locale}'], function () {
+   Route::get('/homepage', function () {
+    return view('site.homePages');
+   })->middleware('setLocale');
+});
 
 //Towers
 

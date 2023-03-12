@@ -13,21 +13,18 @@
           <div class="row justify-content-center">
             <div class="col-xl-8 col-lg-11 col-md-12">
               <div class="hero__caption text-center">
-                <h2 data-animation="bounceIn" data-delay="0.2s">منـصـة
-                  <span> جـهـات</span>
+                <h2 data-animation="bounceIn" data-delay="0.2s">@lang('site.platform')
+                  <span>@lang('site.jehat')</span>
                 </h2>
-                <h2 class="lastchild" data-animation="bounceIn" data-delay="0.2s"> مـسـتـقـبل كل
-                  الجـهـات</h2>
+                <h2 class="lastchild" data-animation="bounceIn" data-delay="0.2s">@lang('site.des') </h2>
                 <p data-animation="fadeInUp" data-delay="0.4s">
 
-                  تـتيح للجهات فتح مكاتب افتراضية لموظفيها وغرف اجتمـاعات <br>
-                  كما تمكن المستفيدين من الوصول للجهات بكل سهولة ويسر
-
+                @lang('site.des_1')
 
                 </p>
 
                 <a href="{{ URL :: to ('/register')}}" class="btn hero-btn" data-animation="fadeInUp" data-delay="0.7s">
-                {{__('site.jehat_platform')}}
+               @lang('site.jehat_platform')
                 </a>
               </div>
             </div>
@@ -44,16 +41,13 @@
           <div class="row justify-content-center">
             <div class="col-xl-8 col-lg-11 col-md-12">
               <div class="hero__caption text-center">
-                <h2 data-animation="bounceIn" data-delay="0.2s">منـصـة
-                  <span> جـهـات</span>
+              <h2 data-animation="bounceIn" data-delay="0.2s">@lang('site.platform')
+                  <span>@lang('site.jehat')</span>
                 </h2>
-                <h2 class="lastchild" data-animation="bounceIn" data-delay="0.2s"> مـسـتـقـبل كل
-                  الجـهـات</h2>
+                <h2 class="lastchild" data-animation="bounceIn" data-delay="0.2s">  @lang('site.des') </h2>
                 <p data-animation="fadeInUp" data-delay="0.4s">
 
-                  تـتيح للجهات فتح مكاتب افتراضية لموظفيها وغرف اجتمـاعات <br>
-                  كما تمكن المستفيدين من الوصول للجهات بكل سهولة ويسر
-
+                @lang('site.des_1')
 
                 </p>
 
@@ -75,16 +69,14 @@
           <div class="row justify-content-center">
             <div class="col-xl-8 col-lg-11 col-md-12">
               <div class="hero__caption text-center">
-                <h2 data-animation="bounceIn" data-delay="0.2s">منـصـة
-                  <span> جـهـات</span>
+              <h2 data-animation="bounceIn" data-delay="0.2s">@lang('site.platform')
+                  <span>@lang('site.jehat')</span>
                 </h2>
-                <h2 class="lastchild" data-animation="bounceIn" data-delay="0.2s"> مـسـتـقـبل كل
-                  الجـهـات</h2>
+                <h2 class="lastchild" data-animation="bounceIn" data-delay="0.2s">  @lang('site.des') </h2>
+
                 <p data-animation="fadeInUp" data-delay="0.4s">
 
-                  تـتيح للجهات فتح مكاتب افتراضية لموظفيها وغرف اجتمـاعات <br>
-                  كما تمكن المستفيدين من الوصول للجهات بكل سهولة ويسر
-
+                @lang('site.des_1')
 
                 </p>
 
@@ -215,7 +207,7 @@
           </div>
           <!-- Section Tittle -->
           <div class="section-tittle mb-25">
-            <h2>{{__('site.jehat_platform')}}</h2>
+            <h2>@lang('site.jehat_platform')</h2>
           </div>
           <p class="mb-20">
             أول أبراج مكتبية أفتراضية .... نعم اول أبراج أفتراضيه تعكس الواقع الفعلي للابراج المكتبيه

@@ -93,20 +93,11 @@
                                                
                                                <div class=" nav-item dropdown">
                                                <a class=" dropdown-toggle" href="#" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                                               {{ Config::get('languages')[App::getLocale()] }}
-                                             <!-- print({{ Config::get('languages')[App::getLocale()] }}) -->
-
+                                                    {{ app()-> getLocale()=='ar'?'عربي':'English'}}
                                                </a>
 
                                                  <div class="dropdown-menu" aria-labelledby="dropdownMenuLink">
-                                                
-                                             <!-- print({{ Config::get('languages')[App::getLocale()] }}) -->
-
-                                                   @foreach (Config::get('languages') as $lang => $language)
-                                                  @if ($lang != App::getLocale())
-                                                  <a class="dropdown-item"  href="{{ route('lang.switch', $lang) }}"> {{$language}}</a>
-                                                  @endif
-                                                @endforeach
+                                                  <a class="dropdown-item"  href="{{url(app()->getLocale()=='ar'?'en':'ar')}}">{{ app()-> getLocale()=='ar'?'English':'عربي'}}</a>
                                                 </div>
                                                </div>
                                             </ul>
