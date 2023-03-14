@@ -117,7 +117,11 @@ Route::group(['prefix' => '{locale}'], function () {
       return view('site.homePages');
      })->middleware('setLocale');
 });
-
+Route::group(['prefix' => '{locale}'], function () {
+   Route::get('/homepage', function () {
+    return view('site.homePages');
+   })->middleware('setLocale');
+});
 
 //Towers
 
