@@ -7,12 +7,12 @@
 	<div class="container">
 		<div class="row">
 			<div class="col-12">
-				<h2 class="breadcrumbs-title">المركز
-					<span>الاعلامي</span>
+				<h2 class="breadcrumbs-title">@lang('site.Center') 
+					<span>@lang('site.Media') </span>
 				</h2>
 				<ul class="breadcrumb-list">
-					<li><a href="{{ URL :: to ('/')}}">الرئيسية</a></li>
-					<li>المركز الاعلامي
+					<li><a href="{{ URL :: to ('/')}}">@lang('site.Homepage') </a></li>
+					<li>@lang('site.MediaCenter') 
 					</li>
 				</ul>
 			</div>
@@ -27,7 +27,7 @@
 				<div class="row">
 					<div class="col-12">
 						<div class="section-tittle">
-							<h2> المركز الاعلامي</h2>
+							<h2>  @lang('site.MediaCenter')</h2>
 						</div>
 					</div>
 					<div class="col-lg-6 col-md-6 col-sm-12">

@@ -72,24 +72,24 @@
                                         <nav>
                                             <ul id="navigation">
                                                 <li><a @if(Request::segment(1) == '') class="active"  @endif
-                                                href="{{ URL :: to ('/homepage')}}">الرئيسية </a></li>
+                                                href="{{ URL :: to ('/homepage')}}">@lang('site.Homepage') </a></li>
                                                 <li><a @if(Request::segment(1) == 'aboutUs') class="active"  @endif 
-                                                href="{{ URL :: to ('/aboutUs')}}">من نحن</a></li>
+                                                href="{{ URL :: to ('/aboutUs')}}">@lang('site.aboutUs')</a></li>
                                                 <li><a @if(Request::segment(1) == 'contactUs') class="active"  @endif 
-                                                href="{{ URL :: to ('/contactUs')}}">تواصل معنا</a></li>
+                                                href="{{ URL :: to ('/contactUs')}}">@lang('site.contactUs') </a></li>
                                                 <li><a @if(Request::segment(1) == 'helpcenter' || 
                                                 Request::segment(1) == 'media' ||
                                                 Request::segment(1) == 'question') class="active"  @endif 
-                                                href="#">دليل المستخدم</a>
+                                                href="#"> @lang('site.UserManual')</a>
                                                     <ul class="submenu">
-                                                        <li><a href="{{ URL :: to ('/helpcenter')}}">مركز المساعدة</a></li>
-                                                        <li><a href="{{ URL :: to ('/media')}}">المركز الأعلامي </a></li>
-                                                        <li><a href="{{ URL :: to ('/question')}}">الاسئلة الشائعة  </a></li>
+                                                        <li><a href="{{ URL :: to ('/helpcenter')}}">@lang('site.HelpCenter')</a></li>
+                                                        <li><a href="{{ URL :: to ('/media')}}">@lang('site.MediaCenter')</a></li>
+                                                        <li><a href="{{ URL :: to ('/question')}}"> @lang('site.question')  </a></li>
                                                     </ul>
                                                 <li><a @if(Request::segment(1) == 'cards') class="active" @endif 
-                                                href="{{ URL :: to ('/cards')}}">الأبراج الأفتراضية</a></li>
+                                                href="{{ URL :: to ('/cards')}}">@lang('site.virtual_towers')  </a></li>
                                                 <li><a @if(Request::segment(1) == 'news') class="active" @endif 
-                                                href="{{ URL :: to ('/news')}}"> الاخبار</a></li>
+                                                href="{{ URL :: to ('/news')}}">@lang('site.news')  </a></li>
                                                
                                                <div class=" nav-item dropdown">
                                                <a class=" dropdown-toggle" href="#" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
@@ -107,8 +107,7 @@
                                     
                                     <div class="header-right-btn d-none d-lg-block ml-65">
                                     @guest
-                                        <a href="https://app.jehat.sa/client_login.aspx" class="border-btn">تسجيل
-                                            الدخول</a>
+                                        <a href="https://app.jehat.sa/client_login.aspx" class="border-btn">@lang('site.signin') </a>
                                             @else
                                             {{ Auth::user()->name }}
                                             @endguest
@@ -150,8 +149,8 @@
                 <div class="row align-items-center justify-content-center">
                     <div class="col-xl-7 col-lg-9 col-md-8">
                         <div class="wantToWork-caption text-center">
-                            <h2>كيف يمكنني تحميل التطبيق</h2>
-                            <p>تستطيع تحميل تطبيق جهات من متجر جوجل أو أبستور</p>
+                            <h2>@lang('site.des_Footer')</h2>
+                            <p>@lang('site.des_Footer_1')</p>
                             <a href="https://apps.apple.com/eg/app/jehat/id1600983802">
                                 <img src="{{ asset('public/web-assets/img/gallery/nmn.png')}}" alt=""></a>
                             <a href="https://play.google.com/store/apps/">
@@ -179,7 +178,7 @@
                                     </div>
                                     <div class="footer-tittle">
                                         <div class="footer-tittle text-center">
-                                            <p> &nbsp; يمكنك متابعتنا على قنوات التواصل الأجتماعي </p>
+                                            <p> @lang('site.des_Footer_2')</p>
                                         </div>
                                     </div>
                                     <!-- social -->
@@ -196,10 +195,10 @@
                         <div class="col-xl-3 col-lg-3 col-md-4 col-sm-6">
                             <div class="single-footer-caption mb-50">
                                 <div class="footer-tittle">
-                                    <h4>عن منصة جهات</h4>
+                                    <h4>@lang('site.des_Footer_3')</h4>
                                     <ul>
-                                        <li><a href="{{ URL :: to ('/aboutUs')}}"> من نحن </a></li>
-                                        <li><a href="{{ URL :: to ('/ourTeam')}}"> فريق العمل </a></li>
+                                        <li><a href="{{ URL :: to ('/aboutUs')}}"> @lang('site.aboutUs')</a></li>
+                                        <li><a href="{{ URL :: to ('/ourTeam')}}"> @lang('site.ourTeam')</a></li>
                                 
 
                                     </ul>
@@ -209,7 +208,7 @@
                         <div class="col-xl-3 col-lg-3 col-md-4 col-sm-6">
                             <div class="single-footer-caption mb-50">
                                 <div class="footer-tittle">
-                                    <h4> روابط مهمه</h4>
+                                    <h4> @lang('site.Links')  </h4>
                                     <ul>
                                     @foreach($footerPages as $data)
                                         <li><a href="{{URL :: to ('/footerPages',$data->slug )}}">  {{ $data->name_ar}}</a></li>
@@ -221,9 +220,9 @@
                         <div class="col-xl-3 col-lg-3 col-md-4 col-sm-6">
                             <div class="single-footer-caption mb-50">
                                 <div class="footer-tittle">
-                                    <h4>تواصل معنا</h4>
+                                    <h4>@lang('site.contactUs') </h4>
                                     <ul>
-                                        <li><a href="#">الدعم الفني</a></li>
+                                        <li><a href="#">@lang('site.technical_support')</a></li>
                                         <li><a href="mailto:info@jehat.sa" target="_blank">info@jehat.sa</a></li>
                                         <li><a href="https://wa.me/966553777769?text=" target="_blank">+966553777769</a></li>
 
@@ -243,7 +242,7 @@
                                 <div class="footer-copy-right text-center">
                                     <p>
 
-                                        جميع الحقوق محفوظة منصة جهات &copy; 2023
+                                    @lang('site.des_Footer_4')&copy; 2023
 
                                     </p>
                                 </div>

@@ -8,11 +8,10 @@
   <div class="container">
     <div class="row">
       <div class="col-12">
-        <h2 class="breadcrumbs-title">مركز
-          المساعدة </h2>
+        <h2 class="breadcrumbs-title">@lang('site.HelpCenter')</h2>
         <ul class="breadcrumb-list">
-          <li><a href="{{ URL :: to ('/')}}">الرئيسية</a></li>
-          <li>مركز المساعدة
+          <li><a href="{{ URL :: to ('/')}}">@lang('site.Homepage') </a></li>
+          <li> @lang('site.HelpCenter')
           </li>
         </ul>
       </div>

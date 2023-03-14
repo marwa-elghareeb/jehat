@@ -161,7 +161,7 @@
 
         <div class="row justify-content-center text-center mb-5">
           <div class="col-12" data-aos="fade-up">
-            <h2 class="section-heading">أكثر من 850 جهة وشركة وثقوا بنا</h2>
+            <h2 class="section-heading">@lang('site.des_2')</h2>
           </div>
         </div>
         <div class="row">
@@ -210,12 +210,9 @@
             <h2>@lang('site.jehat_platform')</h2>
           </div>
           <p class="mb-20">
-            أول أبراج مكتبية أفتراضية .... نعم اول أبراج أفتراضيه تعكس الواقع الفعلي للابراج المكتبيه
-            وتستطيع أي جهة أن تأخذ مساحة بهذا البرج وتفتح مكاتب أفتراضية لكل موظفيها فتتمكن الجهة من نقل
-            العمل المكتبي الى بيئة الكترونية منظمة وفق احدث المتطلبات ومعايير الحماية
-
+          @lang('site.des_3')
           </p>
-          <a href="https://app.jehat.sa/client_register.aspx" class="all-btn"><button type="button" class="btn btn-outline-secondary  pt-8 btn-sm">سجل الأن</button></a>
+          <a href="https://app.jehat.sa/client_register.aspx" class="all-btn"><button type="button" class="btn btn-outline-secondary  pt-8 btn-sm">@lang('site.signin') </button></a>
 
         </div>
       </div>
@@ -240,7 +237,7 @@
     <!-- Section Tittle -->
     <div class="row text-center">
       <div class="col-12" data-aos="fade-up">
-        <h2 class="section-heading">ماذا قالوا عنا </h2>
+        <h2 class="section-heading">  @lang('site.des_4')</h2>
       </div>
       <div class="col-12">
         <div class="testimonial-wrapper section-bg2 pt-15">

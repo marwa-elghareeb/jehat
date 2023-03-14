@@ -7,12 +7,12 @@
     <div class="container">
         <div class="row">
             <div class="col-12">
-                <h2 class="breadcrumbs-title">تواصل
-                    <span>معنا</span>
+                <h2 class="breadcrumbs-title">@lang('site.contact')
+                    <span>@lang('site.with')</span>
                 </h2>
                 <ul class="breadcrumb-list">
-                    <li><a href="{{ URL :: to ('/')}}">الرئيسية</a></li>
-                    <li>تواصل معنا </li>
+                    <li><a href="{{ URL :: to ('/')}}">@lang('site.Homepage')</a></li>
+                    <li>@lang('site.Homepage')</li>
                 </ul>
             </div>
         </div>
