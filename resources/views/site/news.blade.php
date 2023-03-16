@@ -8,11 +8,11 @@
         <div class="row">
             <div class="col-12">
                 <h2 class="breadcrumbs-title">
-                    <span>الأخبار</span>
+                    <span>@lang('site.news')</span>
                 </h2>
                 <ul class="breadcrumb-list">
-                    <li><a href="{{ URL :: to ('/')}}">الرئيسية</a></li>
-                    <li>الأخبار
+                    <li><a href="{{ URL :: to ('/')}}">@lang('site.Homepage')</a></li>
+                    <li>@lang('site.news')
                     </li>
                 </ul>
             </div>
@@ -69,7 +69,7 @@
                 <div class="col-lg-4 col-md-4 col-sm-12">
                     <div class="blog_right_sidebar">
                         <aside class="single_sidebar_widget popular_post_widget">
-                            <h3 class="widget_title" style="color: #2d2d2d;">اخر الأخبار</h3>
+                            <h3 class="widget_title" style="color: #2d2d2d;"> @lang('site.news_1')</h3>
                             <div class="media post_item">
                            
                                 <img src="{{ URL ::to ('public/upload/'.$data->images)}}" alt="post">

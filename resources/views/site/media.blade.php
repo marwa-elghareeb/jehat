@@ -34,7 +34,7 @@
 						<a class="download-pdf" href="{{ asset('public/portal-assets/media/presentation.pdf')}}">
 							<h2>
 								<img class="pdf" src="{{ asset('public/web-assets/img/icon/pdficon.svg')}} " alt="">
-								تحميل ملف آلية عمل المنصة
+								@lang('site.des_5')
 
 							</h2>
 						</a>
@@ -42,7 +42,7 @@
 					<div class="col-lg-6 col-md-6 col-sm-12">
                             <a class="download-pdf" href="public/portal-assets/media/user guide.pdf"> 
             
-                                <h2><img class="pdf" src="{{ asset('public/web-assets/img/icon/pdficon.svg')}} " alt=""> تحميل ملف دليل المستخدم  </h2></a>
+                                <h2><img class="pdf" src="{{ asset('public/web-assets/img/icon/pdficon.svg')}} " alt=""> @lang('site.des_6') </h2></a>
                         </div>
 
 
@@ -51,7 +51,7 @@
 
 				<br>
 				<div class="col-12">
-                            <h1 class="explain">شرح منصة مستفيد </h1>
+                            <h1 class="explain"> @lang('site.des_7') </h1>
                         </div>
 				<div class="row">
 				<div class="row gallery-item">

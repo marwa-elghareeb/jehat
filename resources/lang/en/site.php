@@ -43,6 +43,9 @@ return [
 //Media Center
 'Center' => 'Center ',
 'Media' => 'Media ',
-
+'des_5' =>'Download the platform working  ',
+'des_6' => ' Download user guide file',
+'des_7' => ' Explanation of the beneficiary platform',
+'news_1' => 'latest news ',
 
 ];

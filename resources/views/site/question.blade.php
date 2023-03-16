@@ -7,12 +7,12 @@
   <div class="container">
     <div class="row">
       <div class="col-12">
-        <h2 class="breadcrumbs-title">الاسئلة
-          <span>الشائعة</span>
+        <h2 class="breadcrumbs-title">
+          <span>@lang('site.question')</span>
         </h2>
         <ul class="breadcrumb-list">
-          <li><a href="{{ URL :: to ('/')}}">الرئيسية</a></li>
-          <li>الاسئلة الشائعة
+          <li><a href="{{ URL :: to ('/')}}">@lang('site.Homepage')</a></li>
+          <li>@lang('site.question')
           </li>
         </ul>
       </div>
@@ -31,7 +31,7 @@
         <div class="row">
           <div class="col-12">
             <div class="section-tittle">
-              <h2> الاسئلة الشائعة </h2>
+              <h2> @lang('site.question')</h2>
             </div>
           </div>
           <div class="col-12">
