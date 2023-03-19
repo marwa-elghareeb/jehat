@@ -112,16 +112,23 @@ Route::group(['middleware' => ['auth']], function () {
 
 //Language
 
-Route::group(['prefix' => '{locale}'], function () {
+
+Route::group(['prefix' => '{locale}' ,'middleware' => 'setLocale'], function () {
    Route::get('/', function () {
       return view('site.homePages');
-     })->middleware('setLocale');
+     });
+Route::get('/aboutUs', [AboutUsSiteController::class, 'index'])->name('/aboutUs');
+Route::get('/contactUs', [ContactUsSiteController::class, 'index'])->name('/contactUs');
+Route::get('/media', [MediaSiteController::class, 'index'])->name('/media');
+Route::get('/news', [NewsSiteController::class, 'index'])->name('/news');
+//Help Center
+Route::get('/helpcenter', [IndexController::class, 'help'])->name('/helpcenter');
+Route::get('/question', [IndexController::class, 'question'])->name('/question');
+Route::post('/search', [IndexController::class, 'search'])->name('/search');
+
 });
-Route::group(['prefix' => '{locale}'], function () {
-   Route::get('/homepage', function () {
-    return view('site.homePages');
-   })->middleware('setLocale');
-});
+
+
 
 //Towers
 

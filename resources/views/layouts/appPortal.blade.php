@@ -71,25 +71,26 @@
                                     <div class="main-menu d-none d-lg-block">
                                         <nav>
                                             <ul id="navigation">
+
                                                 <li><a @if(Request::segment(1) == '') class="active"  @endif
-                                                href="{{ URL :: to ('/homepage')}}">@lang('site.Homepage') </a></li>
+                                                href="{{ URL :: to ('/homepage'), app()->getLocale()}}">@lang('site.Homepage') </a></li>
                                                 <li><a @if(Request::segment(1) == 'aboutUs') class="active"  @endif 
-                                                href="{{ URL :: to ('/aboutUs')}}">@lang('site.aboutUs')</a></li>
+                                                href="{{ route('/aboutUs', app()->getLocale()) }} ">@lang('site.aboutUs')</a></li>
                                                 <li><a @if(Request::segment(1) == 'contactUs') class="active"  @endif 
-                                                href="{{ URL :: to ('/contactUs')}}">@lang('site.contactUs') </a></li>
+                                                href="{{ route('/contactUs', app()->getLocale()) }} ">@lang('site.contactUs') </a></li>
                                                 <li><a @if(Request::segment(1) == 'helpcenter' || 
                                                 Request::segment(1) == 'media' ||
                                                 Request::segment(1) == 'question') class="active"  @endif 
                                                 href="#"> @lang('site.UserManual')</a>
                                                     <ul class="submenu">
-                                                        <li><a href="{{ URL :: to ('/helpcenter')}}">@lang('site.HelpCenter')</a></li>
-                                                        <li><a href="{{ URL :: to ('/media')}}">@lang('site.MediaCenter')</a></li>
-                                                        <li><a href="{{ URL :: to ('/question')}}"> @lang('site.question')  </a></li>
+                                                        <li><a href="{{ route('/helpcenter', app()->getLocale()) }} ">@lang('site.HelpCenter')</a></li>
+                                                        <li><a href=" {{ route('/media', app()->getLocale()) }} ">@lang('site.MediaCenter')</a></li>
+                                                        <li><a href=" {{ route('/question', app()->getLocale()) }}"> @lang('site.question')  </a></li>
                                                     </ul>
                                                 <li><a @if(Request::segment(1) == 'cards') class="active" @endif 
                                                 href="{{ URL :: to ('/cards')}}">@lang('site.virtual_towers')  </a></li>
                                                 <li><a @if(Request::segment(1) == 'news') class="active" @endif 
-                                                href="{{ URL :: to ('/news')}}">@lang('site.news')  </a></li>
+                                                href="{{ route('/news', app()->getLocale()) }}">@lang('site.news')  </a></li>
                                                
                                                <div class=" nav-item dropdown">
                                                <a class=" dropdown-toggle" href="#" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
