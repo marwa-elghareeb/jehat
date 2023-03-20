@@ -7,7 +7,8 @@
     <div class="container">
         <div class="row">
             <div class="col-12">
-                <h2 class="breadcrumbs-title">@lang('site.about')<span>@lang('site.us')</span></h2>
+                <h2 class="breadcrumbs-title">@lang('site.about') 
+                    <span>@lang('site.us')</span></h2>
                 <ul class="breadcrumb-list">
                     <li><a href="{{ URL :: to ('/')}}"> @lang('site.Homepage')</a></li>
                     <li>@lang('site.contactUs')</li>

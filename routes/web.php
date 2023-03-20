@@ -50,18 +50,12 @@ Route::get('/homepage', function () {
     return view('site.homePages');
    });
 
-Route::get('/aboutUs', [AboutUsSiteController::class, 'index']);
-Route::get('/contactUs', [ContactUsSiteController::class, 'index']);
 Route::post('/contactUsForm', [ContactUsSiteController::class, 'contactUsForm']);
-Route::get('/media', [MediaSiteController::class, 'index']);
 Route::get('/footerPages/{slug}', [FooterSiteController::class, 'index']);
-Route::get('/news', [NewsSiteController::class, 'index']);
 Route::get('/news-details/{id}', [NewsSiteController::class, 'newsDetails']);
 Route::get('/ourTeam', [IndexController::class, 'ourTeam']);
 //Help Center
-Route::get('/helpcenter', [IndexController::class, 'help']);
 Route::get('/helpcenter/{id}', [IndexController::class, 'helpDetails']);
-Route::get('/question', [IndexController::class, 'question']);
 Route::post('/search', [IndexController::class, 'search']);
 
 //Caption
@@ -113,7 +107,7 @@ Route::group(['middleware' => ['auth']], function () {
 //Language
 
 
-Route::group(['prefix' => '{locale}' ,'middleware' => 'setLocale'], function () {
+Route::group(['prefix' => '{locale}' , 'where' => ['locale' => '[a-zA-Z]{2}'],'middleware' => 'setLocale'], function () {
    Route::get('/', function () {
       return view('site.homePages');
      });
@@ -125,6 +119,8 @@ Route::get('/news', [NewsSiteController::class, 'index'])->name('/news');
 Route::get('/helpcenter', [IndexController::class, 'help'])->name('/helpcenter');
 Route::get('/question', [IndexController::class, 'question'])->name('/question');
 Route::post('/search', [IndexController::class, 'search'])->name('/search');
+Route::get('/cards', [TowerSiteController::class, 'cards'])->name('/cards');
+//Route::get('/allCompanies', [TowerSiteController::class, 'companies'])->name('/allCompanies');
 
 });
 

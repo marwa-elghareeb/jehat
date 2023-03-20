@@ -7,11 +7,11 @@
   <div class="container">
       <div class="row">
           <div class="col-12">
-              <h2 class="breadcrumbs-title">منصة 
-                <span>جهات</span></h2>
+              <h2 class="breadcrumbs-title">@lang('site.platform') 
+                <span>@lang('site.jehat') </span></h2>
               <ul class="breadcrumb-list">
-                  <li><a href="{{ URL :: to ('/')}}">الرئيسية</a></li>
-                  <li>منصة جهات
+                  <li><a href="{{ URL :: to ('/')}}">@lang('site.Homepage')</a></li>
+                  <li>@lang('site.jehat_platform') 
                   </li>
               </ul>
           </div>
@@ -25,7 +25,7 @@
       <div class="row">
         <div class="col-12">
           <div class="section-title" data-aos="fade-up">
-            <h1 data-animation="bounceIn" data-delay="0.2s">منصة جهات  </h1>
+            <h1 data-animation="bounceIn" data-delay="0.2s">@lang('site.jehat_platform')   </h1>
           
         </div>
         </div>
@@ -44,7 +44,7 @@
               الموظفين
             
             </p>
-            <a href="{{ $data->link }}" class="btn btn-outline-secondary  btn-sm pt-8 ">المزيد</a>
+            <a href="{{ $data->link }}" class="btn btn-outline-secondary  btn-sm pt-8 ">@lang('site.More') </a>
           </div>
         </div>
         @endforeach

@@ -40,6 +40,15 @@ return [
 //contactUs
 'with' => 'us',
 'contact' => 'contact',
+'Contact_Us' => 'Contact Us We are here to help you',
+'des_contact' => 'Need to talk to us? We listen to you. Please choose your preferred method of communication One of our employees will contact you shortly. ...we will be glad to hear your voice',
+'name' => 'name',
+'phone' => 'phone',
+'email' => 'email',
+'subject' => 'Title',
+'message' => 'message',
+'send' => 'send',
+
 //Media Center
 'Center' => 'Center ',
 'Media' => 'Media ',
@@ -47,5 +56,6 @@ return [
 'des_6' => ' Download user guide file',
 'des_7' => ' Explanation of the beneficiary platform',
 'news_1' => 'latest news ',
-
+'More' => 'More ',                    
+'Virtual_offices' => 'Virtual offices',  
 ];

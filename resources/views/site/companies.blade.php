@@ -12,8 +12,8 @@
                     <span>المجموعه</span>
                 </h2>
                 <ul class="breadcrumb-list">
-                    <li><a href="{{ URL :: to ('/')}}">الرئيسية</a></li>
-                    <li>المكاتب الافتراضيه
+                    <li><a href="{{ URL :: to ('/')}}">@lang('site.Homepage')</a></li>
+                    <li>@lang('site.Virtual_offices')
                     </li>
                 </ul>
             </div>
@@ -30,7 +30,7 @@
             <div class=" row">
                 <div class="col-lg-12 col-md-12">
                     <div class="section-title" data-aos="fade-up">
-                        <h1> المكاتب الافتراضيه</h1>
+                        <h1>  @lang('site.Virtual_offices')</h1>
 
                     </div>
                 </div>

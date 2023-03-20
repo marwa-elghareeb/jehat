@@ -88,7 +88,7 @@
                                                         <li><a href=" {{ route('/question', app()->getLocale()) }}"> @lang('site.question')  </a></li>
                                                     </ul>
                                                 <li><a @if(Request::segment(1) == 'cards') class="active" @endif 
-                                                href="{{ URL :: to ('/cards')}}">@lang('site.virtual_towers')  </a></li>
+                                                href=" {{ route('/cards', app()->getLocale()) }}">@lang('site.virtual_towers')  </a></li>
                                                 <li><a @if(Request::segment(1) == 'news') class="active" @endif 
                                                 href="{{ route('/news', app()->getLocale()) }}">@lang('site.news')  </a></li>
                                                

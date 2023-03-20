@@ -12,7 +12,7 @@
                 </h2>
                 <ul class="breadcrumb-list">
                     <li><a href="{{ URL :: to ('/')}}">@lang('site.Homepage')</a></li>
-                    <li>@lang('site.Homepage')</li>
+                    <li>@lang('site.contactUs')</li>
                 </ul>
             </div>
         </div>
@@ -27,12 +27,10 @@
                 <div class="col-lg-7 col-md-10 col-sm-12">
                     <div class="hero__caption hero__caption2 text-center ">
 
-                        <h1 class="contct" data-animation="bounceIn" data-delay="0.2s"> تواصل معنا نحن هنا لمساعدتك</h1>
+                        <h1 class="contct" data-animation="bounceIn" data-delay="0.2s"> @lang('site.Contact_Us')    </h1>
 
                         <p data-animation="fadeInUp" data-delay="0.4s">
-                            بحاجة الى التحدث معنا؟
-                            نحن نستمع إليك. يرجى اختيار وسيلة الاتصال المفضلة لديك
-                            وسيقوم أحد موظفينا بالتواصل معك قريبًا. ... سوف يسعدنا أن نسمع صوتك</p>
+                        @lang('site.des_contact')   </p>
 
                     </div>
                 </div>
@@ -77,7 +75,7 @@
                         <div class="row">
                             <div class="col-lg-6 col-md-12">
                                 <div class="form-group mb-30">
-                                    <input type="text" name="name" class="form-control" placeholder="الاسم">
+                                    <input type="text" name="name" class="form-control" placeholder="        @lang('site.name') ">
                                     @if($errors->has('name'))
                                         <div class="error">{{ $errors->first('name') }}</div>
                                         @endif
@@ -85,7 +83,7 @@
                             </div>
                             <div class="col-lg-6 col-md-12">
                                 <div class="form-group mb-30">
-                                    <input type="text" name="phone" class="form-control" placeholder="رقم الجوال">
+                                    <input type="text" name="phone" class="form-control" placeholder="  @lang('site.phone') ">
                                     @if($errors->has('phone'))
                                         <div class="error">{{ $errors->first('phone') }}</div>
                                         @endif
@@ -93,7 +91,7 @@
                             </div>
                             <div class="col-lg-12 col-md-12">
                                 <div class="form-group mb-30">
-                                    <input type="text" name="email" class="form-control" placeholder="البريد الالكترونى">
+                                    <input type="text" name="email" class="form-control" placeholder="  @lang('site.email')">
                                     @if($errors->has('email'))
                                         <div class="error">{{ $errors->first('email') }}</div>
                                         @endif
@@ -101,7 +99,7 @@
                             </div>
                             <div class="col-lg-12 col-md-12">
                                 <div class="form-group mb-30">
-                                    <input type="text" name="subject" class="form-control" placeholder=" عنوان الرساله">
+                                    <input type="text" name="subject" class="form-control" placeholder=" @lang('site.subject')  ">
                                     @if($errors->has('subject'))
                                         <div class="error">{{ $errors->first('subject') }}</div>
                                         @endif
@@ -109,14 +107,14 @@
                             </div>
                             <div class="col-12">
                                 <div class="form-group mb-30">
-                                    <textarea class="form-control" name="message" id="exampleFormControlTextarea1" placeholder="محتوي الرسالة" rows="6"></textarea>
+                                    <textarea class="form-control" name="message" id="exampleFormControlTextarea1" placeholder="@lang('site.message')  " rows="6"></textarea>
                                     @if($errors->has('message'))
                                         <div class="error">{{ $errors->first('message') }}</div>
                                         @endif
                                 </div>
                             </div>
                             <div class="col-12">
-                                <button type="submit" class="send-button">إرسال</button>
+                                <button type="submit" class="send-button"> @lang('site.send')</button>
                             </div>
 
                         </div>
