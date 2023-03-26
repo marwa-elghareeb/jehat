@@ -6,10 +6,10 @@
     <div class="container">
         <div class="row">
             <div class="col-12">
-                <h2 class="breadcrumbs-title"> روابط <span> مهمه</span></h2>
+                <h2 class="breadcrumbs-title"> @lang('site.Link') <span> @lang('site.Important')</span></h2>
                 <ul class="breadcrumb-list">
-                    <li><a href="{{ URL :: to ('/')}}">الرئيسية</a></li>
-                    <li> {{ $allData->name_ar }} </li>
+                    <li><a href="{{ URL :: to ('/')}}">@lang('site.Homepage')</a></li>
+                    <li>  {{ $allData->{'name_'.app()->getLocale()} }}</li>
                 </ul>
             </div>
         </div>
@@ -30,10 +30,10 @@
 
                                     <p class="sample-text">
 
-                                    <h1>{{ $allData->name_ar }}</h1>
+                                    <h1> {{ $allData->{'name_'.app()->getLocale()} }}</h1>
                                     <br>
 
-                                    <p class="description"> {{ $allData->desc_ar }}
+                                    <p class="description"> {{ $allData->{'desc_'.app()->getLocale()} }}
                                     </p>
                                 </div>
                         </div>

@@ -3,7 +3,7 @@
 return [
     //appPortal
     'Homepage' => ' Home',
-    'aboutUs' => 'about us',
+    'aboutUs' => 'About us',
     'contactUs' => 'Connect us',
     'UserManual' => "User's Manual",
     'HelpCenter' => 'Help Center',
@@ -13,7 +13,12 @@ return [
     'virtual_towers' => 'virtual towers',
     'technical_support' => 'technical support',
     'ourTeam' => 'work team',
+    'work' => 'work ',
+    'team' => ' Team',
+
     'Links' => 'Important Links',
+    'Important' => 'Important',
+    'Link' => ' Links',
     'signin' => 'sign in',
     'des_Footer'=> 'How can I download the app',
     'des_Footer_1'=> 'You can download the application from the Google Play store or the Appstore ',
@@ -35,11 +40,11 @@ return [
     // end homepages
     // aboutUs
     'us' => 'us ',
-    'about' => 'about',
+    'about' => 'About',
        //end  aboutUs
 //contactUs
 'with' => 'us',
-'contact' => 'contact',
+'contact' => 'Contact',
 'hours' => '24 hours a day ',
 'Contact_Us' => 'Contact Us We are here to help you',
 'des_contact' => 'Need to talk to us? We listen to you. Please choose your preferred method of communication One of our employees will contact you shortly. ...we will be glad to hear your voice',

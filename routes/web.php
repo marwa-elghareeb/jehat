@@ -50,11 +50,8 @@ Route::get('/', function () {
    
 
 Route::post('/contactUsForm', [ContactUsSiteController::class, 'contactUsForm']);
-Route::get('/footerPages/{slug}', [FooterSiteController::class, 'index']);
 Route::get('/news-details/{id}', [NewsSiteController::class, 'newsDetails']);
-Route::get('/ourTeam', [IndexController::class, 'ourTeam']);
 //Help Center
-Route::get('/helpcenter/{id}', [IndexController::class, 'helpDetails']);
 Route::post('/search', [IndexController::class, 'search']);
 
 //Caption
@@ -124,6 +121,12 @@ Route::group([
     Route::get('/cards', [TowerSiteController::class, 'cards'])->name('/cards');
     Route::get('/allCompanies', [TowerSiteController::class, 'companies'])->name('/allCompanies');
     Route::get('/department/{slug}', [TowerSiteController::class, 'department']);
+    Route::get('/footerPages/{slug}', [FooterSiteController::class, 'index']);
+    Route::get('/helpcenter/{id}', [IndexController::class, 'helpDetails']);
+    Route::get('/ourTeam', [IndexController::class, 'ourTeam']);
+    Route::get('/news-details/{id}', [NewsSiteController::class, 'newsDetails']);
+
+
 
 });
 

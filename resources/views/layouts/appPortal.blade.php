@@ -224,7 +224,7 @@
                                     <h4> @lang('site.Links')  </h4>
                                     <ul>
                                     @foreach($footerPages as $data)
-                                        <li><a href="{{URL :: to ('/footerPages',$data->slug )}}">  {{ $data->name_ar}}</a></li>
+                                        <li><a href="{{URL :: to ('/footerPages',$data->slug )}}">  {{ $data->{'name_'.app()->getLocale()} }}</a></li>
                                         @endforeach
                                     </ul>
                                 </div>

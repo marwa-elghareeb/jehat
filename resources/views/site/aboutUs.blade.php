@@ -11,7 +11,7 @@
                     <span>@lang('site.us')</span></h2>
                 <ul class="breadcrumb-list">
                     <li><a href="{{ URL :: to ('/')}}"> @lang('site.Homepage')</a></li>
-                    <li>@lang('site.contactUs')</li>
+                    <li>@lang('site.aboutUs')</li>
                 </ul>
             </div>
         </div>

@@ -6,12 +6,12 @@
   <div class="container">
     <div class="row">
       <div class="col-12">
-        <h2 class="breadcrumbs-title">فريق
-          <span>العمل</span>
+        <h2 class="breadcrumbs-title">@lang('site.team')
+          <span>@lang('site.work')</span>
         </h2>
         <ul class="breadcrumb-list">
-          <li><a href="index.html">الرئيسية</a></li>
-          <li>فريق العمل</li>
+          <li><a href="index.html">@lang('site.Homepage')</a></li>
+          <li>@lang('site.ourTeam') </li>
         </ul>
       </div>
     </div>
@@ -24,7 +24,7 @@
       <div class="row">
         <div class="col-12">
           <h1 class="text-blk team-head-text">
-            فريق العمل 
+          @lang('site.ourTeam')
           </h1>
         </div>
       </div>
