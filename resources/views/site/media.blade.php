@@ -62,7 +62,7 @@
                                 href="{{ URL ::to ($data->link)}}"
                                 class="video-wrap position-relative">
                                 <img class="single-gallery-image"  src="{{ URL ::to ('public/upload/'.$data->image)}}">
-                                <h3>{{ $data->title_ar}}</h3>
+                                <h3>  {{ $data->{'title_'.app()->getLocale()} }}</h3>
                             </a>
                         </div>@endforeach
 						</div>

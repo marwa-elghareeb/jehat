@@ -41,17 +41,17 @@
                                             <h1 class="title">
 
 
-                                              {{ $allData[0]->title_ar }} </h1>
+                                            {{ $allData[0]->{'title_'.app()->getLocale()} }} </h1>
                                         </div>
                                         <p class="description wow fadeInUp">
                                    
-                                        {{ strip_tags( $allData[0]->desc_ar ) }}
-
+                                     
+                                        {{ strip_tags( $allData[0]->{'desc_'.app()->getLocale()}  ) }}
                                         </p>
                                         <div class="singiture wow fadeInUp" data-wow-delay="0.5s">
                                             <h2 class="sub-title wow fadeInUp">
-                                            {{ $allData[4]->title_ar }}</h2>
-                                            <h3>   {{ $allData[4]->name_ar }}</h3>
+                                             {{ $allData[4]->{'title_'.app()->getLocale()} }}</h2>
+                                            <h3>     {{ $allData[4]->{'name_'.app()->getLocale()} }}</h3>
                                             <img src="{{ URL ::to ('public/upload/'.$allData[4]->image)}}" class="wow fadeInUp" data-wow-delay="0.6s" alt="sign">
                                         </div>
                                     </div>
@@ -73,8 +73,8 @@
                                             <img src="{{ URL ::to ('public/upload/'.$allData[1]->image)}}" alt="">
                                         </div>
                                         <div class="services-cap">
-                                            <h3 class="font-weight-bold text-center">{{ $allData[1]->title_ar }}</h5>
-                                                <p class=" text-center">{{ strip_tags( $allData[1]->desc_ar ) }}</p>
+                                            <h3 class="font-weight-bold text-center"> {{ $allData[1]->{'title_'.app()->getLocale()} }}</h5>
+                                                <p class=" text-center">{{ strip_tags( $allData[1]->{'desc_'.app()->getLocale()}  ) }}</p>
                                         </div>
                                     </div>
                                 </div>
@@ -85,8 +85,8 @@
                                             <img src=" {{ URL ::to ('public/upload/'.$allData[2]->image)}}  " alt="" style="height: 100px; width: 100px;">
                                         </div>
                                         <div class="services-cap">
-                                            <h3 class="font-weight-bold text-center">{{ $allData[2]->title_ar }} </h3>
-                                            <p class=" text-center">  {{ strip_tags( $allData[2]->desc_ar ) }}</p>
+                                            <h3 class="font-weight-bold text-center">{{ $allData[2]->{'title_'.app()->getLocale()} }}</h3>
+                                            <p class=" text-center">{{ strip_tags( $allData[2]->{'desc_'.app()->getLocale()}  ) }}</p>
                                         </div>
                                     </div>
                                 </div>
@@ -96,8 +96,8 @@
                                             <img src=" {{ URL ::to ('public/upload/'.$allData[3]->image)}} " alt="" style="height: 100px; width: 100px;">
                                         </div>
                                         <div class="services-cap">
-                                            <h3 class="font-weight-bold text-center"> {{ $allData[3]->title_ar }}</h3>
-                                            <p class=" text-center"> {{ strip_tags( $allData[3]->desc_ar ) }}</p>
+                                            <h3 class="font-weight-bold text-center">{{ $allData[3]->{'title_'.app()->getLocale()} }}</h3>
+                                            <p class=" text-center"> {{ strip_tags( $allData[3]->{'desc_'.app()->getLocale()}  ) }}</p>
                                         </div>
                                     </div>
                                 </div>

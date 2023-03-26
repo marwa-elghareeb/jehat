@@ -55,9 +55,9 @@
                       aria-labelledby="headingOne{{ $data->id}}" 
                       data-bs-parent="#accordionExample{{ $data->id}}">
                         <div class="accordion-body">
-                          <strong>{{$data->question_ar}}
+                          <strong>{{ $data->{'question_'.app()->getLocale()} }}
                       <br>
-                      {{ $data->answer_ar}}</strong> 
+                      {{ $data->{'answer_'.app()->getLocale()} }}</strong> 
                       
                         </div>
                       </div>

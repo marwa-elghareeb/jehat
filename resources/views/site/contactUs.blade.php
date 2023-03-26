@@ -43,12 +43,12 @@
                             <h3 class="title" style="overflow: hidden; font-family: cairo"></h3>
                             <br>
                             <div class="media-body">
-                                <h3>{{ $data->name_ar }}</h3>
-                                <p>{{ $data->address_ar }}</p>
+                                <h3>{{ $data->{'name_'.app()->getLocale()} }} </h3>
+                                <p>{{ $data->{'address_'.app()->getLocale()} }} </p>
                                 <div class="info phone">
                                     <img alt="" height="50" src="{{ asset('public/web-assets/img/Whatsapp.png')}}" width="52"><span>{{ $data->number }}</span>
                                 </div>
-                                <p>{{ $data->desc_ar }}</p>
+                                <p>{{ $data->{'desc_'.app()->getLocale()} }} </p>
                             </div>
                         </div>
                         <div class="contact-info">
@@ -56,7 +56,7 @@
                                 <span>{{ $data->email }}
                                 </span>
                                 <span class="contact-info__icon"><i class="ti-email"></i></span>
-                                <p>على مدار 24 ساعة</p>
+                                <p>  @lang('site.hours')</p>
                             </div>
                         </div>
                     </div>

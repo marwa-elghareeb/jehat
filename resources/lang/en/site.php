@@ -40,6 +40,7 @@ return [
 //contactUs
 'with' => 'us',
 'contact' => 'contact',
+'hours' => '24 hours a day ',
 'Contact_Us' => 'Contact Us We are here to help you',
 'des_contact' => 'Need to talk to us? We listen to you. Please choose your preferred method of communication One of our employees will contact you shortly. ...we will be glad to hear your voice',
 'name' => 'name',
@@ -57,5 +58,12 @@ return [
 'des_7' => ' Explanation of the beneficiary platform',
 'news_1' => 'latest news ',
 'More' => 'More ',                    
-'Virtual_offices' => 'Virtual offices',  
+'Virtual_offices' => 'Virtual offices',
+'companies' => 'companies ',
+'group' => 'group ',
+'departments_employees' => 'departments and employees ',
+'departments' => 'departments  ',
+'employees' => ' and employees ',
+'More_details' => ' More details',
+
 ];

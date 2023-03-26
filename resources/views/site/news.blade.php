@@ -45,7 +45,7 @@
                             </div>
                             <div class="blog_details">
                                 <a class="d-inline-block" href="#">
-                                <h2 class="blog-head" style="color: #2d2d2d;">{{ $data->name_ar }}</h2>
+                                <h2 class="blog-head" style="color: #2d2d2d;">{{ $data->{'name_'.app()->getLocale()} }}</h2>
                                     <!--<h2 class="blog-head" style="color: 
                                     #2d2d2d;">حضور صاحب السمو الملكي الأمير/ فيصل بن بندر بن عبدالع
                                     زيز آل سعود، أمير منطقة الرياض،
@@ -54,7 +54,7 @@
                                 </a>
                                 <ul class="blog-info-link">
                                     <li><a href="#">
-                                        <i class="fa fa-comments"></i> المزيد من التفاصيل</a></li>
+                                        <i class="fa fa-comments"></i>  @lang('site.More_details')</a></li>
                                 </ul>
                             </div>
                             </div>
@@ -75,7 +75,7 @@
                                 <img src="{{ URL ::to ('public/upload/'.$data->images)}}" alt="post">
                                 <div class="media-body">
                                     <a href="#">
-                                        <h3>{{ $data->name_ar }}</h3>
+                                        <h3>{{ $data->{'name_'.app()->getLocale()} }}</h3>
                                     </a>
                                     <p>{{ $data->news_date }}</p>
                                 </div>

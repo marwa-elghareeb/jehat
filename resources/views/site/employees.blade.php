@@ -6,11 +6,11 @@
     <div class="container">
         <div class="row">
             <div class="col-12">
-                <h2 class="breadcrumbs-title">الاقسام <span>والموظفين</span></h2>
+                <h2 class="breadcrumbs-title">@lang('site.departments') <span>@lang('site.employees')</span></h2>
                 <ul class="breadcrumb-list">
-                    <li><a href="{{ URL :: to ('/')}}">الرئيسية</a></li>
-                    <li>الاقسام والموظفين</li>
-                    <li> ({{ $cData->name_ar}})</li>
+                    <li><a href="{{ URL :: to ('/')}}">@lang('site.Homepage')</a></li>
+                    <li> @lang('site.departments_employees') </li>
+                    <li>  {{ $cData->{'name_'.app()->getLocale()} }}</li>
                 </ul>
             </div>
         </div>
@@ -25,7 +25,7 @@
             <div class="row justify-content-center">
                 <div class="col-xl-8 col-lg-11 col-md-12">
                     <div class="hero__caption hero__caption2 text-center mb-50">
-                        <h1 data-animation="bounceIn" data-delay="0.2s"> الاقسام والموظفين </h1>
+                        <h1 data-animation="bounceIn" data-delay="0.2s"> @lang('site.departments_employees')  </h1>
                     </div>
                 </div>
             </div>
@@ -89,14 +89,14 @@
                             </form>
                         </aside>
                         <aside class="single_sidebar_widget post_category_widget  text-center">
-                            <h4 class="widget_title">الاقسام</h4>
+                            <h4 class="widget_title">@lang('site.departments') </h4>
                             <ul class="list cat-list text-center">
 
 
                                 @foreach($allDept as $data)
                                 <li>
                                     <a href="{{ URL :: to ('/employe' , $data->id )}}" class="d-flex ">
-                                        <p class=" text-center"> {{ $data->name_ar }}</p>
+                                        <p class=" text-center"> {{ $data->{'name_'.app()->getLocale()} }}</p>
                                         <p class=" text-center">({{ $data->empCount}})</p>
                                     </a>
                                 </li>

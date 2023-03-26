@@ -39,7 +39,7 @@
             <div class="box-img-item  text-center">
               <img src="{{ URL ::to ('public/upload/'.$data->image)}} " alt="">
             </div>
-            <h4 class="title"><a href="">  {{ $data->name_ar }}</a></h4>
+            <h4 class="title"><a href=""> {{ $data->{'name_'.app()->getLocale()} }}</a></h4>
             <p class="description">يتم عرض جميع الشركات الموجوده فى المنصه وكذلك الاقسام الخاصه بها وايضا
               الموظفين
             

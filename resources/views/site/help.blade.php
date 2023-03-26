@@ -31,7 +31,7 @@
 
           <div class="col-12">
             <div class="section-tittle">
-              <h2> {{ $data->name_ar}} </h2>
+              <h2>  {{ $data->{'name_'.app()->getLocale()} }} </h2>
             </div>
           </div>
           <div class="col-12">
@@ -46,13 +46,13 @@
                     <div class="accordion-item">
                       <h2 class="accordion-header" id="headingOne_{{ $child->id}}">
                         <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne_{{ $child->id}}" aria-expanded="true" aria-controls="collapseOne_{{ $child->id}}">
-                          {{ $child->name_ar }}
+                           {{  $child->{'name_'.app()->getLocale()} }}
                         </button>
                       </h2>
                       <div id="collapseOne_{{ $child->id}}" class="accordion-collapse collapse show" aria-labelledby="headingOne_{{ $child->id}}" data-bs-parent="#accordionExample_{{ $child->id}}">
                         <div class="accordion-body">
                           @foreach ($child->subSub as $ss)
-                          <strong> {{ $ss->name_ar }}</strong>
+                          <strong>   {{  $ss->{'name_'.app()->getLocale()} }}</strong>
                           <br>
                           <p>
                             <?php echo strip_tags($ss->pageData); ?>

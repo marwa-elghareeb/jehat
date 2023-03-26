@@ -6,10 +6,10 @@
     <div class="container">
         <div class="row">
             <div class="col-12">
-                <h2 class="breadcrumbs-title">الاقسام <span>والموظفين</span></h2>
+                <h2 class="breadcrumbs-title">@lang('site.departments') <span>@lang('site.employees')</span></h2>
                 <ul class="breadcrumb-list">
-                    <li><a href="{{ URL :: to ('/')}}">الرئيسية</a></li>
-                    <li>الاقسام والموظفين</li>
+                    <li><a href="{{ URL :: to ('/')}}">@lang('site.Homepage')</a></li>
+                    <li>  @lang('site.departments_employees')</li>
                     <li> ({{ $cData->name_ar}})</li>
                 </ul>
             </div>
@@ -25,7 +25,7 @@
             <div class="row justify-content-center">
                 <div class="col-xl-8 col-lg-11 col-md-12">
                     <div class="hero__caption hero__caption2 text-center mb-50">
-                        <h1 data-animation="bounceIn" data-delay="0.2s"> الاقسام والموظفين </h1>
+                        <h1 data-animation="bounceIn" data-delay="0.2s"> @lang('site.departments_employees') </h1>
                     </div>
                 </div>
             </div>

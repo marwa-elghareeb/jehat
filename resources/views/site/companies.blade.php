@@ -8,8 +8,8 @@
     <div class="container">
         <div class="row">
             <div class="col-12">
-                <h2 class="breadcrumbs-title">شركات
-                    <span>المجموعه</span>
+                <h2 class="breadcrumbs-title">@lang('site.companies')
+                    <span>@lang('site.group')</span>
                 </h2>
                 <ul class="breadcrumb-list">
                     <li><a href="{{ URL :: to ('/')}}">@lang('site.Homepage')</a></li>
@@ -43,12 +43,12 @@
                         </div>
 
                         <div class="card-body">
-                            <h1 class="card-title"> {{ $data->name_ar }}</h1>
+                            <h1 class="card-title"> {{ $data->{'name_'.app()->getLocale()} }}</h1>
                         </div>
                         <div class="button-one ">
                             <a href="{{ URL :: to ('/reception' , $data->slug )}}" class=" " 
                             role="button" aria-pressed="true">
-                            <i class="fa fa-user"></i>الاقسام والموظفين</a>
+                            <i class="fa fa-user"></i>  @lang('site.departments_employees') </a>
                         </div>
 
                     </div>
