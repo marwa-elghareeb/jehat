@@ -103,10 +103,12 @@ Route::group(['middleware' => ['auth']], function () {
 //Language
 
 
-Route::group([ 
-'where' => ['locale' => '[a-zA-Z]{2}'],
+Route::group(['prefix' => '{locale}','where' => ['locale' => '[a-z]{2}'],
 'middleware' => 'setLocale'],
  function () {
+    Route::get('/homepage', function () {
+        return view('site.homePages');
+       })->name('/homepage');
     Route::get('/homepage', function () {
     return view('site.homePages');
    })->name('/homepage');

@@ -91,8 +91,9 @@
                                                 href=" {{ route('/cards', app()->getLocale()) }}">@lang('site.virtual_towers')  </a></li>
                                                 <li><a @if(Request::segment(1) == 'news') class="active" @endif 
                                                 href="{{ route('/news', app()->getLocale()) }}">@lang('site.news')  </a></li>
-                                                 <!--
+                                             
                                                <div class=" nav-item dropdown">
+                                                
                                                <a class=" dropdown-toggle" href="#" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                                                     {{ app()-> getLocale()=='ar'?'عربي':'English'}}
                                                </a>
@@ -101,14 +102,8 @@
                                                   <a class="dropdown-item"  href="{{url(app()->getLocale()=='ar'?'en':'ar')}}">{{ app()-> getLocale()=='ar'?'English':'عربي'}}</a>
                                                 </div>
                                                </div>
-                                            </ul>-->
-                                            <div class="hidden space-x-8 sm:-my-px sm:ml-10 sm:flex">
-                                            @foreach (config('app.available_locales') as $locale)
-                                              <a href="{{ request()->url() }}?language={{ $locale }}"
-                                                  class="@if (app()->getLocale() == $locale) border-indigo-400 @endif inline-flex items-center px-1 pt-1 border-b-2 text-sm font-medium leading-5 focus:outline-none transition duration-150 ease-in-out">
-                                                   [{{ strtoupper($locale) }}]
-                                                </a>
-                                             @endforeach
+                                            </ul>
+                                           
                   
 
                         
