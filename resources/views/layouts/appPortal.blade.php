@@ -73,7 +73,7 @@
                                             <ul id="navigation">
 
                                                 <li><a @if(Request::segment(1) == '') class="active"  @endif
-                                                href="{{ route('/homepage', app()->getLocale())}}">@lang('site.Homepage') </a></li>
+                                                href=" {{ route('/homepage', app()->getLocale()) }} ">@lang('site.Homepage') </a></li>
                                                 <li><a @if(Request::segment(1) == 'aboutUs') class="active"  @endif 
                                                 href="{{ route('/aboutUs', app()->getLocale()) }} ">@lang('site.aboutUs')</a></li>
                                                 <li><a @if(Request::segment(1) == 'contactUs') class="active"  @endif 
@@ -91,9 +91,8 @@
                                                 href=" {{ route('/cards', app()->getLocale()) }}">@lang('site.virtual_towers')  </a></li>
                                                 <li><a @if(Request::segment(1) == 'news') class="active" @endif 
                                                 href="{{ route('/news', app()->getLocale()) }}">@lang('site.news')  </a></li>
-                                             
+                                               
                                                <div class=" nav-item dropdown">
-                                                
                                                <a class=" dropdown-toggle" href="#" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                                                     {{ app()-> getLocale()=='ar'?'عربي':'English'}}
                                                </a>
@@ -103,12 +102,6 @@
                                                 </div>
                                                </div>
                                             </ul>
-                                           
-                  
-
-                        
-                   
-                </div>
                                         </nav>
                                     </div>
                                    
@@ -205,8 +198,8 @@
                                 <div class="footer-tittle">
                                     <h4>@lang('site.des_Footer_3')</h4>
                                     <ul>
-                                        <li><a href="{{ URL :: to ('/aboutUs')}}"> @lang('site.aboutUs')</a></li>
-                                        <li><a href="{{ URL :: to ('/ourTeam')}}"> @lang('site.ourTeam')</a></li>
+                                        <li><a href="{{ route('/aboutUs', app()->getLocale()) }} "> @lang('site.aboutUs')</a></li>
+                                        <li><a href="{{ route('/ourTeam', app()->getLocale()) }}"> @lang('site.ourTeam')</a></li>
                                 
 
                                     </ul>
@@ -219,7 +212,7 @@
                                     <h4> @lang('site.Links')  </h4>
                                     <ul>
                                     @foreach($footerPages as $data)
-                                        <li><a href="{{URL :: to ('/footerPages',$data->slug )}}">  {{ $data->{'name_'.app()->getLocale()} }}</a></li>
+                                        <li><a href="{{URL :: to ('/footerPages',$data->slug )}}">  {{ $data->name_ar}}</a></li>
                                         @endforeach
                                     </ul>
                                 </div>

@@ -125,7 +125,7 @@ Route::group(['prefix' => '{locale}','where' => ['locale' => '[a-z]{2}'],
     Route::get('/department/{slug}', [TowerSiteController::class, 'department']);
     Route::get('/footerPages/{slug}', [FooterSiteController::class, 'index']);
     Route::get('/helpcenter/{id}', [IndexController::class, 'helpDetails']);
-    Route::get('/ourTeam', [IndexController::class, 'ourTeam']);
+    Route::get('/ourTeam', [IndexController::class, 'ourTeam'])->name('/ourTeam');
     Route::get('/news-details/{id}', [NewsSiteController::class, 'newsDetails']);
 
 
