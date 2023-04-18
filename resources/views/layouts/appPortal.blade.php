@@ -91,12 +91,10 @@
                                                 href=" {{ route('/cards', app()->getLocale()) }}">@lang('site.virtual_towers')  </a></li>
                                                 <li><a @if(Request::segment(1) == 'news') class="active" @endif 
                                                 href="{{ route('/news', app()->getLocale()) }}">@lang('site.news')  </a></li>
-                                               
-                                               <div class=" nav-item dropdown">
+                                                <div class=" nav-item dropdown">
                                                <a class=" dropdown-toggle" href="#" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                                                     {{ app()-> getLocale()=='ar'?'عربي':'English'}}
                                                </a>
-
                                                  <div class="dropdown-menu" aria-labelledby="dropdownMenuLink">
                                                   <a class="dropdown-item"  href="{{url(app()->getLocale()=='ar'?'en':'ar')}}">{{ app()-> getLocale()=='ar'?'English':'عربي'}}</a>
                                                 </div>

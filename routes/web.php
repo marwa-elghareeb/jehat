@@ -44,10 +44,6 @@ use App\Http\Controllers\Site\IndexController;
 //Portal Routes:
 
 
-Route::get('/', function () {
-    return view('site.homePages');
-   });
-   
 
 Route::post('/contactUsForm', [ContactUsSiteController::class, 'contactUsForm']);
 Route::get('/news-details/{id}', [NewsSiteController::class, 'newsDetails']);
@@ -106,7 +102,7 @@ Route::group(['middleware' => ['auth']], function () {
 Route::group(['prefix' => '{locale}','where' => ['locale' => '[a-z]{2}'],
 'middleware' => 'setLocale'],
  function () {
-    Route::get('/homepage', function () {
+    Route::get('/', function () {
         return view('site.homePages');
        })->name('/homepage');
     Route::get('/homepage', function () {
