@@ -4,6 +4,7 @@ namespace App\Http\Controllers\Admin;
 use App\Http\Controllers\Controller;
 use Illuminate\Http\Request;
 use App\Models\Cards;
+use Illuminate\Support\Str;
 
 class CardsController extends Controller
 {
@@ -61,6 +62,7 @@ class CardsController extends Controller
         $data->image = $filename;
         $data->desc_ar = $request->desc_ar;
         $data->desc_en = $request->desc_en;
+        $data->slug = Str::slug($request->name_ar);
         $data->save();
         return redirect()->route('cards-data.index');
     }
@@ -117,6 +119,7 @@ class CardsController extends Controller
              $data->desc_ar = $request->desc_ar;
              $data->desc_en = $request->desc_en;
              $data->link = $request->link;
+             $data->slug = Str::slug($request->name_ar);
      
              if($request->file('image')){
                 $file= $request->file('image');

@@ -44,7 +44,7 @@
               الموظفين
             
             </p>
-            <a href="{{ $data->link }}" class="btn btn-outline-secondary  btn-sm pt-8 ">@lang('site.More') </a>
+            <a href="{{ $data->link }}" target="_blank" class="btn btn-outline-secondary  btn-sm pt-8 ">@lang('site.More') </a>
           </div>
         </div>
         @endforeach

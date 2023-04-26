@@ -30,6 +30,9 @@ use App\Http\Controllers\Site\NewsSiteController;
 use App\Http\Controllers\Site\TowerSiteController;
 use App\Http\Controllers\Site\IndexController;
 
+//Test Controller 
+use App\Http\Controllers\TeleworksController;
+
 
 /*
 |--------------------------------------------------------------------------
@@ -41,9 +44,12 @@ use App\Http\Controllers\Site\IndexController;
 | contains the "web" middleware group. Now create something great!
 |
 */
+
+//Test Controllers 
+Route::get('/teleworks', [TeleworksController::class, 'index']);
+Route::get('/api', [TeleworksController::class, 'api']);
+
 //Portal Routes:
-
-
 Route::get('/', function () {
     return view('site.homePages');
    });
@@ -90,15 +96,15 @@ Route::group(['prefix' => 'admin'], function () {
 
 //User
 Auth::routes();
-Route::group(['middleware' => ['auth']], function () {
+//Route::group(['middleware' => ['auth']], function () {
     Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name('home');
-    Route::get('/allCompanies', [TowerSiteController::class, 'companies']);
+    Route::get('/allCompanies/{slug}', [TowerSiteController::class, 'companies']);
     Route::get('/reception/{slug}', [TowerSiteController::class, 'reception']);
     Route::get('/department/{slug}', [TowerSiteController::class, 'department']);
     Route::get('/employe/{id}', [TowerSiteController::class, 'employees']);
     Route::post('/searchEmp', [TowerSiteController::class, 'searchEmp']);
 
-});
+//});
 
 //Language
 
@@ -127,8 +133,6 @@ Route::group(['prefix' => '{locale}','where' => ['locale' => '[a-z]{2}'],
     Route::get('/helpcenter/{id}', [IndexController::class, 'helpDetails']);
     Route::get('/ourTeam', [IndexController::class, 'ourTeam'])->name('/ourTeam');
     Route::get('/news-details/{id}', [NewsSiteController::class, 'newsDetails']);
-
-
 
 });
 

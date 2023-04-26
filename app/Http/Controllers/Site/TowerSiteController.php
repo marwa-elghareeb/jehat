@@ -23,9 +23,9 @@ class TowerSiteController extends Controller
         return view('site.towers');
     }
 
-    public function companies()
+    public function companies($slug)
     {
-        $allData = Companies::all();
+        $allData = Companies::where('slug', $slug)->get();
         return view('site.companies')->with(['allData' => $allData]);
     }
 
