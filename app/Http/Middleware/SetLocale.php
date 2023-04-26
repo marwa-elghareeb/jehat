@@ -7,10 +7,12 @@ use Illuminate\Http\Request;
 
 class SetLocale
 {
-    /**
+   /**
      * Handle an incoming request.
      *
      * @param  \Illuminate\Http\Request  $request
+     * @param  \Closure $next
+
      * @param  \Closure(\Illuminate\Http\Request): (\Illuminate\Http\Response|\Illuminate\Http\RedirectResponse)  $next
      * @return \Illuminate\Http\Response|\Illuminate\Http\RedirectResponse
      */
@@ -19,4 +21,7 @@ class SetLocale
         app()->setLocale($request->segment(1));
             return $next($request);
     }
+            
+            
+  
 }

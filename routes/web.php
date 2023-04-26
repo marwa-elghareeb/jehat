@@ -50,9 +50,7 @@ Route::get('/teleworks', [TeleworksController::class, 'index']);
 Route::get('/api', [TeleworksController::class, 'api']);
 
 //Portal Routes:
-Route::get('/', function () {
-    return view('site.homePages');
-   });
+Route::get('/', function () {return view('site.homePages');});
    
 
 Route::post('/contactUsForm', [ContactUsSiteController::class, 'contactUsForm']);
@@ -112,7 +110,7 @@ Auth::routes();
 Route::group(['prefix' => '{locale}','where' => ['locale' => '[a-z]{2}'],
 'middleware' => 'setLocale'],
  function () {
-    Route::get('/homepage', function () {
+    Route::get('/', function () {
         return view('site.homePages');
        })->name('/homepage');
     Route::get('/homepage', function () {
